@@ -1,0 +1,126 @@
+.rbx-container {
+    width:600px;
+    max-width:100%;
+    margin:auto;
+    background:#111;
+    color:#d3d3d3;
+    overflow:hidden;
+    border:1px
+    solid #8e4a3e
+}
+.rbx-topbar,.rbx-bottombar {
+    height:35px;
+    background:#8e4a3e
+}
+.rbx-menu {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:8px;
+    padding:15px
+}
+.rbx-menu
+a {
+    width:85px;
+    height:42px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#050505;
+    border:1px
+    solid #121212;
+    font-family:'Jura',sans-serif;
+    font-size:10px;
+    letter-spacing:2px;
+    color:#f0f0f0;
+    text-decoration:none;
+    box-shadow:0 0 10px rgba(0,0,0,.8), inset 0 0 15px rgba(255,255,255,.03);
+    transition:.3s
+}
+.rbx-menu a:hover {
+    color:#8e4a3e;
+    transform:translateY(-2px);
+    box-shadow:0 0 12px rgba(142,74,62,.5)
+}
+.rbx-header {
+    position:relative;
+    padding:20px
+}
+.rbx-leftpics {
+    position:absolute;
+    left:10px;
+    top:40px;
+    display:flex;
+    flex-direction:column;
+    gap:18px
+}
+.rbx-leftpics img, .rbx-rightpic
+img {
+    width:90px;
+    height:90px;
+    object-fit:cover;
+    border:2px
+    solid #8e4a3e
+}
+.rbx-rightpic {
+    text-align:right;
+    margin-top:15px
+}
+.rbx-title {
+    margin:30px
+    0 15px;
+    text-align:center;
+    font-family:'Cinzel',serif;
+    font-size:58px;
+    font-weight:600;
+    letter-spacing:10px;
+    background:linear-gradient( to bottom, #d3d3d3 0%, #d3d3d3 65%, #8e4a3e 100% );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent
+}
+.rbx-text {
+    width:65%;
+    margin-left:auto;
+    margin-right:auto;
+    font-family:'Jura',sans-serif;
+    font-size:12px;
+    line-height:1.8;
+    text-align:justify
+}
+.rbx-quote {
+    margin:5px
+    20px 5px;
+    text-align:center;
+    font-family:'Cormorant Garamond',serif;
+    font-size:38px;
+    font-style:italic
+}
+.rbx-info {
+    text-align:center;
+    color:#8e4a3e;
+    font-family:'Jura',sans-serif;
+    font-size:11px;
+    letter-spacing:1px;
+    padding-bottom:25px
+}
+@media (max-width:650px) {
+    .rbx-leftpics {
+        position:static;
+        flex-direction:row;
+        justify-content:center;
+        margin-bottom:15px
+    }
+    .rbx-text {
+        width:100%
+    }
+    .rbx-title {
+        font-size:44px;
+        letter-spacing:6px
+    }
+    .rbx-quote {
+        font-size:28px
+    }
+    .rbx-rightpic {
+        text-align:center
+    }
+}
