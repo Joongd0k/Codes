@@ -58,6 +58,8 @@
     overflow: hidden;
     border-radius: 20px;
     height: 90px;
+    border: 2px solid rgba(255,255,255,.35);
+    box-shadow: 0 0 8px rgba(255,107,141,.4);
 }
 .activity img {
     width: 100%;
