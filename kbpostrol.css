@@ -87,11 +87,11 @@
     width: 16px;
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:600px){
 
     .kbpost{
         width:100%;
-        max-width:600px;
+        max-width:500px;
         padding:12px;
     }
 
@@ -107,12 +107,14 @@
 
     .kbbody,
     .kbinfo{
-        width:100%;
+        width:90%;
         box-sizing:border-box;
     }
 
     .kbbody{
         padding:18px;
+        font-size: 10px;
+        line-height: 1.6;
     }
 
     .kbinfo{
