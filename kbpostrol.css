@@ -60,6 +60,9 @@
     line-height: 1.7;
     text-align: justify;
 }
+.kbbody u {
+    color: #ff6b8d!important;
+}
 .kbfooter {
     margin-top: 12px;
     display: flex;
@@ -79,11 +82,11 @@
     line-height: 1.8;
 }
 .kbrow b {
-    color: #444;
+    color: #444!important;
     margin-right: 3px;
 }
 .kbrow i {
-    color: #ff6b8d;
+    color: #ff6b8d!important;
     width: 16px;
 }
 
