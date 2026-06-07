@@ -4,7 +4,6 @@
 }
 .kazu-party {
     width: 600px;
-    max-width: 600px;
     margin: auto;
     padding: 20px;
     position:relative;
@@ -12,18 +11,20 @@
     background-size: cover;
     background-position: center;
     border-radius: 30px;
+    border: 1px solid #2f3440;
     font-family: 'Poppins', sans-serif;
 }
 .kbtitle{
     position:absolute;
-    left:-22px;
-    top:30px;
+    left:-19px;
+    top:25px;
 
     writing-mode:vertical-rl;
     text-orientation:upright;
 
     font-family:"Bungee Shade",sans-serif;
     font-size:35px;
+    background: none;
 
     color:#fff;
 
