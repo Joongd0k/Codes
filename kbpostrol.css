@@ -1,0 +1,88 @@
+.kbpost {
+    width: 600px;
+    margin: auto;
+    position: relative;
+    padding: 15px;
+    border: 1px solid #2f3440;
+    border-radius: 25px;
+    background: linear-gradient(rgba(15, 15, 25, .80), rgba(15, 15, 25, .80)), url("https://i.servimg.com/u/f35/19/19/77/70/file_010.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Poppins', sans-serif;
+}
+.kbside {
+    position: absolute;
+    left: -19px;
+    top: 25px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-family: "Bungee Shade", sans-serif;
+    font-size: 35px;
+    background: none;
+    color: #fff;
+    animation: flicker 4s infinite;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff6b8d, 0 0 40px #ff6b8d, 0 0 80px #ff6b8d;
+}
+.kbside span {
+    color: #ff6b8d;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff6b8d, 0 0 40px #ff6b8d, 0 0 80px #ff6b8d;
+    animation: kazuglow 2s infinite alternate;
+}
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff6b8d, 0 0 40px #ff6b8d, 0 0 80px #ff6b8d;
+    }
+    20%,
+    24%,
+    55% {
+        opacity: .4;
+        text-shadow: none;
+    }
+}
+@keyframes kazuglow {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 15px #ff6b8d, 0 0 30px #ff6b8d;
+    }
+    to {
+        text-shadow: 0 0 10px #fff, 0 0 25px #ff6b8d, 0 0 50px #ff6b8d;
+    }
+}
+.kbbody {
+    width: 90%;
+    margin: auto;
+    background: #fff8f2;
+    border: 1px solid #2f3440;
+    border-radius: 20px;
+    padding: 25px;
+    color: #2b2b2b;
+    font-size: 13px;
+    line-height: 1.9;
+    text-align: justify;
+}
+.kbfooter {
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+}
+.kbinfo {
+    width: 85%;
+    background: #fff8f2;
+    border: 1px solid #2f3440;
+    border-radius: 15px;
+    padding: 12px 18px;
+    color: #555;
+    font-size: 11px;
+    border: 1px solid rgba(0, 0, 0, .08);
+}
+.kbrow {
+    line-height: 1.8;
+}
+.kbrow b {
+    color: #444;
+    margin-right: 3px;
+}
+.kbrow i {
+    color: #ff6b8d;
+    width: 16px;
+}
