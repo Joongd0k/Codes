@@ -14,13 +14,66 @@
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
 }
-.kbtitle {
-    text-align: center;
-    font-family: "Bungee Shade", sans-serif;
-    font-size: 45px;
-    margin: 0 0 25px;
-    color: #ffffff;
-    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f09, 0 0 82px #f09, 0 0 92px #f09, 0 0 102px #f09, 0 0 151px #f09;
+.kbtitle{
+    position:absolute;
+    left:-22px;
+    top:30px;
+
+    writing-mode:vertical-rl;
+    text-orientation:upright;
+
+    font-family:"Bungee Shade",sans-serif;
+    font-size:35px;
+
+    color:#fff;
+
+    animation:flicker 4s infinite;
+
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 20px #ff6b8d,
+    0 0 40px #ff6b8d,
+    0 0 80px #ff6b8d;
+}
+
+.kbtitle span{
+    color:#ff7a45;
+
+    animation:kazuglow 2s infinite alternate;
+
+    text-shadow:
+    0 0 5px #fff,
+    0 0 15px #ff7a45,
+    0 0 30px #ff7a45,
+    0 0 60px #ff7a45;
+}
+
+@keyframes flicker{
+    0%,18%,22%,25%,53%,57%,100%{
+        opacity:1;
+    }
+
+    20%,24%,55%{
+        opacity:.55;
+    }
+}
+
+@keyframes kazuglow{
+    from{
+        text-shadow:
+        0 0 5px #fff,
+        0 0 15px #ff7a45,
+        0 0 30px #ff7a45;
+    }
+
+    to{
+        text-shadow:
+        0 0 10px #fff,
+        0 0 25px #ff7a45,
+        0 0 50px #ff7a45,
+        0 0 80px #ff7a45;
+    }
 }
 .kbcontent {
     display: flex;
