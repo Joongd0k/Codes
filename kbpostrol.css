@@ -63,6 +63,7 @@
 .kbbody u {
     color: #ff6b8d!important;
     text-decoration: wavy underline;
+    text-decoration-color: #ff6b8d!important;
 }
 .kbfooter {
     margin-top: 12px;
