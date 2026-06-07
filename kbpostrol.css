@@ -86,3 +86,36 @@
     color: #ff6b8d;
     width: 16px;
 }
+
+@media screen and (max-width:700px){
+
+    .kbpost{
+        width:100%;
+        max-width:600px;
+        padding:12px;
+    }
+
+    .kbside{
+        position:static;
+        writing-mode:horizontal-tb;
+        text-orientation:mixed;
+        text-align:center;
+        display:block;
+        margin:0 0 12px;
+        font-size:26px;
+    }
+
+    .kbbody,
+    .kbinfo{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .kbbody{
+        padding:18px;
+    }
+
+    .kbinfo{
+        padding:10px 14px;
+    }
+}
