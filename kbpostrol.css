@@ -19,9 +19,13 @@
     font-family: "Bungee Shade", sans-serif;
     font-size: 35px;
     background: none;
-    color: #fff;
+    color:#ff7a45;
     animation: flicker 4s infinite;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff6b8d, 0 0 40px #ff6b8d, 0 0 80px #ff6b8d;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 15px #ff7a45,
+    0 0 30px #ff7a45,
+    0 0 60px #ff7a45;
 }
 .kbside span {
     color: #ff6b8d;
