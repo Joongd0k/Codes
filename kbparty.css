@@ -133,6 +133,16 @@
     letter-spacing: 1px;
     text-shadow: 0 0 10px black;
 }
+.kbnote{
+    background:#fff8f2;
+    border-radius:20px;
+    padding:15px;
+    font-size:11px;
+    line-height:1.8;
+    color:#444;
+    border:2px solid rgba(255,255,255,.35);
+    box-shadow:0 0 8px rgba(255,107,141,.4);
+}
 .rules-card {
     margin-top: 20px;
     display: flex;
