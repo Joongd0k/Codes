@@ -145,7 +145,7 @@
     box-shadow:0 0 8px rgba(255,107,141,.4);
 }
 .kbscroll{
-    max-height:200px;
+    max-height:220px;
     overflow:auto;
 }
 .rules-card {
