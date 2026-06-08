@@ -86,7 +86,6 @@
     background: #fff8f2;
     border-radius: 25px;
     padding: 20px;
-    margin-top:-22px;
 }
 .kbwelcome {
     font-family: 'Permanent Marker', cursive;
@@ -144,6 +143,10 @@
     color:#444;
     border:2px solid rgba(255,255,255,.35);
     box-shadow:0 0 8px rgba(255,107,141,.4);
+}
+.kbscroll{
+    max-height:200px;
+    overflow:auto;
 }
 .rules-card {
     margin-top: 20px;
