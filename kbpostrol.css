@@ -21,11 +21,7 @@
     background: none;
     color:#ff7a45;
     animation: flicker 4s infinite;
-    text-shadow:
-    0 0 5px #fff,
-    0 0 15px #ff7a45,
-    0 0 30px #ff7a45,
-    0 0 60px #ff7a45;
+    text-shadow: 0 0 5px #fff, 0 0 15px #ff7a45, 0 0 30px #ff7a45, 0 0 60px #ff7a45;
 }
 .kbside span {
     color: #ff6b8d;
