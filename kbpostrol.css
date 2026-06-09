@@ -38,8 +38,8 @@
     text-shadow:
     0 0 2px rgba(255,255,255,.8),
     0 0 8px #ff6b8d,
-    0 0 16px #ff6b8d,
-    0 0 28px #ff6b8d;
+    0 0 12px #ff6b8d,
+    0 0 24px #ff6b8d;
 }
 
 @keyframes flicker{
