@@ -164,11 +164,6 @@
     color: #491684;
     font-size: 32px;
 }
-.rules-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px 20px;
-}
 .rules-txt {
     color: #2b2b2b;
     font-size: 12px;
