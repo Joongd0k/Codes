@@ -20,15 +20,15 @@
     font-size: 35px;
     background: none;
 
-    color:#ffd745;
+    color:#ffdb57;
 
     animation:flicker 4s infinite;
 
     text-shadow:
     0 0 2px rgba(255,255,255,.8),
-    0 0 8px #ffd745,
-    0 0 16px #ffd745,
-    0 0 28px #ffd745;
+    0 0 8px #ffdb57,
+    0 0 16px #ffdb57,
+    0 0 20px #ffdb57;
 }
 
 .kbside span{
