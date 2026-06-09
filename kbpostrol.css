@@ -19,33 +19,55 @@
     font-family: "Bungee Shade", sans-serif;
     font-size: 35px;
     background: none;
-    color:#ff7a45;
-    animation: flicker 4s infinite;
-    text-shadow: 0 0 5px #fff, 0 0 15px #ff7a45, 0 0 30px #ff7a45, 0 0 60px #ff7a45;
+
+    color:#ffd745;
+
+    animation:flicker 4s infinite;
+
+    text-shadow:
+    0 0 2px rgba(255,255,255,.8),
+    0 0 8px #ffd745,
+    0 0 16px #ffd745,
+    0 0 28px #ffd745;
 }
-.kbside span {
-    color: #ff6b8d;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff6b8d, 0 0 40px #ff6b8d, 0 0 80px #ff6b8d;
-    animation: kazuglow 2s infinite alternate;
+
+.kbside span{
+    color:#ff6b8d;
+
+    animation:kazuglow 2s infinite alternate;
+
+    text-shadow:
+    0 0 2px rgba(255,255,255,.8),
+    0 0 8px #ff6b8d,
+    0 0 16px #ff6b8d,
+    0 0 28px #ff6b8d;
 }
-@keyframes flicker {
-    0%, 18%, 22%, 25%, 53%, 57%, 100% {
-        opacity: 1;
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff6b8d, 0 0 40px #ff6b8d, 0 0 80px #ff6b8d;
+
+@keyframes flicker{
+    0%,18%,22%,25%,53%,57%,100%{
+        opacity:1;
     }
-    20%,
-    24%,
-    55% {
-        opacity: .4;
-        text-shadow: none;
+
+    20%,24%,55%{
+        opacity:.55;
     }
 }
-@keyframes kazuglow {
-    from {
-        text-shadow: 0 0 5px #fff, 0 0 15px #ff6b8d, 0 0 30px #ff6b8d;
+
+@keyframes kazuglow{
+    from{
+        text-shadow:
+        0 0 2px rgba(255,255,255,.8),
+        0 0 8px #ff6b8d,
+        0 0 16px #ff6b8d,
+        0 0 28px #ff6b8d;
     }
-    to {
-        text-shadow: 0 0 10px #fff, 0 0 25px #ff6b8d, 0 0 50px #ff6b8d;
+
+    to{
+        text-shadow:
+        0 0 3px rgba(255,255,255,.9),
+        0 0 12px #ff6b8d,
+        0 0 22px #ff6b8d,
+        0 0 38px #ff6b8d;
     }
 }
 .kbbody {
