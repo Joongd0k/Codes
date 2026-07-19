@@ -1,0 +1,241 @@
+.edmag {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    background: #111;
+    border: 1px solid #8e4a3e;
+    color: #d8d8d8;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.edmag * {
+    box-sizing: border-box;
+}
+.edmag-bar {
+    height: 34px;
+    background: #8e4a3e;
+}
+/*============== CABECERA =============*/
+
+.edmag-head {
+    padding: 35px 30px;
+    text-align: center;
+}
+.edmag-mini {
+    font-family: 'Jura', sans-serif;
+    font-size: 10px;
+    letter-spacing: 5px;
+    color: #8e4a3e;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.edmag-title {
+    font-family: 'Cinzel', serif;
+    font-size: 54px;
+    letter-spacing: 8px;
+    font-weight: 600;
+    background: linear-gradient(to bottom, #d3d3d3 0%, #d3d3d3 70%, #8e4a3e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.edmag-line {
+    width: 70px;
+    height: 1px;
+    margin: 22px auto;
+    background: #8e4a3e;
+}
+.edmag-sub {
+    width: 80%;
+    margin: 20px auto 0;
+    font-family: 'Jura', sans-serif;
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: center;
+    color: #bababa;
+}
+/*============= GRID ==============*/
+
+.edmag-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    padding: 30px;
+}
+/*========== TARJETA ===========*/
+
+.edpost {
+    background: #0b0b0b;
+    overflow: hidden;
+    transition: .35s ease;
+    box-shadow: 0 0 16px rgba(0, 0, 0, .45);
+}
+.edpost:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 18px rgba(142, 74, 62, .30);
+}
+/*=========== FOTO ===========*/
+
+.edphoto {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #000;
+    margin: 0;
+}
+.edphoto img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .55s ease;
+}
+.edpost:hover .edphoto img {
+    transform: scale(1.06);
+}
+/* Degradado */
+
+.edphoto::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient( to top, rgba(0, 0, 0, .55), rgba(0, 0, 0, 0) 45%);
+    pointer-events: none;
+}
+/*============ CONTENIDO ===========*/
+
+.edinfo {
+    padding: 18px;
+    background: #111;
+    text-align: center;
+}
+.edinfo::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 2px;
+    margin: 0 auto 14px;
+    background: #8e4a3e;
+    transition: .35s;
+}
+.edpost:hover .edinfo::before {
+    width: 70px;
+}
+/*======== FECHA ========*/
+
+.edcategory {
+    font-family: 'Jura', sans-serif;
+    font-size: 7px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #8e4a3e;
+    margin: 0 0 8px;
+}
+/*========= TITULO ==========*/
+
+.edtitle {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel', serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    color: #ececec;
+}
+/*========= PARTNER =========*/
+
+.edpartner {
+    display: block;
+    margin: 3px 0 0 !important;
+    padding: 0 !important;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 10px;
+    font-style: italic;
+    line-height: 1.2;
+    color: #b88478;
+}
+/*======== READ STORY ==========*/
+
+.edread {
+    display: inline-block;
+    margin-top: 15px;
+    font-family: 'Jura', sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #8e4a3e;
+    transition: .35s;
+}
+.edread:hover {
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+/*================ ESTADOS ===============*/
+
+.status {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 5;
+    padding: 5px 10px;
+    font-family: 'Jura', sans-serif;
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: rgba(17, 17, 17, .75);
+    backdrop-filter: blur(5px);
+    border: 1px solid #8e4a3e;
+}
+.status.active {
+    color: #f2d5cf;
+}
+.status.finished {
+    color: #d7d7d7;
+    border-color: #666;
+}
+.status.hiatus {
+    color: #e2c688;
+    border-color: #aa8847;
+}
+/*================ EFECTOS ==============*/
+
+.edpost:hover .edtitle {
+    color: #ffffff;
+}
+.edpost:hover .status {
+    background: #8e4a3e;
+    color: #fff;
+}
+/*============= BARRA FINAL ==============*/
+
+.edmag-bar:last-child {
+    margin-top: 10px;
+}
+/*============== RESPONSIVE ==========*/
+
+@media(max-width:650px) {
+    .edmag-grid {
+        grid-template-columns: 1fr;
+        padding: 25px;
+        gap: 35px;
+    }
+    .edmag-title {
+        font-size: 42px;
+        letter-spacing: 5px;
+    }
+    .edmag-sub {
+        font-size: 20px;
+    }
+    .edphoto {
+        height: 200px;
+    }
+    .edmag .edtitle {
+        font-size: 18px;
+    }
+    .edmag .edpartner {
+        font-size: 19px;
+    }
+}
