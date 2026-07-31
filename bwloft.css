@@ -54,8 +54,8 @@
     transition: .3s;
 }
 .bwl-plan-btn:hover {
-    background: #8b7442;
-    border-color: #8b7442;
+    background: #8f4545;
+    border-color: #8f4545;
     color: white;
 }
 .bwl-plan-box {
@@ -64,7 +64,7 @@
     max-height: 92vh;
     padding: 25px;
     background: #111;
-    border: 1px solid #8b7442;
+    border: 1px solid #8f4545;
     text-align: center;
 }
 .bwl-plan-box img {
@@ -86,7 +86,7 @@
     margin: 45px;
     padding: 28px 32px;
     background: #1b1b1b;
-    border-left: 3px solid #8b7442;
+    border-left: 3px solid #8f4545;
     border-right: 1px solid #2c2c2c;
     border-top: 1px solid #2c2c2c;
     border-bottom: 1px solid #2c2c2c;
@@ -113,8 +113,8 @@
     flex-wrap: wrap;
     gap: 14px;
     padding: 35px;
-    border-top: 1px solid #8b7442;
-    border-bottom: 1px solid #8b7442;
+    border-top: 1px solid #8f4545;
+    border-bottom: 1px solid #8f4545;
     background: #1c1c1c;
 }
 .bwl-index a {
@@ -128,7 +128,7 @@
     transition: .3s;
 }
 .bwl-index a:hover {
-    border-color: #8b7442;
+    border-color: #8f4545;
     color: #d8c28b;
 }
 /*================ POPUPS ================*/
@@ -155,7 +155,7 @@
     max-height: 82vh;
     overflow-y: auto;
     background: #161616;
-    border: 1px solid #8b7442;
+    border: 1px solid #8f4545;
     box-shadow: 0 0 40px rgba(0, 0, 0, .7);
     padding: 45px;
     line-height: 1.9;
