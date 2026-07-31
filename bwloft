@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
+/*======== CONTENEDOR =============*/
+
+.bwl-loft {
+    width: 650px;
+    margin: auto;
+    background: #161616;
+    border: 1px solid #353535;
+    color: #d8d8d8;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 0 35px rgba(0, 0, 0, .45);
+}
+/*================== PORTADA ==============*/
+
+.bwl-cover {
+    height: 430px;
+    position: relative;
+    background-image: url(https://i.servimg.com/u/f35/19/19/77/70/picsar13.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px;
+}
+.bwl-cover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, .15), rgba(0, 0, 0, .80));
+}
+.bwl-cover * {
+    position: relative;
+    z-index: 2;
+}
+.bwl-plan-btn {
+    position: absolute;
+    right: 30px;
+    bottom: 28px;
+    z-index: 5;
+    padding: 9px 18px;
+    border: 1px solid rgba(255, 255, 255, .35);
+    background: rgba(15, 15, 15, .55);
+    backdrop-filter: blur(4px);
+    color: #ececec;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: .3s;
+}
+.bwl-plan-btn:hover {
+    background: #8b7442;
+    border-color: #8b7442;
+    color: white;
+}
+.bwl-plan-box {
+    width: 95vw;
+    max-width: 1300px;
+    max-height: 92vh;
+    padding: 25px;
+    background: #111;
+    border: 1px solid #8b7442;
+    text-align: center;
+}
+.bwl-plan-box img {
+    width: 100%;
+    max-height: 82vh;
+    object-fit: contain;
+    display: block;
+}
+/*============ TITULO =============*/
+
+.bwl-subtitle {
+    margin-top: 10px;
+    color: #c6ab74;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.bwl-intro {
+    margin: 45px;
+    padding: 28px 32px;
+    background: #1b1b1b;
+    border-left: 3px solid #8b7442;
+    border-right: 1px solid #2c2c2c;
+    border-top: 1px solid #2c2c2c;
+    border-bottom: 1px solid #2c2c2c;
+    line-height: 1.75;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: .3px;
+    text-align: justify;
+    color: #cfcfcf;
+}
+.bwl-intro-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    color: #d8c28b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+/*============ INDICE ========*/
+
+.bwl-index {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 35px;
+    border-top: 1px solid #8b7442;
+    border-bottom: 1px solid #8b7442;
+    background: #1c1c1c;
+}
+.bwl-index a {
+    padding: 8px 15px;
+    border: 1px solid #444;
+    color: #bbbbbb;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: .3s;
+}
+.bwl-index a:hover {
+    border-color: #8b7442;
+    color: #d8c28b;
+}
+/*================ POPUPS ================*/
+
+.bwl-popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, .82);
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .35s;
+    z-index: 9999;
+}
+.bwl-popup:target {
+    opacity: 1;
+    visibility: visible;
+}
+.bwl-popup-box {
+    width: 700px;
+    max-width: 92vw;
+    max-height: 82vh;
+    overflow-y: auto;
+    background: #161616;
+    border: 1px solid #8b7442;
+    box-shadow: 0 0 40px rgba(0, 0, 0, .7);
+    padding: 45px;
+    line-height: 1.9;
+    font-size: 14px;
+    color: #cfcfcf;
+    text-align: justify;
+}
+.bwl-close {
+    float: right;
+    text-decoration: none;
+    color: #b89c64;
+    font-size: 28px;
+    line-height: 1;
+}
+.bwl-close:hover {
+    color: #fff;
+}
+/*============ SECCIONES ==========*/
+
+.bwl-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 36px;
+    color: #f2f2f2;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+/*========= SUBTITULOS =========*/
+
+.bwl-subheading {
+    margin-top: 30px;
+    margin-bottom: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: #d8c28b;
+}
