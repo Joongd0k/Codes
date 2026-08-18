@@ -1,0 +1,186 @@
+.umbrarum-ficha {
+    width: 650px;
+    margin: 30px auto;
+    padding: 28px;
+    box-sizing: border-box;
+    background: #0a0a0a;
+    color: #e5e1dc;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    line-height: 1.7;
+    letter-spacing: .3px;
+}
+.uf-header {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: 12px;
+}
+.uf-main-image {
+    min-height: 430px;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+.uf-profile {
+    padding: 35px 30px;
+    box-sizing: border-box;
+    background: var(--uf-panel);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.uf-kicker {
+    margin-bottom: 18px;
+    color: #960018;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.uf-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 47px;
+    line-height: .78;
+    text-transform: uppercase;
+}
+.uf-surname {
+    margin-top: 8px;
+    font-size: 27px;
+    letter-spacing: 3px;
+}
+.uf-line {
+    width: 70px;
+    height: 1px;
+    margin: 25px 0 16px;
+    background: var(--uf-accent);
+}
+.uf-data {
+    margin-top: 28px;
+    border-top: 1px solid var(--uf-line);
+}
+.uf-data-item {
+    padding: 11px 7px;
+    border-bottom: 1px solid var(--uf-line);
+}
+.uf-data-item:nth-child(odd) {
+    border-right: 1px solid var(--uf-line);
+}
+.uf-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #960018 !important;
+}
+.uf-value {
+    margin-top: 2px;
+    color: var(--uf-text);
+    font-size: 13px;
+    font-weight: 400;
+}
+.uf-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.35fr;
+    gap: 12px;
+    margin-top: 12px;
+}
+.uf-small-image {
+    height: 145px;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+}
+.uf-quote {
+    min-height: 145px;
+    padding: 22px;
+    box-sizing: border-box;
+    background: var(--uf-panel);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.uf-quote-PB {
+    color: var(--uf-accent);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    line-height: .5;
+}
+.uf-quote-text {
+    margin-top: 12px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    line-height: 1.15;
+    text-transform: uppercase;
+}
+.uf-section {
+    margin-top: 12px;
+    padding: 35px;
+    box-sizing: border-box;
+    background: var(--uf-panel);
+}
+.uf-section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 27px;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.uf-section-line {
+    width: 45px;
+    height: 1px;
+    margin: 15px 0 22px;
+    background: #960018;
+}
+.uf-text {
+    color: #aaa7a3;
+    font-size: 10px;
+    line-height: 1.9;
+    text-align: justify;
+}
+.uf-text b,
+.uf-text strong {
+    font-weight: bold;
+    color: #960018;
+}
+.uf-extras {
+    padding-bottom: 40px;
+}
+.uf-footer {
+    margin-top: 18px;
+    color: #5e5b59;
+    font-size: 7px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-align: center;
+}
+@media screen and (max-width: 720px) {
+    .umbrarum-ficha {
+        width: 95%;
+        padding: 15px
+    }
+    .uf-header {
+        grid-template-columns: 1fr
+    }
+    .uf-main-image {
+        min-height: 380px
+    }
+    .uf-gallery {
+        grid-template-columns: 1fr 1fr
+    }
+    .uf-quote {
+        grid-column: 1 / 3
+    }
+}
+@media screen and (max-width: 450px) {
+    .uf-gallery {
+        grid-template-columns: 1fr
+    }
+    .uf-quote {
+        grid-column: auto
+    }
+    .uf-profile {
+        padding: 28px 22px
+    }
+    .uf-section {
+        padding: 25px 22px
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
