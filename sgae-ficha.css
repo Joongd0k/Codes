@@ -373,16 +373,15 @@
 
 }
 
-
 /* ==========================================================
-   HISTORIA 
+   HISTORIA
    ========================================================== */
 
 .st-section {
 
-    margin-top: 14px;
+    margin-top: 12px;
 
-    padding: 38px;
+    padding: 32px;
 
     box-sizing: border-box;
 
@@ -390,7 +389,17 @@
 
     border: 1px solid #25271f;
 
-    position: relative;
+}
+
+
+.st-section-head,
+.st-extra-head {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 13px;
 
 }
 
@@ -401,22 +410,18 @@
 
     font-family: 'Cinzel', Georgia, serif;
 
-    font-size: 11px;
-
-    letter-spacing: 2px;
+    font-size: 12px;
 
 }
 
 
-.st-section-heading {
-
-    margin-top: 6px;
+.st-section-title {
 
     color: #e7e2d5;
 
     font-family: 'Cinzel', Georgia, serif;
 
-    font-size: 26px;
+    font-size: 24px;
 
     letter-spacing: 3px;
 
@@ -425,13 +430,13 @@
 }
 
 
-.st-section-line {
+.st-line {
 
-    width: 50px;
+    width: 45px;
 
     height: 1px;
 
-    margin: 17px 0 22px;
+    margin: 15px 0 21px;
 
     background: #b5a653;
 
@@ -442,11 +447,90 @@
 
     color: #aaa99f;
 
+    font-family: Georgia, serif;
+
     font-size: 11px;
 
     line-height: 2;
 
     text-align: justify;
+
+}
+
+
+/* ==========================================================
+   COLLAGE
+   ========================================================== */
+
+.st-collage {
+
+    display: grid;
+
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 12px;
+
+    margin-top: 12px;
+
+    align-items: stretch;
+
+}
+
+
+.st-collage-photo {
+
+    min-height: 230px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid #292a24;
+ 
+    filter: grayscale(30%) sepia(10%);
+
+}
+
+
+.photo-a {
+
+    transform: rotate(-1deg);
+
+}
+
+
+/* ==========================================================
+   DATOS EXTRAS
+   ========================================================== */
+
+.st-extra {
+
+    min-height: 230px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: #111310;
+
+    border: 1px solid #25271f;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.st-extra .st-line {
+
+    margin-bottom: 18px;
 
 }
 
@@ -471,65 +555,6 @@
     color: #c6c1b1;
 
 }
-
-/* ==========================================================
-   COLLAGE
-   ========================================================== */
-
-.st-extra-collage {
-
-    display: grid;
-
-    grid-template-columns: .8fr 1.2fr;
-
-    gap: 14px;
-
-    margin-top: 14px;
-
-    align-items: stretch;
-
-}
-
-
-.st-extra-collage-photo {
-
-    min-height: 230px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    background-size: cover;
-
-    background-position: center;
-
-    filter: grayscale(30%) sepia(10%);
-
-    border: 1px solid #292a24;
-
-}
-
-
-.photo-a {
-
-    transform: rotate(-1deg);
-
-}
-
-.st-extra-collage .st-section {
-
-    margin-top: 0;
-
-    min-height: 230px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-}
-
 
 /* ==========================================================
    FOOTER
