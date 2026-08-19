@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+/* ==========================================================
+   FICHA
+   ========================================================== */
+
 .reaper-ficha {
 
     --reaper-main: #77748A;
@@ -9,17 +16,21 @@
     --reaper-line: #2A292E;
 
     width: 650px;
+
     margin: 30px auto;
+
     padding: 28px;
 
     box-sizing: border-box;
 
     background: var(--reaper-bg);
+
     color: var(--reaper-text);
 
     font-family: Arial, sans-serif;
 
     font-size: 10px;
+
     line-height: 1.7;
 
     position: relative;
@@ -73,10 +84,6 @@
 
 }
 
-
-/* ==========================================================
-   HEADER / COLLAGE PRINCIPAL
-   ========================================================== */
 
 .reaper-header {
 
@@ -150,7 +157,7 @@
 
     grid-column: 2 / 4;
 
-    padding: 30px;
+    padding: 28px 30px;
 
     box-sizing: border-box;
 
@@ -182,7 +189,7 @@
 
 .reaper-name {
 
-    margin-top: 17px;
+    margin-top: 14px;
 
     color: #ECEAE7;
 
@@ -210,88 +217,32 @@
 }
 
 
-.reaper-symbol {
+/* ==========================================================
+   DIVISOR DE IDENTIDAD
+   ========================================================== */
 
-    margin-top: 20px;
+.reaper-identity-line {
 
-    color: var(--reaper-main);
+    width: 100%;
 
-    font-family: Georgia, serif;
+    height: 1px;
 
-    font-size: 22px;
+    margin: 20px 0 16px;
 
-}
-
-
-.reaper-motto {
-
-    margin-top: 6px;
-
-    color: var(--reaper-muted);
-
-    font-size: 7px;
-
-    letter-spacing: 3px;
+    background: var(--reaper-line);
 
 }
 
 
 /* ==========================================================
-   FOTOS SECUNDARIAS
+   DATOS BÁSICOS DENTRO DE IDENTIDAD
    ========================================================== */
 
-.reaper-photo-small {
-
-    position: relative;
-
-    overflow: hidden;
-
-    background-size: cover;
-
-    background-position: center;
-
-    border: 1px solid #29282E;
-
-}
-
-
-/* ==========================================================
-   REGISTRO
-   ========================================================== */
-
-.reaper-record {
-
-    margin-top: 12px;
-
-    padding: 22px 25px;
-
-    background: var(--reaper-panel);
-
-    border: 1px solid #28272D;
-
-}
-
-
-.reaper-record-title {
-
-    margin-bottom: 15px;
-
-    color: var(--reaper-main);
-
-    font-size: 7px;
-
-    font-weight: bold;
-
-    letter-spacing: 4px;
-
-}
-
-
-.reaper-record-grid {
+.reaper-basic-grid {
 
     display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
 
 }
 
@@ -305,9 +256,18 @@
 }
 
 
-.reaper-data:first-child {
+.reaper-data:nth-child(odd) {
 
     border-left: none;
+
+}
+
+
+.reaper-data:nth-child(n+3) {
+
+    border-top: 1px solid var(--reaper-line);
+
+    padding-top: 9px;
 
 }
 
@@ -327,11 +287,30 @@
 
 .reaper-value {
 
-    margin-top: 4px;
+    margin-top: 3px;
 
     color: var(--reaper-text);
 
-    font-size: 10px;
+    font-size: 9px;
+
+}
+
+
+/* ==========================================================
+   FOTOS SECUNDARIAS
+   ========================================================== */
+
+.reaper-photo-small {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid #29282E;
 
 }
 
@@ -405,17 +384,6 @@
     flex-direction: column;
 
     justify-content: center;
-
-}
-
-
-.reaper-note-number {
-
-    color: var(--reaper-main);
-
-    font-family: Georgia, serif;
-
-    font-size: 23px;
 
 }
 
@@ -594,7 +562,7 @@
 
         grid-template-columns: 1fr 1fr;
 
-        grid-template-rows: 380px 150px;
+        grid-template-rows: 380px auto;
 
     }
 
@@ -623,42 +591,6 @@
 
     }
 
-
-    .reaper-record-grid {
-
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-
-    .reaper-data:nth-child(3) {
-
-        border-left: none;
-
-        border-top: 1px solid var(--reaper-line);
-
-    }
-
-
-    .reaper-data:nth-child(4) {
-
-        border-top: 1px solid var(--reaper-line);
-
-    }
-
-
-    .reaper-collage {
-
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-
-    .reaper-note {
-
-        grid-column: 1 / 3;
-
-    }
 
 }
 
@@ -699,12 +631,12 @@
 
     .reaper-identity {
 
-        min-height: 230px;
+        min-height: 330px;
 
     }
 
 
-    .reaper-record-grid {
+    .reaper-basic-grid {
 
         grid-template-columns: 1fr;
 
@@ -723,6 +655,13 @@
     .reaper-data:first-child {
 
         border-top: none;
+
+    }
+
+
+    .reaper-data:nth-child(n+3) {
+
+        border-top: 1px solid var(--reaper-line);
 
     }
 
@@ -755,4 +694,3 @@
     }
 
 }
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
