@@ -398,7 +398,9 @@
 
 .elains-history-image {
 
-    width: 105px;
+    width: 150px;
+    min-width: 150px;
+    flex-basis: 150px;
 
     height: 125px;
 
@@ -412,7 +414,7 @@
 
     overflow: hidden;
 
-    border-radius: 12px 12px 30px 12px;
+    border-radius: 20px 7px 28px 7px;
 
 }
 
@@ -494,7 +496,13 @@
 
     width: 100%;
 
+    max-height: 350px;
+
+    padding-right: 12px;
+
     box-sizing: border-box;
+
+    overflow-y: auto;
 
     color: #aaa09b;
 
@@ -502,7 +510,7 @@
 
     font-size: 13px;
 
-    line-height: 1.85;
+    line-height: 1.65;
 
     text-align: justify;
 
