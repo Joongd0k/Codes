@@ -510,7 +510,7 @@
 
     font-size: 13px;
 
-    line-height: 1.65;
+    line-height: 1.55;
 
     text-align: justify;
 
@@ -617,15 +617,43 @@
 
 .elains-text {
 
+    max-height: 230px;
+
+    padding-right: 12px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
     color: #aaa09b;
 
     font-family: 'Cormorant Garamond', Georgia, serif;
 
     font-size: 13px;
 
-    line-height: 1.85;
+    line-height: 1.55;
 
     text-align: justify;
+
+}
+
+.elains-text::-webkit-scrollbar {
+
+    width: 3px;
+
+}
+
+
+.elains-text::-webkit-scrollbar-track {
+
+    background: #241d1b;
+
+}
+
+
+.elains-text::-webkit-scrollbar-thumb {
+
+    background: #ad735d;
 
 }
 
@@ -770,22 +798,22 @@
     }
 
 
-    .elains-history {
+    .elains-history-heading {
 
-        grid-template-columns: 1fr;
+    gap: 18px;
 
-    }
+}
 
 
-    .elains-history-image {
+.elains-history-image {
 
-        min-height: 300px;
+    width: 140px;
+    min-width: 140px;
+    flex-basis: 140px;
 
-        height: 300px;
+    height: 110px;
 
-        border-radius: 0 0 50% 20%;
-
-    }
+}
 
 
     .elains-basic-data {
@@ -898,13 +926,31 @@
 
     }
 
+   .elains-history-heading {
 
-    .elains-history-content {
+    flex-direction: column;
 
-        padding: 28px 22px;
+    align-items: flex-start;
 
-    }
+}
 
+
+   .elains-history-image {
+
+    width: 100%;
+    min-width: 0;
+    flex-basis: auto;
+
+    height: 130px;
+
+}
+
+
+  .elains-history-title {
+
+    width: 100%;
+
+}
 
     .elains-extras {
 
