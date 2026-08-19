@@ -398,9 +398,9 @@
 
 .elains-history-image {
 
-    width: 150px;
-    min-width: 150px;
-    flex-basis: 150px;
+    width: 180px;
+    min-width: 180px;
+    flex-basis: 180px;
 
     height: 125px;
 
@@ -449,7 +449,7 @@
 
     color: #ad735d;
 
-    font-size: 7px;
+    font-size: 9px;
 
     font-weight: 700;
 
@@ -466,7 +466,7 @@
 
     font-family: 'Cinzel', Georgia, serif;
 
-    font-size: 25px;
+    font-size: 35px;
 
     letter-spacing: 3px;
 
