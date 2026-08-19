@@ -296,7 +296,8 @@
    ========================================================== */
 
 .st-main-image::after,
-.st-gallery-image::after {
+.st-gallery-image::after
+.st-extra-collage-photo::after{
 
     content: "";
 
@@ -471,13 +472,6 @@
 
 }
 
-
-.st-extra-section {
-
-    padding-bottom: 45px;
-
-} 
-
 /* ==========================================================
    COLLAGE
    ========================================================== */
@@ -522,22 +516,11 @@
 
 }
 
+.st-extra-collage .st-section {
 
-/* ==========================================================
-   DATOS EXTRAS
-   ========================================================== */
-
-.st-extra {
+    margin-top: 0;
 
     min-height: 230px;
-
-    padding: 30px;
-
-    box-sizing: border-box;
-
-    background: #111310;
-
-    border: 1px solid #25271f;
 
     display: flex;
 
@@ -547,12 +530,6 @@
 
 }
 
-
-.st-extra .st-line {
-
-    margin-bottom: 18px;
-
-}
 
 /* ==========================================================
    FOOTER
@@ -639,6 +616,12 @@
 
     }
 
+   .st-extra-collage {
+
+        grid-template-columns: 1fr 1fr;
+
+   }
+
 }
 
 
@@ -713,5 +696,11 @@
         padding: 28px 23px;
 
     }
+
+   .st-extra-collage {
+
+        grid-template-columns: 1fr;
+
+   }
 
     }
