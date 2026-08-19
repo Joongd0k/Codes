@@ -1,0 +1,758 @@
+.reaper-ficha {
+
+    --reaper-main: #77748A;
+    --reaper-light: #B8B5C0;
+    --reaper-text: #D8D5D0;
+    --reaper-muted: #85838B;
+    --reaper-bg: #0C0C0E;
+    --reaper-panel: #131316;
+    --reaper-line: #2A292E;
+
+    width: 650px;
+    margin: 30px auto;
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background: var(--reaper-bg);
+    color: var(--reaper-text);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 10px;
+    line-height: 1.7;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid #25242A;
+
+}
+
+
+/* ==========================================================
+   MARCO INTERIOR
+   ========================================================== */
+
+.reaper-ficha:before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+
+    border: 1px solid rgba(119,116,138,.16);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================================================
+   CABECERA
+   ========================================================== */
+
+.reaper-top-mark {
+
+    margin-bottom: 12px;
+
+    color: var(--reaper-main);
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    text-align: right;
+
+}
+
+
+/* ==========================================================
+   HEADER / COLLAGE PRINCIPAL
+   ========================================================== */
+
+.reaper-header {
+
+    display: grid;
+
+    grid-template-columns: 1.45fr .8fr .55fr;
+
+    grid-template-rows: 230px 150px;
+
+    gap: 12px;
+
+}
+
+
+/* ==========================================================
+   IMAGEN PRINCIPAL
+   ========================================================== */
+
+.reaper-main-photo {
+
+    grid-row: 1 / 3;
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid #29282E;
+
+}
+
+
+/* TONO ESPECTRAL */
+
+.reaper-main-photo:after,
+.reaper-photo-small:after,
+.reaper-collage-photo:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(119,116,138,.16);
+
+    pointer-events: none;
+
+}
+
+
+/* FILTRO DE LAS FOTOGRAFÍAS */
+
+.reaper-main-photo,
+.reaper-photo-small,
+.reaper-collage-photo {
+
+    filter: grayscale(18%) saturate(88%);
+
+}
+
+
+/* ==========================================================
+   IDENTIDAD
+   ========================================================== */
+
+.reaper-identity {
+
+    grid-column: 2 / 4;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: var(--reaper-panel);
+
+    border: 1px solid #28272D;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.reaper-class {
+
+    color: var(--reaper-main);
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+}
+
+
+.reaper-name {
+
+    margin-top: 17px;
+
+    color: #ECEAE7;
+
+    font-family: Georgia, serif;
+
+    font-size: 37px;
+
+    line-height: .85;
+
+    text-transform: uppercase;
+
+}
+
+
+.reaper-surname {
+
+    margin-top: 9px;
+
+    color: var(--reaper-main);
+
+    font-size: 23px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.reaper-symbol {
+
+    margin-top: 20px;
+
+    color: var(--reaper-main);
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+}
+
+
+.reaper-motto {
+
+    margin-top: 6px;
+
+    color: var(--reaper-muted);
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* ==========================================================
+   FOTOS SECUNDARIAS
+   ========================================================== */
+
+.reaper-photo-small {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid #29282E;
+
+}
+
+
+/* ==========================================================
+   REGISTRO
+   ========================================================== */
+
+.reaper-record {
+
+    margin-top: 12px;
+
+    padding: 22px 25px;
+
+    background: var(--reaper-panel);
+
+    border: 1px solid #28272D;
+
+}
+
+
+.reaper-record-title {
+
+    margin-bottom: 15px;
+
+    color: var(--reaper-main);
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+}
+
+
+.reaper-record-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+.reaper-data {
+
+    padding: 5px 13px;
+
+    border-left: 1px solid var(--reaper-line);
+
+}
+
+
+.reaper-data:first-child {
+
+    border-left: none;
+
+}
+
+
+.reaper-label {
+
+    color: var(--reaper-main);
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.reaper-value {
+
+    margin-top: 4px;
+
+    color: var(--reaper-text);
+
+    font-size: 10px;
+
+}
+
+
+/* ==========================================================
+   COLLAGE
+   ========================================================== */
+
+.reaper-collage {
+
+    display: grid;
+
+    grid-template-columns: 1fr .7fr 1.2fr;
+
+    gap: 12px;
+
+    margin-top: 12px;
+
+}
+
+
+.reaper-collage-photo {
+
+    height: 155px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid #29282E;
+
+}
+
+
+.photo-a {
+
+    transform: rotate(-1deg);
+
+}
+
+
+.photo-b {
+
+    transform: rotate(1.2deg);
+
+}
+
+
+/* ==========================================================
+   NOTA
+   ========================================================== */
+
+.reaper-note {
+
+    height: 155px;
+
+    padding: 25px;
+
+    box-sizing: border-box;
+
+    background: #111114;
+
+    border: 1px solid #28272D;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.reaper-note-number {
+
+    color: var(--reaper-main);
+
+    font-family: Georgia, serif;
+
+    font-size: 23px;
+
+}
+
+
+.reaper-note-title {
+
+    margin-top: 8px;
+
+    color: #E4E1DD;
+
+    font-family: Georgia, serif;
+
+    font-size: 13px;
+
+    letter-spacing: 2px;
+
+}
+
+
+.reaper-note-text {
+
+    margin-top: 10px;
+
+    color: var(--reaper-muted);
+
+    font-size: 9px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ==========================================================
+   HISTORIA / EXTRAS
+   ========================================================== */
+
+.reaper-section {
+
+    margin-top: 12px;
+
+    padding: 32px;
+
+    box-sizing: border-box;
+
+    background: var(--reaper-panel);
+
+    border: 1px solid #28272D;
+
+}
+
+
+.reaper-section-head {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 13px;
+
+}
+
+
+.reaper-section-number {
+
+    color: var(--reaper-main);
+
+    font-family: Georgia, serif;
+
+    font-size: 12px;
+
+}
+
+
+.reaper-section-title {
+
+    color: #E5E2DE;
+
+    font-family: Georgia, serif;
+
+    font-size: 24px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+.reaper-line {
+
+    width: 45px;
+
+    height: 1px;
+
+    margin: 15px 0 21px;
+
+    background: var(--reaper-main);
+
+}
+
+
+.reaper-text {
+
+    color: #A8A6AA;
+
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    line-height: 2;
+
+    text-align: justify;
+
+}
+
+
+/* ==========================================================
+   FORMATO DE TEXTO
+   ========================================================== */
+
+.reaper-text b,
+.reaper-text strong {
+
+    color: var(--reaper-light);
+
+    font-weight: bold;
+
+}
+
+
+.reaper-text i,
+.reaper-text em {
+
+    color: #C2BEC6;
+
+}
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+.reaper-footer {
+
+    margin-top: 18px;
+
+    color: #57565D;
+
+    font-size: 7px;
+
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media screen and (max-width: 720px) {
+
+    .reaper-ficha {
+
+        width: 95%;
+
+        padding: 20px;
+
+    }
+
+
+    .reaper-header {
+
+        grid-template-columns: 1fr 1fr;
+
+        grid-template-rows: 380px 150px;
+
+    }
+
+
+    .reaper-main-photo {
+
+        grid-column: 1 / 3;
+
+        grid-row: 1;
+
+    }
+
+
+    .reaper-identity {
+
+        grid-column: 1 / 2;
+
+        grid-row: 2;
+
+    }
+
+
+    .reaper-photo-small {
+
+        grid-row: 2;
+
+    }
+
+
+    .reaper-record-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .reaper-data:nth-child(3) {
+
+        border-left: none;
+
+        border-top: 1px solid var(--reaper-line);
+
+    }
+
+
+    .reaper-data:nth-child(4) {
+
+        border-top: 1px solid var(--reaper-line);
+
+    }
+
+
+    .reaper-collage {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .reaper-note {
+
+        grid-column: 1 / 3;
+
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .reaper-ficha {
+
+        width: 96%;
+
+        padding: 15px;
+
+    }
+
+
+    .reaper-header {
+
+        display: flex;
+
+        flex-direction: column;
+
+    }
+
+
+    .reaper-main-photo {
+
+        height: 400px;
+
+    }
+
+
+    .reaper-photo-small {
+
+        height: 150px;
+
+    }
+
+
+    .reaper-identity {
+
+        min-height: 230px;
+
+    }
+
+
+    .reaper-record-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .reaper-data {
+
+        border-left: none;
+
+        border-top: 1px solid var(--reaper-line);
+
+    }
+
+
+    .reaper-data:first-child {
+
+        border-top: none;
+
+    }
+
+
+    .reaper-collage {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .reaper-note {
+
+        grid-column: auto;
+
+    }
+
+
+    .reaper-section {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .reaper-section-title {
+
+        font-size: 20px;
+
+    }
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
