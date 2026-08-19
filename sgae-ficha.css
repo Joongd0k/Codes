@@ -296,8 +296,8 @@
    ========================================================== */
 
 .st-main-image::after,
-.st-gallery-image::after
-.st-extra-collage-photo::after{
+.st-gallery-image::after,
+.st-collage-photo::after {
 
     content: "";
 
@@ -309,7 +309,7 @@
 
     pointer-events: none;
 
-}
+   }
 
 
 /* ==========================================================
@@ -641,7 +641,7 @@
 
     }
 
-   .st-extra-collage {
+   .st-collage {
 
         grid-template-columns: 1fr 1fr;
 
@@ -722,7 +722,7 @@
 
     }
 
-   .st-extra-collage {
+   .st-collage {
 
         grid-template-columns: 1fr;
 
