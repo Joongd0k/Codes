@@ -374,7 +374,7 @@
 
 
 /* ==========================================================
-   HISTORIA / EXTRAS
+   HISTORIA 
    ========================================================== */
 
 .st-section {
@@ -472,12 +472,140 @@
 }
 
 
-.st-extra-section {
+/* .st-extra-section {
 
     padding-bottom: 45px;
 
+} */
+
+/* ==========================================================
+   COLLAGE + DATOS EXTRAS
+   ========================================================== */
+
+.st-extra-collage {
+
+    display: grid;
+
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 14px;
+
+    margin-top: 14px;
+
+    align-items: stretch;
+
 }
 
+
+/* ==========================================================
+   FOTO DE EXTRAS
+   ========================================================== */
+
+.st-extra-photo {
+
+    min-height: 230px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    filter: grayscale(30%) sepia(10%);
+
+    border: 1px solid #292a24;
+
+}
+
+
+.st-extra-photo::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(181,166,83,.18);
+
+    pointer-events: none;
+
+}
+
+
+.st-extra-photo {
+
+    transform: rotate(-1deg);
+
+}
+
+
+/* ==========================================================
+   DATOS EXTRAS
+   ========================================================== */
+
+.st-extra {
+
+    min-height: 230px;
+
+    padding: 30px;
+
+    box-sizing: border-box;
+
+    background: #111310;
+
+    border: 1px solid #25271f;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.st-extra-head {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 13px;
+
+}
+
+
+.st-extra .st-section-number {
+
+    flex-shrink: 0;
+
+}
+
+
+.st-extra .st-section-heading {
+
+    margin-top: 0;
+
+    font-size: 22px;
+
+}
+
+
+.st-extra .st-section-line {
+
+    margin: 15px 0 18px;
+
+}
+
+
+.st-extra .st-text {
+
+    margin: 0;
+
+   }
 
 /* ==========================================================
    FOOTER
