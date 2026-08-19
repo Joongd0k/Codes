@@ -472,14 +472,14 @@
 }
 
 
-/* .st-extra-section {
+.st-extra-section {
 
     padding-bottom: 45px;
 
-} */
+} 
 
 /* ==========================================================
-   COLLAGE + DATOS EXTRAS
+   COLLAGE
    ========================================================== */
 
 .st-extra-collage {
@@ -497,11 +497,7 @@
 }
 
 
-/* ==========================================================
-   FOTO DE EXTRAS
-   ========================================================== */
-
-.st-extra-photo {
+.st-extra-collage-photo {
 
     min-height: 230px;
 
@@ -520,22 +516,7 @@
 }
 
 
-.st-extra-photo::after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background: rgba(181,166,83,.18);
-
-    pointer-events: none;
-
-}
-
-
-.st-extra-photo {
+.photo-a {
 
     transform: rotate(-1deg);
 
@@ -567,45 +548,11 @@
 }
 
 
-.st-extra-head {
+.st-extra .st-line {
 
-    display: flex;
-
-    align-items: baseline;
-
-    gap: 13px;
+    margin-bottom: 18px;
 
 }
-
-
-.st-extra .st-section-number {
-
-    flex-shrink: 0;
-
-}
-
-
-.st-extra .st-section-heading {
-
-    margin-top: 0;
-
-    font-size: 22px;
-
-}
-
-
-.st-extra .st-section-line {
-
-    margin: 15px 0 18px;
-
-}
-
-
-.st-extra .st-text {
-
-    margin: 0;
-
-   }
 
 /* ==========================================================
    FOOTER
