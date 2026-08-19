@@ -233,7 +233,7 @@
 
     font-family: Arial, sans-serif;
 
-    font-size: 7px;
+    font-size: 9px;
 
     font-weight: bold;
 
@@ -248,7 +248,7 @@
 
     color: #d8d5ca;
 
-    font-size: 11px;
+    font-size: 13px;
 
     line-height: 1.45;
 
@@ -333,8 +333,6 @@
 
     justify-content: center;
 
-    order: -1;
-
 }
 
 
@@ -355,7 +353,7 @@
 
     font-family: 'Cinzel', Georgia, serif;
 
-    font-size: 14px;
+    font-size: 12px;
 
     letter-spacing: 3px;
 
@@ -364,11 +362,11 @@
 
 .st-note-text {
 
-    margin-top: 7px;
+    margin-top: 4px;
 
     color: #85867d;
 
-    font-size: 11px;
+    font-size: 13px;
 
     font-style: italic;
 
