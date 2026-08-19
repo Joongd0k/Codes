@@ -354,26 +354,21 @@
 
 }
 
-
 /* =====================
    HISTORIA
    ====================== */
 
 .elains-history {
 
-    display: grid;
-
-    grid-template-columns: 42% 58%;
-
-    min-height: 340px;
-
     margin-top: 15px;
+
+    padding: 25px 30px 30px;
+
+    box-sizing: border-box;
 
     background: #1b1514;
 
     border: 1px solid rgba(173,115,93,.20);
-
-    overflow: hidden;
 
     border-radius: 18px 18px 55px 55px;
 
@@ -381,12 +376,33 @@
 
 
 /* ======================
-   IMAGEN DE HISTORIA
+   CABECERA HISTORIA
+   ======================= */
+
+.elains-history-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ======================
+   IMAGEN HISTORIA
    ======================= */
 
 .elains-history-image {
 
-    min-height: 340px;
+    width: 105px;
+
+    height: 125px;
+
+    flex-shrink: 0;
 
     background-size: cover;
 
@@ -396,7 +412,7 @@
 
     overflow: hidden;
 
-    border-radius: 0 0 55% 25%;
+    border-radius: 12px 12px 30px 12px;
 
 }
 
@@ -417,14 +433,12 @@
 
 
 /* =====================
-   CONTENIDO HISTORIA
-   ======================= */
+   TÍTULO HISTORIA
+   ====================== */
 
-.elains-history-content {
+.elains-history-title {
 
-    padding: 35px 30px;
-
-    box-sizing: border-box;
+    flex: 1;
 
 }
 
@@ -465,7 +479,7 @@
 
     height: 1px;
 
-    margin: 15px 0 20px;
+    margin: 15px 0 0;
 
     background: #bd8f7d;
 
@@ -474,17 +488,13 @@
 
 /* ======================
    TEXTO DE HISTORIA
-   ========================= */
+   ======================= */
 
 .elains-history-text {
 
-    height: 215px;
-
-    padding-right: 10px;
+    width: 100%;
 
     box-sizing: border-box;
-
-    overflow-y: auto;
 
     color: #aaa09b;
 
@@ -499,7 +509,9 @@
 }
 
 
-/* SCROLL */
+/* ======================
+   SCROLL
+   ======================= */
 
 .elains-history-text::-webkit-scrollbar {
 
@@ -520,7 +532,6 @@
     background: #ad735d;
 
 }
-
 
 /* =======================
    BANNER DATOS EXTRAS
