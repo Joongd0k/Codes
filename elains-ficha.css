@@ -1,0 +1,907 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* ========================
+   ELÄINS · CHARACTER PROFILE
+   
+   ========================== */
+
+.elains-ficha {
+
+    width: 650px;
+    margin: 35px auto;
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(206,171,158,.10),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(173,115,93,.08),
+            transparent 30%
+        ),
+        #151111;
+
+    color: #d9c8c0;
+
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    font-size: 10px;
+    line-height: 1.7;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* ============================
+   MARCO 
+   ========================== */
+
+.elains-ficha:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border: 1px solid rgba(206,171,158,.20);
+
+    border-radius: 28px 12px 32px 15px;
+
+    pointer-events: none;
+
+}
+
+
+.elains-ficha:after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 20px;
+    right: 24px;
+
+    width: 80px;
+    height: 80px;
+
+    border-top: 1px solid rgba(173,115,93,.20);
+    border-right: 1px solid rgba(173,115,93,.20);
+
+    border-radius: 0 35px 0 0;
+
+    pointer-events: none;
+
+}
+
+
+/* ============================
+   CABECERA
+   ============================= */
+
+.elains-header {
+
+    position: relative;
+
+    padding: 38px 35px 32px;
+
+    text-align: center;
+
+    background: rgba(28,21,20,.72);
+
+    border: 1px solid rgba(173,115,93,.22);
+
+    border-radius: 45px 18px 45px 18px;
+
+}
+
+
+/* ===========================
+   ICONO
+   =============================== */
+
+.elains-icon-frame {
+
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 25px;
+
+    padding: 7px;
+
+    box-sizing: border-box;
+
+    background: #ad735d;
+
+    transform: rotate(45deg);
+
+    border-radius: 25px 8px 25px 8px;
+
+    position: relative;
+
+}
+
+
+.elains-icon-frame:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 5px;
+
+    border: 1px solid #ceab9e;
+
+    border-radius: 20px 7px 20px 7px;
+
+}
+
+
+.elains-icon {
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    transform: rotate(-45deg) scale(1.15);
+
+    border-radius: 50%;
+
+}
+
+
+/* =============================
+   SÍMBOLOS LATERALES
+   ========================= */
+
+.elains-side-symbol {
+
+    position: absolute;
+
+    top: 105px;
+
+    color: #bd8f7d;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    opacity: .75;
+
+}
+
+
+.elains-left {
+
+    left: 35px;
+
+    transform: rotate(180deg);
+
+}
+
+
+.elains-right {
+
+    right: 35px;
+
+}
+
+
+/* =========================
+   ELÄIN / GRADO
+   =========================== */
+
+.elains-race {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 5px;
+
+}
+
+
+.elains-race-name,
+.elains-race-grade {
+
+    padding: 7px 18px;
+
+    box-sizing: border-box;
+
+    background: #ad735d;
+
+    color: #f0e3de;
+
+    font-family: 'Cinzel', Georgia, serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    border-radius: 14px;
+
+}
+
+
+.elains-race-grade {
+
+    background: #bd8f7d;
+
+    color: #241a18;
+
+}
+
+
+/* =========================
+   NOMBRE
+   ========================== */
+
+.elains-character-title {
+
+    margin-top: 25px;
+
+    color: #e6d8d2;
+
+    font-family: 'Cinzel', Georgia, serif;
+
+    font-size: 30px;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.elains-full-name {
+
+    margin-top: 9px;
+
+    color: #bd8f7d;
+
+    font-family: 'Cormorant Garamond', Georgia, serif;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ======================
+   DATOS BÁSICOS
+   ========================= */
+
+.elains-basic-data {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 28px auto 0;
+
+    max-width: 480px;
+
+    border-top: 1px solid rgba(189,143,125,.22);
+
+    border-bottom: 1px solid rgba(189,143,125,.22);
+
+}
+
+
+.elains-data {
+
+    padding: 12px 10px;
+
+    border-left: 1px solid rgba(189,143,125,.18);
+
+}
+
+
+.elains-data:first-child {
+
+    border-left: none;
+
+}
+
+
+.elains-data-label {
+
+    color: #ad735d;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.elains-data-value {
+
+    margin-top: 4px;
+
+    color: #d9c8c0;
+
+    font-family: 'Cormorant Garamond', Georgia, serif;
+
+    font-size: 13px;
+
+}
+
+
+/* =====================
+   HISTORIA
+   ====================== */
+
+.elains-history {
+
+    display: grid;
+
+    grid-template-columns: 42% 58%;
+
+    min-height: 340px;
+
+    margin-top: 15px;
+
+    background: #1b1514;
+
+    border: 1px solid rgba(173,115,93,.20);
+
+    overflow: hidden;
+
+    border-radius: 18px 18px 55px 55px;
+
+}
+
+
+/* ======================
+   IMAGEN DE HISTORIA
+   ======================= */
+
+.elains-history-image {
+
+    min-height: 340px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 0 0 55% 25%;
+
+}
+
+
+.elains-history-image:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(173,115,93,.13);
+
+    pointer-events: none;
+
+}
+
+
+/* =====================
+   CONTENIDO HISTORIA
+   ======================= */
+
+.elains-history-content {
+
+    padding: 35px 30px;
+
+    box-sizing: border-box;
+
+}
+
+
+.elains-section-kicker {
+
+    color: #ad735d;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.elains-section-title {
+
+    margin-top: 7px;
+
+    color: #e7dcd6;
+
+    font-family: 'Cinzel', Georgia, serif;
+
+    font-size: 25px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+.elains-title-line {
+
+    width: 45px;
+
+    height: 1px;
+
+    margin: 15px 0 20px;
+
+    background: #bd8f7d;
+
+}
+
+
+/* ======================
+   TEXTO DE HISTORIA
+   ========================= */
+
+.elains-history-text {
+
+    height: 215px;
+
+    padding-right: 10px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    color: #aaa09b;
+
+    font-family: 'Cormorant Garamond', Georgia, serif;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+
+    text-align: justify;
+
+}
+
+
+/* SCROLL */
+
+.elains-history-text::-webkit-scrollbar {
+
+    width: 3px;
+
+}
+
+
+.elains-history-text::-webkit-scrollbar-track {
+
+    background: #241d1b;
+
+}
+
+
+.elains-history-text::-webkit-scrollbar-thumb {
+
+    background: #ad735d;
+
+}
+
+
+/* =======================
+   BANNER DATOS EXTRAS
+   ======================= */
+
+.elains-extra-banner {
+
+    margin: 15px 25px;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    background: #ad735d;
+
+    color: #f0e5df;
+
+    font-family: 'Cinzel', Georgia, serif;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+    border-radius: 20px 7px 20px 7px;
+
+}
+
+
+.elains-extra-banner span {
+
+    margin: 0 12px;
+
+    color: #ceab9e;
+
+}
+
+
+/* =====================
+   DATOS EXTRAS
+   ====================== */
+
+.elains-extras {
+
+    display: grid;
+
+    grid-template-columns: 1fr 190px;
+
+    gap: 25px;
+
+    padding: 32px;
+
+    box-sizing: border-box;
+
+    background: #1b1514;
+
+    border: 1px solid rgba(173,115,93,.20);
+
+    border-radius: 12px 35px 12px 35px;
+
+}
+
+
+/* =====================
+   TEXTO EXTRAS
+   =================== */
+
+.elains-extra-text {
+
+    padding: 5px 0;
+
+}
+
+
+.elains-text {
+
+    color: #aaa09b;
+
+    font-family: 'Cormorant Garamond', Georgia, serif;
+
+    font-size: 13px;
+
+    line-height: 1.85;
+
+    text-align: justify;
+
+}
+
+
+/* =====================
+   GALERÍA MINIATURAS
+   ======================== */
+
+.elains-mini-gallery {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    align-content: center;
+
+}
+
+
+.elains-mini-image {
+
+    width: 86px;
+    height: 86px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    filter: saturate(80%) sepia(8%);
+
+    border: 1px solid rgba(189,143,125,.35);
+
+    border-radius: 18px 5px 18px 5px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.elains-mini-image:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(173,115,93,.10);
+
+    pointer-events: none;
+
+}
+
+
+/* ========================
+   FORMATO DE TEXTO
+   ====================== */
+
+.elains-text b,
+.elains-text strong,
+.elains-history-text b,
+.elains-history-text strong {
+
+    color: #bd8f7d;
+
+    font-weight: bold;
+
+}
+
+
+.elains-text i,
+.elains-text em,
+.elains-history-text i,
+.elains-history-text em {
+
+    color: #ceab9e;
+
+}
+
+
+/* =======================
+   FOOTER
+   ====================== */
+
+.elains-footer {
+
+    margin-top: 18px;
+
+    color: #695955;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+}
+
+
+.elains-footer span {
+
+    margin: 0 10px;
+
+    color: #ad735d;
+
+}
+
+
+/* =======================
+   RESPONSIVE
+   ========================== */
+
+@media screen and (max-width: 720px) {
+
+    .elains-ficha {
+
+        width: 95%;
+
+        padding: 20px;
+
+    }
+
+
+    .elains-header {
+
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+
+
+    .elains-side-symbol {
+
+        display: none;
+
+    }
+
+
+    .elains-history {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .elains-history-image {
+
+        min-height: 300px;
+
+        height: 300px;
+
+        border-radius: 0 0 50% 20%;
+
+    }
+
+
+    .elains-basic-data {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .elains-data:nth-child(3) {
+
+        grid-column: 1 / 3;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(189,143,125,.18);
+
+    }
+
+
+    .elains-extras {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .elains-mini-gallery {
+
+        grid-template-columns: repeat(3, 1fr);
+
+        justify-items: center;
+
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .elains-ficha {
+
+        width: 96%;
+
+        padding: 15px;
+
+    }
+
+
+    .elains-header {
+
+        padding: 30px 18px;
+
+    }
+
+
+    .elains-icon-frame {
+
+        width: 90px;
+        height: 90px;
+
+    }
+
+
+    .elains-character-title {
+
+        font-size: 24px;
+
+    }
+
+
+    .elains-race-name,
+    .elains-race-grade {
+
+        padding: 6px 12px;
+
+        font-size: 8px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .elains-basic-data {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .elains-data {
+
+        border-left: none;
+
+        border-top: 1px solid rgba(189,143,125,.18);
+
+    }
+
+
+    .elains-data:first-child {
+
+        border-top: none;
+
+    }
+
+
+    .elains-data:nth-child(3) {
+
+        grid-column: auto;
+
+    }
+
+
+    .elains-history-content {
+
+        padding: 28px 22px;
+
+    }
+
+
+    .elains-extras {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .elains-mini-image {
+
+        width: 72px;
+        height: 72px;
+
+    }
+
+
+    .elains-extra-banner {
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        letter-spacing: 2px;
+
+    }
+
+}
