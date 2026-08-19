@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap');
 
 /* ========================
    ELÄINS · CHARACTER PROFILE
@@ -106,7 +106,7 @@
 
 /* ===========================
    ICONO
-   =============================== */
+   ============================ */
 
 .elains-icon-frame {
 
@@ -127,6 +127,8 @@
 
     position: relative;
 
+    overflow: hidden;
+
 }
 
 
@@ -142,6 +144,10 @@
 
     border-radius: 20px 7px 20px 7px;
 
+    z-index: 2;
+
+    pointer-events: none;
+
 }
 
 
@@ -155,12 +161,11 @@
 
     transform: rotate(-45deg) scale(1.15);
 
-    border-radius: 50%;
 
 }
 
 
-/* =============================
+/* ===========================
    SÍMBOLOS LATERALES
    ========================= */
 
@@ -255,9 +260,11 @@
 
     color: #e6d8d2;
 
-    font-family: 'Cinzel', Georgia, serif;
+    font-family: 'Almendra', serif;
+   
+    font-size: 34px;
 
-    font-size: 30px;
+    font-weight: 700;
 
     line-height: 1;
 
