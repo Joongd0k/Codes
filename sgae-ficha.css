@@ -305,11 +305,19 @@
 
     inset: 0;
 
-    background: rgba(181,166,83,.18);
+    background:
+        linear-gradient(
+            135deg,
+            rgba(181,166,83,.32),
+            rgba(181,166,83,.08) 55%,
+            rgba(20,20,15,.12)
+        );
+
+    mix-blend-mode: multiply;
 
     pointer-events: none;
 
-   }
+}
 
 
 /* ==========================================================
