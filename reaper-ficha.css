@@ -1,19 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
 
-/* ==========================================================
-   FICHA
-   ========================================================== */
+/* ======================
+   GRIM REAPERS · CHARACTER 
+   ============================ */
 
 .reaper-ficha {
 
-    --reaper-main: #77748A;
-    --reaper-light: #B8B5C0;
-    --reaper-text: #D8D5D0;
-    --reaper-muted: #85838B;
-    --reaper-bg: #0C0C0E;
-    --reaper-panel: #131316;
-    --reaper-line: #2A292E;
+    --reaper-main: #7f90a8;
+    --reaper-light: #99a6b9;
+    --reaper-bright: #b2bccb;
+
+    --reaper-text: #d5dbe3;
+    --reaper-muted: #8d96a2;
+
+    --reaper-bg: #090b0e;
+    --reaper-panel: #11151a;
+
+    --reaper-line: #252c34;
 
     width: 650px;
 
@@ -23,11 +27,25 @@
 
     box-sizing: border-box;
 
-    background: var(--reaper-bg);
+    background:
+
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(127,144,168,.08),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(178,188,203,.05),
+            transparent 30%
+        ),
+
+        var(--reaper-bg);
 
     color: var(--reaper-text);
 
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', Arial, sans-serif;
 
     font-size: 10px;
 
@@ -37,14 +55,14 @@
 
     overflow: hidden;
 
-    border: 1px solid #25242A;
+    border: 1px solid #1d232a;
 
 }
 
 
-/* ==========================================================
+/* ========================
    MARCO INTERIOR
-   ========================================================== */
+========================= */
 
 .reaper-ficha:before {
 
@@ -52,21 +70,41 @@
 
     position: absolute;
 
-    top: 12px;
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
+    inset: 12px;
 
-    border: 1px solid rgba(119,116,138,.16);
+    border: 1px solid rgba(127,144,168,.16);
 
     pointer-events: none;
 
 }
 
 
-/* ==========================================================
+/* =====================
+   DETALLE SUPERIOR
+   ================== */
+
+.reaper-ficha:after {
+
+    content: "ARCHIVE // 001";
+
+    position: absolute;
+
+    top: 18px;
+
+    left: 28px;
+
+    color: rgba(153,166,185,.25);
+
+    font-size: 6px;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* =========================
    CABECERA
-   ========================================================== */
+   ======================== */
 
 .reaper-top-mark {
 
@@ -85,6 +123,10 @@
 }
 
 
+/* ========================
+   GRID CABECERA
+========================== */
+
 .reaper-header {
 
     display: grid;
@@ -98,9 +140,9 @@
 }
 
 
-/* ==========================================================
+/* =====================
    IMAGEN PRINCIPAL
-   ========================================================== */
+   ======================= */
 
 .reaper-main-photo {
 
@@ -114,14 +156,19 @@
 
     overflow: hidden;
 
-    border: 1px solid #29282E;
+    border: 1px solid #252c34;
+
+    filter:
+        grayscale(20%)
+        saturate(72%)
+        contrast(105%);
 
 }
 
 
-/* ==========================================================
-   TONO ESPECTRAL
-   ========================================================== */
+/* ===========================
+   EFECTO ESPECTRAL
+   ============================= */
 
 .reaper-main-photo:after,
 .reaper-photo-small:after,
@@ -133,29 +180,45 @@
 
     inset: 0;
 
-    background: rgba(119,116,138,.16);
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(127,144,168,.20),
+            transparent 60%
+        );
 
     pointer-events: none;
 
 }
 
 
-/* ==========================================================
-   FILTRO DE FOTOGRAFÍAS
-   ========================================================== */
+/* =========================
+   FOTOS SECUNDARIAS
+   ========================== */
 
-.reaper-main-photo,
-.reaper-photo-small,
-.reaper-collage-photo {
+.reaper-photo-small {
 
-    filter: grayscale(18%) saturate(88%);
+    position: relative;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid #252c34;
+
+    filter:
+        grayscale(25%)
+        saturate(70%);
 
 }
 
 
-/* ==========================================================
+/* =======================
    IDENTIDAD
-   ========================================================== */
+   ======================= */
 
 .reaper-identity {
 
@@ -167,7 +230,7 @@
 
     background: var(--reaper-panel);
 
-    border: 1px solid #28272D;
+    border: 1px solid #252c34;
 
     display: flex;
 
@@ -195,13 +258,17 @@
 
     margin-top: 14px;
 
-    color: #ECEAE7;
+    color: var(--reaper-bright);
 
-    font-family: Georgia, serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
 
-    font-size: 37px;
+    font-size: 40px;
 
-    line-height: .85;
+    font-weight: 600;
+
+    line-height: .8;
+
+    letter-spacing: 2px;
 
     text-transform: uppercase;
 
@@ -221,9 +288,9 @@
 }
 
 
-/* ==========================================================
-   DIVISOR DE IDENTIDAD
-   ========================================================== */
+/* ===================
+   DIVISOR
+   ====================== */
 
 .reaper-identity-line {
 
@@ -238,9 +305,9 @@
 }
 
 
-/* ==========================================================
+/* =====================
    DATOS BÁSICOS
-   ========================================================== */
+   ======================== */
 
 .reaper-basic-grid {
 
@@ -300,28 +367,9 @@
 }
 
 
-/* ==========================================================
-   FOTOS SECUNDARIAS
-   ========================================================== */
-
-.reaper-photo-small {
-
-    position: relative;
-
-    overflow: hidden;
-
-    background-size: cover;
-
-    background-position: center;
-
-    border: 1px solid #29282E;
-
-}
-
-
-/* ==========================================================
+/* =====================
    HISTORIA
-   ========================================================== */
+   ====================== */
 
 .reaper-section {
 
@@ -333,10 +381,35 @@
 
     background: var(--reaper-panel);
 
-    border: 1px solid #28272D;
+    border: 1px solid #252c34;
+
+    position: relative;
 
 }
 
+
+.reaper-section:before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 55px;
+
+    height: 1px;
+
+    background: var(--reaper-main);
+
+}
+
+
+/* ======================
+   ENCABEZADOS
+   ======================= */
 
 .reaper-section-head,
 .reaper-extra-head {
@@ -354,22 +427,26 @@
 
     color: var(--reaper-main);
 
-    font-family: Georgia, serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
 
-    font-size: 12px;
+    font-size: 15px;
+
+    font-weight: 600;
 
 }
 
 
 .reaper-section-title {
 
-    color: #E5E2DE;
+    color: var(--reaper-bright);
 
-    font-family: Georgia, serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
 
-    font-size: 24px;
+    font-size: 26px;
 
-    letter-spacing: 3px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
 
     text-transform: uppercase;
 
@@ -389,24 +466,28 @@
 }
 
 
+/* =================
+   TEXTO
+   ================== */
+
 .reaper-text {
 
-    color: #A8A6AA;
+    color: #aeb5bf;
 
-    font-family: Georgia, serif;
+    font-family: 'Cormorant Garamond', Georgia, serif;
 
-    font-size: 11px;
+    font-size: 13px;
 
-    line-height: 2;
+    line-height: 1.75;
 
     text-align: justify;
 
 }
 
 
-/* ==========================================================
+/* =====================
    COLLAGE
-   ========================================================== */
+  ======================= */
 
 .reaper-collage {
 
@@ -435,7 +516,11 @@
 
     background-position: center;
 
-    border: 1px solid #29282E;
+    border: 1px solid #252c34;
+
+    filter:
+        grayscale(20%)
+        saturate(70%);
 
 }
 
@@ -447,9 +532,9 @@
 }
 
 
-/* ==========================================================
+/* ====================
    DATOS EXTRAS
-   ========================================================== */
+   ==================== */
 
 .reaper-extra {
 
@@ -461,7 +546,7 @@
 
     background: var(--reaper-panel);
 
-    border: 1px solid #28272D;
+    border: 1px solid #252c34;
 
     display: flex;
 
@@ -479,9 +564,9 @@
 }
 
 
-/* ==========================================================
+/* =======================
    FORMATO DE TEXTO
-   ========================================================== */
+ ====================== */
 
 .reaper-text b,
 .reaper-text strong {
@@ -496,30 +581,10 @@
 .reaper-text i,
 .reaper-text em {
 
-    color: #C2BEC6;
+    color: var(--reaper-bright);
 
 }
 
-
-/* ==========================================================
-   FOOTER
-   ========================================================== */
-
-.reaper-footer {
-
-    margin-top: 18px;
-
-    color: #57565D;
-
-    font-size: 7px;
-
-    font-weight: bold;
-
-    letter-spacing: 4px;
-
-    text-align: center;
-
-}
 
 
 /* ==========================================================
@@ -576,7 +641,6 @@
         grid-template-columns: 1fr 1fr;
 
     }
-
 
 }
 
@@ -679,8 +743,8 @@
 
     .reaper-section-title {
 
-        font-size: 20px;
+        font-size: 21px;
 
     }
 
-   }
+}
