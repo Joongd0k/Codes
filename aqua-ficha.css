@@ -116,11 +116,11 @@
 
     margin: 0 auto 25px;
 
-    padding: 7px;
+    padding: 0;
 
     box-sizing: border-box;
 
-    background: #609ab8;
+    background: transparent;
 
     transform: rotate(45deg);
 
