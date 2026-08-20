@@ -563,6 +563,46 @@
 
 }
 
+.reaper-extra-text {
+
+    max-height: 130px;
+
+    padding-right: 10px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    color: #A8A6AA;
+
+    font-family: Georgia, serif;
+
+    font-size: 11px;
+
+    line-height: 2;
+
+    text-align: justify;
+
+}
+
+.reaper-extra-text::-webkit-scrollbar {
+
+    width: 3px;
+
+}
+
+.reaper-extra-text::-webkit-scrollbar-track {
+
+    background: #0C0C0E;
+
+}
+
+.reaper-extra-text::-webkit-scrollbar-thumb {
+
+    background: var(--reaper-main);
+
+}
+
 
 /* =======================
    FORMATO DE TEXTO
