@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap');
-
+@import url('https://solrainha.github.io/saturnicons/saturnicons.css');
+@import url('https://solrainha.github.io/honeybee/honeybee.css');
 
 /* ========================
-   DRYADS · CHARACTER PROFILE
+   DRYADS ·  PROFILE
    ========================== */
 
 .dryads-ficha {
@@ -115,11 +116,11 @@
 
     margin: 0 auto 25px;
 
-    padding: 7px;
+    padding: 0;
 
     box-sizing: border-box;
 
-    background: #9cb8a6;
+    background: transparent;
 
     transform: rotate(45deg);
 
@@ -276,7 +277,7 @@
 
 .dryads-full-name {
 
-    margin-top: 9px;
+    margin-top: 5px;
 
     color: #b0c6b8;
 
@@ -510,7 +511,7 @@
 
     font-size: 13px;
 
-    line-height: 1.55;
+    line-height: 1.4;
 
     text-align: justify;
 
@@ -633,9 +634,9 @@
 
     font-family: 'Cormorant Garamond', Georgia, serif;
 
-    font-size: 13px;
+    font-size: 12px;
 
-    line-height: 1.55;
+    line-height: 1.5;
 
     text-align: justify;
 
