@@ -1,0 +1,963 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+/* ========================
+   AQUATIC · CHARACTER PROFILE
+   ========================== */
+
+.aquatic-ficha {
+
+    width: 650px;
+    margin: 35px auto;
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(160,194,212,.10),
+            transparent 28%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(96,154,184,.08),
+            transparent 30%
+        ),
+        #111619;
+
+    color: #dce9ef;
+
+    font-family: 'Montserrat', Arial, sans-serif;
+
+    font-size: 10px;
+    line-height: 1.7;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* ============================
+   MARCO
+   ========================== */
+
+.aquatic-ficha:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 12px;
+
+    border: 1px solid rgba(160,194,212,.20);
+
+    border-radius: 28px 12px 32px 15px;
+
+    pointer-events: none;
+
+}
+
+
+.aquatic-ficha:after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 20px;
+    right: 24px;
+
+    width: 80px;
+    height: 80px;
+
+    border-top: 1px solid rgba(96,154,184,.20);
+    border-right: 1px solid rgba(96,154,184,.20);
+
+    border-radius: 0 35px 0 0;
+
+    pointer-events: none;
+
+}
+
+
+/* ============================
+   CABECERA
+   ============================= */
+
+.aquatic-header {
+
+    position: relative;
+
+    padding: 38px 35px 32px;
+
+    text-align: center;
+
+    background: rgba(20,28,31,.72);
+
+    border: 1px solid rgba(96,154,184,.22);
+
+    border-radius: 45px 18px 45px 18px;
+
+}
+
+
+/* ===========================
+   ICONO
+   ============================ */
+
+.aquatic-icon-frame {
+
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 25px;
+
+    padding: 7px;
+
+    box-sizing: border-box;
+
+    background: #609ab8;
+
+    transform: rotate(45deg);
+
+    border-radius: 25px 8px 25px 8px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.aquatic-icon-frame:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 5px;
+
+    border: 1px solid #a0c2d4;
+
+    border-radius: 20px 7px 20px 7px;
+
+    z-index: 2;
+
+    pointer-events: none;
+
+}
+
+
+.aquatic-icon {
+
+    width: 100%;
+    height: 100%;
+
+    background-size: cover;
+    background-position: center;
+
+    transform: rotate(-45deg) scale(1.15);
+
+}
+
+
+/* ===========================
+   SÍMBOLOS LATERALES
+   ========================= */
+
+.aquatic-side-symbol {
+
+    position: absolute;
+
+    top: 105px;
+
+    color: #80aec6;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    opacity: .75;
+
+}
+
+
+.aquatic-left {
+
+    left: 35px;
+
+    transform: rotate(180deg);
+
+}
+
+
+.aquatic-right {
+
+    right: 35px;
+
+}
+
+
+/* =========================
+   AQUATIC / GRADO
+   =========================== */
+
+.aquatic-race {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 5px;
+
+    margin-top: 5px;
+
+}
+
+
+.aquatic-race-name,
+.aquatic-race-grade {
+
+    padding: 7px 18px;
+
+    box-sizing: border-box;
+
+    background: #609ab8;
+
+    color: #132027;
+
+    font-family: 'Cinzel', Georgia, serif;
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    border-radius: 14px 6px 14px 6px;
+
+}
+
+
+.aquatic-race-grade {
+
+    background: #80aec6;
+
+    color: #18242a;
+
+}
+
+
+/* =========================
+   NOMBRE
+   ========================== */
+
+.aquatic-character-title {
+
+    margin-top: 25px;
+
+    color: #dce9ef;
+
+    font-family: 'Almendra', serif;
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.aquatic-full-name {
+
+    margin-top: 9px;
+
+    color: #80aec6;
+
+    font-family: 'Cormorant Garamond', Georgia, serif;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ======================
+   DATOS BÁSICOS
+   ========================= */
+
+.aquatic-basic-data {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    margin: 28px auto 0;
+
+    max-width: 480px;
+
+    border-top: 1px solid rgba(128,174,198,.22);
+
+    border-bottom: 1px solid rgba(128,174,198,.22);
+
+}
+
+
+.aquatic-data {
+
+    padding: 12px 10px;
+
+    border-left: 1px solid rgba(128,174,198,.18);
+
+}
+
+
+.aquatic-data:first-child {
+
+    border-left: none;
+
+}
+
+
+.aquatic-data-label {
+
+    color: #609ab8;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.aquatic-data-value {
+
+    margin-top: 4px;
+
+    color: #dce9ef;
+
+    font-family: 'Cormorant Garamond', Georgia, serif;
+
+    font-size: 13px;
+
+}
+
+
+/* =====================
+   HISTORIA
+   ====================== */
+
+.aquatic-history {
+
+    margin-top: 15px;
+
+    padding: 25px 30px 30px;
+
+    box-sizing: border-box;
+
+    background: #192022;
+
+    border: 1px solid rgba(96,154,184,.20);
+
+    border-radius: 18px 18px 55px 55px;
+
+}
+
+
+/* ======================
+   CABECERA HISTORIA
+   ======================= */
+
+.aquatic-history-heading {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* ======================
+   IMAGEN HISTORIA
+   ======================= */
+
+.aquatic-history-image {
+
+    width: 180px;
+    min-width: 180px;
+    flex-basis: 180px;
+
+    height: 125px;
+
+    flex-shrink: 0;
+
+    background-size: cover;
+
+    background-position: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 20px 7px 28px 7px;
+
+}
+
+
+.aquatic-history-image:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(96,154,184,.13);
+
+    pointer-events: none;
+
+}
+
+
+/* =====================
+   TÍTULO HISTORIA
+   ====================== */
+
+.aquatic-history-title {
+
+    flex: 1;
+
+}
+
+
+.aquatic-section-kicker {
+
+    color: #609ab8;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 3px;
+
+}
+
+
+.aquatic-section-title {
+
+    margin-top: 7px;
+
+    color: #dce9ef;
+
+    font-family: 'Cinzel', Georgia, serif;
+
+    font-size: 35px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+.aquatic-title-line {
+
+    width: 45px;
+
+    height: 1px;
+
+    margin: 15px 0 0;
+
+    background: #80aec6;
+
+}
+
+
+/* ======================
+   TEXTO DE HISTORIA
+   ======================= */
+
+.aquatic-history-text {
+
+    width: 100%;
+
+    max-height: 350px;
+
+    padding-right: 12px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    color: #aabac3;
+
+    font-family: 'Cormorant Garamond', Georgia, serif;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    text-align: justify;
+
+}
+
+
+/* ======================
+   SCROLL
+   ======================= */
+
+.aquatic-history-text::-webkit-scrollbar,
+.aquatic-text::-webkit-scrollbar {
+
+    width: 3px;
+
+}
+
+
+.aquatic-history-text::-webkit-scrollbar-track,
+.aquatic-text::-webkit-scrollbar-track {
+
+    background: #202a2e;
+
+}
+
+
+.aquatic-history-text::-webkit-scrollbar-thumb,
+.aquatic-text::-webkit-scrollbar-thumb {
+
+    background: #609ab8;
+
+}
+
+
+/* =======================
+   BANNER DATOS EXTRAS
+   ======================= */
+
+.aquatic-extra-banner {
+
+    margin: 15px 25px;
+
+    padding: 11px;
+
+    box-sizing: border-box;
+
+    background: #609ab8;
+
+    color: #132027;
+
+    font-family: 'Cinzel', Georgia, serif;
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+    border-radius: 20px 7px 20px 7px;
+
+}
+
+
+.aquatic-extra-banner span {
+
+    margin: 0 12px;
+
+    color: #a0c2d4;
+
+}
+
+
+/* =====================
+   DATOS EXTRAS
+   ====================== */
+
+.aquatic-extras {
+
+    display: grid;
+
+    grid-template-columns: 1fr 190px;
+
+    gap: 25px;
+
+    padding: 32px;
+
+    box-sizing: border-box;
+
+    background: #192022;
+
+    border: 1px solid rgba(96,154,184,.20);
+
+    border-radius: 12px 35px 12px 35px;
+
+}
+
+
+/* =====================
+   TEXTO EXTRAS
+   =================== */
+
+.aquatic-extra-text {
+
+    padding: 5px 0;
+
+}
+
+
+.aquatic-text {
+
+    max-height: 240px;
+
+    padding-right: 12px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    color: #aabac3;
+
+    font-family: 'Cormorant Garamond', Georgia, serif;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+
+    text-align: justify;
+
+}
+
+
+/* =====================
+   GALERÍA MINIATURAS
+   ======================== */
+
+.aquatic-mini-gallery {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 8px;
+
+    align-content: center;
+
+}
+
+
+.aquatic-mini-image {
+
+    width: 86px;
+    height: 86px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid rgba(128,174,198,.35);
+
+    border-radius: 18px 5px 18px 5px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.aquatic-mini-image:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(96,154,184,.10);
+
+    pointer-events: none;
+
+}
+
+
+/* ========================
+   FORMATO DE TEXTO
+   ====================== */
+
+.aquatic-text b,
+.aquatic-text strong,
+.aquatic-history-text b,
+.aquatic-history-text strong {
+
+    color: #80aec6;
+
+    font-weight: bold;
+
+}
+
+
+.aquatic-text i,
+.aquatic-text em,
+.aquatic-history-text i,
+.aquatic-history-text em {
+
+    color: #a0c2d4;
+
+}
+
+
+/* =======================
+   FOOTER
+   ====================== */
+
+.aquatic-footer {
+
+    margin-top: 18px;
+
+    color: #61717a;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-align: center;
+
+}
+
+
+.aquatic-footer span {
+
+    margin: 0 10px;
+
+    color: #609ab8;
+
+}
+
+
+/* =======================
+   RESPONSIVE
+   ========================== */
+
+@media screen and (max-width: 720px) {
+
+    .aquatic-ficha {
+
+        width: 95%;
+
+        padding: 20px;
+
+    }
+
+
+    .aquatic-header {
+
+        padding-left: 25px;
+        padding-right: 25px;
+
+    }
+
+
+    .aquatic-side-symbol {
+
+        display: none;
+
+    }
+
+
+    .aquatic-history-heading {
+
+        gap: 18px;
+
+    }
+
+
+    .aquatic-history-image {
+
+        width: 140px;
+        min-width: 140px;
+        flex-basis: 140px;
+
+        height: 110px;
+
+    }
+
+
+    .aquatic-basic-data {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .aquatic-data:nth-child(3) {
+
+        grid-column: 1 / 3;
+
+        border-left: none;
+
+        border-top: 1px solid rgba(128,174,198,.18);
+
+    }
+
+
+    .aquatic-extras {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .aquatic-mini-gallery {
+
+        grid-template-columns: repeat(3, 1fr);
+
+        justify-items: center;
+
+    }
+
+}
+
+
+@media screen and (max-width: 450px) {
+
+    .aquatic-ficha {
+
+        width: 96%;
+
+        padding: 15px;
+
+    }
+
+
+    .aquatic-header {
+
+        padding: 30px 18px;
+
+    }
+
+
+    .aquatic-icon-frame {
+
+        width: 90px;
+        height: 90px;
+
+    }
+
+
+    .aquatic-character-title {
+
+        font-size: 24px;
+
+    }
+
+
+    .aquatic-race-name,
+    .aquatic-race-grade {
+
+        padding: 6px 12px;
+
+        font-size: 8px;
+
+        letter-spacing: 2px;
+
+    }
+
+
+    .aquatic-basic-data {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .aquatic-data {
+
+        border-left: none;
+
+        border-top: 1px solid rgba(128,174,198,.18);
+
+    }
+
+
+    .aquatic-data:first-child {
+
+        border-top: none;
+
+    }
+
+
+    .aquatic-data:nth-child(3) {
+
+        grid-column: auto;
+
+    }
+
+
+    .aquatic-history-heading {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .aquatic-history-image {
+
+        width: 100%;
+        min-width: 0;
+        flex-basis: auto;
+
+        height: 130px;
+
+    }
+
+
+    .aquatic-history-title {
+
+        width: 100%;
+
+    }
+
+
+    .aquatic-extras {
+
+        padding: 25px 20px;
+
+    }
+
+
+    .aquatic-mini-image {
+
+        width: 72px;
+        height: 72px;
+
+    }
+
+
+    .aquatic-extra-banner {
+
+        margin-left: 10px;
+        margin-right: 10px;
+
+        letter-spacing: 2px;
+
+    }
+
+}
