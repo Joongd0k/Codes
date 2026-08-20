@@ -1,3 +1,7 @@
+@import url('https://solrainha.github.io/saturnicons/saturnicons.css');
+@import url('https://solrainha.github.io/honeybee/honeybee.css');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
 .umbrarum-ficha {
     width: 650px;
     margin: 30px auto;
@@ -183,4 +187,3 @@
         padding: 25px 22px
     }
 }
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
