@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
-
+@import url('https://solrainha.github.io/saturnicons/saturnicons.css');
+@import url('https://solrainha.github.io/honeybee/honeybee.css');
 
 /* ======================
-   GRIM REAPERS · CHARACTER 
-   ============================ */
+   GRIM REAPERS · PROFILE 
+   ========================= */
 
 .reaper-ficha {
 
@@ -476,9 +477,9 @@
 
     font-family: 'Cormorant Garamond', Georgia, serif;
 
-    font-size: 13px;
+    font-size: 11px;
 
-    line-height: 1.75;
+    line-height: 1.9;
 
     text-align: justify;
 
@@ -577,7 +578,7 @@
 
     font-family: Georgia, serif;
 
-    font-size: 11px;
+    font-size: 12px;
 
     line-height: 2;
 
