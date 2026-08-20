@@ -392,7 +392,7 @@
 
     color: var(--uf-main);
 
-    font-size: 7px;
+    font-size: 10px;
 
     font-weight: 700;
 
@@ -409,7 +409,7 @@
 
     font-family: 'Cormorant Garamond', serif;
 
-    font-size: 13px;
+    font-size: 16px;
 
     line-height: 1.2;
 
@@ -733,53 +733,6 @@
         ),
 
         var(--uf-panel);
-
-}
-
-
-/* ==========================
-   SCROLL DATOS EXTRAS
-   ========================== */
-
-
-.uf-extra-text {
-
-    max-height: 150px;
-
-    padding-right: 12px;
-
-    box-sizing: border-box;
-
-    overflow-y: auto;
-
-    color: var(--uf-muted);
-
-    font-size: 10px;
-
-    line-height: 1.9;
-
-    text-align: justify;
-
-}
-
-
-.uf-extra-text::-webkit-scrollbar {
-
-    width: 3px;
-
-}
-
-
-.uf-extra-text::-webkit-scrollbar-track {
-
-    background: #0b0a0b;
-
-}
-
-
-.uf-extra-text::-webkit-scrollbar-thumb {
-
-    background: var(--uf-main);
 
 }
 
