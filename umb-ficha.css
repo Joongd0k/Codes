@@ -1,189 +1,949 @@
 @import url('https://solrainha.github.io/saturnicons/saturnicons.css');
+
 @import url('https://solrainha.github.io/honeybee/honeybee.css');
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
 
+
+/* ==========================
+   UMBRARUM · PROFILE
+   ========================== */
+
+
 .umbrarum-ficha {
+
+    /* PALETA */
+
+    --uf-main: #ac0911;
+
+    --uf-light: #bd3a41;
+
+    --uf-soft: #cd6b70;
+
+
+    /* FONDOS */
+
+    --uf-bg: #080808;
+
+    --uf-panel: #111011;
+
+    --uf-panel-2: #161214;
+
+
+    /* TEXTO */
+
+    --uf-text: #e4dedb;
+
+    --uf-muted: #a49b9a;
+
+
+    /* LÍNEAS */
+
+    --uf-line: rgba(172,9,17,.28);
+
+
     width: 650px;
+
     margin: 30px auto;
+
     padding: 28px;
+
     box-sizing: border-box;
-    background: #0a0a0a;
-    color: #e5e1dc;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 11px;
-    line-height: 1.7;
-    letter-spacing: .3px;
-}
-.uf-header {
-    display: grid;
-    grid-template-columns: 1.05fr 1fr;
-    gap: 12px;
-}
-.uf-main-image {
-    min-height: 430px;
-    background-size: cover;
-    background-position: center;
-    filter: grayscale(100%);
-}
-.uf-profile {
-    padding: 35px 30px;
-    box-sizing: border-box;
-    background: var(--uf-panel);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.uf-kicker {
-    margin-bottom: 18px;
-    color: #960018;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 4px;
-}
-.uf-name {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 47px;
-    line-height: .78;
-    text-transform: uppercase;
-}
-.uf-surname {
-    margin-top: 8px;
-    font-size: 27px;
-    letter-spacing: 3px;
-}
-.uf-line {
-    width: 70px;
-    height: 1px;
-    margin: 25px 0 16px;
-    background: var(--uf-accent);
-}
-.uf-data {
-    margin-top: 28px;
-    border-top: 1px solid var(--uf-line);
-}
-.uf-data-item {
-    padding: 11px 7px;
-    border-bottom: 1px solid var(--uf-line);
-}
-.uf-data-item:nth-child(odd) {
-    border-right: 1px solid var(--uf-line);
-}
-.uf-label {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #960018 !important;
-}
-.uf-value {
-    margin-top: 2px;
+
+
+    background:
+
+        radial-gradient(
+            circle at 10% 5%,
+            rgba(172,9,17,.09),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(189,58,65,.05),
+            transparent 30%
+        ),
+
+        var(--uf-bg);
+
+
     color: var(--uf-text);
-    font-size: 13px;
-    font-weight: 400;
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 11px;
+
+    line-height: 1.7;
+
+    letter-spacing: .3px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(189,58,65,.20);
+
 }
-.uf-gallery {
+
+
+/* ==========================
+   MARCO INTERIOR
+   ========================== */
+
+
+.umbrarum-ficha:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 11px;
+
+    border: 1px solid rgba(189,58,65,.13);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================
+   MARCA SUPERIOR
+   ========================== */
+
+
+.uf-top-mark {
+
+    margin-bottom: 12px;
+
+    color: var(--uf-muted);
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
+    text-align: right;
+
+}
+
+
+.uf-top-mark span {
+
+    margin: 0 7px;
+
+    color: var(--uf-main);
+
+}
+
+
+/* ==========================
+   CABECERA
+   ========================== */
+
+
+.uf-header {
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1.35fr;
+
+    grid-template-columns: 1.05fr 1fr;
+
     gap: 12px;
-    margin-top: 12px;
+
 }
-.uf-small-image {
-    height: 145px;
+
+
+/* ==========================
+   IMAGEN PRINCIPAL
+   ========================== */
+
+
+.uf-main-image {
+
+    min-height: 430px;
+
     background-size: cover;
+
     background-position: center;
-    filter: grayscale(100%);
+
+    filter:
+        grayscale(85%)
+        contrast(105%);
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(189,58,65,.25);
+
 }
-.uf-quote {
-    min-height: 145px;
-    padding: 22px;
+
+
+/* TONO ROJIZO */
+
+
+.uf-main-image:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(172,9,17,.20),
+            transparent 55%
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================
+   PERFIL
+   ========================== */
+
+
+.uf-profile {
+
+    padding: 35px 30px;
+
     box-sizing: border-box;
+
     background: var(--uf-panel);
+
+    border: 1px solid rgba(189,58,65,.13);
+
+    position: relative;
+
     display: flex;
+
     flex-direction: column;
+
     justify-content: center;
+
 }
-.uf-quote-PB {
-    color: var(--uf-accent);
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    line-height: .5;
+
+
+/* DETALLE SUPERIOR */
+
+
+.uf-profile:before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 14px;
+
+    right: 14px;
+
+    width: 35px;
+
+    height: 35px;
+
+    border-top: 1px solid rgba(172,9,17,.35);
+
+    border-right: 1px solid rgba(172,9,17,.35);
+
 }
-.uf-quote-text {
-    margin-top: 12px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 14px;
-    line-height: 1.15;
-    text-transform: uppercase;
+
+
+/* ==========================
+   KICKER
+   ========================== */
+
+
+.uf-kicker {
+
+    margin-bottom: 18px;
+
+    color: var(--uf-main);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 4px;
+
 }
-.uf-section {
-    margin-top: 12px;
-    padding: 35px;
-    box-sizing: border-box;
-    background: var(--uf-panel);
-}
-.uf-section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 27px;
-    line-height: 1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-.uf-section-line {
-    width: 45px;
-    height: 1px;
-    margin: 15px 0 22px;
-    background: #960018;
-}
-.uf-text {
-    color: #aaa7a3;
+
+
+.uf-kicker i {
+
+    margin-right: 5px;
+
     font-size: 10px;
-    line-height: 1.9;
-    text-align: justify;
+
 }
+
+
+/* ==========================
+   NOMBRE
+   ========================== */
+
+
+.uf-name {
+
+    color: #eee8e5;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 47px;
+
+    line-height: .78;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+.uf-surname {
+
+    margin-top: 8px;
+
+    color: var(--uf-light);
+
+    font-size: 27px;
+
+    letter-spacing: 4px;
+
+}
+
+
+/* ==========================
+   DIVISOR
+   ========================== */
+
+
+.uf-line {
+
+    width: 70px;
+
+    height: 1px;
+
+    margin: 25px 0 16px;
+
+    background:
+
+        linear-gradient(
+            to right,
+            var(--uf-main),
+            transparent
+        );
+
+}
+
+
+/* ==========================
+   DATOS BÁSICOS
+   ========================== */
+
+
+.uf-data {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    margin-top: 28px;
+
+    border-top: 1px solid var(--uf-line);
+
+    border-left: 1px solid var(--uf-line);
+
+}
+
+
+.uf-data-item {
+
+    min-height: 58px;
+
+    padding: 11px 13px;
+
+    box-sizing: border-box;
+
+    border-right: 1px solid var(--uf-line);
+
+    border-bottom: 1px solid var(--uf-line);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+/* ==========================
+   ETIQUETAS
+   ========================== */
+
+
+.uf-label {
+
+    color: var(--uf-main);
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+.uf-value {
+
+    margin-top: 4px;
+
+    color: var(--uf-text);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 13px;
+
+    line-height: 1.2;
+
+}
+
+
+/* ==========================
+   GALERÍA
+   ========================== */
+
+
+.uf-gallery {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1.35fr;
+
+    gap: 12px;
+
+    margin-top: 12px;
+
+}
+
+
+/* ==========================
+   FOTOS SECUNDARIAS
+   ========================== */
+
+
+.uf-small-image {
+
+    height: 145px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    filter:
+        grayscale(85%)
+        contrast(105%);
+
+    position: relative;
+
+    overflow: hidden;
+
+    border: 1px solid rgba(189,58,65,.18);
+
+}
+
+
+.uf-small-image:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(172,9,17,.10);
+
+    pointer-events: none;
+
+}
+
+
+/* ==========================
+   PLAYED BY
+   ========================== */
+
+
+.uf-quote {
+
+    min-height: 145px;
+
+    padding: 22px;
+
+    box-sizing: border-box;
+
+    background: var(--uf-panel);
+
+    border: 1px solid rgba(189,58,65,.13);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.uf-quote-symbol {
+
+    margin-bottom: 8px;
+
+    color: var(--uf-main);
+
+    font-size: 9px;
+
+}
+
+
+.uf-quote-PB {
+
+    color: var(--uf-soft);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 22px;
+
+    line-height: .8;
+
+}
+
+
+.uf-quote-text {
+
+    margin-top: 12px;
+
+    color: var(--uf-text);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 14px;
+
+    line-height: 1.15;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ==========================
+   SECCIONES
+   ========================== */
+
+
+.uf-section {
+
+    margin-top: 12px;
+
+    padding: 35px;
+
+    box-sizing: border-box;
+
+    background: var(--uf-panel);
+
+    border: 1px solid rgba(189,58,65,.13);
+
+    position: relative;
+
+}
+
+
+/* DETALLE ESQUINA */
+
+
+.uf-section:after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 14px;
+
+    bottom: 14px;
+
+    width: 25px;
+
+    height: 25px;
+
+    border-right: 1px solid rgba(172,9,17,.25);
+
+    border-bottom: 1px solid rgba(172,9,17,.25);
+
+}
+
+
+/* ==========================
+   CABECERA DE SECCIÓN
+   ========================== */
+
+
+.uf-section-head {
+
+    display: flex;
+
+    align-items: baseline;
+
+    gap: 13px;
+
+}
+
+
+.uf-section-number {
+
+    color: var(--uf-main);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 13px;
+
+}
+
+
+/* ==========================
+   TÍTULO
+   ========================== */
+
+
+.uf-section-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #e7e1de;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 27px;
+
+    line-height: 1;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.uf-section-title i {
+
+    color: var(--uf-main);
+
+    font-size: 13px;
+
+}
+
+
+/* ==========================
+   LÍNEA
+   ========================== */
+
+
+.uf-section-line {
+
+    width: 55px;
+
+    height: 1px;
+
+    margin: 15px 0 22px;
+
+    background:
+
+        linear-gradient(
+            to right,
+            var(--uf-main),
+            transparent
+        );
+
+}
+
+
+/* ==========================
+   TEXTO
+   ========================== */
+
+
+.uf-text {
+
+    color: var(--uf-muted);
+
+    font-size: 10px;
+
+    line-height: 1.9;
+
+    text-align: justify;
+
+}
+
+
+/* FORMATO */
+
+
 .uf-text b,
 .uf-text strong {
-    font-weight: bold;
-    color: #960018;
-}
-.uf-extras {
-    padding-bottom: 40px;
-}
-.uf-footer {
-    margin-top: 18px;
-    color: #5e5b59;
-    font-size: 7px;
+
+    color: var(--uf-light);
+
     font-weight: 700;
+
+}
+
+
+.uf-text i,
+.uf-text em {
+
+    color: var(--uf-soft);
+
+}
+
+
+/* ==========================
+   DATOS EXTRAS
+   ========================== */
+
+
+.uf-extras {
+
+    padding-bottom: 35px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(172,9,17,.035),
+            transparent 45%
+        ),
+
+        var(--uf-panel);
+
+}
+
+
+/* ==========================
+   SCROLL DATOS EXTRAS
+   ========================== */
+
+
+.uf-extra-text {
+
+    max-height: 150px;
+
+    padding-right: 12px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    color: var(--uf-muted);
+
+    font-size: 10px;
+
+    line-height: 1.9;
+
+    text-align: justify;
+
+}
+
+
+.uf-extra-text::-webkit-scrollbar {
+
+    width: 3px;
+
+}
+
+
+.uf-extra-text::-webkit-scrollbar-track {
+
+    background: #0b0a0b;
+
+}
+
+
+.uf-extra-text::-webkit-scrollbar-thumb {
+
+    background: var(--uf-main);
+
+}
+
+
+/* ==========================
+   FOOTER
+   ========================== */
+
+
+.uf-footer {
+
+    margin-top: 18px;
+
+    color: #51494a;
+
+    font-size: 7px;
+
+    font-weight: 700;
+
     letter-spacing: 4px;
+
     text-align: center;
+
 }
+
+
+.uf-footer span {
+
+    margin: 0 8px;
+
+    color: var(--uf-main);
+
+}
+
+
+/* ==========================
+   RESPONSIVE — TABLET
+   ========================== */
+
+
 @media screen and (max-width: 720px) {
+
     .umbrarum-ficha {
+
         width: 95%;
-        padding: 15px
+
+        padding: 20px;
+
     }
+
+
     .uf-header {
-        grid-template-columns: 1fr
+
+        grid-template-columns: 1fr;
+
     }
+
+
     .uf-main-image {
-        min-height: 380px
+
+        min-height: 380px;
+
     }
+
+
     .uf-gallery {
-        grid-template-columns: 1fr 1fr
+
+        grid-template-columns: 1fr 1fr;
+
     }
+
+
     .uf-quote {
-        grid-column: 1 / 3
+
+        grid-column: 1 / 3;
+
     }
+
 }
+
+
+/* ==========================
+   RESPONSIVE — MÓVIL
+   ========================== */
+
+
 @media screen and (max-width: 450px) {
+
+    .umbrarum-ficha {
+
+        width: 96%;
+
+        padding: 15px;
+
+    }
+
+
     .uf-gallery {
-        grid-template-columns: 1fr
+
+        grid-template-columns: 1fr;
+
     }
+
+
     .uf-quote {
-        grid-column: auto
+
+        grid-column: auto;
+
     }
+
+
     .uf-profile {
-        padding: 28px 22px
+
+        padding: 28px 22px;
+
     }
+
+
+    .uf-name {
+
+        font-size: 40px;
+
+    }
+
+
+    .uf-surname {
+
+        font-size: 23px;
+
+    }
+
+
+    .uf-data {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .uf-data-item {
+
+        min-height: 55px;
+
+    }
+
+
     .uf-section {
-        padding: 25px 22px
+
+        padding: 25px 22px;
+
     }
-}
+
+
+    .uf-section-title {
+
+        font-size: 23px;
+
+    }
+
+
+    .uf-text {
+
+        font-size: 10px;
+
+    }
+
+        }
