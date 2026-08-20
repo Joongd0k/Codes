@@ -348,7 +348,7 @@
 
     color: var(--reaper-main);
 
-    font-size: 7px;
+    font-size: 9px;
 
     font-weight: bold;
 
@@ -363,7 +363,7 @@
 
     color: var(--reaper-text);
 
-    font-size: 9px;
+    font-size: 11px;
 
 }
 
@@ -477,9 +477,9 @@
 
     font-family: 'Cormorant Garamond', Georgia, serif;
 
-    font-size: 11px;
+    font-size: 12px;
 
-    line-height: 1.9;
+    line-height: 1.7;
 
     text-align: justify;
 
