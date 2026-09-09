@@ -235,12 +235,10 @@
     border:1px solid var(--line);
     background:linear-gradient(135deg,rgba(217,197,167,.045),transparent 45%),rgba(255,255,255,.012);
     font-size:15px;
-    line-height:1.55;
-    text-align:justify;
 }
 .ros-rules-lead {
     color:var(--cream-light);
-    font-size:10px;
+    font-size:12px;
     line-height:1.9;
     text-align: justify;
 }
@@ -265,8 +263,8 @@
 }
 .ros-rule-info p {
     color:var(--muted);
-    font-size:15px;
-    line-height:1.5;
+    font-size:10px;
+    line-height:1.9;
     text-align:justify;
     margin:0 0 12px;
 }
