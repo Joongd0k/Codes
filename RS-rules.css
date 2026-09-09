@@ -238,7 +238,7 @@
 .ros-rules-lead {
     color:var(--cream-light);
     font-size:12px;
-    line-height:1.9;
+    line-height:1.3;
     text-align: justify;
 }
 .ros-rules-intro p:last-child {
@@ -251,7 +251,7 @@
     background:rgba(154,122,184,.055);
     font-size: 12px;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 1.3;
 }
 .ros-rule-info-title {
     margin-bottom:6px;
@@ -266,7 +266,7 @@
 .ros-rule-info p {
     color:var(--muted);
     font-size:10px;
-    line-height:1.9;
+    line-height:1.3;
     text-align:justify;
     margin:0 0 12px;
 }
