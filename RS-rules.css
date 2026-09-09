@@ -240,9 +240,9 @@
 }
 .ros-rules-lead {
     color:var(--cream-light);
-    font-size:16px;
-    line-height:1.2;
-    text-align: justify
+    font-size:10px;
+    line-height:1.9;
+    text-align: justify;
 }
 .ros-rules-intro p:last-child {
     margin-bottom:0
