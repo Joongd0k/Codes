@@ -243,9 +243,6 @@
     line-height: 100%;
     text-align: justify;
 }
-.ros-rules-intro p:last-child {
-    margin-bottom:0;
-}
 .ros-rule-info {
     margin:18px 0;
     padding:17px 19px;
@@ -261,31 +258,10 @@
     font-size:12px;
     letter-spacing:1px;
 }
-.ros-rule-info p:last-child {
-    margin-bottom:0;
-}
-.ros-rule-info p {
-    color:var(--muted);
-    margin:0 0 12px;
-}
 .ros-rule-list {
     margin:16px 0 20px;
     padding:0;
     list-style:none;
-}
-.ros-rule-list li {
-    position:relative;
-    margin-bottom:8px;
-    padding-left:21px;
-    color:var(--muted);
-    font-size:11px;
-}
-.ros-rule-list li::before {
-    position:absolute;
-    left:0;
-    top:1px;
-    color:var(--violet);
-    font-size:10px
 }
 .ros-rule-steps {
     display:grid;
