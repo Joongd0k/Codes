@@ -238,12 +238,12 @@
     border:1px solid var(--line);
     background:linear-gradient(135deg,rgba(217,197,167,.045),transparent 45%),rgba(255,255,255,.012);
     text-align: justify;
-    font-size: 10px;
+    font-size: 12px;
 }
 .ros-rules-lead {
     color:var(--cream-light);
     font-size:12px;
-    line-height: 100%;
+    line-height: normal;
     text-align: justify;
 }
 .ros-rule-info {
