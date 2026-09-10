@@ -189,7 +189,10 @@
 }
 .ros-rule {
     scroll-margin-top:30px;
-    margin-bottom:55px
+    margin-bottom:55px;
+    text-align: justify;
+    font-size: 12px;
+    line-height: normal;
 }
 .ros-rule-heading {
     display:flex;
