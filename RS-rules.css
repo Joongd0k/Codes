@@ -589,11 +589,13 @@
         grid-template-columns:repeat(2,minmax(0,1fr));
         gap:3px
     }
-    .ros-rules-side-note {
-        display:none
+    .ros-rule-card-grid {
+        grid-template-columns:1fr;
     }
-    .ros-rule-card-grid,.ros-staff {
-        grid-template-columns:1fr
+    .ros-staff {
+        grid-template-columns:1fr;
+        justify-items:center;
+        gap:15px;
     }
 }
 @media (max-width:520px) {
