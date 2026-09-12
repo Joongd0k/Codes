@@ -165,25 +165,6 @@
     font-size:9px;
     text-align:center
 }
-.ros-rules-side-note {
-    margin-top:24px;
-    padding:15px;
-    border:1px solid var(--line-soft);
-    background:rgba(154,122,184,.035)
-}
-.ros-rules-side-note strong {
-    display:block;
-    margin-bottom:6px;
-    color:var(--cream);
-    font-family:"Cinzel",serif;
-    font-size:11px;
-    letter-spacing:1px
-}
-.ros-rules-side-note span {
-    color:var(--muted);
-    font-size:14px;
-    line-height:1.35
-}
 .ros-rules-content {
     min-width:0
 }
@@ -238,12 +219,12 @@
     border:1px solid var(--line);
     background:linear-gradient(135deg,rgba(217,197,167,.045),transparent 45%),rgba(255,255,255,.012);
     text-align: justify;
-    font-size: 12px;
+    font-size: 10px;
     font-family: "Montserrat", sans-serif;
 }
 .ros-rules-lead {
     color:var(--cream-light);
-    font-size:12px;
+    font-size:11px;
     line-height: normal;
     text-align: justify;
 }
