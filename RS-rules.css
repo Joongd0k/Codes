@@ -31,7 +31,7 @@
     overflow:hidden;
     font-family:"Cormorant Garamond",Georgia,serif;
     font-size:17px;
-    line-height:1.55
+    line-height:1.55;
 }
 .ros-rules * {
     box-sizing:border-box
@@ -96,20 +96,21 @@
 .ros-rules-title {
     margin:0;
     color:var(--cream-light);
-    font-family:"Cinzel",serif;
+    font-family: "Almendra", serif;
     font-size:clamp(38px,6vw,70px);
-    font-weight:500;
+    font-weight:700;
     line-height:1;
     letter-spacing:5px;
     text-transform:uppercase;
     text-shadow:0 3px 20px rgba(154,122,184,.12)
 }
 .ros-rules-subtitle {
-    max-width:700px;
+    max-width:500px;
     margin:19px auto 25px;
     color:var(--muted);
     font-size:19px;
-    font-style:italic
+    font-style:italic;
+    font-family:"Cinzel",serif;
 }
 .ros-rules-layout {
     position:relative;
@@ -239,6 +240,7 @@
     background:linear-gradient(135deg,rgba(217,197,167,.045),transparent 45%),rgba(255,255,255,.012);
     text-align: justify;
     font-size: 12px;
+    font-family: "Montserrat", sans-serif;
 }
 .ros-rules-lead {
     color:var(--cream-light);
