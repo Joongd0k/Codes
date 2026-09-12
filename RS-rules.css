@@ -1,6 +1,6 @@
 .post:has(.big-post) .post-post {
     flex:1;
-    margin-left:10px
+    margin-left:10px;
 }
 .post:has(.big-post) .post-perfil {
     display:none
@@ -66,11 +66,11 @@
     letter-spacing:9px;
     text-align:center;
     font-family:"Cinzel",serif;
-    font-size:13px
+    font-size:13px;
 }
 .ros-rules-ornament::before,.ros-rules-ornament::after {
     margin:0 12px;
-    color:var(--violet)
+    color:var(--violet);
 }
 .ros-rules-header {
     position:relative;
@@ -82,7 +82,7 @@
     justify-content:center;
     text-align:center;
     border-bottom:1px solid var(--line);
-    background:radial-gradient(circle at 50% 45%,rgba(154,122,184,.13),transparent 32%),linear-gradient(180deg,rgba(255,255,255,.025),transparent)
+    background:radial-gradient(circle at 50% 45%,rgba(154,122,184,.13),transparent 32%),linear-gradient(180deg,rgba(255,255,255,.025),transparent);
 }
 .ros-rules-kicker {
     margin-bottom:13px;
@@ -91,7 +91,7 @@
     font-size:10px;
     font-weight:600;
     letter-spacing:5px;
-    text-transform:uppercase
+    text-transform:uppercase;
 }
 .ros-rules-title {
     margin:0;
@@ -102,13 +102,13 @@
     line-height:1;
     letter-spacing:5px;
     text-transform:uppercase;
-    text-shadow:0 3px 20px rgba(154,122,184,.12)
+    text-shadow:0 3px 20px rgba(154,122,184,.12);
 }
 .ros-rules-subtitle {
-    max-width:500px;
+    max-width:400px;
     margin:19px auto 25px;
     color:var(--muted);
-    font-size:19px;
+    font-size:15px;
     font-style:italic;
 }
 .ros-rules-layout {
@@ -147,26 +147,26 @@
     color:var(--muted);
     border:1px solid transparent;
     font-family:"Montserrat",sans-serif;
-    font-size:9px;
+    font-size:11px;
     letter-spacing:1px;
     text-transform:uppercase;
-    transition:.2s ease
+    transition:.2s ease;
 }
 .ros-rules-nav a:hover {
     color:var(--cream-light);
     background:linear-gradient(90deg,rgba(154,122,184,.11),transparent);
-    border-color:var(--line-soft)
+    border-color:var(--line-soft);
 }
 .ros-rules-nav-number {
     width:25px;
     flex:0 0 25px;
     color:var(--violet);
     font-family:"Cinzel",serif;
-    font-size:9px;
-    text-align:center
+    font-size:11px;
+    text-align:center;
 }
 .ros-rules-content {
-    min-width:0
+    min-width:0;
 }
 .ros-rule {
     scroll-margin-top:30px;
@@ -179,7 +179,7 @@
     display:flex;
     align-items:center;
     gap:15px;
-    margin-bottom:21px
+    margin-bottom:21px;
 }
 .ros-rule-icon {
     flex:0 0 48px;
@@ -190,7 +190,7 @@
     color:var(--cream);
     border:1px solid var(--line);
     background:rgba(154,122,184,.06);
-    font-size:21px
+    font-size:21px;
 }
 .ros-rule-kicker {
     color:var(--violet);
@@ -198,7 +198,7 @@
     font-size:9px;
     font-weight:600;
     letter-spacing:3px;
-    text-transform:uppercase
+    text-transform:uppercase;
 }
 .ros-rule-title {
     margin:2px 0 0;
@@ -206,7 +206,7 @@
     font-family:"Cinzel",serif;
     font-size:25px;
     font-weight:500;
-    letter-spacing:1px
+    letter-spacing:1px;
 }
 .ros-rule-divider {
     height:1px;
@@ -220,13 +220,13 @@
     background:linear-gradient(135deg,rgba(217,197,167,.045),transparent 45%),rgba(255,255,255,.012);
     text-align: justify;
     font-size: 10px;
-    font-family: "Montserrat", sans-serif;
 }
 .ros-rules-lead {
     color:var(--cream-light);
     font-size:11px;
     line-height: normal;
     text-align: justify;
+    font-family: "Montserrat", sans-serif;
 }
 .ros-rule-info {
     margin:18px 0;
@@ -535,7 +535,7 @@
     max-width:680px;
     margin:15px auto;
     color:var(--muted);
-    font-size:13px;
+    font-size:11px;
     font-style:italic;
     font-family: "Almendra", serif;
 }
@@ -550,11 +550,11 @@
     .ros-rules {
         width:calc(100% - 12px);
         margin:10px auto;
-        padding:8px
+        padding:8px;
     }
     .ros-rules-header {
         min-height:245px;
-        padding:40px 22px 30px
+        padding:40px 22px 30px;
     }
     .ros-rules-title {
         font-size:38px;
