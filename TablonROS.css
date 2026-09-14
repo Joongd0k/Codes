@@ -1,0 +1,1056 @@
+/* ============================================================
+   REQUIEM OF SOULS — TABLÓN PRINCIPAL
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+
+#ros_tablon{
+  --fondo1:#11141A;
+  --fondo2:#171b22;
+  --fondo3:#080a0d;
+
+  --color1:#8e6b9f;
+  --color2:#E6e1d8;
+
+  --textobase:#ededed;
+  --links1:#87778f;
+
+  --borde1:1px solid #303640;
+  --borde1-c:#ededed;
+
+  --borde2:1px solid #1c1c1c;
+  --borde2-c:#1c1c1c;
+
+  --gradient1:linear-gradient(44deg,#8e6b9f,#a19278);
+  --sombra:1px 0px 0px black;
+
+  width:min(1100px,calc(100% - 30px));
+  height:530px;
+  margin:25px auto;
+  position:relative;
+  overflow:hidden;
+
+  box-sizing:border-box;
+
+  background:var(--fondo3);
+  border:var(--borde1);
+
+  color:var(--textobase);
+  font-family:'Raleway',sans-serif;
+  font-size:12px;
+
+  box-shadow:0 15px 45px rgba(0,0,0,.35);
+}
+
+#ros_tablon *,
+#ros_tablon *:before,
+#ros_tablon *:after{
+  box-sizing:border-box;
+}
+
+#ros_tablon a{
+  color:var(--links1);
+  text-decoration:none;
+  transition:.3s ease;
+}
+
+#ros_tablon a:hover{
+  color:var(--color2);
+}
+
+
+/* ============================================================
+   ORNAMENTO GENERAL
+   ============================================================ */
+
+#ros_tablon:before{
+  content:"";
+  position:absolute;
+  inset:7px;
+  border:1px solid rgba(230,225,216,.08);
+  pointer-events:none;
+  z-index:20;
+}
+
+#ros_tablon:after{
+  content:"☾  ✦  ☽";
+  position:absolute;
+  bottom:5px;
+  left:50%;
+  transform:translateX(-50%);
+  color:rgba(230,225,216,.3);
+  font-family:'Cormorant Garamond',serif;
+  font-size:11px;
+  letter-spacing:4px;
+  pointer-events:none;
+  z-index:20;
+}
+
+
+/* ============================================================
+   MENÚ
+   ============================================================ */
+
+#ros_tablon .ros_menu{
+  height:62px;
+  display:flex;
+  align-items:center;
+  gap:30px;
+  padding:0 35px;
+
+  background:var(--fondo2);
+  border-bottom:var(--borde1);
+
+  position:relative;
+  z-index:10;
+}
+
+#ros_tablon .ros_brand{
+  margin-right:auto;
+
+  font-family:'Cinzel Decorative',serif;
+  font-size:14px;
+  letter-spacing:2px;
+  color:var(--color2);
+  text-shadow:var(--sombra);
+  white-space:nowrap;
+}
+
+#ros_tablon .ros_brand small{
+  display:block;
+  margin-top:3px;
+
+  font-family:'Raleway',sans-serif;
+  font-size:7px;
+  font-weight:600;
+  letter-spacing:3px;
+  color:var(--color1);
+}
+
+#ros_tablon .ros_nav{
+  display:flex;
+  align-items:center;
+  gap:4px;
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+#ros_tablon .ros_nav > li{
+  position:relative;
+}
+
+#ros_tablon .ros_nav > li > a{
+  display:block;
+  padding:10px 12px;
+
+  color:#aaaeb5;
+  font-size:9px;
+  font-weight:600;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+#ros_tablon .ros_nav > li > a:hover{
+  color:var(--color2);
+}
+
+
+/* SUBMENÚ */
+
+#ros_tablon .ros_submenu{
+  position:absolute;
+  top:100%;
+  right:0;
+
+  min-width:160px;
+  padding:7px;
+
+  background:var(--fondo2);
+  border:var(--borde1);
+
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(5px);
+
+  transition:.25s ease;
+}
+
+#ros_tablon .ros_nav li:hover .ros_submenu,
+#ros_tablon .ros_nav li:focus-within .ros_submenu{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
+#ros_tablon .ros_submenu a{
+  display:block;
+  padding:8px 10px;
+
+  font-size:9px;
+  letter-spacing:1px;
+  text-transform:uppercase;
+
+  border-bottom:1px solid rgba(255,255,255,.04);
+}
+
+#ros_tablon .ros_submenu a:last-child{
+  border-bottom:0;
+}
+
+
+/* ============================================================
+   TABS
+   ============================================================ */
+
+#ros_tablon input[name="ros_tab"]{
+  display:none;
+}
+
+#ros_tablon .ros_tabs{
+  position:absolute;
+  bottom:0;
+  left:0;
+
+  width:100%;
+  height:42px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:0;
+
+  background:var(--fondo2);
+  border-top:var(--borde1);
+
+  z-index:15;
+}
+
+#ros_tablon .ros_tabs label{
+  height:42px;
+  min-width:145px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  cursor:pointer;
+
+  color:#737780;
+  font-size:9px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+
+  transition:.3s ease;
+}
+
+#ros_tablon .ros_tabs label:hover{
+  color:var(--color2);
+}
+
+#ros_tab1:checked ~ .ros_tabs label[for="ros_tab1"],
+#ros_tab2:checked ~ .ros_tabs label[for="ros_tab2"],
+#ros_tab3:checked ~ .ros_tabs label[for="ros_tab3"]{
+  color:var(--color2);
+  background:var(--fondo1);
+  box-shadow:inset 0 -2px 0 var(--color1);
+}
+
+
+/* ============================================================
+   CONTENEDOR DE PANELES
+   ============================================================ */
+
+#ros_tablon .ros_panels{
+  position:absolute;
+  top:62px;
+  left:0;
+  right:0;
+  bottom:42px;
+
+  overflow:hidden;
+}
+
+#ros_tablon .ros_panel{
+  position:absolute;
+  inset:0;
+
+  padding:22px 30px;
+
+  opacity:0;
+  visibility:hidden;
+  transform:translateX(25px);
+
+  transition:.35s ease;
+}
+
+#ros_tab1:checked ~ .ros_panels .ros_panel1,
+#ros_tab2:checked ~ .ros_panels .ros_panel2,
+#ros_tab3:checked ~ .ros_panels .ros_panel3{
+  opacity:1;
+  visibility:visible;
+  transform:translateX(0);
+}
+
+
+/* ============================================================
+   TÍTULOS
+   ============================================================ */
+
+#ros_tablon .ros_label{
+  display:block;
+  margin-bottom:6px;
+
+  color:var(--color1);
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+}
+
+#ros_tablon .ros_title{
+  margin:0;
+
+  color:var(--color2);
+
+  font-family:'Cinzel Decorative',serif;
+  font-size:26px;
+  line-height:1.2;
+  font-weight:500;
+  text-shadow:var(--sombra);
+}
+
+#ros_tablon .ros_title span{
+  color:var(--color1);
+}
+
+
+/* ============================================================
+   MARCOS / CAJAS
+   ============================================================ */
+
+#ros_tablon .ros_box{
+  background:rgba(23,27,34,.8);
+  border:var(--borde1);
+  position:relative;
+}
+
+#ros_tablon .ros_box:before{
+  content:"";
+  position:absolute;
+  inset:5px;
+  border:1px solid rgba(230,225,216,.045);
+  pointer-events:none;
+}
+
+
+/* ============================================================
+   PANEL 1 — LA ISLA
+   ============================================================ */
+
+#ros_tablon .ros_isla{
+  display:grid;
+  grid-template-columns:1.35fr .85fr;
+  grid-template-rows:145px 90px;
+  gap:12px;
+}
+
+
+/* Bienvenida */
+
+#ros_tablon .ros_welcome{
+  padding:18px 20px;
+  overflow:hidden;
+}
+
+#ros_tablon .ros_welcome .ros_title{
+  font-size:27px;
+}
+
+#ros_tablon .ros_welcome p{
+  max-width:550px;
+  margin:10px 0 0;
+
+  color:#aeb1b7;
+  font-family:'Cormorant Garamond',serif;
+  font-size:14px;
+  line-height:1.35;
+}
+
+#ros_tablon .ros_welcome .ros_quote{
+  margin-top:8px;
+
+  color:#777d87;
+  font-family:'Cormorant Garamond',serif;
+  font-size:12px;
+  font-style:italic;
+}
+
+
+/* Últimos temas */
+
+#ros_tablon .ros_topics{
+  grid-row:1 / span 2;
+
+  padding:16px;
+  overflow:hidden;
+}
+
+#ros_tablon .ros_topics h3{
+  margin:0 0 10px;
+
+  color:var(--color2);
+  font-family:'Cinzel Decorative',serif;
+  font-size:12px;
+  font-weight:500;
+}
+
+#ros_tablon .ultemas{
+  height:178px;
+  overflow:auto;
+  scrollbar-width:thin;
+  scrollbar-color:var(--color1) transparent;
+}
+
+#ros_tablon .ultemas_mover{
+  width:100%;
+}
+
+#ros_tablon .ultemas_mover a{
+  display:block;
+  padding:8px 4px;
+
+  border-bottom:1px solid rgba(255,255,255,.05);
+
+  color:#b7bac0;
+  font-size:10px;
+}
+
+#ros_tablon .ultemas_mover a:hover{
+  color:var(--color2);
+}
+
+
+/* Clima */
+
+#ros_tablon .ros_weather{
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+#ros_tablon .ros_weather_icon{
+  width:48px;
+  height:48px;
+  flex:none;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid rgba(142,107,159,.5);
+  border-radius:50%;
+
+  color:var(--color2);
+  font-family:'Cormorant Garamond',serif;
+  font-size:22px;
+}
+
+#ros_tablon .ros_weather strong{
+  display:block;
+
+  color:var(--color2);
+  font-family:'Cinzel Decorative',serif;
+  font-size:11px;
+  font-weight:500;
+}
+
+#ros_tablon .ros_weather span{
+  display:block;
+  margin-top:4px;
+
+  color:#858a93;
+  font-size:9px;
+  letter-spacing:.5px;
+}
+
+
+/* Mapa */
+
+#ros_tablon .ros_map{
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+#ros_tablon .ros_map_text strong{
+  display:block;
+
+  color:var(--color2);
+  font-family:'Cinzel Decorative',serif;
+  font-size:11px;
+  font-weight:500;
+}
+
+#ros_tablon .ros_map_text span{
+  display:block;
+  margin-top:4px;
+
+  color:#858a93;
+  font-size:9px;
+}
+
+#ros_tablon .ros_map_button{
+  width:52px;
+  height:52px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid rgba(142,107,159,.55);
+  border-radius:50%;
+
+  color:var(--color2);
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;
+}
+
+#ros_tablon .ros_map_button:hover{
+  background:var(--gradient1);
+  color:#fff;
+}
+
+
+/* ============================================================
+   FILA INFERIOR DEL PANEL 1
+   ============================================================ */
+
+#ros_tablon .ros_bottom{
+  grid-column:1 / -1;
+
+  display:grid;
+  grid-template-columns:1.4fr .6fr;
+  gap:12px;
+}
+
+
+/* Anuncio */
+
+#ros_tablon .ros_announcement{
+  padding:14px 18px;
+  display:flex;
+  align-items:center;
+  gap:15px;
+}
+
+#ros_tablon .ros_announcement_icon{
+  width:36px;
+  height:36px;
+  flex:none;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid rgba(142,107,159,.45);
+
+  color:var(--color1);
+  font-size:15px;
+}
+
+#ros_tablon .ros_announcement strong{
+  display:block;
+  color:var(--color2);
+  font-family:'Cinzel Decorative',serif;
+  font-size:10px;
+  font-weight:500;
+}
+
+#ros_tablon .ros_announcement p{
+  margin:4px 0 0;
+  color:#858a93;
+  font-size:9px;
+}
+
+
+/* Oráculo */
+
+#ros_tablon .ros_oracle{
+  padding:13px 17px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+#ros_tablon .ros_oracle strong{
+  display:block;
+  color:var(--color2);
+  font-family:'Cinzel Decorative',serif;
+  font-size:11px;
+  font-weight:500;
+}
+
+#ros_tablon .ros_oracle span{
+  display:block;
+  margin-top:3px;
+  color:#858a93;
+  font-size:9px;
+}
+
+#ros_tablon .ros_oracle_button{
+  color:var(--color1);
+  font-size:20px;
+}
+
+
+/* ============================================================
+   PANEL 2 — INFORMACIÓN
+   ============================================================ */
+
+#ros_tablon .ros_info{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:190px 55px;
+  gap:12px;
+}
+
+
+/* Staff */
+
+#ros_tablon .ros_staff{
+  padding:16px;
+}
+
+#ros_tablon .ros_staff h3,
+#ros_tablon .ros_news h3,
+#ros_tablon .ros_event h3{
+  margin:0 0 12px;
+
+  color:var(--color2);
+  font-family:'Cinzel Decorative',serif;
+  font-size:12px;
+  font-weight:500;
+}
+
+#ros_tablon .ros_staff_list{
+  display:flex;
+  gap:10px;
+}
+
+#ros_tablon .ros_staff_card{
+  flex:1;
+  min-width:0;
+
+  padding:10px 5px;
+
+  text-align:center;
+  border:1px solid rgba(255,255,255,.05);
+}
+
+#ros_tablon .ros_staff_avatar{
+  width:48px;
+  height:48px;
+  margin:0 auto 7px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid rgba(142,107,159,.5);
+  border-radius:50%;
+
+  color:var(--color1);
+  font-family:'Cormorant Garamond',serif;
+  font-size:18px;
+}
+
+#ros_tablon .ros_staff_card strong{
+  display:block;
+
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+
+  color:#c5c7cb;
+  font-size:8px;
+  letter-spacing:.5px;
+}
+
+#ros_tablon .ros_staff_card span{
+  display:block;
+  margin-top:3px;
+
+  color:#6f747c;
+  font-size:7px;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+
+/* Noticias */
+
+#ros_tablon .ros_news{
+  padding:16px;
+  overflow:hidden;
+}
+
+#ros_tablon .ros_news_list{
+  height:140px;
+  overflow:auto;
+  scrollbar-width:thin;
+}
+
+#ros_tablon .ros_news_item{
+  padding:8px 0;
+
+  display:grid;
+  grid-template-columns:48px 1fr;
+  gap:10px;
+
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+#ros_tablon .ros_news_date{
+  color:var(--color1);
+  font-family:'Cinzel Decorative',serif;
+  font-size:8px;
+}
+
+#ros_tablon .ros_news_item strong{
+  display:block;
+  color:#c4c6cb;
+  font-size:9px;
+}
+
+#ros_tablon .ros_news_item span{
+  display:block;
+  margin-top:3px;
+  color:#737780;
+  font-size:8px;
+}
+
+
+/* Evento */
+
+#ros_tablon .ros_event{
+  padding:16px;
+
+  background:
+    linear-gradient(90deg,rgba(8,10,13,.98),rgba(8,10,13,.65)),
+    url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80')
+    center/cover;
+}
+
+#ros_tablon .ros_event h3{
+  margin-bottom:7px;
+}
+
+#ros_tablon .ros_event_title{
+  color:var(--color2);
+  font-family:'Cinzel Decorative',serif;
+  font-size:16px;
+}
+
+#ros_tablon .ros_event_date{
+  margin-top:4px;
+  color:var(--color1);
+  font-size:8px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+#ros_tablon .ros_event p{
+  max-width:400px;
+  margin:8px 0 0;
+
+  color:#999da4;
+  font-family:'Cormorant Garamond',serif;
+  font-size:12px;
+  line-height:1.2;
+}
+
+
+/* Copyright */
+
+#ros_tablon .ros_credit{
+  grid-column:1 / -1;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:15px;
+
+  color:#555b64;
+  font-size:8px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+#ros_tablon .ros_credit span{
+  color:var(--color1);
+}
+
+
+/* ============================================================
+   PANEL 3 — BÚSQUEDAS
+   ============================================================ */
+
+#ros_tablon .ros_search_panel{
+  height:100%;
+  display:flex;
+  flex-direction:column;
+}
+
+#ros_tablon .ros_search_header{
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  margin-bottom:16px;
+}
+
+#ros_tablon .ros_search_header h2{
+  margin:0;
+
+  color:var(--color2);
+  font-family:'Cinzel Decorative',serif;
+  font-size:22px;
+  font-weight:500;
+}
+
+#ros_tablon .ros_search_header p{
+  margin:0;
+  color:#70757e;
+  font-family:'Cormorant Garamond',serif;
+  font-size:13px;
+}
+
+
+#ros_tablon .ros_search_grid{
+  flex:1;
+
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+#ros_tablon .ros_search_card{
+  min-height:105px;
+  padding:14px;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+
+  background:var(--fondo2);
+  border:var(--borde1);
+
+  position:relative;
+  overflow:hidden;
+}
+
+#ros_tablon .ros_search_card:before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:var(--gradient1);
+  opacity:0;
+
+  transition:.35s ease;
+}
+
+#ros_tablon .ros_search_card:hover:before{
+  opacity:.08;
+}
+
+#ros_tablon .ros_search_status{
+  position:absolute;
+  top:10px;
+  right:10px;
+
+  color:var(--color1);
+  font-size:7px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+#ros_tablon .ros_search_card h3{
+  position:relative;
+  z-index:1;
+
+  margin:0;
+
+  color:#d4d5d8;
+  font-family:'Cinzel Decorative',serif;
+  font-size:11px;
+  font-weight:500;
+}
+
+#ros_tablon .ros_search_card p{
+  position:relative;
+  z-index:1;
+
+  margin:5px 0 0;
+
+  color:#727780;
+  font-size:8px;
+  line-height:1.3;
+}
+
+
+/* ============================================================
+   SCROLLBARS
+   ============================================================ */
+
+#ros_tablon ::-webkit-scrollbar{
+  width:4px;
+}
+
+#ros_tablon ::-webkit-scrollbar-track{
+  background:transparent;
+}
+
+#ros_tablon ::-webkit-scrollbar-thumb{
+  background:#3b3541;
+}
+
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media(max-width:850px){
+
+  #ros_tablon{
+    width:calc(100% - 20px);
+    height:auto;
+    min-height:600px;
+    overflow:visible;
+  }
+
+  #ros_tablon:before,
+  #ros_tablon:after{
+    display:none;
+  }
+
+  #ros_tablon .ros_menu{
+    height:auto;
+    min-height:70px;
+    padding:12px 20px;
+    flex-wrap:wrap;
+    gap:8px 15px;
+  }
+
+  #ros_tablon .ros_brand{
+    width:100%;
+    margin:0;
+  }
+
+  #ros_tablon .ros_nav{
+    width:100%;
+    flex-wrap:wrap;
+  }
+
+  #ros_tablon .ros_nav > li > a{
+    padding:6px 8px;
+  }
+
+  #ros_tablon .ros_submenu{
+    left:0;
+    right:auto;
+  }
+
+  #ros_tablon .ros_panels{
+    position:relative;
+    top:auto;
+    bottom:auto;
+    min-height:560px;
+  }
+
+  #ros_tablon .ros_panel{
+    position:relative;
+    inset:auto;
+    display:none;
+    transform:none;
+  }
+
+  #ros_tab1:checked ~ .ros_panels .ros_panel1,
+  #ros_tab2:checked ~ .ros_panels .ros_panel2,
+  #ros_tab3:checked ~ .ros_panels .ros_panel3{
+    display:block;
+  }
+
+  #ros_tablon .ros_tabs{
+    position:relative;
+    bottom:auto;
+    height:auto;
+    flex-wrap:wrap;
+  }
+
+  #ros_tablon .ros_tabs label{
+    flex:1;
+    min-width:100px;
+  }
+
+  #ros_tablon .ros_isla{
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+  }
+
+  #ros_tablon .ros_topics{
+    grid-row:auto;
+    min-height:190px;
+  }
+
+  #ros_tablon .ros_bottom{
+    grid-template-columns:1fr;
+  }
+
+  #ros_tablon .ros_info{
+    grid-template-columns:1fr;
+    grid-template-rows:auto;
+  }
+
+  #ros_tablon .ros_search_grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  #ros_tablon .ros_credit{
+    min-height:55px;
+  }
+}
+
+
+@media(max-width:550px){
+
+  #ros_tablon{
+    width:calc(100% - 10px);
+  }
+
+  #ros_tablon .ros_panel{
+    padding:15px;
+  }
+
+  #ros_tablon .ros_search_grid{
+    grid-template-columns:1fr;
+  }
+
+  #ros_tablon .ros_staff_list{
+    flex-wrap:wrap;
+  }
+
+  #ros_tablon .ros_staff_card{
+    flex:1 1 45%;
+  }
+
+  #ros_tablon .ros_welcome .ros_title{
+    font-size:22px;
+  }
+
+  }
