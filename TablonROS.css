@@ -1,10 +1,9 @@
-/* ============================================================
-   REQUIEM OF SOULS — TABLÓN PRINCIPAL
-   ============================================================ */
+/* ============================
+   GOLONDRINA X MARY
+  =========================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap');
+#golondrina{
 
-#ros_tablon{
   --fondo1:#11141A;
   --fondo2:#171b22;
   --fondo3:#080a0d;
@@ -22,1035 +21,1468 @@
   --borde2-c:#1c1c1c;
 
   --gradient1:linear-gradient(44deg,#8e6b9f,#a19278);
+
   --sombra:1px 0px 0px black;
 
-  width:min(1100px,calc(100% - 30px));
-  height:530px;
-  margin:25px auto;
-  position:relative;
-  overflow:hidden;
+  --familyn:'Raleway';
+  --familytitu:'Cinzel Decorative';
 
-  box-sizing:border-box;
+  --tamtext:13px;
 
-  background:var(--fondo3);
-  border:var(--borde1);
+  --banner1:url('https://via.placeholder.com/185x240');
+  --banner2:url('https://via.placeholder.com/185x240');
 
-  color:var(--textobase);
-  font-family:'Raleway',sans-serif;
-  font-size:12px;
-
-  box-shadow:0 15px 45px rgba(0,0,0,.35);
-}
-
-#ros_tablon *,
-#ros_tablon *:before,
-#ros_tablon *:after{
-  box-sizing:border-box;
-}
-
-#ros_tablon a{
-  color:var(--links1);
-  text-decoration:none;
-  transition:.3s ease;
-}
-
-#ros_tablon a:hover{
-  color:var(--color2);
 }
 
 
-/* ============================================================
-   ORNAMENTO GENERAL
-   ============================================================ */
+/* ============================
+   BASE
+   =========================== */
 
-#ros_tablon:before{
-  content:"";
-  position:absolute;
-  inset:7px;
-  border:1px solid rgba(230,225,216,.08);
-  pointer-events:none;
-  z-index:20;
-}
-
-#ros_tablon:after{
-  content:"☾  ✦  ☽";
-  position:absolute;
-  bottom:5px;
-  left:50%;
-  transform:translateX(-50%);
-  color:rgba(230,225,216,.3);
-  font-family:'Cormorant Garamond',serif;
-  font-size:11px;
-  letter-spacing:4px;
-  pointer-events:none;
-  z-index:20;
-}
-
-
-/* ============================================================
-   MENÚ
-   ============================================================ */
-
-#ros_tablon .ros_menu{
-  height:62px;
-  display:flex;
-  align-items:center;
-  gap:30px;
-  padding:0 35px;
-
-  background:var(--fondo2);
-  border-bottom:var(--borde1);
-
-  position:relative;
-  z-index:10;
-}
-
-#ros_tablon .ros_brand{
-  margin-right:auto;
-
-  font-family:'Cinzel Decorative',serif;
-  font-size:14px;
-  letter-spacing:2px;
-  color:var(--color2);
-  text-shadow:var(--sombra);
-  white-space:nowrap;
-}
-
-#ros_tablon .ros_brand small{
-  display:block;
-  margin-top:3px;
-
-  font-family:'Raleway',sans-serif;
-  font-size:7px;
-  font-weight:600;
-  letter-spacing:3px;
-  color:var(--color1);
-}
-
-#ros_tablon .ros_nav{
-  display:flex;
-  align-items:center;
-  gap:4px;
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-
-#ros_tablon .ros_nav > li{
-  position:relative;
-}
-
-#ros_tablon .ros_nav > li > a{
-  display:block;
-  padding:10px 12px;
-
-  color:#aaaeb5;
-  font-size:9px;
-  font-weight:600;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-}
-
-#ros_tablon .ros_nav > li > a:hover{
-  color:var(--color2);
-}
-
-
-/* SUBMENÚ */
-
-#ros_tablon .ros_submenu{
-  position:absolute;
-  top:100%;
-  right:0;
-
-  min-width:160px;
-  padding:7px;
-
-  background:var(--fondo2);
-  border:var(--borde1);
-
-  opacity:0;
-  visibility:hidden;
-  transform:translateY(5px);
-
-  transition:.25s ease;
-}
-
-#ros_tablon .ros_nav li:hover .ros_submenu,
-#ros_tablon .ros_nav li:focus-within .ros_submenu{
-  opacity:1;
-  visibility:visible;
-  transform:translateY(0);
-}
-
-#ros_tablon .ros_submenu a{
-  display:block;
-  padding:8px 10px;
-
-  font-size:9px;
-  letter-spacing:1px;
-  text-transform:uppercase;
-
-  border-bottom:1px solid rgba(255,255,255,.04);
-}
-
-#ros_tablon .ros_submenu a:last-child{
-  border-bottom:0;
-}
-
-
-/* ============================================================
-   TABS
-   ============================================================ */
-
-#ros_tablon input[name="ros_tab"]{
+#left,
+#right{
   display:none;
 }
 
-#ros_tablon .ros_tabs{
+
+#golondrina{
+
+  margin:20px auto;
+
+  width:1100px;
+  height:530px;
+
+  position:relative;
+
+  overflow:hidden;
+
+  background:var(--fondo3);
+
+  border:var(--borde1);
+
+  color:var(--textobase);
+
+  font-family:var(--familyn);
+
+  font-size:var(--tamtext);
+
+}
+
+
+/* ===========================
+   MENÚ PRINCIPAL
+   ============================ */
+
+#golondrina .rosmenu{
+
   position:absolute;
-  bottom:0;
+
+  top:0;
   left:0;
 
   width:100%;
-  height:42px;
+  height:45px;
+
+  padding:0 25px;
 
   display:flex;
-  justify-content:center;
+
   align-items:center;
-  gap:0;
 
   background:var(--fondo2);
-  border-top:var(--borde1);
 
-  z-index:15;
+  border-bottom:var(--borde1);
+
+  z-index:20;
+
 }
 
-#ros_tablon .ros_tabs label{
-  height:42px;
-  min-width:145px;
+
+/* NOMBRE */
+
+#golondrina .rosmenu .rosbrand{
+
+  margin-right:auto;
+
+  color:var(--color2);
+
+  font-family:var(--familytitu);
+
+  font-size:12px;
+
+  letter-spacing:1.5px;
+
+  white-space:nowrap;
+
+  text-shadow:var(--sombra);
+
+}
+
+#golondrina .rosmenu .rosbrand small{
+
+  margin-left:7px;
+
+  color:var(--color1);
+
+  font-family:var(--familyn);
+
+  font-size:7px;
+
+  font-weight:700;
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+}
+
+
+/* LISTA */
+
+#golondrina .rosmenu ul{
+
+  list-style:none;
+
+  margin:0;
+
+  padding:0;
 
   display:flex;
-  justify-content:center;
+
   align-items:center;
 
-  cursor:pointer;
+  gap:2px;
 
-  color:#737780;
-  font-size:9px;
+}
+
+
+#golondrina .rosmenu li{
+
+  position:relative;
+
+  margin:0;
+
+  padding:0;
+
+}
+
+
+#golondrina .rosmenu li > a{
+
+  display:block;
+
+  padding:8px 10px;
+
+  color:#858a93;
+
+  text-decoration:none;
+
+  font-size:8px;
+
   font-weight:700;
-  letter-spacing:2px;
+
+  letter-spacing:1.2px;
+
   text-transform:uppercase;
 
   transition:.3s ease;
+
 }
 
-#ros_tablon .ros_tabs label:hover{
+
+#golondrina .rosmenu li > a:hover{
+
   color:var(--color2);
-}
 
-#ros_tab1:checked ~ .ros_tabs label[for="ros_tab1"],
-#ros_tab2:checked ~ .ros_tabs label[for="ros_tab2"],
-#ros_tab3:checked ~ .ros_tabs label[for="ros_tab3"]{
-  color:var(--color2);
-  background:var(--fondo1);
-  box-shadow:inset 0 -2px 0 var(--color1);
 }
 
 
-/* ============================================================
-   CONTENEDOR DE PANELES
-   ============================================================ */
+/* ===========================
+   SUBMENÚ
+   =========================== */
 
-#ros_tablon .ros_panels{
+#golondrina .rosmenu .rossub{
+
   position:absolute;
-  top:62px;
-  left:0;
+
+  top:100%;
   right:0;
-  bottom:42px;
 
-  overflow:hidden;
-}
+  width:165px;
 
-#ros_tablon .ros_panel{
-  position:absolute;
-  inset:0;
+  padding:6px;
 
-  padding:22px 30px;
-
-  opacity:0;
-  visibility:hidden;
-  transform:translateX(25px);
-
-  transition:.35s ease;
-}
-
-#ros_tab1:checked ~ .ros_panels .ros_panel1,
-#ros_tab2:checked ~ .ros_panels .ros_panel2,
-#ros_tab3:checked ~ .ros_panels .ros_panel3{
-  opacity:1;
-  visibility:visible;
-  transform:translateX(0);
-}
-
-
-/* ============================================================
-   TÍTULOS
-   ============================================================ */
-
-#ros_tablon .ros_label{
   display:block;
-  margin-bottom:6px;
-
-  color:var(--color1);
-  font-size:8px;
-  font-weight:700;
-  letter-spacing:3px;
-  text-transform:uppercase;
-}
-
-#ros_tablon .ros_title{
-  margin:0;
-
-  color:var(--color2);
-
-  font-family:'Cinzel Decorative',serif;
-  font-size:26px;
-  line-height:1.2;
-  font-weight:500;
-  text-shadow:var(--sombra);
-}
-
-#ros_tablon .ros_title span{
-  color:var(--color1);
-}
-
-
-/* ============================================================
-   MARCOS / CAJAS
-   ============================================================ */
-
-#ros_tablon .ros_box{
-  background:rgba(23,27,34,.8);
-  border:var(--borde1);
-  position:relative;
-}
-
-#ros_tablon .ros_box:before{
-  content:"";
-  position:absolute;
-  inset:5px;
-  border:1px solid rgba(230,225,216,.045);
-  pointer-events:none;
-}
-
-
-/* ============================================================
-   PANEL 1 — LA ISLA
-   ============================================================ */
-
-#ros_tablon .ros_isla{
-  display:grid;
-  grid-template-columns:1.35fr .85fr;
-  grid-template-rows:145px 90px;
-  gap:12px;
-}
-
-
-/* Bienvenida */
-
-#ros_tablon .ros_welcome{
-  padding:18px 20px;
-  overflow:hidden;
-}
-
-#ros_tablon .ros_welcome .ros_title{
-  font-size:27px;
-}
-
-#ros_tablon .ros_welcome p{
-  max-width:550px;
-  margin:10px 0 0;
-
-  color:#aeb1b7;
-  font-family:'Cormorant Garamond',serif;
-  font-size:14px;
-  line-height:1.35;
-}
-
-#ros_tablon .ros_welcome .ros_quote{
-  margin-top:8px;
-
-  color:#777d87;
-  font-family:'Cormorant Garamond',serif;
-  font-size:12px;
-  font-style:italic;
-}
-
-
-/* Últimos temas */
-
-#ros_tablon .ros_topics{
-  grid-row:1 / span 2;
-
-  padding:16px;
-  overflow:hidden;
-}
-
-#ros_tablon .ros_topics h3{
-  margin:0 0 10px;
-
-  color:var(--color2);
-  font-family:'Cinzel Decorative',serif;
-  font-size:12px;
-  font-weight:500;
-}
-
-#ros_tablon .ultemas{
-  height:178px;
-  overflow:auto;
-  scrollbar-width:thin;
-  scrollbar-color:var(--color1) transparent;
-}
-
-#ros_tablon .ultemas_mover{
-  width:100%;
-}
-
-#ros_tablon .ultemas_mover a{
-  display:block;
-  padding:8px 4px;
-
-  border-bottom:1px solid rgba(255,255,255,.05);
-
-  color:#b7bac0;
-  font-size:10px;
-}
-
-#ros_tablon .ultemas_mover a:hover{
-  color:var(--color2);
-}
-
-
-/* Clima */
-
-#ros_tablon .ros_weather{
-  padding:14px 16px;
-  display:flex;
-  align-items:center;
-  gap:15px;
-}
-
-#ros_tablon .ros_weather_icon{
-  width:48px;
-  height:48px;
-  flex:none;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  border:1px solid rgba(142,107,159,.5);
-  border-radius:50%;
-
-  color:var(--color2);
-  font-family:'Cormorant Garamond',serif;
-  font-size:22px;
-}
-
-#ros_tablon .ros_weather strong{
-  display:block;
-
-  color:var(--color2);
-  font-family:'Cinzel Decorative',serif;
-  font-size:11px;
-  font-weight:500;
-}
-
-#ros_tablon .ros_weather span{
-  display:block;
-  margin-top:4px;
-
-  color:#858a93;
-  font-size:9px;
-  letter-spacing:.5px;
-}
-
-
-/* Mapa */
-
-#ros_tablon .ros_map{
-  padding:14px 16px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-#ros_tablon .ros_map_text strong{
-  display:block;
-
-  color:var(--color2);
-  font-family:'Cinzel Decorative',serif;
-  font-size:11px;
-  font-weight:500;
-}
-
-#ros_tablon .ros_map_text span{
-  display:block;
-  margin-top:4px;
-
-  color:#858a93;
-  font-size:9px;
-}
-
-#ros_tablon .ros_map_button{
-  width:52px;
-  height:52px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  border:1px solid rgba(142,107,159,.55);
-  border-radius:50%;
-
-  color:var(--color2);
-  font-family:'Cormorant Garamond',serif;
-  font-size:20px;
-}
-
-#ros_tablon .ros_map_button:hover{
-  background:var(--gradient1);
-  color:#fff;
-}
-
-
-/* ============================================================
-   FILA INFERIOR DEL PANEL 1
-   ============================================================ */
-
-#ros_tablon .ros_bottom{
-  grid-column:1 / -1;
-
-  display:grid;
-  grid-template-columns:1.4fr .6fr;
-  gap:12px;
-}
-
-
-/* Anuncio */
-
-#ros_tablon .ros_announcement{
-  padding:14px 18px;
-  display:flex;
-  align-items:center;
-  gap:15px;
-}
-
-#ros_tablon .ros_announcement_icon{
-  width:36px;
-  height:36px;
-  flex:none;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  border:1px solid rgba(142,107,159,.45);
-
-  color:var(--color1);
-  font-size:15px;
-}
-
-#ros_tablon .ros_announcement strong{
-  display:block;
-  color:var(--color2);
-  font-family:'Cinzel Decorative',serif;
-  font-size:10px;
-  font-weight:500;
-}
-
-#ros_tablon .ros_announcement p{
-  margin:4px 0 0;
-  color:#858a93;
-  font-size:9px;
-}
-
-
-/* Oráculo */
-
-#ros_tablon .ros_oracle{
-  padding:13px 17px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-#ros_tablon .ros_oracle strong{
-  display:block;
-  color:var(--color2);
-  font-family:'Cinzel Decorative',serif;
-  font-size:11px;
-  font-weight:500;
-}
-
-#ros_tablon .ros_oracle span{
-  display:block;
-  margin-top:3px;
-  color:#858a93;
-  font-size:9px;
-}
-
-#ros_tablon .ros_oracle_button{
-  color:var(--color1);
-  font-size:20px;
-}
-
-
-/* ============================================================
-   PANEL 2 — INFORMACIÓN
-   ============================================================ */
-
-#ros_tablon .ros_info{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  grid-template-rows:190px 55px;
-  gap:12px;
-}
-
-
-/* Staff */
-
-#ros_tablon .ros_staff{
-  padding:16px;
-}
-
-#ros_tablon .ros_staff h3,
-#ros_tablon .ros_news h3,
-#ros_tablon .ros_event h3{
-  margin:0 0 12px;
-
-  color:var(--color2);
-  font-family:'Cinzel Decorative',serif;
-  font-size:12px;
-  font-weight:500;
-}
-
-#ros_tablon .ros_staff_list{
-  display:flex;
-  gap:10px;
-}
-
-#ros_tablon .ros_staff_card{
-  flex:1;
-  min-width:0;
-
-  padding:10px 5px;
-
-  text-align:center;
-  border:1px solid rgba(255,255,255,.05);
-}
-
-#ros_tablon .ros_staff_avatar{
-  width:48px;
-  height:48px;
-  margin:0 auto 7px;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-
-  border:1px solid rgba(142,107,159,.5);
-  border-radius:50%;
-
-  color:var(--color1);
-  font-family:'Cormorant Garamond',serif;
-  font-size:18px;
-}
-
-#ros_tablon .ros_staff_card strong{
-  display:block;
-
-  overflow:hidden;
-  white-space:nowrap;
-  text-overflow:ellipsis;
-
-  color:#c5c7cb;
-  font-size:8px;
-  letter-spacing:.5px;
-}
-
-#ros_tablon .ros_staff_card span{
-  display:block;
-  margin-top:3px;
-
-  color:#6f747c;
-  font-size:7px;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-
-/* Noticias */
-
-#ros_tablon .ros_news{
-  padding:16px;
-  overflow:hidden;
-}
-
-#ros_tablon .ros_news_list{
-  height:140px;
-  overflow:auto;
-  scrollbar-width:thin;
-}
-
-#ros_tablon .ros_news_item{
-  padding:8px 0;
-
-  display:grid;
-  grid-template-columns:48px 1fr;
-  gap:10px;
-
-  border-bottom:1px solid rgba(255,255,255,.05);
-}
-
-#ros_tablon .ros_news_date{
-  color:var(--color1);
-  font-family:'Cinzel Decorative',serif;
-  font-size:8px;
-}
-
-#ros_tablon .ros_news_item strong{
-  display:block;
-  color:#c4c6cb;
-  font-size:9px;
-}
-
-#ros_tablon .ros_news_item span{
-  display:block;
-  margin-top:3px;
-  color:#737780;
-  font-size:8px;
-}
-
-
-/* Evento */
-
-#ros_tablon .ros_event{
-  padding:16px;
-
-  background:
-    linear-gradient(90deg,rgba(8,10,13,.98),rgba(8,10,13,.65)),
-    url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80')
-    center/cover;
-}
-
-#ros_tablon .ros_event h3{
-  margin-bottom:7px;
-}
-
-#ros_tablon .ros_event_title{
-  color:var(--color2);
-  font-family:'Cinzel Decorative',serif;
-  font-size:16px;
-}
-
-#ros_tablon .ros_event_date{
-  margin-top:4px;
-  color:var(--color1);
-  font-size:8px;
-  font-weight:700;
-  letter-spacing:1px;
-  text-transform:uppercase;
-}
-
-#ros_tablon .ros_event p{
-  max-width:400px;
-  margin:8px 0 0;
-
-  color:#999da4;
-  font-family:'Cormorant Garamond',serif;
-  font-size:12px;
-  line-height:1.2;
-}
-
-
-/* Copyright */
-
-#ros_tablon .ros_credit{
-  grid-column:1 / -1;
-
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:15px;
-
-  color:#555b64;
-  font-size:8px;
-  letter-spacing:1.5px;
-  text-transform:uppercase;
-}
-
-#ros_tablon .ros_credit span{
-  color:var(--color1);
-}
-
-
-/* ============================================================
-   PANEL 3 — BÚSQUEDAS
-   ============================================================ */
-
-#ros_tablon .ros_search_panel{
-  height:100%;
-  display:flex;
-  flex-direction:column;
-}
-
-#ros_tablon .ros_search_header{
-  display:flex;
-  align-items:flex-end;
-  justify-content:space-between;
-  margin-bottom:16px;
-}
-
-#ros_tablon .ros_search_header h2{
-  margin:0;
-
-  color:var(--color2);
-  font-family:'Cinzel Decorative',serif;
-  font-size:22px;
-  font-weight:500;
-}
-
-#ros_tablon .ros_search_header p{
-  margin:0;
-  color:#70757e;
-  font-family:'Cormorant Garamond',serif;
-  font-size:13px;
-}
-
-
-#ros_tablon .ros_search_grid{
-  flex:1;
-
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-}
-
-#ros_tablon .ros_search_card{
-  min-height:105px;
-  padding:14px;
-
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-end;
 
   background:var(--fondo2);
+
   border:var(--borde1);
 
-  position:relative;
-  overflow:hidden;
-}
-
-#ros_tablon .ros_search_card:before{
-  content:"";
-  position:absolute;
-  inset:0;
-
-  background:var(--gradient1);
   opacity:0;
 
-  transition:.35s ease;
+  visibility:hidden;
+
+  transform:translateY(5px);
+
+  transition:.25s ease;
+
 }
 
-#ros_tablon .ros_search_card:hover:before{
-  opacity:.08;
+
+#golondrina .rosmenu li:hover .rossub{
+
+  opacity:1;
+
+  visibility:visible;
+
+  transform:translateY(0);
+
 }
 
-#ros_tablon .ros_search_status{
+
+#golondrina .rosmenu .rossub a{
+
+  padding:8px 9px;
+
+  border-bottom:1px solid rgba(255,255,255,.04);
+
+}
+
+
+#golondrina .rosmenu .rossub a:last-child{
+
+  border-bottom:0;
+
+}
+
+
+/* ===========================
+   DOS BANNERS
+   =========================== */
+
+#golondrina #golbanner{
+
   position:absolute;
-  top:10px;
+
+  top:25px;
   right:10px;
 
-  color:var(--color1);
-  font-size:7px;
-  font-weight:700;
-  letter-spacing:1px;
-  text-transform:uppercase;
+  width:185px;
+  height:480px;
+
+  z-index:3;
+
 }
 
-#ros_tablon .ros_search_card h3{
+
+#golondrina #golbanner .banneruno,
+#golondrina #golbanner .banner2{
+
+  width:185px;
+  height:240px;
+
+  border:var(--borde1);
+
+  background-position:center;
+  background-size:cover;
+
+}
+
+
+#golondrina #golbanner .banneruno{
+
+  background-image:var(--banner1);
+
+  border-radius:10px 10px 0 0;
+
+}
+
+
+#golondrina #golbanner .banner2{
+
+  background-image:var(--banner2);
+
+  border-top:0;
+
+  border-radius:0 0 10px 10px;
+
+}
+
+
+/* ===========================
+   ÁREA DE USUARIO
+   ============================ */
+
+#golondrina #goluser{
+
+  background:var(--fondo2);
+
+  width:100%;
+
+  height:70px;
+
+  border-top:var(--borde1);
+
+  display:flex;
+
+  flex-direction:row;
+
+  align-items:flex-start;
+
+}
+
+
+#golondrina #goluser .conexiontop{
+
+  width:100%;
+
+  display:flex;
+
+  flex-direction:row;
+
+  align-items:flex-start;
+
+  align-content:flex-start;
+
   position:relative;
-  z-index:1;
+
+}
+
+
+#golondrina #goluser .conexion_mover{
+
+  width:100%;
+
+  height:70px;
+
+  display:flex;
+
+  flex-direction:row;
+
+  align-content:flex-start;
+
+  position:relative;
+
+}
+
+
+#golondrina #goluser #userbox{
+
+  background:var(--fondo1);
+
+  width:30%;
+
+  border-right:var(--borde1);
+
+  overflow:hidden;
+
+  display:flex;
+
+  flex-direction:row;
+
+  align-items:flex-start;
+
+  height:70px;
+
+  position:relative;
+
+}
+
+
+#golondrina #goluser #userbox #avatarc img{
+
+  width:50px;
+
+  height:50px;
+
+  margin:10px;
+
+  border-radius:10px;
+
+  border:var(--borde1);
+
+}
+
+
+#golondrina #goluser #userbox #boxc{
+
+  display:flex;
+
+  flex-direction:column;
+
+  margin:10px;
+
+}
+
+
+#golondrina #goluser #userbox #boxc i{
+
+  color:var(--color1);
+
+  font-style:normal;
+
+  font-weight:600;
+
+}
+
+
+#golondrina #goluser #userbox #boxc strong{
+
+  font-size:1.2em;
+
+  font-family:var(--familytitu);
+
+  color:var(--color2);
+
+}
+
+
+#golondrina #goluser #userbox .glmp{
+
+  position:absolute;
+
+  right:-12px;
+
+  bottom:-12px;
+
+  background:rgba(142,107,159,.15);
+
+  color:var(--color1);
+
+  padding:25px;
+
+  border-radius:100px 0 0 10px;
+
+  display:flex;
+
+  align-items:flex-end;
+
+}
+
+
+#golondrina #goluser #userbox .glmp a{
+
+  color:var(--color1);
+
+  font-size:1.3em;
+
+  transition:1s;
+
+}
+
+
+#golondrina #goluser #conjuntocambio{
+
+  width:33%;
+
+  display:flex;
+
+  flex-direction:row;
+
+  align-items:center;
+
+  flex-wrap:wrap;
+
+  padding:10px;
+
+}
+
+
+#golondrina #goluser #conjuntocambio #switch_uname,
+#golondrina #goluser #conjuntocambio #switch_pass{
+
+  margin-right:10px;
+
+  border:var(--borde1);
+
+  background:var(--fondo1)!important;
+
+  font-family:var(--familyn)!important;
+
+  color:var(--textobase)!important;
+
+  border-radius:5px;
+
+  padding:3px;
+
+  margin-bottom:1px;
+
+}
+
+
+#golondrina #goluser #conjuntocambio .boton1{
+
+  background:rgba(142,107,159,.18);
+
+  margin-top:5px;
+
+  padding:4px;
+
+  width:333px;
+
+  border:var(--borde1);
+
+  border-radius:5px;
+
+  font-weight:700;
+
+  color:var(--color1);
+
+}
+
+
+#golondrina #goluser .invi1{
+
+  width:200%;
+
+  display:flex;
+
+  flex-direction:row;
+
+  padding:10px 0 0 10px;
+
+}
+
+
+#golondrina #goluser .invi1 p{
+
+  background:var(--fondo1)!important;
+
+  border:var(--borde1);
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  flex-direction:row;
+
+  overflow:hidden;
+
+  border-radius:5px;
+
+  margin-right:10px;
+
+}
+
+
+#golondrina #goluser .invi1 input{
+
+  border:var(--fondo1);
+
+  background:var(--fondo1)!important;
+
+}
+
+
+#golondrina #goluser .invi1 i{
+
+  border-right:var(--borde1);
+
+  background:var(--fondo1)!important;
+
+  color:var(--color1);
+
+  height:20px;
+
+  padding:0 10px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+}
+
+
+#golondrina #goluser .invi{
+
+  padding:0 10px;
+
+}
+
+
+#golondrina #goluser .invi a{
+
+  color:var(--color1);
+
+  font-weight:600;
+
+}
+
+
+#golondrina #goluser .boton2{
+
+  background:rgba(142,107,159,.18);
+
+  position:absolute;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  left:450px;
+
+  top:-1px;
+
+  padding:10px 20px;
+
+  border:var(--borde1);
+
+  color:var(--color1);
+
+  font-weight:600;
+
+  border-radius:0 0 10px 10px;
+
+}
+
+
+/* =========================
+   ICONOS INFERIORES
+   =========================== */
+
+#golondrina .golink{
+
+  display:flex;
+
+  list-style:none;
+
+  padding:0 0 30px 30px;
 
   margin:0;
 
-  color:#d4d5d8;
-  font-family:'Cinzel Decorative',serif;
-  font-size:11px;
-  font-weight:500;
 }
 
-#ros_tablon .ros_search_card p{
+
+#golondrina .golink li{
+
+  border:var(--borde1);
+
+  background:var(--fondo2);
+
+  padding:10px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  width:20px;
+
+  height:20px;
+
+  border-radius:5px;
+
+  margin:5px;
+
+}
+
+
+#golondrina .golink a{
+
+  color:var(--links1);
+
+  text-decoration:none;
+
+  transition:1s;
+
+}
+
+
+#golondrina .golink a:hover{
+
+  color:var(--color1);
+
+}
+
+
+/* ============================
+   CONTENIDO
+   ============================ */
+
+#golondrina .contreal{
+
+  padding:30px;
+
+  height:335px;
+
+  width:60%;
+
+  display:flex;
+
+  flex-direction:column;
+
+  flex-wrap:wrap;
+
+  justify-content:flex-start;
+
+  align-items:flex-start;
+
   position:relative;
-  z-index:1;
 
-  margin:5px 0 0;
-
-  color:#727780;
-  font-size:8px;
-  line-height:1.3;
 }
 
 
-/* ============================================================
-   SCROLLBARS
-   ============================================================ */
+/* TÍTULO */
 
-#ros_tablon ::-webkit-scrollbar{
-  width:4px;
+#golondrina .contreal .ttu{
+
+  padding:0;
+
+  margin:0;
+
+  font-family:var(--familytitu);
+
+  color:var(--color1);
+
+  font-size:4em;
+
+  width:55%;
+
 }
 
-#ros_tablon ::-webkit-scrollbar-track{
-  background:transparent;
+
+#golondrina .contreal .ttu p{
+
+  margin:0;
+
+  background:rgba(142,107,159,.15);
+
+  color:var(--color1);
+
+  font-family:var(--familyn);
+
+  font-size:var(--tamtext);
+
+  font-weight:600;
+
+  padding:5px 10px;
+
+  border-radius:5px;
+
 }
 
-#ros_tablon ::-webkit-scrollbar-thumb{
-  background:#3b3541;
+
+/* AMBIENTACIÓN */
+
+#golondrina .contreal .glambient{
+
+  width:54%;
+
+  overflow:auto;
+
+  height:70px;
+
+  margin:15px 0;
+
+  text-align:justify;
+
+  padding-right:5px;
+
 }
 
 
-/* ============================================================
+/* ============================
+   CLIMA
+   ============================= */
+
+#golondrina .glestacion{
+
+  width:54%;
+
+  background:var(--fondo2);
+
+  height:50px;
+
+  border:var(--borde1);
+
+  border-radius:10px;
+
+  overflow:hidden;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+}
+
+
+#golondrina .glestacion span{
+
+  display:flex;
+
+  flex-direction:column;
+
+  padding-left:20px;
+
+}
+
+
+#golondrina .glestacion span b{
+
+  color:var(--color1);
+
+  font-size:1.1em;
+
+}
+
+
+#golondrina .glestacion i{
+
+  background:rgba(142,107,159,.15);
+
+  padding:30px;
+
+  border-radius:100px;
+
+  color:var(--color1);
+
+  font-size:2em;
+
+  margin-right:-10px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+}
+
+
+/* ==============================
+   ÚLTIMOS TEMAS
+   ============================== */
+
+#golondrina .ultemas{
+
+  background:var(--fondo2);
+
+  width:40%;
+
+  height:297px;
+
+  margin-left:20px;
+
+  border:var(--borde1);
+
+  border-radius:10px;
+
+  padding-right:10px;
+
+  overflow:auto;
+
+}
+
+
+#golondrina .ultemas .cajatema{
+
+  background:var(--fondo2);
+
+  border-bottom:var(--borde1);
+
+  padding:10px;
+
+}
+
+
+#golondrina .ultemas .cajatema .titulo{
+
+  font-weight:700;
+
+  color:var(--color1);
+
+  margin-bottom:5px;
+
+}
+
+
+#golondrina .ultemas .cajatema .titulo a{
+
+  color:var(--color1);
+
+}
+
+
+#golondrina .ultemas .cajatema .useryhora{
+
+  color:#858a93;
+
+}
+
+
+/* ==============================
+   NOTICIAS
+   ============================== */
+
+#golondrina .golactus{
+
+  background:var(--fondo2);
+
+  width:50%;
+
+  height:250px;
+
+  border:var(--borde1);
+
+  border-radius:10px;
+
+  overflow:auto;
+
+}
+
+
+#golondrina .golactus li{
+
+  list-style:none;
+
+  padding:10px;
+
+  margin:0;
+
+  border-top:var(--borde1);
+
+}
+
+
+#golondrina .golactus li b{
+
+  background:rgba(142,107,159,.15);
+
+  color:var(--color1);
+
+  padding:2px 5px;
+
+  border-radius:10px;
+
+  margin-bottom:5px;
+
+}
+
+
+/* =============================
+   AVISO IMPORTANTE
+   =========================== */
+
+#golondrina .importnoti{
+
+  background:var(--fondo2);
+
+  width:89%;
+
+  border:var(--borde1);
+
+  border-radius:10px;
+
+  padding:10px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:flex-start;
+
+  position:absolute;
+
+  bottom:0;
+
+  margin-bottom:8px;
+
+  height:20px;
+
+  overflow:hidden;
+
+}
+
+
+#golondrina .importnoti i{
+
+  color:var(--color1);
+
+  margin-right:10px;
+
+  font-size:1.5em;
+
+}
+
+
+/* =============================
+   STAFF
+   =========================== */
+
+#golondrina .staff{
+
+  width:50%;
+
+  height:150px;
+
+  list-style:none;
+
+  display:flex;
+
+  flex-direction:row;
+
+  align-content:center;
+
+  align-items:flex-start;
+
+  margin:0;
+
+  padding:0;
+
+  justify-content:flex-end;
+
+}
+
+
+#golondrina .staff li{
+
+  background-position:center!important;
+
+  background-size:cover!important;
+
+  width:90px;
+
+  height:130px;
+
+  border:var(--borde1);
+
+  border-radius:10px;
+
+  margin:0 5px;
+
+  overflow:hidden;
+
+  display:flex;
+
+  align-items:flex-end;
+
+  justify-content:flex-start;
+
+  cursor:pointer;
+
+}
+
+
+#golondrina .staff li a{
+
+  color:var(--color1);
+
+  background:var(--fondo2);
+
+  padding:10px;
+
+  margin-left:10px;
+
+  border:var(--borde1);
+
+  border-bottom:1px solid transparent;
+
+  border-radius:100px 100px 0 0;
+
+  margin-bottom:-60px;
+
+  font-size:1.5em;
+
+  transition:1s;
+
+}
+
+
+#golondrina .staff li:hover a{
+
+  margin-bottom:-1px;
+
+}
+
+
+/* ============================
+   EVENTO
+   ========================== */
+
+#golondrina .golevent{
+
+  background:var(--fondo2);
+
+  width:294px;
+
+  height:100px;
+
+  border:var(--borde1);
+
+  border-radius:10px;
+
+  overflow:hidden;
+
+  display:flex;
+
+  margin-left:30px;
+
+  align-items:center;
+
+  justify-content:flex-start;
+
+  flex-direction:row;
+
+}
+
+
+#golondrina .golevent .imgeve{
+
+  background:rgba(142,107,159,.15);
+
+  height:100px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  width:180px;
+
+  border-radius:0 100px 100px 0;
+
+  margin-right:10px;
+
+}
+
+
+#golondrina .golevent .imgeve img{
+
+  width:50px;
+
+  border-radius:100%;
+
+  height:50px;
+
+  border:5px solid var(--fondo2);
+
+  outline:1px solid #303640;
+
+}
+
+
+#golondrina .golevent span{
+
+  padding:0;
+
+  margin:0;
+
+}
+
+
+#golondrina .golevent span b{
+
+  color:var(--color1);
+
+}
+
+
+/* ============================
+   BÚSQUEDAS
+   ========================== */
+
+#golondrina .golbusq{
+
+  width:102%;
+
+  height:210px;
+
+  list-style:none;
+
+  padding:0;
+
+  margin:10px 0 0 -5px;
+
+  display:flex;
+
+  flex-direction:row;
+
+  flex-wrap:wrap;
+
+  align-items:flex-start;
+
+  justify-content:flex-start;
+
+  align-content:flex-start;
+
+  cursor:pointer;
+
+}
+
+
+#golondrina .golbusq li{
+
+  background-position:center!important;
+
+  background-size:cover!important;
+
+  border:var(--borde1);
+
+  width:100px;
+
+  height:92px;
+
+  margin:5px;
+
+  border-radius:10px;
+
+  overflow:hidden;
+
+}
+
+
+#golondrina .golbusq li p{
+
+  background:rgba(23,27,34,.95);
+
+  width:80px;
+
+  color:var(--color1);
+
+  font-weight:800;
+
+  padding:10px;
+
+  height:72px;
+
+  margin:0;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  margin-top:-100px;
+
+  transition:1s;
+
+}
+
+
+#golondrina .golbusq li:hover p{
+
+  margin-top:0;
+
+}
+
+
+#golondrina .golbusq li p a{
+
+  color:var(--color1);
+
+  text-decoration:none;
+
+}
+
+
+/* ===========================
+   TABS
+   =========================== */
+
+.golcontent2{
+
+  height:377px;
+
+  width:100%;
+
+  position:relative;
+
+  display:flex;
+
+  flex-direction:row;
+
+  flex-wrap:wrap;
+
+  justify-content:flex-start;
+
+  align-content:flex-start;
+
+  background:var(--fondo3);
+
+}
+
+
+.golcontent2 a{
+
+  text-decoration:none;
+
+  color:var(--links1);
+
+  transition:1s;
+
+}
+
+
+.golcontent2 a:hover{
+
+  color:var(--color1);
+
+}
+
+
+.golcontent2 .boxgol{
+
+  position:absolute;
+
+  left:1100px;
+
+  transition:ease 1s;
+
+  width:100%;
+
+  height:341px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:flex-start;
+
+  flex-wrap:nowrap;
+
+  overflow:hidden;
+
+  border-top:var(--borde1);
+
+  background:var(--fondo3);
+
+  top:35px;
+
+}
+
+
+.golcontent2 input{
+
+  display:none;
+
+}
+
+
+.golcontent2 label{
+
+  width:140px;
+
+  cursor:pointer;
+
+  transition:1s;
+
+  display:inline-flex;
+
+  z-index:7;
+
+  position:inherit;
+
+  flex-wrap:wrap;
+
+  flex-direction:row;
+
+  font-weight:700;
+
+  color:#858a93;
+
+  border-bottom:var(--borde1);
+
+  border-right:var(--borde1);
+
+  align-content:center;
+
+  justify-content:center;
+
+  padding:10px;
+
+  align-items:center;
+
+  background:var(--fondo3);
+
+  font-size:9px;
+
+  letter-spacing:1px;
+
+  text-transform:uppercase;
+
+}
+
+
+.golcontent2 label:hover{
+
+  color:var(--color1);
+
+  background:var(--fondo2);
+
+}
+
+
+.golcontent2 input#goltemas1:checked ~ .boxgol1,
+.golcontent2 input#goltemas2:checked ~ .boxgol2,
+.golcontent2 input#goltemas3:checked ~ .boxgol3{
+
+  left:0;
+
+}
+
+
+.golcontent2 input#goltemas1:checked ~ label[for="goltemas1"],
+.golcontent2 input#goltemas2:checked ~ label[for="goltemas2"],
+.golcontent2 input#goltemas3:checked ~ label[for="goltemas3"]{
+
+  color:var(--color1);
+
+  background:var(--fondo2);
+
+}
+
+
+/* ============================
    RESPONSIVE
-   ============================================================ */
+   ============================== */
 
-@media(max-width:850px){
+@media(max-width:900px){
 
-  #ros_tablon{
-    width:calc(100% - 20px);
+  #golondrina{
+
+    width:95%;
+
     height:auto;
-    min-height:600px;
-    overflow:visible;
+
+    min-height:530px;
+
   }
 
-  #ros_tablon:before,
-  #ros_tablon:after{
-    display:none;
+  #golondrina .rosmenu{
+
+    padding:0 15px;
+
   }
 
-  #ros_tablon .ros_menu{
-    height:auto;
-    min-height:70px;
-    padding:12px 20px;
-    flex-wrap:wrap;
-    gap:8px 15px;
+  #golondrina .rosmenu .rosbrand{
+
+    font-size:10px;
+
   }
 
-  #ros_tablon .ros_brand{
-    width:100%;
-    margin:0;
+  #golondrina .rosmenu ul{
+
+    gap:0;
+
   }
 
-  #ros_tablon .ros_nav{
-    width:100%;
-    flex-wrap:wrap;
+  #golondrina .rosmenu li > a{
+
+    padding:8px 6px;
+
+    font-size:7px;
+
   }
 
-  #ros_tablon .ros_nav > li > a{
-    padding:6px 8px;
-  }
-
-  #ros_tablon .ros_submenu{
-    left:0;
-    right:auto;
-  }
-
-  #ros_tablon .ros_panels{
-    position:relative;
-    top:auto;
-    bottom:auto;
-    min-height:560px;
-  }
-
-  #ros_tablon .ros_panel{
-    position:relative;
-    inset:auto;
-    display:none;
-    transform:none;
-  }
-
-  #ros_tab1:checked ~ .ros_panels .ros_panel1,
-  #ros_tab2:checked ~ .ros_panels .ros_panel2,
-  #ros_tab3:checked ~ .ros_panels .ros_panel3{
-    display:block;
-  }
-
-  #ros_tablon .ros_tabs{
-    position:relative;
-    bottom:auto;
-    height:auto;
-    flex-wrap:wrap;
-  }
-
-  #ros_tablon .ros_tabs label{
-    flex:1;
-    min-width:100px;
-  }
-
-  #ros_tablon .ros_isla{
-    grid-template-columns:1fr;
-    grid-template-rows:auto;
-  }
-
-  #ros_tablon .ros_topics{
-    grid-row:auto;
-    min-height:190px;
-  }
-
-  #ros_tablon .ros_bottom{
-    grid-template-columns:1fr;
-  }
-
-  #ros_tablon .ros_info{
-    grid-template-columns:1fr;
-    grid-template-rows:auto;
-  }
-
-  #ros_tablon .ros_search_grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  #ros_tablon .ros_credit{
-    min-height:55px;
-  }
 }
-
-
-@media(max-width:550px){
-
-  #ros_tablon{
-    width:calc(100% - 10px);
-  }
-
-  #ros_tablon .ros_panel{
-    padding:15px;
-  }
-
-  #ros_tablon .ros_search_grid{
-    grid-template-columns:1fr;
-  }
-
-  #ros_tablon .ros_staff_list{
-    flex-wrap:wrap;
-  }
-
-  #ros_tablon .ros_staff_card{
-    flex:1 1 45%;
-  }
-
-  #ros_tablon .ros_welcome .ros_title{
-    font-size:22px;
-  }
-
-  }
