@@ -327,7 +327,7 @@
 #golondrina #golbanner{
 
     width:370px;
-    height:400px;
+    height:380px;
 
     position:absolute;
 
@@ -389,23 +389,6 @@
     background-size:cover;
 
     transition:.4s;
-
-}
-
-
-/* QUITAR BORDES INTERNOS EXTERIORES */
-
-#golondrina .ros_admin:nth-child(2),
-#golondrina .ros_admin:nth-child(4){
-
-    border-right:0;
-
-}
-
-#golondrina .ros_admin:nth-child(3),
-#golondrina .ros_admin:nth-child(4){
-
-    border-bottom:0;
 
 }
 
