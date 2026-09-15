@@ -6,7 +6,7 @@
 
 #golondrina .rosmenu{
   width:100%;
-  height:75px;
+  height:55px;
   background:#080a0d;
   border-bottom:1px solid #303640;
   display:flex;
@@ -26,7 +26,7 @@
     position:relative;
 
     width:135px;
-    height:65px;
+    height:45px;
 
     margin-left:10px;
 
@@ -153,19 +153,19 @@
   padding:0;
   display:flex;
   align-items:stretch;
-  height:75px;
+  height:55px;
 }
 
 #golondrina .rosmenu li{
   position:relative;
-  height:75px;
+  height:55px;
   margin:0;
   padding:0;
   list-style:none;
 }
 
 #golondrina .rosmenu li > a{
-  height:75px;
+  height:55px;
   padding:0 17px;
   display:flex;
   align-items:center;
@@ -189,7 +189,7 @@
 
 #golondrina .rosmenu .rossub{
   position:absolute;
-  top:75px;
+  top:55px;
   left:0;
   width:170px;
   height:auto;
