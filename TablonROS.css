@@ -435,3 +435,359 @@
     background:rgba(142,107,159,.25);
 
 }
+
+/* ==========================
+   INFORMACIÓN — CRÉDITOS / GUIDEBOOK
+   ========================== */
+
+#golondrina .ros_info{
+
+    width:54%;
+
+    height:120px;
+
+    margin-top:10px;
+
+    display:flex;
+
+    flex-direction:row;
+
+    gap:10px;
+
+}
+
+
+/* ==========================
+   CRÉDITOS
+   ========================== */
+
+#golondrina .ros_credits{
+
+    position:relative;
+
+    width:80px;
+    height:120px;
+
+    flex:0 0 80px;
+
+    box-sizing:border-box;
+
+    overflow:visible;
+
+    border:1px solid var(--borde);
+
+    border-radius:10px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=500&q=80");
+
+    background-position:center;
+    background-size:cover;
+
+}
+
+
+/* OSCURECIDO */
+
+#golondrina .ros_credits::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:10px;
+
+    background:rgba(8,10,13,.68);
+
+    pointer-events:none;
+
+    transition:.4s;
+
+}
+
+
+/* SUMMARY */
+
+#golondrina .ros_credits summary{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+    height:120px;
+
+    box-sizing:border-box;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    list-style:none;
+
+}
+
+
+/* QUITAR TRIÁNGULO */
+
+#golondrina .ros_credits summary::-webkit-details-marker{
+
+    display:none;
+
+}
+
+
+/* ICONO */
+
+#golondrina .ros_info_icon{
+
+    width:38px;
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(230,225,216,.45);
+
+    border-radius:50%;
+
+    color:var(--acento1t);
+
+    font-size:19px;
+
+    background:rgba(8,10,13,.35);
+
+    transition:.4s;
+
+}
+
+
+/* TEXTO */
+
+#golondrina .ros_credits summary strong{
+
+    margin-top:7px;
+
+    color:var(--acento1t);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:8px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* HOVER */
+
+#golondrina .ros_credits:hover::before{
+
+    background:rgba(8,10,13,.48);
+
+}
+
+#golondrina .ros_credits:hover .ros_info_icon{
+
+    border-color:var(--acento1t);
+
+    background:rgba(142,107,159,.25);
+
+}
+
+
+/* ==========================
+   CAJA DE CRÉDITOS
+   ========================== */
+
+#golondrina .ros_credits_box{
+
+    position:absolute;
+
+    left:0;
+
+    top:130px;
+
+    width:260px;
+
+    padding:15px;
+
+    box-sizing:border-box;
+
+    z-index:30;
+
+    border:1px solid var(--borde);
+
+    border-radius:10px;
+
+    background:rgba(17,20,26,.98);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.45);
+
+    color:var(--subcolorfont);
+
+    font-family:'Raleway',sans-serif;
+
+    font-size:8px;
+
+    line-height:1.6;
+
+}
+
+#golondrina .ros_credits_box strong{
+
+    display:block;
+
+    margin-bottom:6px;
+
+    color:var(--acento1t);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:9px;
+
+}
+
+#golondrina .ros_credits_box p{
+
+    margin:5px 0;
+
+}
+
+
+/* ==========================
+   GUIDEBOOK
+   ========================== */
+
+#golondrina .ros_guidebook{
+
+    position:relative;
+
+    width:240px;
+    height:120px;
+
+    flex:0 0 240px;
+
+    box-sizing:border-box;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid var(--borde);
+
+    border-radius:10px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=80");
+
+    background-position:center;
+    background-size:cover;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+}
+
+
+/* OSCURECIDO */
+
+#golondrina .ros_guidebook::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,10,13,.62);
+
+    transition:.4s;
+
+}
+
+
+/* TITULO */
+
+#golondrina .ros_guidebook strong{
+
+    position:relative;
+
+    z-index:2;
+
+    color:var(--acento1t);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:17px;
+
+    font-weight:600;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* SUBTITULO */
+
+#golondrina .ros_guidebook span{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:6px;
+
+    color:#92969e;
+
+    font-family:'Raleway',sans-serif;
+
+    font-size:7px;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* HOVER */
+
+#golondrina .ros_guidebook:hover{
+
+    transform:translateY(-2px);
+
+}
+
+#golondrina .ros_guidebook:hover::before{
+
+    background:rgba(8,10,13,.42);
+
+}
+
+#golondrina .ros_guidebook:hover strong{
+
+    color:#fff;
+
+}
