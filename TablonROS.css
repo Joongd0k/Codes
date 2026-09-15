@@ -442,7 +442,7 @@
 
 #golondrina .ros_info{
 
-    width:54%;
+    width:84%;
 
     height:120px;
 
@@ -465,7 +465,7 @@
 
     position:relative;
 
-    width:80px;
+    width:120px;
     height:120px;
 
     flex:0 0 80px;
@@ -676,7 +676,7 @@
 
     position:relative;
 
-    width:240px;
+    width:330px;
     height:120px;
 
     flex:0 0 240px;
