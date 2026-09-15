@@ -216,3 +216,222 @@
     line-height:1.25;
 
 }
+
+/* ==========================
+   ADMINISTRACIÓN
+   ========================== */
+
+#golondrina #golbanner{
+
+    width:370px;
+    height:480px;
+
+    position:absolute;
+
+    right:10px;
+    top:25px;
+
+    z-index:3;
+
+    display:grid;
+
+    grid-template-columns:185px 185px;
+    grid-template-rows:240px 240px;
+
+    overflow:hidden;
+
+    border:1px solid var(--borde);
+    border-radius:10px;
+
+}
+
+
+/* ==========================
+   TARJETAS
+   ========================== */
+
+#golondrina .ros_admin{
+
+    position:relative;
+
+    width:185px;
+    height:240px;
+
+    box-sizing:border-box;
+
+    overflow:hidden;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+    justify-content:center;
+
+    border-right:1px solid var(--borde);
+    border-bottom:1px solid var(--borde);
+
+    text-decoration:none;
+
+    background-position:center;
+    background-size:cover;
+
+    transition:.4s;
+
+}
+
+
+/* QUITAR BORDES INTERNOS EXTERIORES */
+
+#golondrina .ros_admin:nth-child(2),
+#golondrina .ros_admin:nth-child(4){
+
+    border-right:0;
+
+}
+
+#golondrina .ros_admin:nth-child(3),
+#golondrina .ros_admin:nth-child(4){
+
+    border-bottom:0;
+
+}
+
+
+/* ==========================
+   OSCURECIDO
+   ========================== */
+
+#golondrina .ros_admin::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,10,13,.68);
+
+    transition:.4s;
+
+}
+
+
+/* ==========================
+   IMÁGENES
+   ========================== */
+
+#golondrina .ros_admin_fool{
+
+    background-image:
+        url("https://neonarcana.org/cards/major/major-00-the-fool.png");
+
+}
+
+#golondrina .ros_admin_moon{
+
+    background-image:
+        url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=600&q=80");
+
+}
+
+#golondrina .ros_admin_crystal{
+
+    background-image:
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=600&q=80");
+
+}
+
+#golondrina .ros_admin_mystic{
+
+    background-image:
+        url("https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=600&q=80");
+
+}
+
+
+/* ==========================
+   ICONO
+   ========================== */
+
+#golondrina .ros_admin_icon{
+
+    position:relative;
+
+    z-index:2;
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(230,225,216,.45);
+
+    border-radius:50%;
+
+    color:var(--acento1t);
+
+    font-size:22px;
+
+    background:rgba(8,10,13,.35);
+
+    transition:.4s;
+
+}
+
+
+/* ==========================
+   NOMBRE
+   ========================== */
+
+#golondrina .ros_admin strong{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:8px;
+
+    color:var(--acento1t);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:10px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    text-align:center;
+
+}
+
+
+/* ==========================
+   HOVER
+   ========================== */
+
+#golondrina .ros_admin:hover{
+
+    transform:translateY(-2px);
+
+}
+
+#golondrina .ros_admin:hover::before{
+
+    background:rgba(8,10,13,.48);
+
+}
+
+#golondrina .ros_admin:hover .ros_admin_icon{
+
+    border-color:var(--acento1t);
+
+    background:rgba(142,107,159,.25);
+
+}
