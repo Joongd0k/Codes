@@ -125,3 +125,94 @@
   color:#E6e1d8;
   background:#171b22;
 }
+
+/* ==================
+   EVENTO
+   ================== */
+
+#golondrina .ros_event{
+
+    width:50%;
+    height:150px;
+    box-sizing:border-box;
+
+    padding:15px;
+
+    margin:0;
+
+    overflow:hidden;
+
+    border:1px solid var(--borde);
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8,10,13,.98),
+            rgba(8,10,13,.72)
+        ),
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80")
+        center/cover;
+
+}
+
+#golondrina .ros_event h3{
+
+    margin:0 0 5px;
+
+    color:var(--color1);
+
+    font-family:'Raleway',sans-serif;
+
+    font-size:8px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+#golondrina .ros_event_title{
+
+    color:var(--color2);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:14px;
+
+}
+
+#golondrina .ros_event_date{
+
+    margin-top:4px;
+
+    color:var(--color1);
+
+    font-size:7px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+#golondrina .ros_event p{
+
+    max-width:420px;
+
+    margin:7px 0 0;
+
+    color:#92969e;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:11px;
+
+    line-height:1.25;
+
+}
