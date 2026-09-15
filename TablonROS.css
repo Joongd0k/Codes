@@ -339,7 +339,7 @@
     display:grid;
 
     grid-template-columns:185px 185px;
-    grid-template-rows:240px 240px;
+    grid-template-rows:210px 210px;
 
     overflow:hidden;
 
@@ -357,8 +357,8 @@
 
     position:relative;
 
-    width:165px;
-    height:200px;
+    width:185px;
+    height:210px;
 
     box-sizing:border-box;
 
