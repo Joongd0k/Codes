@@ -338,12 +338,17 @@
 
     display:grid;
 
-    grid-template-columns:185px 185px;
-    grid-template-rows:210px 210px;
+    grid-template-columns:repeat(2, 1fr);
+    grid-template-rows:repeat(2, 1fr);
+
+    gap:6px;
+
+    box-sizing:border-box;
 
     overflow:hidden;
 
-    border:1px solid var(--borde);
+    border:0;
+
     border-radius:10px;
 
 }
@@ -357,8 +362,11 @@
 
     position:relative;
 
-    width:185px;
-    height:210px;
+    width:100%;
+    height:100%;
+
+    min-width:0;
+    min-height:0;
 
     box-sizing:border-box;
 
@@ -371,8 +379,9 @@
     align-items:center;
     justify-content:center;
 
-    border-right:1px solid var(--borde);
-    border-bottom:1px solid var(--borde);
+    border:1px solid var(--borde);
+
+    border-radius:10px;
 
     text-decoration:none;
 
