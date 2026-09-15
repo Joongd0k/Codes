@@ -6,7 +6,7 @@
 
 #golondrina .rosmenu{
   width:100%;
-  height:45px;
+  height:75px;
   background:#080a0d;
   border-bottom:1px solid #303640;
   display:flex;
@@ -17,9 +17,112 @@
   font-family:'Raleway',sans-serif;
 }
 
+/* ==========================
+   GUIDEBOOK
+   ========================== */
+
+#golondrina .rosmenu_guidebook{
+
+    position:relative;
+
+    width:115px;
+    height:65px;
+
+    margin-left:10px;
+
+    flex:0 0 115px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+
+    box-sizing:border-box;
+
+    border:1px solid #303640;
+
+    border-radius:9px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=600&q=80");
+
+    background-position:center;
+    background-size:cover;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+}
+
+
+/* OSCURECIDO */
+
+#golondrina .rosmenu_guidebook::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,10,13,.58);
+
+    transition:.4s;
+
+}
+
+
+/* TEXTO */
+
+#golondrina .rosmenu_guidebook span{
+
+    position:relative;
+
+    z-index:2;
+
+    color:#E6e1d8;
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:11px;
+
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    text-shadow:0 1px 4px #000;
+
+}
+
+
+/* HOVER */
+
+#golondrina .rosmenu_guidebook:hover{
+
+    transform:translateY(-2px);
+
+}
+
+#golondrina .rosmenu_guidebook:hover::before{
+
+    background:rgba(8,10,13,.35);
+
+}
+
+#golondrina .rosmenu_guidebook:hover span{
+
+    color:#fff;
+
+}
+
 #golondrina .rosmenu .rosbrand{
-  height:45px;
-  padding:0 22px;
+  height:75px;
+  padding:0 20px;
   display:flex;
   flex-direction:column;
   justify-content:center;
@@ -29,7 +132,7 @@
 
 #golondrina .rosmenu .rosbrand strong{
   font-family:'Cinzel Decorative',serif;
-  font-size:24px;
+  font-size:22px;
   font-weight:600;
   letter-spacing:1.5px;
   color:#E6e1d8;
@@ -37,7 +140,7 @@
 }
 
 #golondrina .rosmenu .rosbrand span{
-  font-size: 11px;
+  font-size: 9px;
   text-transform:uppercase;
   letter-spacing:2px;
   color:#87778f;
@@ -50,19 +153,19 @@
   padding:0;
   display:flex;
   align-items:stretch;
-  height:45px;
+  height:75px;
 }
 
 #golondrina .rosmenu li{
   position:relative;
-  height:45px;
+  height:75px;
   margin:0;
   padding:0;
   list-style:none;
 }
 
 #golondrina .rosmenu li > a{
-  height:45px;
+  height:75px;
   padding:0 17px;
   display:flex;
   align-items:center;
@@ -71,7 +174,7 @@
   color:#87778f;
   text-decoration:none;
   text-transform:uppercase;
-  font-size: 18px;
+  font-size: 16px;
   font-weight:700;
   letter-spacing:1px;
   transition:.3s;
@@ -86,7 +189,7 @@
 
 #golondrina .rosmenu .rossub{
   position:absolute;
-  top:45px;
+  top:75px;
   left:0;
   width:170px;
   height:auto;
@@ -116,7 +219,7 @@
   height:34px;
   padding:0 14px;
   justify-content:flex-start;
-  font-size:15px;
+  font-size:12px;
   letter-spacing:1px;
   color:#87778f;
 }
