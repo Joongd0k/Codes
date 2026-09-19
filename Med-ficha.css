@@ -83,6 +83,8 @@
 .medium-header {
 
     position: relative;
+    margin: -28px -28px 0;
+    border-radius: 20px 20px 0 0;
 
 }
 
@@ -102,7 +104,7 @@
 
     overflow: hidden;
 
-    border-radius: 15px 15px 0 0;
+    border-radius: 20px 20px 0 0;
    
     filter:
         grayscale(55%)
@@ -113,7 +115,7 @@
 
 /* DIFUMINADO */
 
-.medium-main-img:after {
+/*.medium-main-img:after {
     content: "";
     position: absolute;
     inset: 0;
@@ -126,7 +128,7 @@
             #0d0a11 100%
         );
     pointer-events: none;
-}
+}*/
 
 .medium-main-img:before {
 
