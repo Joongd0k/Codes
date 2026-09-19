@@ -83,7 +83,6 @@
 .medium-header {
 
     position: relative;
-    border-radius: 15px 15px 0 0;
 
 }
 
@@ -103,7 +102,6 @@
 
     overflow: hidden;
 
-    border: 1px;
     border-radius: 15px 15px 0 0;
    
     filter:
@@ -113,7 +111,7 @@
 }
 
 
-/* VELO VIOLETA */
+/* DIFUMINADO */
 
 .medium-main-img:after {
     content: "";
@@ -195,7 +193,7 @@
 
     font-family: "Cinzel", serif;
 
-    font-size: 11px;
+    font-size: 12px;
 
     font-weight: 600;
 
@@ -482,21 +480,6 @@
     line-height: 1.4;
 
 }
-
-.medium-value b,
-.medium-value strong {
-
-    color: var(--medium-main);
-
-    font-family: "Cinzel", serif;
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-   }
 
 .medium-text {
 
@@ -832,3 +815,4 @@
         font-size: 22px;
 
     }
+}
