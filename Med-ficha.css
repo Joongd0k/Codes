@@ -146,7 +146,7 @@
 
     left: 28px;
     right: 28px;
-    bottom: 15px;
+    bottom: 45px;
 
     color: #eee8f0;
 
@@ -198,7 +198,7 @@
 
     font-family: "Cinzel", serif;
 
-    font-size: 13px;
+    font-size: 11px;
 
     font-weight: 600;
 
@@ -217,7 +217,7 @@
 
     font-family: "Cinzel", serif;
 
-    font-size: 13px;
+    font-size: 11px;
 
     font-weight: 600;
 
@@ -529,9 +529,9 @@
 }
 
 
-/* =========================================
+/* ========================
    TÍTULO HISTORIA
-   ========================================= */
+   ======================== */
 
 .medium-history-title {
 
@@ -596,9 +596,9 @@
 
     color: #a99faa;
 
-    font-size: 10px;
+    font-size: 11px;
 
-    line-height: 1.9;
+    line-height: 1.5;
 
     text-align: justify;
 
