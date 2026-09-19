@@ -103,7 +103,7 @@
 
     overflow: hidden;
 
-    border: 1px solid var(--medium-bg);
+    border: 1px;
     border-radius: 15px 15px 0 0;
    
     filter:
@@ -458,7 +458,7 @@
 
     font-family: "Cinzel", serif;
 
-    font-size: 8px;
+    font-size: 11px;
 
     font-weight: 700;
 
@@ -477,7 +477,7 @@
 
     font-family: 'Cormorant Garamond', serif;
 
-    font-size: 13px;
+    font-size: 14px;
 
     line-height: 1.4;
 
@@ -490,13 +490,42 @@
 
     font-family: "Cinzel", serif;
 
-    font-size: 9px;
+    font-size: 10px;
 
     font-weight: 700;
 
     letter-spacing: 2px;
 
    }
+
+.medium-text {
+
+    margin-top: 1px;
+
+    color: #eee8f0;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+
+}
+
+.medium-text b,
+.medium-text strong {
+
+    color: var(--medium-main);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
 
 
 /* ====================
@@ -774,9 +803,14 @@
 
     }
 
+   .medium-label {
+
+    font-size: 12px;
+   }
+   
    .medium-value {
 
-        font-size: 10px;
+        font-size: 11px;
 
    }
 
