@@ -145,7 +145,7 @@
 
     left: 28px;
     right: 28px;
-    bottom: 25px;
+    bottom: 35px;
 
     color: #eee8f0;
 
@@ -195,7 +195,7 @@
 
     color: var(--medium-soft);
 
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cinzel", serif;
 
     font-size: 13px;
 
@@ -214,7 +214,7 @@
 
     color: var(--medium-soft);
 
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Cinzel", serif;
 
     font-size: 13px;
 
@@ -457,6 +457,8 @@
 .medium-label {
 
     color: var(--medium-main);
+
+    font-family: "Cinzel", serif;
 
     font-size: 8px;
 
