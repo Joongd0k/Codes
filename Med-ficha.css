@@ -298,7 +298,7 @@
 
 .medium-data {
 
-    min-width: 0;
+    min-width: auto;
 
     height: 265px;
 
