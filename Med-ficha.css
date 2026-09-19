@@ -81,7 +81,7 @@
 .medium-header {
 
     position: relative;
-    margin: -19px -19px 0;
+    margin: -18px -18px 0;
     border-radius: 15px 15px 0 0;
 
 }
@@ -185,6 +185,7 @@
     box-sizing: border-box;
 
     border-bottom: 1px solid var(--medium-soft);
+    z-index: 2;
 
 }
 
