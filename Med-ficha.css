@@ -121,10 +121,10 @@
         linear-gradient(
             to bottom,
             transparent 65%,
-            rgba(13,10,17,.05) 72%,
-            rgba(13,10,17,.18) 80%,
-            rgba(13,10,17,.45) 88%,
-            rgba(13,10,17,.75) 95%,
+            rgba(21,12,6,.05) 72%,
+            rgba(21,12,6,.18) 80%,
+            rgba(17,13,10,.45) 88%,
+            rgba(17,13,10,.75) 95%,
             #0d0a11 100%
         );
     pointer-events: none;
@@ -185,7 +185,7 @@
     box-sizing: border-box;
 
     border-bottom: 1px solid var(--medium-soft);
-    z-index: 2;
+    
 
 }
 
