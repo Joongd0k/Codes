@@ -44,7 +44,7 @@
 
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
-    line-height: 1.7;
+    line-height: 1.5;
 
     letter-spacing: .3px;
 
@@ -52,6 +52,7 @@
     overflow: hidden;
 
     border: 1px solid rgba(165,136,174,.25);
+    border-radius: 10px 10px 0 0;
 
 }
 
