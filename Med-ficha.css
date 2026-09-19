@@ -104,7 +104,7 @@
 
     border-radius: 15px 15px 0 0;
    
-  /*  filter:
+    /*filter:
         grayscale(55%)
         contrast(105%);*/
 
@@ -116,8 +116,8 @@
 .medium-main-img:after {
     content: "";
     position: absolute;
-    inset: 0;
-    background:
+    /*inset: 0;*/
+    /*background:
         linear-gradient(
             to bottom,
             transparent 65%,
@@ -126,7 +126,8 @@
             rgba(17,13,10,.45) 88%,
             rgba(17,13,10,.75) 95%,
             #0d0a11 100%
-        );
+        );*/
+    background-image: linear-gradient(to top, #0D0A11, transparent 65%);
     pointer-events: none;
     z-index: 1;
 }
