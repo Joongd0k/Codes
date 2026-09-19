@@ -2,8 +2,7 @@
 
 @import url('https://solrainha.github.io/honeybee/honeybee.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ======================
    MÉDIUM · FICHA
@@ -104,7 +103,8 @@
     overflow: hidden;
 
     border: 1px solid var(--medium-border);
-
+    border-radius: 15px 15px 0 0;
+   
     filter:
         grayscale(55%)
         contrast(105%);
@@ -151,7 +151,7 @@
 
     color: #eee8f0;
 
-    font-family: "Almendra", serif;
+    font-family: "Abril Fatface", serif;
    
     font-size: 58px;
 
