@@ -60,7 +60,7 @@
    MARCO INTERIOR
    =================== */
 
-.medium-ficha:before {
+/*.medium-ficha:before {
 
     content: "";
 
@@ -73,7 +73,7 @@
    
     pointer-events: none;
 
-}
+}*/
 
 
 /* ===================
@@ -125,6 +125,47 @@
             rgba(25,19,33,.70) 88%,
             #0d0a11 100%
         );
+    pointer-events: none;
+}
+
+.medium-main-img:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: rgba(13,10,17,.75);
+
+    backdrop-filter:
+        blur(4px)
+        grayscale(1);
+
+    -webkit-backdrop-filter:
+        blur(4px)
+        grayscale(1);
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            transparent 48%,
+            rgba(0,0,0,.15) 62%,
+            rgba(0,0,0,.65) 78%,
+            black 100%
+        );
+
+    -webkit-mask-image:
+        linear-gradient(
+            to bottom,
+            transparent 48%,
+            rgba(0,0,0,.15) 62%,
+            rgba(0,0,0,.65) 78%,
+            black 100%
+        );
+
+    z-index: 1;
+
     pointer-events: none;
 }
 
