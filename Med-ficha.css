@@ -5,9 +5,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-/* =========================================
+/* ======================
    MÉDIUM · FICHA
-   ========================================= */
+   ==================== */
 
 .medium-ficha {
 
@@ -244,9 +244,9 @@
 }
 
 
-/* =========================================
+/* ======================
    IMÁGENES LATERALES
-   ========================================= */
+   ======================= */
 
 .medium-side-img {
 
@@ -484,117 +484,9 @@
 }
 
 
-/* ========================
-   DETALLE INFERIOR DEL PANEL
-   ========================= */
-
-.medium-data:after {
-
-    content: "✦";
-
-    position: absolute;
-
-    bottom: 7px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width: 80%;
-
-    height: 12px;
-
-    color: var(--medium-main);
-
-    font-size: 10px;
-
-    line-height: 12px;
-
-    text-align: center;
-
-    border-top: 1px solid rgba(142,106,154,.45);
-
-}
-
-
-/* =======================
-   FRANJA SEPARADORA
-   ======================== */
-
-.medium-divider {
-
-    height: 8px;
-
-    margin: 13px 0 14px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: var(--medium-main);
-
-    position: relative;
-
-}
-
-
-.medium-divider:before,
-.medium-divider:after {
-
-    content: "";
-
-    position: absolute;
-
-    top: 50%;
-
-    width: 42%;
-
-    height: 1px;
-
-    background: rgba(187,166,194,.35);
-
-}
-
-
-.medium-divider:before {
-    left: 0;
-}
-
-
-.medium-divider:after {
-    right: 0;
-}
-
-
-.medium-divider span {
-
-    position: relative;
-
-    z-index: 2;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    width: 20px;
-    height: 20px;
-
-    color: var(--medium-soft);
-
-    background: var(--medium-bg);
-
-    font-size: 10px;
-
-}
-
-
-/* =========================================
+/* ====================
    HISTORIA
-   ========================================= */
+   =================== */
 
 .medium-history {
 
@@ -668,9 +560,9 @@
 }
 
 
-/* =========================================
+/* ========================
    LÍNEA HISTORIA
-   ========================================= */
+   ========================= */
 
 .medium-history-line {
 
@@ -691,9 +583,9 @@
 }
 
 
-/* =========================================
+/* ======================
    TEXTO HISTORIA
-   ========================================= */
+   ======================= */
 
 .medium-history-text {
 
@@ -724,9 +616,9 @@
 }
 
 
-/* =========================================
+/* =====================
    SCROLL DE DATOS
-   ========================================= */
+   ====================== */
 
 .medium-content::-webkit-scrollbar {
 
@@ -749,9 +641,9 @@
 }
 
 
-/* =========================================
+/* ==================
    TABLET
-   ========================================= */
+   ================== */
 
 @media screen and (max-width: 720px) {
 
@@ -782,9 +674,9 @@
 }
 
 
-/* =========================================
+/* ==============
    MÓVIL
-   ========================================= */
+   ============= */
 
 @media screen and (max-width: 500px) {
 
