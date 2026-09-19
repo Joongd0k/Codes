@@ -51,7 +51,8 @@
     position: relative;
     overflow: hidden;
 
-    border-radius: 20px 20px 1px 1px solid rgba(165,136,174,.25);
+    border: 1px solid rgba(165,136,174,.25);
+    border-radius: 20px 20px 0 0;
 
 }
 
@@ -68,8 +69,9 @@
 
     inset: 10px;
 
-    border: 15px 15px 1px 1px solid rgba(187,166,194,.10);
-
+    border: 1px solid rgba(187,166,194,.10);
+    border-radius: 15px 15px 0 0;
+   
     pointer-events: none;
 
 }
@@ -199,7 +201,7 @@
 
     font-size: 11px;
 
-    font-weight: 500;
+    font-weight: 600;
 
     letter-spacing: 2px;
 
@@ -218,7 +220,7 @@
 
     font-size: 11px;
 
-    font-weight: 500;
+    font-weight: 600;
 
     letter-spacing: 2px;
 
@@ -479,9 +481,9 @@
 
     font-family: 'Cormorant Garamond', serif;
 
-    font-size: 15px;
+    font-size: 13px;
 
-    line-height: 1.1;
+    line-height: 1.4;
 
 }
 
@@ -492,7 +494,7 @@
 
     font-family: "Cinzel", serif;
 
-    font-size: 8px;
+    font-size: 9px;
 
     font-weight: 700;
 
