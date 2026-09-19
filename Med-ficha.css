@@ -121,8 +121,8 @@
         linear-gradient(
             to bottom,
             transparent 55%,
-            rgba(13,10,17,.25) 70%,
-            rgba(13,10,17,.70) 88%,
+            rgba(38,29,49,.25) 70%,
+            rgba(25,19,33,.70) 88%,
             #0d0a11 100%
         );
     pointer-events: none;
@@ -158,6 +158,8 @@
     text-transform: uppercase;
 
     text-shadow: 0 1px 8px rgba(0,0,0,.7);
+    
+    user-select: none;
 
 }
 
@@ -456,7 +458,7 @@
 
     font-family: "Cinzel", serif;
 
-    font-size: 10px;
+    font-size: 9.5px;
 
     font-weight: 700;
 
@@ -475,7 +477,7 @@
 
     font-family: 'Cormorant Garamond', serif;
 
-    font-size: 14px;
+    font-size: 12px;
 
     line-height: 1.4;
 
