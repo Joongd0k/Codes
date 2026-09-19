@@ -55,6 +55,24 @@
 
 }
 
+/* ==================
+   MARCO INTERIOR
+   =================== */
+
+.medium-ficha:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 10px;
+
+    border: 1px solid rgba(187,166,194,.10);
+    border-radius: 15px 15px 0 0;
+   
+    pointer-events: none;
+
+}
 
 /* ===================
    CABECERA
@@ -63,8 +81,8 @@
 .medium-header {
 
     position: relative;
-    margin: -29px -29px 0;
-    border-radius: 20px 20px 0 0;
+    margin: -19px -19px 0;
+    border-radius: 15px 15px 0 0;
 
 }
 
@@ -84,11 +102,11 @@
 
     overflow: hidden;
 
-    border-radius: 20px 20px 0 0;
+    border-radius: 15px 15px 0 0;
    
-    filter:
+  /*  filter:
         grayscale(55%)
-        contrast(105%);
+        contrast(105%);*/
 
 }
 
