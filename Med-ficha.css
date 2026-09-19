@@ -235,7 +235,7 @@
 
     display: grid;
 
-    grid-template-columns: 180px 1fr 82px;
+    grid-template-columns: 180px 1fr;
 
     gap: 12px;
 
@@ -492,6 +492,8 @@
 
 .medium-history {
 
+    margin-top: 14px;
+   
     padding: 29px 30px 32px;
 
     background: var(--medium-panel);
@@ -669,7 +671,7 @@
 
     .medium-info {
 
-        grid-template-columns: 145px 1fr 65px;
+        grid-template-columns: 145px 1fr;
 
     }
 
@@ -729,7 +731,7 @@
 
     .medium-info {
 
-        grid-template-columns: 110px 1fr 55px;
+        grid-template-columns: 110px 1fr;
 
         gap: 7px;
 
