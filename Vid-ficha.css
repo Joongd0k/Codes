@@ -1,0 +1,835 @@
+@import url('https://solrainha.github.io/saturnicons/saturnicons.css');
+
+@import url('https://solrainha.github.io/honeybee/honeybee.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ======================
+   VIDENTE · FICHA
+   ==================== */
+
+.vidente-ficha {
+
+    --vidente-main: #8e97c7;
+    --vidente-light: #a5acd2;
+    --vidente-soft: #bbc1dd;
+
+    --vidente-bg: #0a0c14;
+    --vidente-panel: #111420;
+    --vidente-border: rgba(165,172,210,.35);
+
+    width: 650px;
+    margin: 30px auto;
+    padding: 28px;
+
+    box-sizing: border-box;
+
+    background:
+        radial-gradient(
+            circle at 10% 10%,
+            rgba(142,151,199,.12),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(187,193,221,.05),
+            transparent 35%
+        ),
+
+        var(--vidente-bg);
+
+    color: var(--vidente-soft);
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+
+    letter-spacing: .3px;
+
+    position: relative;
+    overflow: hidden;
+
+    border: 1px solid rgba(165,172,210,.25);
+    border-radius: 20px 20px 0 0;
+
+}
+
+
+/* ==================
+   MARCO INTERIOR
+   =================== */
+
+.vidente-ficha:before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 10px;
+
+    border: 1px solid rgba(187,193,221,.10);
+    border-radius: 15px 15px 0 0;
+
+    pointer-events: none;
+
+}
+
+
+/* ===================
+   CABECERA
+   ==================== */
+
+.vidente-header {
+
+    position: relative;
+
+}
+
+
+/* =======================
+   IMAGEN PRINCIPAL
+   ======================= */
+
+.vidente-main-img {
+
+    height: 405px;
+
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 15px 15px 0 0;
+
+    filter:
+        grayscale(55%)
+        contrast(105%);
+
+}
+
+
+/* DIFUMINADO */
+
+.vidente-main-img:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            to bottom,
+            transparent 55%,
+            rgba(30,34,57,.25) 70%,
+            rgba(18,21,35,.70) 88%,
+            #0a0c14 100%
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* =========================
+   NOMBRE GRANDE
+   ========================= */
+
+.vidente-name {
+
+    position: absolute;
+
+    z-index: 2;
+
+    left: 28px;
+    right: 28px;
+    bottom: 55px;
+
+    color: #eef0f7;
+
+    font-family: "Abril Fatface", serif;
+
+    font-size: 58px;
+
+    line-height: .8;
+
+    letter-spacing: 11px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    text-shadow: 0 1px 8px rgba(0,0,0,.7);
+
+    user-select: none;
+
+}
+
+
+/* ================
+   IDENTIDAD
+   ================= */
+
+.vidente-identity {
+
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 8px;
+
+    box-sizing: border-box;
+
+    border-bottom: 1px solid var(--vidente-soft);
+
+}
+
+
+/* NOMBRE COMPLETO */
+
+.vidente-fullname {
+
+    color: var(--vidente-soft);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* VIDENTE */
+
+.vidente-type {
+
+    color: var(--vidente-soft);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+/* ===========================
+   BLOQUE DE INFORMACIÓN
+   ========================== */
+
+.vidente-info {
+
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 12px;
+
+    margin-top: 20px;
+
+}
+
+
+/* ======================
+   IMAGEN LATERAL
+   ======================= */
+
+.vidente-side-img {
+
+    height: 265px;
+
+    background-size: cover;
+
+    background-position: center;
+
+    border: 1px solid var(--vidente-border);
+
+    filter:
+        grayscale(65%)
+        contrast(105%);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* COLOR SOBRE IMAGEN */
+
+.vidente-side-img:after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(142,151,199,.18),
+            transparent 65%
+        );
+
+    pointer-events: none;
+
+}
+
+
+/* ==================
+   PANEL CENTRAL
+   =================== */
+
+.vidente-data {
+
+    min-width: 0;
+
+    height: 265px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: var(--vidente-panel);
+
+    border: 1px solid var(--vidente-border);
+
+}
+
+
+/* =================
+   RADIO BUTTONS
+   ================= */
+
+.vidente-data > input {
+
+    display: none;
+
+}
+
+
+/* ===================
+   TABS
+   =================== */
+
+.vidente-tabs {
+
+    height: 47px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    border-bottom: 1px solid var(--vidente-border);
+
+}
+
+
+.vidente-tabs label {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    cursor: pointer;
+
+    color: rgba(187,193,221,.55);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 8px;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    transition: .3s;
+
+}
+
+
+/* TAB ACTIVO */
+
+#vidente-main:checked ~ .vidente-tabs label[for="vidente-main"],
+#vidente-extra:checked ~ .vidente-tabs label[for="vidente-extra"] {
+
+    color: #eef0f7;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(142,151,199,.65),
+            rgba(165,172,210,.18)
+        );
+
+}
+
+
+/* ===================
+   CONTENIDO DE TABS
+   ================= */
+
+.vidente-content {
+
+    position: absolute;
+
+    top: 47px;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 19px 27px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transform: translateX(18px);
+
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+
+}
+
+
+/* TAB PRINCIPAL */
+
+#vidente-main:checked ~ .vidente-primary {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(0);
+
+}
+
+
+/* TAB EXTRAS */
+
+#vidente-extra:checked ~ .vidente-extra {
+
+    opacity: 1;
+
+    visibility: visible;
+
+    transform: translateX(0);
+
+}
+
+
+/* ===================
+   CAMPOS
+   ==================== */
+
+.vidente-field {
+
+    margin-bottom: 12px;
+
+}
+
+
+.vidente-label {
+
+    color: var(--vidente-main);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 9.5px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.vidente-value {
+
+    margin-top: 1px;
+
+    color: #eef0f7;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+}
+
+
+.vidente-text {
+
+    margin-top: 1px;
+
+    color: #eef0f7;
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 14px;
+
+    line-height: 1.4;
+
+}
+
+
+.vidente-text b,
+.vidente-text strong {
+
+    color: var(--vidente-main);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* ====================
+   HISTORIA
+   =================== */
+
+.vidente-history {
+
+    margin-top: 14px;
+
+    padding: 29px 30px 32px;
+
+    background: var(--vidente-panel);
+
+    border: 1px solid var(--vidente-border);
+
+    position: relative;
+
+}
+
+
+/* DETALLE ESQUINA */
+
+.vidente-history:after {
+
+    content: "";
+
+    position: absolute;
+
+    right: 14px;
+
+    bottom: 14px;
+
+    width: 30px;
+
+    height: 30px;
+
+    border-right: 1px solid rgba(142,151,199,.55);
+
+    border-bottom: 1px solid rgba(142,151,199,.55);
+
+}
+
+
+/* ========================
+   TÍTULO HISTORIA
+   ======================== */
+
+.vidente-history-title {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: var(--vidente-soft);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 26px;
+
+    line-height: 1;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+.vidente-history-title span {
+
+    color: var(--vidente-main);
+
+    font-size: 15px;
+
+}
+
+
+/* ========================
+   LÍNEA HISTORIA
+   ========================= */
+
+.vidente-history-line {
+
+    width: 70px;
+
+    height: 1px;
+
+    margin: 17px 0 20px;
+
+    background:
+
+        linear-gradient(
+            to right,
+            var(--vidente-main),
+            transparent
+        );
+
+}
+
+
+/* ======================
+   TEXTO HISTORIA
+   ======================= */
+
+.vidente-history-text {
+
+    color: #a9aec2;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    text-align: justify;
+
+}
+
+
+.vidente-history-text b,
+.vidente-history-text strong {
+
+    color: var(--vidente-light);
+
+}
+
+
+.vidente-history-text i,
+.vidente-history-text em {
+
+    color: var(--vidente-soft);
+
+}
+
+
+/* =====================
+   SCROLL DE DATOS
+   ====================== */
+
+.vidente-content::-webkit-scrollbar {
+
+    width: 3px;
+
+}
+
+
+.vidente-content::-webkit-scrollbar-thumb {
+
+    background: var(--vidente-main);
+
+}
+
+
+.vidente-content::-webkit-scrollbar-track {
+
+    background: transparent;
+
+}
+
+
+/* ==================
+   TABLET
+   ================== */
+
+@media screen and (max-width: 720px) {
+
+    .vidente-ficha {
+
+        width: 95%;
+
+        padding: 20px;
+
+    }
+
+
+    .vidente-name {
+
+        font-size: 49px;
+
+        letter-spacing: 8px;
+
+    }
+
+
+    .vidente-info {
+
+        grid-template-columns: 145px 1fr;
+
+    }
+
+}
+
+
+/* ==============
+   MÓVIL
+   ============= */
+
+@media screen and (max-width: 500px) {
+
+    .vidente-ficha {
+
+        width: 96%;
+
+        padding: 15px;
+
+    }
+
+
+    .vidente-main-img {
+
+        height: 350px;
+
+    }
+
+
+    .vidente-name {
+
+        left: 15px;
+        right: 15px;
+
+        font-size: 39px;
+
+        letter-spacing: 5px;
+
+    }
+
+
+    .vidente-identity {
+
+        padding: 0 4px;
+
+    }
+
+
+    .vidente-fullname,
+    .vidente-type {
+
+        font-size: 8px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .vidente-info {
+
+        grid-template-columns: 110px 1fr;
+
+        gap: 7px;
+
+    }
+
+
+    .vidente-side-img,
+    .vidente-data {
+
+        height: 270px;
+
+    }
+
+
+    .vidente-tabs label {
+
+        font-size: 6px;
+
+        letter-spacing: 1px;
+
+    }
+
+
+    .vidente-content {
+
+        padding: 17px 15px;
+
+    }
+
+
+    .vidente-label {
+
+        font-size: 12px;
+
+    }
+
+
+    .vidente-value {
+
+        font-size: 12px;
+
+    }
+
+
+    .vidente-text {
+
+        font-size: 11px;
+
+    }
+
+
+    .vidente-history {
+
+        padding: 25px 20px 30px;
+
+    }
+
+
+    .vidente-history-title {
+
+        font-size: 22px;
+
+    }
+
+  }
