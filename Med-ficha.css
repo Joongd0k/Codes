@@ -51,8 +51,7 @@
     position: relative;
     overflow: hidden;
 
-    border: 1px solid rgba(165,136,174,.25);
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 1px 1px solid rgba(165,136,174,.25);
 
 }
 
@@ -69,7 +68,7 @@
 
     inset: 10px;
 
-    border: 1px solid rgba(187,166,194,.10);
+    border: 15px 15px 1px 1px solid rgba(187,166,194,.10);
 
     pointer-events: none;
 
@@ -146,7 +145,7 @@
 
     left: 28px;
     right: 28px;
-    bottom: 45px;
+    bottom: 55px;
 
     color: #eee8f0;
 
@@ -200,7 +199,7 @@
 
     font-size: 11px;
 
-    font-weight: 600;
+    font-weight: 500;
 
     letter-spacing: 2px;
 
@@ -219,7 +218,7 @@
 
     font-size: 11px;
 
-    font-weight: 600;
+    font-weight: 500;
 
     letter-spacing: 2px;
 
@@ -485,6 +484,21 @@
     line-height: 1.1;
 
 }
+
+.medium-value b,
+.medium-value strong {
+
+    color: var(--medium-main);
+
+    font-family: "Cinzel", serif;
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+   }
 
 
 /* ====================
