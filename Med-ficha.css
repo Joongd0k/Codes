@@ -63,7 +63,7 @@
 .medium-header {
 
     position: relative;
-    margin: -28px -28px 0;
+    margin: -29px -29px 0;
     border-radius: 20px 20px 0 0;
 
 }
@@ -95,22 +95,25 @@
 
 /* DIFUMINADO */
 
-/*.medium-main-img:after {
+.medium-main-img:after {
     content: "";
     position: absolute;
     inset: 0;
     background:
         linear-gradient(
             to bottom,
-            transparent 55%,
-            rgba(38,29,49,.25) 70%,
-            rgba(25,19,33,.70) 88%,
+            transparent 65%,
+            rgba(13,10,17,.05) 72%,
+            rgba(13,10,17,.18) 80%,
+            rgba(13,10,17,.45) 88%,
+            rgba(13,10,17,.75) 95%,
             #0d0a11 100%
         );
     pointer-events: none;
-}*/
+    z-index: 1;
+}
 
-.medium-main-img:before {
+/*.medium-main-img:before {
 
     content: "";
 
@@ -149,7 +152,7 @@
     z-index: 1;
 
     pointer-events: none;
-}
+}*/
 
 
 /* =========================
