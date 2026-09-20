@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&family=Xanh+Mono:ital@0;1&display=swap');
 @import url('https://solrainha.github.io/saturnicons/saturnicons.css');
 @import url('https://solrainha.github.io/honeybee/honeybee.css');
 
 /* ======================
    GRIM REAPERS · PROFILE 
-   ========================= */
+   ======================= */
 
 .reaper-ficha {
 
@@ -22,7 +22,7 @@
 
     width: 650px;
 
-    margin: 30px auto;
+    margin: 20px auto;
 
     padding: 28px;
 
@@ -46,12 +46,6 @@
 
     color: var(--reaper-text);
 
-    font-family: 'Montserrat', Arial, sans-serif;
-
-    font-size: 10px;
-
-    line-height: 1.5;
-
     position: relative;
 
     overflow: hidden;
@@ -72,7 +66,7 @@
 
     position: absolute;
 
-    inset: 12px;
+    inset: 10px;
 
     border: 1px solid rgba(127,144,168,.16);
     border-radius: 15px 15px 0 0;
@@ -92,6 +86,8 @@
     color: var(--reaper-main);
 
     font-size: 7px;
+   
+    font-family: "Montserrat", sans-serif;
 
     font-weight: bold;
 
@@ -121,7 +117,7 @@
 
 /* =====================
    IMAGEN PRINCIPAL
-   ======================= */
+   ===================== */
 
 .reaper-main-photo {
 
@@ -147,7 +143,7 @@
 
 /* ===========================
    EFECTO ESPECTRAL
-   ============================= */
+   =========================== */
 
 .reaper-main-photo:after,
 .reaper-photo-small:after,
@@ -174,7 +170,7 @@
 
 /* =========================
    FOTOS SECUNDARIAS
-   ========================== */
+   ========================= */
 
 .reaper-photo-small {
 
@@ -225,6 +221,8 @@
     color: var(--reaper-main);
 
     font-size: 7px;
+    
+    font-family: "Montserrat", sans-serif;
 
     font-weight: bold;
 
@@ -239,8 +237,8 @@
 
     color: var(--reaper-bright);
 
-    font-family: 'Cormorant Garamond', Georgia, serif;
-
+    font-family: "Bodoni Moda SC", serif;
+   
     font-size: 40px;
 
     font-weight: 600;
@@ -261,6 +259,8 @@
     color: var(--reaper-main);
 
     font-size: 23px;
+    
+    font-family: "Bodoni Moda SC", serif;
 
     letter-spacing: 4px;
 
@@ -269,7 +269,7 @@
 
 /* ===================
    DIVISOR
-   ====================== */
+   =================== */
 
 .reaper-identity-line {
 
@@ -286,7 +286,7 @@
 
 /* =====================
    DATOS BÁSICOS
-   ======================== */
+   ===================== */
 
 .reaper-basic-grid {
 
@@ -327,6 +327,8 @@
     color: var(--reaper-main);
 
     font-size: 9px;
+   
+    font-family: "Staatliches", sans-serif;
 
     font-weight: bold;
 
@@ -342,6 +344,8 @@
     color: var(--reaper-text);
 
     font-size: 11px;
+   
+    font-family: "Montserrat", sans-serif;
 
 }
 
@@ -406,8 +410,8 @@
 
     color: var(--reaper-main);
 
-    font-family: 'Cormorant Garamond', serif;
-
+    font-family: "Staatliches", sans-serif;
+   
     font-size: 15px;
 
     font-weight: 600;
@@ -419,8 +423,8 @@
 
     color: var(--reaper-bright);
 
-    font-family: 'Cormorant Garamond', serif;
-
+    font-family: "Bodoni Moda SC", serif;
+   
     font-size: 26px;
 
     font-weight: 600;
@@ -453,8 +457,8 @@
 
     color: #aeb5bf;
 
-    font-family: 'Cormorant Garamond', serif;
-
+    font-family: "Montserrat", sans-serif;
+   
     font-size: 12px;
 
     line-height: 1.5;
@@ -554,11 +558,11 @@
 
     color: #A8A6AA;
 
-    font-family: Georgia, serif;
+    font-family: "Montserrat", sans-serif;
 
     font-size: 12px;
 
-    line-height: 2;
+    line-height: 1.4;
 
     text-align: justify;
 
@@ -606,9 +610,9 @@
 
 
 
-/* ==========================================================
+/* ================================
    RESPONSIVE — TABLET
-   ========================================================== */
+   ===================================== */
 
 @media screen and (max-width: 720px) {
 
@@ -664,9 +668,9 @@
 }
 
 
-/* ==========================================================
+/* ===================================
    RESPONSIVE — MÓVIL
-   ========================================================== */
+   =================================== */
 
 @media screen and (max-width: 450px) {
 
