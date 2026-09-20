@@ -416,7 +416,7 @@
 
     font-family: "Montserrat", sans-serif;
    
-    font-size: 13px;
+    font-size: 14px;
 
     line-height: 1.4;
 
@@ -441,44 +441,22 @@
 
 }
 
-
 /* =====================
    IMG 3
   ======================= */
 
 .reaper-extras {
-
     display: grid;
-
-    grid-template-columns: .8fr 1.2fr;
-
+    grid-template-columns: 180px 1fr;
     gap: 12px;
-
     margin-top: 12px;
-
-    align-items: stretch;
-
 }
 
-
 .reaper-img-tres {
-
     min-height: 230px;
-
-    position: relative;
-
-    overflow: hidden;
-
     background-size: cover;
-
     background-position: center;
-
     border: 1px solid #252c34;
-
-    filter:
-        grayscale(20%)
-        saturate(70%);
-
 }
 
 
@@ -487,25 +465,43 @@
    ==================== */
 
 .reaper-extra {
-
     min-height: 230px;
-
     padding: 30px;
-
     box-sizing: border-box;
-
     background: var(--reaper-panel);
-
     border: 1px solid #252c34;
-
     display: flex;
-
     flex-direction: column;
-
     justify-content: center;
+}
+
+.reaper-extra .reaper-line {
+
+    margin-bottom: 18px;
 
 }
 
+.reaper-extra-text {
+
+    max-height: 130px;
+
+    padding-right: 10px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    color: #A8A6AA;
+
+    font-family: "Montserrat", sans-serif;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+
+    text-align: justify;
+
+}
 
 .reaper-extra .reaper-line {
 
@@ -647,7 +643,7 @@
 
     .reaper-img-dos {
 
-        height: 150px;
+        height: 120px;
 
     }
 
@@ -665,7 +661,13 @@
 
     }
 
+    .reaper-text {
+      
+       font-size: 11px;
+       line-height: 1.4;
 
+    }
+   
     .reaper-data {
 
         border-left: none;
