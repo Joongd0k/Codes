@@ -81,7 +81,7 @@
 .medium-header {
 
     position: relative;
-    margin: -17px -17px 0;
+    margin: -17.5px -17.5px 0;
     border-radius: 15px 15px 0 0;
 
 }
@@ -104,9 +104,9 @@
 
     border-radius: 15px 15px 0 0;
    
-    /*filter:
+    filter:
         grayscale(55%)
-        contrast(105%);*/
+        contrast(105%);
 
 }
 
