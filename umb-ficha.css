@@ -548,7 +548,7 @@
 
     font-size: 14px;
 
-    line-height: 1.15;
+    line-height: 1.5;
 
     text-transform: uppercase;
 
@@ -856,6 +856,11 @@
 
     }
 
+    .uf-quote-text {
+       
+    font-size: 11px;
+
+    }
 
     .uf-profile {
 
@@ -916,6 +921,18 @@
     .uf-text {
 
         font-size: 10px;
+
+    }
+
+    .uf-footer {
+
+    font-size:  7px;
+
+    font-weight: 500;
+
+    letter-spacing: 4px;
+
+    text-align: center;
 
     }
 
