@@ -22,7 +22,7 @@
 
     width: 650px;
 
-    margin: 20px auto;
+    margin: 30px auto;
 
     padding: 28px;
 
@@ -416,11 +416,28 @@
 
     font-family: "Montserrat", sans-serif;
    
-    font-size: 12px;
+    font-size: 13px;
 
-    line-height: 1.5;
+    line-height: 1.4;
 
     text-align: justify;
+
+}
+
+.reaper-text b,
+.reaper-text strong {
+
+    color: var(--reaper-light);
+
+    font-weight: bold;
+
+}
+
+
+.reaper-text i,
+.reaper-text em {
+
+    color: var(--reaper-bright);
 
 }
 
@@ -518,6 +535,23 @@
 
 }
 
+.reaper-extra-text b,
+.reaper-extra-text strong {
+
+    color: var(--reaper-light);
+
+    font-weight: bold;
+
+}
+
+
+.reaper-extra-text i,
+.reaper-extra-text em {
+
+    color: var(--reaper-bright);
+
+}
+
 .reaper-extra-text::-webkit-scrollbar {
 
     width: 3px;
@@ -535,29 +569,6 @@
     background: var(--reaper-main);
 
 }
-
-
-/* =======================
-   FORMATO DE TEXTO
- ====================== */
-
-.reaper-text b,
-.reaper-text strong {
-
-    color: var(--reaper-light);
-
-    font-weight: bold;
-
-}
-
-
-.reaper-text i,
-.reaper-text em {
-
-    color: var(--reaper-bright);
-
-}
-
 
 
 /* ================================
@@ -706,3 +717,4 @@
     }
 
 }
+   
