@@ -50,13 +50,14 @@
 
     font-size: 10px;
 
-    line-height: 1.7;
+    line-height: 1.5;
 
     position: relative;
 
     overflow: hidden;
 
     border: 1px solid #1d232a;
+    border-radius: 20px 20px 0 0;
 
 }
 
@@ -74,34 +75,11 @@
     inset: 12px;
 
     border: 1px solid rgba(127,144,168,.16);
+    border-radius: 15px 15px 0 0;
 
     pointer-events: none;
 
 }
-
-
-/* =====================
-   DETALLE SUPERIOR
-   ================== */
-
-.reaper-ficha:after {
-
-    content: "My name is Death and the end is here";
-
-    position: absolute;
-
-    top: 18px;
-
-    left: 28px;
-
-    color: rgba(153,166,185,.25);
-
-    font-size: 6px;
-
-    letter-spacing: 3px;
-
-}
-
 
 /* =========================
    CABECERA
@@ -428,7 +406,7 @@
 
     color: var(--reaper-main);
 
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Cormorant Garamond', serif;
 
     font-size: 15px;
 
@@ -441,7 +419,7 @@
 
     color: var(--reaper-bright);
 
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Cormorant Garamond', serif;
 
     font-size: 26px;
 
@@ -475,11 +453,11 @@
 
     color: #aeb5bf;
 
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Cormorant Garamond', serif;
 
-    font-size: 13px;
+    font-size: 12px;
 
-    line-height: 1.7;
+    line-height: 1.5;
 
     text-align: justify;
 
@@ -487,7 +465,7 @@
 
 
 /* =====================
-   COLLAGE
+   IMG 3
   ======================= */
 
 .reaper-collage {
