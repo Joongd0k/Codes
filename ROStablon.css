@@ -1,0 +1,1627 @@
+/* =============================
+   REQUIEM OF SOULS — TABLÓN
+   ============================= */
+
+#rosboard{
+
+    --rb-acento:#66758A;
+    --rb-dorado:#a19278;
+    --rb-borde:#303038;
+    --rb-fondo:#171b22;
+    --rb-fondod:#080a0d;
+    --rb-fondom:#11141A;
+    --rb-texto:#b8b8c0;
+    --rb-claro:#E6e1d8;
+
+    width:1200px;
+
+    margin:30px auto;
+
+    padding:22px;
+
+    box-sizing:border-box;
+
+    display:grid;
+
+    grid-template-columns:
+        2fr
+        1fr
+        1fr;
+
+    grid-auto-rows:auto;
+
+    gap:10px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(102,117,138,.10),
+            transparent 32%
+        ),
+        radial-gradient(
+            circle at 90% 85%,
+            rgba(161,146,120,.06),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #080a0d,
+            #11141A 55%,
+            #171b22
+        );
+
+    border:1px solid var(--rb-borde);
+    border-radius:5px;
+
+    color:var(--rb-texto);
+
+    font-family:'Raleway',sans-serif;
+}
+
+
+/* ==========================
+   CABECERA
+   ========================= */
+
+#rosboard .rb-header{
+
+    grid-column:1 / -1;
+
+    min-height:105px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:22px;
+
+    box-sizing:border-box;
+
+    border-bottom:1px solid var(--rb-borde);
+
+}
+
+
+#rosboard .rb-header-line{
+
+    height:1px;
+
+    flex:1;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--rb-borde)
+        );
+}
+
+
+#rosboard .rb-header-line:last-child{
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--rb-borde),
+            transparent
+        );
+
+}
+
+
+#rosboard .rb-header-content{
+
+    min-width:360px;
+
+    text-align:center;
+
+}
+
+
+#rosboard .rb-header-small{
+
+    margin-bottom:5px;
+
+    color:var(--rb-acento);
+
+    font-size:7px;
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+
+#rosboard .rb-title{
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:30px;
+    font-weight:600;
+
+    line-height:1.1;
+
+    letter-spacing:1px;
+
+}
+
+
+#rosboard .rb-subtitle{
+
+    margin-top:5px;
+
+    color:var(--rb-dorado);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:13px;
+
+    font-style:italic;
+
+    letter-spacing:1px;
+
+}
+
+
+/* =============================
+   INTRO
+ ========================= */
+
+#rosboard .rb-intro{
+
+    grid-column:1 / 2;
+
+    min-height:150px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:20px;
+
+    box-sizing:border-box;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(102,117,138,.08),
+            rgba(8,10,13,.25)
+        );
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+}
+
+
+#rosboard .rb-intro-symbol{
+
+    width:60px;
+    height:60px;
+
+    flex:0 0 60px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(161,146,120,.45);
+
+    border-radius:50%;
+
+    color:var(--rb-dorado);
+
+    font-size:23px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(161,146,120,.12),
+            transparent 68%
+        );
+
+}
+
+
+#rosboard .rb-intro-text{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+#rosboard .rb-intro-text strong{
+
+    margin-bottom:7px;
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:13px;
+    font-weight:600;
+
+}
+
+
+#rosboard .rb-intro-text span{
+
+    max-width:480px;
+
+    color:var(--rb-texto);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:17px;
+
+    line-height:1.25;
+
+}
+
+
+/* ============================
+   CLIMA
+  ============================= */
+
+#rosboard .rb-weather,
+#rosboard .rb-clock{
+
+    min-height:150px;
+
+    padding:16px;
+
+    box-sizing:border-box;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:var(--rb-fondom);
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+}
+
+
+#rosboard .rb-label{
+
+    color:var(--rb-acento);
+
+    font-size:7px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+}
+
+
+#rosboard .rb-weather-icon{
+
+    margin-top:8px;
+
+    color:var(--rb-dorado);
+
+    font-size:21px;
+
+}
+
+
+#rosboard .rb-temperature{
+
+    margin-top:2px;
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:20px;
+
+}
+
+
+#rosboard .rb-weather-text{
+
+    margin-top:2px;
+
+    color:var(--rb-texto);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:13px;
+
+}
+
+
+#rosboard .rb-weather-location{
+
+    margin-top:7px;
+
+    color:#777b84;
+
+    font-size:6px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* ==============================
+   HORA
+   ============================= */
+
+#rosboard .rb-clock-time{
+
+    margin-top:9px;
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:25px;
+
+    letter-spacing:1px;
+
+}
+
+
+#rosboard .rb-clock-date{
+
+    margin-top:3px;
+
+    color:var(--rb-dorado);
+
+    font-size:8px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+#rosboard .rb-clock-zone{
+
+    margin-top:10px;
+
+    color:#777b84;
+
+    font-size:6px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+}
+
+
+/* ========================
+   MAPA + ORÁCULO
+   ======================== */
+
+#rosboard .rb-visual{
+
+    min-height:145px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-sizing:border-box;
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+    background-position:center;
+
+    background-size:cover;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+
+#rosboard .rb-map{
+
+    background-image:
+        url("https://images.unsplash.com/photo-1524666041070-9c8762d0a3f1?auto=format&fit=crop&w=700&q=80");
+
+}
+
+
+#rosboard .rb-oracle{
+
+    background-image:
+        url("https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=80");
+
+}
+
+
+#rosboard .rb-visual-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,10,13,.67);
+
+    transition:.35s;
+
+}
+
+
+#rosboard .rb-visual-content{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+#rosboard .rb-visual-icon{
+
+    width:42px;
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(230,225,216,.45);
+
+    border-radius:50%;
+
+    color:var(--rb-claro);
+
+    background:rgba(8,10,13,.35);
+
+    font-size:19px;
+
+    transition:.35s;
+
+}
+
+
+#rosboard .rb-visual strong{
+
+    margin-top:8px;
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:10px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+#rosboard .rb-visual span{
+
+    margin-top:4px;
+
+    color:#b8b8c0;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:12px;
+
+}
+
+
+#rosboard .rb-visual:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+#rosboard .rb-visual:hover .rb-visual-overlay{
+
+    background:rgba(8,10,13,.48);
+
+}
+
+
+#rosboard .rb-visual:hover .rb-visual-icon{
+
+    border-color:var(--rb-dorado);
+
+    background:rgba(102,117,138,.20);
+
+}
+
+
+/* =======================
+   TÍTULO DE SECCIÓN
+   ===================== */
+
+#rosboard .rb-section-title{
+
+    grid-column:1 / -1;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-top:5px;
+
+}
+
+
+#rosboard .rb-section-title:before,
+#rosboard .rb-section-title:after{
+
+    content:"";
+
+    height:1px;
+
+    flex:1;
+
+    background:var(--rb-borde);
+
+}
+
+
+#rosboard .rb-section-title span{
+
+    color:var(--rb-dorado);
+
+    font-size:7px;
+
+    font-weight:700;
+
+    letter-spacing:2.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* =========================
+   STAFF
+   ======================== */
+
+#rosboard .rb-staff{
+
+    min-height:105px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-sizing:border-box;
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+    background-position:center;
+
+    background-size:cover;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+
+#rosboard .rb-staff-fool{
+
+    grid-column:1 / 2;
+
+    background-image:url("https://i.imgur.com/KOBaIHX.jpeg");
+
+}
+
+
+#rosboard .rb-staff-sun{
+
+    grid-column:2 / 3;
+
+    background-image:url("https://i.imgur.com/AY6FIbg.jpeg");
+
+}
+
+
+#rosboard .rb-staff-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,10,13,.63);
+
+    transition:.35s;
+
+}
+
+
+#rosboard .rb-staff-content{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+#rosboard .rb-staff-icon{
+
+    width:38px;
+    height:38px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(161,146,120,.45);
+
+    border-radius:50%;
+
+    color:var(--rb-dorado);
+
+    font-size:16px;
+
+}
+
+
+#rosboard .rb-staff-content strong{
+
+    display:block;
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:12px;
+
+    font-weight:600;
+
+}
+
+
+#rosboard .rb-staff-content span{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:#999ca4;
+
+    font-size:7px;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+
+#rosboard .rb-staff:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+#rosboard .rb-staff:hover .rb-staff-overlay{
+
+    background:rgba(8,10,13,.45);
+
+}
+
+
+/* ========================
+   EVENTO
+   ========================= */
+
+#rosboard .rb-event{
+
+    grid-column:3 / 4;
+
+    grid-row:4 / 6;
+
+    min-height:220px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    box-sizing:border-box;
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+    background-image:
+        url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80");
+
+    background-position:center;
+
+    background-size:cover;
+
+}
+
+
+#rosboard .rb-event-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            0deg,
+            rgba(8,10,13,.97),
+            rgba(8,10,13,.20)
+        );
+
+}
+
+
+#rosboard .rb-event-content{
+
+    position:relative;
+
+    z-index:2;
+
+    width:100%;
+
+    padding:18px;
+
+    box-sizing:border-box;
+
+}
+
+
+#rosboard .rb-event-content > strong{
+
+    display:block;
+
+    margin-top:7px;
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    line-height:1.2;
+
+}
+
+
+#rosboard .rb-event-date{
+
+    display:block;
+
+    margin-top:5px;
+
+    color:var(--rb-dorado);
+
+    font-size:7px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+}
+
+
+#rosboard .rb-event-description{
+
+    margin-top:9px;
+
+    color:var(--rb-texto);
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:14px;
+
+    line-height:1.2;
+
+}
+
+
+#rosboard .rb-event-content > a{
+
+    display:inline-flex;
+
+    margin-top:12px;
+
+    padding:7px 11px;
+
+    box-sizing:border-box;
+
+    border:1px solid rgba(161,146,120,.45);
+
+    color:var(--rb-dorado);
+
+    font-size:7px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+#rosboard .rb-event-content > a:hover{
+
+    color:var(--rb-claro);
+
+    border-color:var(--rb-claro);
+
+}
+
+
+/* =========================
+   ÚLTIMOS TEMAS
+   ========================= */
+
+#rosboard .rb-topics{
+
+    grid-column:1 / 2;
+
+    min-height:220px;
+
+    padding:15px;
+
+    box-sizing:border-box;
+
+    background:var(--rb-fondom);
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+    overflow:hidden;
+
+}
+
+
+#rosboard .rb-box-title{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    padding-bottom:9px;
+
+    margin-bottom:4px;
+
+    border-bottom:1px solid var(--rb-borde);
+
+}
+
+
+#rosboard .rb-box-title strong{
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:11px;
+
+    font-weight:600;
+
+}
+
+
+#rosboard .rb-box-title span{
+
+    color:var(--rb-acento);
+
+    font-size:6px;
+
+    font-weight:700;
+
+    letter-spacing:1.2px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* CONTENEDOR REAL DE FOROACTIVO */
+
+#rosboard .ultemas{
+
+    width:100%;
+
+    height:175px;
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    overflow:auto;
+
+    background:transparent;
+
+    border:0;
+
+}
+
+
+/* TEMA */
+
+#rosboard .ultemas .cajatema{
+
+    padding:9px 4px;
+
+    box-sizing:border-box;
+
+    background:transparent;
+
+    border-bottom:1px solid var(--rb-borde);
+
+}
+
+
+#rosboard .ultemas .cajatema:last-child{
+
+    border-bottom:0;
+
+}
+
+
+#rosboard .ultemas .cajatema .titulo{
+
+    margin:0 0 4px;
+
+    color:var(--rb-dorado);
+
+    font-family:'Raleway',sans-serif;
+
+    font-size:8px;
+
+    font-weight:700;
+
+}
+
+
+#rosboard .ultemas .cajatema .titulo a{
+
+    color:var(--rb-dorado);
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+#rosboard .ultemas .cajatema .titulo a:hover{
+
+    color:var(--rb-claro);
+
+}
+
+
+#rosboard .ultemas .cajatema .useryhora{
+
+    color:#777b84;
+
+    font-family:'Raleway',sans-serif;
+
+    font-size:6px;
+
+    letter-spacing:.4px;
+
+}
+
+
+/* ===============
+   NOTICIAS
+   ==================== */
+
+#rosboard .rb-news{
+
+    grid-column:2 / 3;
+
+    min-height:220px;
+
+    padding:15px;
+
+    box-sizing:border-box;
+
+    background:var(--rb-fondom);
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+}
+
+
+#rosboard .rb-news-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+#rosboard .rb-news-list > a{
+
+    min-height:38px;
+
+    display:grid;
+
+    grid-template-columns:42px 1fr;
+
+    gap:8px;
+
+    padding:8px 2px;
+
+    box-sizing:border-box;
+
+    border-bottom:1px solid var(--rb-borde);
+
+    text-decoration:none;
+
+}
+
+
+#rosboard .rb-news-list > a:last-child{
+
+    border-bottom:0;
+
+}
+
+
+#rosboard .rb-news-date{
+
+    color:var(--rb-acento);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:7px;
+
+    line-height:1.3;
+
+}
+
+
+#rosboard .rb-news-content{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+#rosboard .rb-news-content strong{
+
+    color:var(--rb-claro);
+
+    font-size:8px;
+
+    font-weight:700;
+
+}
+
+
+#rosboard .rb-news-content i{
+
+    margin-top:3px;
+
+    color:#858991;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:11px;
+
+    font-style:normal;
+
+    line-height:1.1;
+
+}
+
+
+#rosboard .rb-news-list > a:hover strong{
+
+    color:var(--rb-dorado);
+
+}
+
+
+/* =======================
+   BÚSQUEDAS
+   ====================== */
+
+#rosboard .rb-searches{
+
+    grid-column:1 / -1;
+
+    padding:15px;
+
+    box-sizing:border-box;
+
+    background:rgba(17,20,26,.72);
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+}
+
+
+#rosboard .rb-search-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:8px;
+
+}
+
+
+#rosboard .rb-search{
+
+    height:125px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    box-sizing:border-box;
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+    background-position:center;
+
+    background-size:cover;
+
+    text-decoration:none;
+
+    transition:.35s;
+
+}
+
+
+#rosboard .rb-search-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(8,10,13,.68);
+
+    transition:.35s;
+
+}
+
+
+#rosboard .rb-search-content{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+#rosboard .rb-search-icon{
+
+    width:34px;
+    height:34px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(230,225,216,.40);
+
+    border-radius:50%;
+
+    color:var(--rb-claro);
+
+    font-size:15px;
+
+}
+
+
+#rosboard .rb-search strong{
+
+    margin-top:8px;
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:8px;
+
+    font-weight:600;
+
+    letter-spacing:.8px;
+
+    text-align:center;
+
+    text-transform:uppercase;
+
+}
+
+
+#rosboard .rb-search:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+#rosboard .rb-search:hover .rb-search-overlay{
+
+    background:rgba(8,10,13,.46);
+
+}
+
+
+#rosboard .rb-search:hover .rb-search-icon{
+
+    border-color:var(--rb-dorado);
+
+}
+
+
+/* =====================
+   CRÉDITOS
+   ======================= */
+
+#rosboard .rb-credits{
+
+    grid-column:1 / -1;
+
+    min-height:70px;
+
+    padding:12px 18px;
+
+    box-sizing:border-box;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    background:var(--rb-fondom);
+
+    border:1px solid var(--rb-borde);
+
+    border-radius:4px;
+
+}
+
+
+#rosboard .rb-credits-icon{
+
+    width:38px;
+    height:38px;
+
+    flex:0 0 38px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border:1px solid rgba(161,146,120,.40);
+
+    border-radius:50%;
+
+    color:var(--rb-dorado);
+
+    font-size:15px;
+
+}
+
+
+#rosboard .rb-credits-text{
+
+    flex:1;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+#rosboard .rb-credits-text strong{
+
+    color:var(--rb-claro);
+
+    font-family:'Cinzel Decorative',serif;
+
+    font-size:9px;
+
+    font-weight:600;
+
+}
+
+
+#rosboard .rb-credits-text span{
+
+    max-width:700px;
+
+    margin-top:3px;
+
+    color:#7f838c;
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:12px;
+
+    line-height:1.2;
+
+}
+
+
+#rosboard .rb-credits > a{
+
+    padding:7px 10px;
+
+    border:1px solid var(--rb-borde);
+
+    color:var(--rb-dorado);
+
+    font-size:6px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-decoration:none;
+
+    text-transform:uppercase;
+
+}
+
+
+#rosboard .rb-credits > a:hover{
+
+    color:var(--rb-claro);
+
+    border-color:var(--rb-dorado);
+
+}
+
+
+/* ============================
+   SCROLLBAR
+   ========================= */
+
+#rosboard ::-webkit-scrollbar{
+
+    width:4px;
+
+}
+
+
+#rosboard ::-webkit-scrollbar-track{
+
+    background:#080a0d;
+
+}
+
+
+#rosboard ::-webkit-scrollbar-thumb{
+
+    background:#303038;
+
+}
+
+
+/* ========================
+   RESPONSIVE
+   ======================== */
+
+@media(max-width:1250px){
+
+    #rosboard{
+
+        width:95%;
+
+    }
+
+}
+
+
+@media(max-width:900px){
+
+    #rosboard{
+
+        grid-template-columns:1fr 1fr;
+
+    }
+
+    #rosboard .rb-intro{
+
+        grid-column:1 / -1;
+
+    }
+
+    #rosboard .rb-event{
+
+        grid-column:1 / -1;
+
+        grid-row:auto;
+
+    }
+
+    #rosboard .rb-topics{
+
+        grid-column:1 / 2;
+
+    }
+
+    #rosboard .rb-news{
+
+        grid-column:2 / 3;
+
+    }
+
+    #rosboard .rb-search-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    #rosboard{
+
+        grid-template-columns:1fr;
+
+    }
+
+    #rosboard .rb-header{
+
+        min-height:90px;
+
+    }
+
+    #rosboard .rb-title{
+
+        font-size:23px;
+
+    }
+
+    #rosboard .rb-header-line{
+
+        display:none;
+
+    }
+
+    #rosboard .rb-intro,
+    #rosboard .rb-weather,
+    #rosboard .rb-clock,
+    #rosboard .rb-visual,
+    #rosboard .rb-staff-fool,
+    #rosboard .rb-staff-sun,
+    #rosboard .rb-event,
+    #rosboard .rb-topics,
+    #rosboard .rb-news{
+
+        grid-column:1 / -1;
+
+    }
+
+    #rosboard .rb-search-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
