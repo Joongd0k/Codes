@@ -219,8 +219,8 @@
     color:var(--rb-texto);
 
     font-family:'Cormorant Garamond',serif;
-    font-size:13px;
-    line-height:1.5;
+    font-size:11px;
+    line-height:1.2;
     text-align: justify;
 }
 
@@ -441,7 +441,7 @@
     color:#d0d0d4;
 
     font-family:'Cormorant Garamond',serif;
-    font-size:11px;
+    font-size:9px;
     line-height:1.2;
 }
 
@@ -923,7 +923,7 @@
     position:relative;
     z-index:2;
 
-    width:100%;
+    width:95%;
 
     padding:12px 8px;
 
@@ -1011,7 +1011,7 @@
 
 /* =====================
    CRÉDITOS
-   ======================= */
+   ===================== */
 
 #rosboard .rb-credits{
     grid-area:credits;
