@@ -1076,6 +1076,7 @@
     font-family:'Cormorant Garamond',serif;
     font-size:10px;
     letter-spacing:1.2px;
+    text-align: justify;
 }
 
 #rosboard .rb-credits-text a{
