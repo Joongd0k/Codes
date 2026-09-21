@@ -526,12 +526,7 @@
 }
 
 #rosboard .rb-visual:hover .rb-visual-overlay{
-    background:
-        linear-gradient(
-            180deg,
-            rgba(8,10,13,.25),
-            rgba(8,10,13,.78)
-        );
+    background:rgba(8,10,13,.48);
 }
 
 #rosboard .rb-visual-content{
@@ -548,10 +543,9 @@
 }
 
 #rosboard .rb-visual-icon{
-    margin-bottom:5px;
     width:40px;
     height:40px;
-  
+    display:flex;
     align-items:center;
     justify-content:center;
   
@@ -563,6 +557,14 @@
     transition:.35s;
   
     font-size:17px;
+}
+
+#rosboard .rb-visual:hover .rb-visual-icon{
+
+    border-color:var(--rb-dorado);
+
+    background:rgba(102,117,138,.20);
+
 }
 
 #rosboard .rb-visual-content strong{
@@ -742,7 +744,7 @@
     color:var(--rb-claro);
 
     font-family:'Cormorant Garamond',serif;
-    font-size:14px;
+    font-size:11px;
     font-weight:600;
 }
 
@@ -754,8 +756,9 @@
     color:#777b84;
 
     font-family:'Raleway',sans-serif;
-    font-size:6px;
-    line-height:1.4;
+    font-size:11px;
+    font-style:normal;
+    line-height:1.2;
 }
 
 
@@ -1019,35 +1022,34 @@
 
     min-width:0;
 
-    min-height:90px;
+    min-height:70px;
 
-    padding:18px 22px;
+    padding:12px 18px;
 
     box-sizing:border-box;
 
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:25px;
+    gap:14px;
 
     background:var(--rb-fondom);
 
     border:1px solid var(--rb-borde);
 
     border-radius:4px;
-
-    text-align:center;
+   
 }
 
 #rosboard .rb-credits-icon{
     width:40px;
     height:40px;
 
+    flex:0 0 38px;
+   /* flex-shrink:0; */
     display:flex;
     align-items:center;
     justify-content:center;
-
-    flex-shrink:0;
 
     border:1px solid rgba(161,146,120,.40);
     border-radius:50%;
@@ -1073,16 +1075,22 @@
 
 #rosboard .rb-credits-text{
     margin-top:5px;
-    max-width:700px;
     color:#7f838c;
 
     font-family:'Cormorant Garamond',serif;
-    font-size:12px;
-    letter-spacing:1.4px;
+    font-size:10px;
+    letter-spacing:1.2px;
 }
 
 #rosboard .rb-credits-text a{
+    border:1px solid var(--rb-borde);
+
     color:var(--rb-dorado);
+    font-size:6px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
 
     text-decoration:none;
 }
