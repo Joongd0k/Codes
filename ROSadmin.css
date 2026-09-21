@@ -1,0 +1,407 @@
+/* =========================================================
+   REQUIEM OF SOULS — ADMINISTRATIVE POST
+   ========================================================= */
+
+#rospost{
+
+    --rp-acento:#66758A;
+    --rp-dorado:#a19278;
+    --rp-borde:#303038;
+    --rp-fondo:#171b22;
+    --rp-fondod:#080a0d;
+    --rp-fondom:#11141A;
+    --rp-texto:#b8b8c0;
+    --rp-claro:#E6e1d8;
+
+    width:1000px;
+    margin:30px auto;
+    padding:0;
+
+    box-sizing:border-box;
+
+    position:relative;
+    overflow:hidden;
+
+    background:
+        radial-gradient(
+            circle at 15% 0%,
+            rgba(102,117,138,.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 90% 100%,
+            rgba(161,146,120,.06),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #080a0d 0%,
+            #11141A 52%,
+            #171b22 100%
+        );
+
+    border:1px solid var(--rp-borde);
+    border-radius:5px;
+
+    color:var(--rp-texto);
+
+    font-family:'Raleway',sans-serif;
+}
+
+
+/* =========================================================
+   CABECERA
+   ========================================================= */
+
+#rospost .rp-header{
+
+    padding:35px 50px 30px;
+
+    box-sizing:border-box;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    text-align:center;
+
+    border-bottom:1px solid var(--rp-borde);
+}
+
+
+/* =========================================================
+   ICONO
+   ========================================================= */
+
+#rospost .rp-icon{
+
+    width:64px;
+    height:64px;
+
+    margin-bottom:17px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    box-sizing:border-box;
+
+    border:1px solid rgba(161,146,120,.45);
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(161,146,120,.12),
+            transparent 68%
+        );
+
+    color:var(--rp-dorado);
+
+    font-size:22px;
+}
+
+
+/* =========================================================
+   TITULO
+   ========================================================= */
+
+#rospost .rp-title{
+
+    color:var(--rp-claro);
+
+    font-family:'Cinzel Decorative',serif;
+    font-size:27px;
+    font-weight:600;
+    line-height:1.2;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+}
+
+
+/* =========================================================
+   SUBTITULO
+   ========================================================= */
+
+#rospost .rp-subtitle{
+
+    margin-top:9px;
+
+    color:var(--rp-acento);
+
+    font-family:'Raleway',sans-serif;
+    font-size:11px;
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* =========================================================
+   DECORACIÓN
+   ========================================================= */
+
+#rospost .rp-decoration{
+
+    width:130px;
+    height:1px;
+
+    margin-top:18px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--rp-dorado),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   CUERPO DEL POST
+   ========================================================= */
+
+#rospost .rp-body{
+
+    padding:35px 50px 40px;
+
+    box-sizing:border-box;
+
+    color:var(--rp-texto);
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:14px;
+    font-weight:500;
+    line-height:1.5;
+
+    text-align:justify;
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+#rospost .rp-body strong{
+
+    color:var(--rp-claro);
+
+    font-weight:700;
+}
+
+
+#rospost .rp-body b{
+
+    color:var(--rp-claro);
+}
+
+
+#rospost .rp-body i{
+
+    color:#aaaeb6;
+}
+
+
+/* =========================================================
+   ENLACES
+   ========================================================= */
+
+#rospost .rp-body a{
+
+    color:var(--rp-dorado);
+
+    text-decoration:none;
+
+    border-bottom:1px solid rgba(161,146,120,.35);
+
+    transition:.3s;
+}
+
+
+#rospost .rp-body a:hover{
+
+    color:var(--rp-claro);
+
+    border-color:var(--rp-claro);
+}
+
+
+/* =========================================================
+   APARTADOS INTERNOS OPCIONALES
+   ========================================================= */
+
+#rospost .rp-section{
+
+    margin:0 0 28px;
+
+    padding:0 0 24px;
+
+    border-bottom:1px solid var(--rp-borde);
+}
+
+
+#rospost .rp-section:last-child{
+
+    margin-bottom:0;
+    padding-bottom:0;
+
+    border-bottom:0;
+}
+
+
+/* =========================================================
+   TITULO DE APARTADO
+   ========================================================= */
+
+#rospost .rp-section-title{
+
+    margin-bottom:10px;
+
+    color:var(--rp-dorado);
+
+    font-family:'Raleway',sans-serif;
+    font-size:9px;
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+}
+
+
+/* =========================================================
+   DESTACADO
+   ========================================================= */
+
+#rospost .rp-note{
+
+    margin:25px 0;
+
+    padding:16px 20px;
+
+    box-sizing:border-box;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(102,117,138,.08),
+            rgba(161,146,120,.04)
+        );
+
+    border-left:2px solid var(--rp-dorado);
+
+    color:#aaaeb6;
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:15px;
+    font-style:italic;
+    line-height:1.45;
+}
+
+
+/* =========================================================
+   LISTAS
+   ========================================================= */
+
+#rospost .rp-body ul{
+
+    margin:15px 0;
+    padding-left:25px;
+}
+
+
+#rospost .rp-body li{
+
+    margin-bottom:7px;
+}
+
+
+#rospost .rp-body li::marker{
+
+    color:var(--rp-dorado);
+}
+
+
+/* =========================================================
+   SEPARADOR
+   ========================================================= */
+
+#rospost .rp-divider{
+
+    width:100%;
+    height:1px;
+
+    margin:28px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--rp-borde),
+            transparent
+        );
+}
+
+
+/* =========================================================
+   PIE
+   ========================================================= */
+
+#rospost .rp-footer{
+
+    padding:14px 25px;
+
+    box-sizing:border-box;
+
+    border-top:1px solid var(--rp-borde);
+
+    color:#686c75;
+
+    font-family:'Raleway',sans-serif;
+    font-size:6px;
+    font-weight:600;
+
+    letter-spacing:1.5px;
+
+    text-align:center;
+    text-transform:uppercase;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:1050px){
+
+    #rospost{
+
+        width:95%;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    #rospost .rp-header{
+
+        padding:28px 25px 25px;
+    }
+
+    #rospost .rp-body{
+
+        padding:25px 25px 30px;
+    }
+
+    #rospost .rp-title{
+
+        font-size:21px;
+    }
+
+      }
