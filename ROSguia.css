@@ -49,17 +49,18 @@
 #rosguide .rg-intro{
     min-width:0;
     min-height:0;
-
+    height:100%;
     box-sizing:border-box;
-    padding:35px 35px 30px;
+    padding:25px 25px 20px;
 
     display:flex;
     flex-direction:column;
-    justify-content:flex-start;
+    /*justify-content:flex-start;*/
 
     position:relative;
 
     border-right:1px solid var(--rg-borde);
+   overflow:hidden;
 }
 
 
@@ -144,26 +145,10 @@
     font-family:'Cormorant Garamond',serif;
     font-size:11px;
     font-weight:500;
-    line-height:1.45;
+    line-height:1.35;
     text-align:justify;
-}
-
-
-/* frase destacada */
-
-#rosguide .rg-note{
-    margin-top:auto;
-    padding-top:22px;
-
-    border-top:1px solid var(--rg-borde);
-
-    color:var(--rg-acento);
-
-    font-family:'Cormorant Garamond',serif;
-    font-size:14px;
-    font-style:italic;
-    line-height:1.4;
-    text-align: center;
+    overflow:auto;
+    padding-right:8px;
 }
 
 /* ==================================================
