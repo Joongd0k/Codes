@@ -207,7 +207,7 @@ FUENTES
 #rospost .rp-body strong, .rp-body b{
 
     font-family: "Cinzel Decorative", serif;
-    color:var(--rp-claro);
+    color:#66758a;
 
     font-weight:700;
 }
@@ -215,7 +215,7 @@ FUENTES
 
 #rospost .rp-body i{
 
-    color:#aaaeb6;
+    color:#8c98a8;
 }
 
 
@@ -305,10 +305,10 @@ FUENTES
 
     color:#aaaeb6;
 
-    font-family:'Cormorant Garamond',serif;
-    font-size:15px;
+    font-family: "Cormorant Garamond", serif;
+    font-size:11px;
     font-style:italic;
-    line-height:1.45;
+    line-height:1.4;
 }
 
 
