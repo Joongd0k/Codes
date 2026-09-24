@@ -322,7 +322,7 @@ FUENTES
     margin-top:25px;
     perspective:1200px;
 }
-.rp-staff-card {
+#rospost .rp-staff-card {
     position:relative;
     display:block;
     width:min(100%,300px);
@@ -333,12 +333,12 @@ FUENTES
     cursor:pointer;
     perspective:1200px;
 }
-.rp-staff-card input {
+#rospost .rp-staff-card input {
     position:absolute;
     opacity:0;
     pointer-events:none;
 }
-.rp-staff-inner {
+#rospost .rp-staff-inner {
     position:relative;
     display:block;
     width:100%;
@@ -346,10 +346,10 @@ FUENTES
     transform-style:preserve-3d;
     transition:transform .8s cubic-bezier(.2,.7,.2,1);
 }
-.rp-staff-card input:checked+.rp-staff-inner{
+#rospost .rp-staff-card input:checked+.rp-staff-inner{
     transform:rotateY(180deg);
 }
-.rp-staff-front,
+#rospost .rp-staff-front,
 .rp-staff-back {
     position:absolute;
     inset:0;
@@ -364,12 +364,12 @@ FUENTES
     backface-visibility:hidden;
     -webkit-backface-visibility:hidden;
 }
-.rp-staff-front {
+#rospost .rp-staff-front {
     display:flex;
     align-items:center;
     justify-content:center;
 }
-.rp-staff-front img {
+#rospost .rp-staff-front img {
     display:block;
     width:100%;
     height:100%;
@@ -377,7 +377,7 @@ FUENTES
     padding:0;
     object-fit:cover;
 }
-.rp-staff-back {
+#rospost .rp-staff-back {
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -389,21 +389,21 @@ FUENTES
         linear-gradient(145deg,rgba(217,197,167,.035),transparent 50%),
         var(--panel);
 }
-.rp-staff-back::before {
+#rospost .rp-staff-back::before {
     content:"✦";
     margin-bottom:20px;
     color:var(--violet);
     font-family:"Cinzel",serif;
     font-size:16px;
 }
-.rp-staff-name {
+#rospost .rp-staff-name {
     margin-bottom:8px;
     color:var(--cream-light);
     font-family:"Cinzel",serif;
     font-size:17px;
     letter-spacing:1px;
 }
-.rp-staff-role {
+#rospost .rp-staff-role {
     margin-bottom:18px;
     color:var(--violet);
     font-family:"Montserrat",sans-serif;
@@ -412,7 +412,7 @@ FUENTES
     letter-spacing:1.5px;
     text-transform:uppercase;
 }
-.rp-staff-description {
+#rospost .rp-staff-description {
     margin:0;
     padding:0;
     color:var(--muted);
@@ -421,7 +421,7 @@ FUENTES
     line-height:1.5;
     text-align:justify;
 }
-.rp-staff-hint {
+#rospost .rp-staff-hint {
     margin-top:22px 0 0;
     padding:0;
     color:#625d66;
@@ -429,6 +429,34 @@ FUENTES
     font-size:12px;
     letter-spacing:2px;
     text-transform:uppercase;
+}
+
+/* ===========================
+   CARD GRID
+   =========================== */
+
+.rp-body-card-grid {
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:10px;
+    margin-top:20px
+}
+.rp-body-card {
+    padding:18px;
+    border:1px solid var(--rp-dorado);
+    background:rgba(255,255,255,.012)
+}
+.rp-body-card-title {
+    margin-bottom:7px;
+    color:var(--rp-acento);
+    font-family:"Cinzel",serif;
+    font-size:14px
+}
+.rp-body-card p {
+    margin:0;
+    color:var(--rp-claro);
+    font-size:11px;
+    line-height:1.4;
 }
 
 /* ===========================
