@@ -15,7 +15,7 @@ FUENTES
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* ==========================================
-   REQUIEM OF SOULS — ADMINISTRATIVE POST
+   ROS — ADMINISTRATIVE POST
    ========================================== */
 
 #rospost{
@@ -322,6 +322,7 @@ FUENTES
     margin-top:25px;
     perspective:1200px;
 }
+
 #rospost .rp-staff-card {
     position:relative;
     display:block;
@@ -333,11 +334,13 @@ FUENTES
     cursor:pointer;
     perspective:1200px;
 }
+
 #rospost .rp-staff-card input {
     position:absolute;
     opacity:0;
     pointer-events:none;
 }
+
 #rospost .rp-staff-inner {
     position:relative;
     display:block;
@@ -346,11 +349,13 @@ FUENTES
     transform-style:preserve-3d;
     transition:transform .8s cubic-bezier(.2,.7,.2,1);
 }
-#rospost .rp-staff-card input:checked+.rp-staff-inner{
+
+#rospost .rp-staff-card input:checked + .rp-staff-inner {
     transform:rotateY(180deg);
 }
+
 #rospost .rp-staff-front,
-.rp-staff-back {
+#rospost .rp-staff-back {
     position:absolute;
     inset:0;
     width:100%;
@@ -358,17 +363,20 @@ FUENTES
     margin:0;
     padding:0;
     overflow:hidden;
-    border:1px solid var(--line);
-    background:var(--bg);
+    box-sizing:border-box;
+    border:1px solid var(--rp-borde);
+    background:var(--rp-fondom);
     box-shadow:0 12px 30px rgba(0,0,0,.35);
     backface-visibility:hidden;
     -webkit-backface-visibility:hidden;
 }
+
 #rospost .rp-staff-front {
     display:flex;
     align-items:center;
     justify-content:center;
 }
+
 #rospost .rp-staff-front img {
     display:block;
     width:100%;
@@ -377,6 +385,7 @@ FUENTES
     padding:0;
     object-fit:cover;
 }
+
 #rospost .rp-staff-back {
     display:flex;
     flex-direction:column;
@@ -384,79 +393,99 @@ FUENTES
     padding:28px;
     transform:rotateY(180deg);
     text-align:center;
+
     background:
-        radial-gradient(circle at 50% 20%,rgba(154,122,184,.10),transparent 35%),
-        linear-gradient(145deg,rgba(217,197,167,.035),transparent 50%),
-        var(--panel);
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(102,117,138,.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            145deg,
+            rgba(161,146,120,.035),
+            transparent 50%
+        ),
+        var(--rp-fondom);
 }
+
 #rospost .rp-staff-back::before {
     content:"✦";
     margin-bottom:20px;
-    color:var(--violet);
-    font-family:"Cinzel",serif;
+    color:var(--rp-dorado);
+    font-family:"Cinzel Decorative",serif;
     font-size:16px;
 }
+
 #rospost .rp-staff-name {
     margin-bottom:8px;
-    color:var(--cream-light);
-    font-family:"Cinzel",serif;
+    color:var(--rp-claro);
+    font-family:"Cinzel Decorative",serif;
     font-size:17px;
     letter-spacing:1px;
 }
+
 #rospost .rp-staff-role {
     margin-bottom:18px;
-    color:var(--violet);
+    color:var(--rp-acento);
     font-family:"Montserrat",sans-serif;
     font-size:10px;
     font-weight:600;
     letter-spacing:1.5px;
     text-transform:uppercase;
 }
+
 #rospost .rp-staff-description {
     margin:0;
     padding:0;
-    color:var(--muted);
+    color:var(--rp-texto);
     font-family:"Cormorant Garamond",Georgia,serif;
-    font-size:14px;
-    line-height:1.5;
+    font-size:11px;
+    line-height:1.4;
     text-align:justify;
 }
+
 #rospost .rp-staff-hint {
-    margin-top:22px 0 0;
+    margin:22px 0 0;
     padding:0;
     color:#625d66;
     font-family:"Montserrat",sans-serif;
     font-size:12px;
     letter-spacing:2px;
     text-transform:uppercase;
-}
+ }
 
 /* ===========================
-   CARD GRID
+   CARDS
    =========================== */
 
 #rospost .rp-card-grid {
     display:grid;
     grid-template-columns:repeat(2,minmax(0,1fr));
     gap:10px;
-    margin-top:20px
+    margin:20px 0 0;
 }
+
 #rospost .rp-card {
+    box-sizing:border-box;
     padding:18px;
     border:1px solid var(--rp-dorado);
-    background:rgba(255,255,255,.012)
-}
-#rospost .rp-card-title {
-    margin-bottom:7px;
-    color:var(--rp-acento);
-    font-family:"Cinzel",serif;
-    font-size:14px
-}
-#rospost .rp-card p {
-    margin:0;
-    color:var(--rp-claro);
+    background:rgba(255,255,255,.012);
+    color:var(--rp-texto);
+    font-family:"Montserrat",sans-serif;
     font-size:11px;
     line-height:1.4;
+}
+
+#rospost .rp-card-title {
+    margin:0 0 8px;
+    color:var(--rp-acento);
+    font-family:"Cinzel Decorative",serif;
+    font-size:14px;
+    line-height:1.3;
+}
+
+#rospost .rp-card strong {
+    color:var(--rp-claro);
 }
 
 /* ===========================
