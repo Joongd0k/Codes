@@ -489,6 +489,7 @@ FUENTES
 
 #rospost .rp-card strong, .rp-card b {
     color:var(--rp-claro);
+    font-size: 9px;
 }
 
 /* ===========================
