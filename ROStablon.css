@@ -1891,13 +1891,13 @@
     color:var(--rg-dorado);
 
     font-family:'Raleway',sans-serif;
-    font-size:18px;
+    font-size:20px;
     font-weight:700;
 }
 
 .rosguide .ultemas .cajatema .titulo a{
     color:var(--rg-dorado);
-
+    font-size:18px;
     text-decoration:none;
 }
 
