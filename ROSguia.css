@@ -3,14 +3,14 @@
    ================================ */
 
 #rosguide{
-    --rg-acento:#66758A;
+    --rg-acento:#8a709f;
     --rg-dorado:#a19278;
-    --rg-borde:#303038;
+    --rg-borde:#b1a0c0;
     --rg-fondo:#171b22;
     --rg-fondod:#080a0d;
     --rg-fondom:#11141A;
     --rg-texto:#b8b8c0;
-    --rg-claro:#E6e1d8;
+    --rg-claro:#ebe6ee;
 
     width:1150px;
     min-height:400px;
