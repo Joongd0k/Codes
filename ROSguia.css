@@ -35,6 +35,7 @@
             #171b22 100%);
 
     border:1px solid var(--rg-borde);
+    box-shadow: 0 0 6px rgba(177, 160, 192, .35);
     border-radius:5px;
 
     color:var(--rg-texto);
@@ -80,6 +81,7 @@
     border-radius:50%;
 
     color:var(--rg-dorado);
+    text-shadow: 0 0 7px rgba(161, 146, 120, .5);
     font-size:28px;
 
     background:
