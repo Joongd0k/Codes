@@ -39,7 +39,7 @@
             #171b22 100%
         );
 
-    border:1px solid var(--rg-borde);
+    border:1px solid var(--rg-fondod);
     border-radius:5px;
 
     color:var(--rg-texto);
@@ -1891,7 +1891,7 @@
     color:var(--rg-dorado);
 
     font-family:'Raleway',sans-serif;
-    font-size:8px;
+    font-size:14px;
     font-weight:700;
 }
 
@@ -1909,5 +1909,5 @@
     color:#777b84;
 
     font-family:'Raleway',sans-serif;
-    font-size:6px;
+    font-size:10px;
 }
