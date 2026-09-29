@@ -28,6 +28,10 @@ FUENTES
     --rp-fondom:#11141A;
     --rp-texto:#b8b8c0;
     --rp-claro:#E6e1d8;
+    --line:rgba(217,197,167,.28);
+    --line-soft:rgba(154,122,184,.22);
+    --muted:#98919d;
+    --cream:#d9c5a7;
 
     width:1000px;
     margin:30px auto;
@@ -438,7 +442,7 @@ FUENTES
     margin:0;
     padding:0;
     color:var(--rp-texto);
-    font-family:"Cormorant Garamond",Georgia,serif;
+    font-family:"Cormorant Garamond",serif;
     font-size:11px;
     line-height:1.4;
     text-align:justify;
@@ -469,8 +473,8 @@ FUENTES
 #rospost .rp-card {
     box-sizing:border-box;
     padding:18px;
-    border:4px solid var(--rp-dorado);
-    border-radius: 2px;
+    border:2px solid var(--line-soft);
+    border-radius: 3px;
     background:rgba(255,255,255,.012);
     color:var(--rp-texto);
     font-family:"Montserrat",sans-serif;
@@ -480,7 +484,7 @@ FUENTES
 
 #rospost .rp-card-title {
     margin:0 0 8px;
-    color:var(--rp-acento);
+    color:var(--cream);
     font-family:"Cinzel Decorative",serif;
     font-size:13px;
     line-height:1.3;
@@ -535,10 +539,60 @@ FUENTES
         );
 }
 
+/* ============================
+   SANCIONES 
+   ============================= */
+
+#rospost .rp-steps {
+    display:grid;
+    gap:9px;
+    margin-top:20px
+}
+#rospost .rp-step {
+    display:grid;
+    grid-template-columns:42px minmax(0,1fr);
+    gap:14px;
+    padding:15px;
+    border:1px solid var(--line-soft);
+    background:rgba(255,255,255,.012)
+}
+
+#rospost .rp-step-num {
+    width:42px;
+    height:42px;
+    display:grid;
+    place-items:center;
+    color:var(--cream);
+    border:1px solid var(--line);
+    font-family:"Cinzel",serif;
+    font-size:13px;
+}
+#rospost .rp-step strong {
+    display:block;
+    margin:1px 0 4px;
+    color:var(--cream);
+    font-family:"Cinzel",serif;
+    font-size:14px;
+    font-weight:500;
+}
+#rospost .rp-step span {
+    color:var(--muted);
+    font-size: 14px;
+    line-height:1.45;
+}
 
 /* ============================
    PIE
    ============================= */
+
+#rospost .end-quote {
+    max-width: 90%;
+    margin:15px auto;
+    color:var(--muted);
+    font-size: 9px;
+    font-style:italic;
+    font-family:"Cormorant Garamond", serif;
+}
 
 #rospost .rp-footer{
 
