@@ -592,6 +592,7 @@ FUENTES
     font-size: 9px;
     font-style:italic;
     font-family:"Cormorant Garamond", serif;
+    text-align:center;
 }
 
 #rospost .rp-footer{
