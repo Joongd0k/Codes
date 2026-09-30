@@ -555,7 +555,6 @@ FUENTES
     padding:15px;
     border:1px solid var(--line-soft);
     background:rgba(255,255,255,.012);
-    min-width:0;
 }
 
 #rospost .rp-step-num {
