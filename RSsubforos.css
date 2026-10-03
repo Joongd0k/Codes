@@ -655,6 +655,8 @@ DOS SUBFOROS + GUIDEBOOK ***/
 
     grid-row: 1;
 
+    border-radius: 16px 16px 0 0;
+
 }
 
 
@@ -709,7 +711,7 @@ DOS SUBFOROS + GUIDEBOOK ***/
 
     border: var(--borde2);
 
-    border-radius: 16px;
+    border-radius: 14px;
 
 }
 
@@ -1537,8 +1539,6 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     gap: 6px;
 
-    border-radius: 8px;
-
 }
 
 
@@ -1555,6 +1555,8 @@ PANEL IZQUIERDO + SUBFOROS  */
     background: var(--fondo1);
 
     border: 1px solid var(--borde1);
+
+    border-radius: 6px;
 
     color: var(--textobase);
 
@@ -1645,7 +1647,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     list-style: none;
 
-    border-radius: 13px;
+    border-radius: 11px;
 
 }
 
@@ -2004,7 +2006,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     border: 0;
 
-    border-radius: 0;
+    border-radius: 4px;
 
 }
 
@@ -2023,7 +2025,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     object-position: center;
 
-    border-radius: 0;
+    border-radius: 4px;
 
     }
 
