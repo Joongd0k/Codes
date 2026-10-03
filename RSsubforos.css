@@ -1955,9 +1955,9 @@ PANEL IZQUIERDO + SUBFOROS  */
 
 .cat2-special .avatar-lastpost {
 
-    width: 210px;
+    width: 100%;
 
-    height: 280px;
+    height: 266px;
 
     padding: 4px;
 
