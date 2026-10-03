@@ -1618,7 +1618,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     width: 100%;
 
-    height: 360px;
+    height: 340px;
 
     min-width: 0;
 
@@ -1955,9 +1955,9 @@ PANEL IZQUIERDO + SUBFOROS  */
 
 .cat2-special .avatar-lastpost {
 
-    width: 58px;
+    width: 200px;
 
-    height: 58px;
+    height: 300px;
 
     padding: 4px;
 
@@ -2001,7 +2001,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     color: var(--textobase);
 
-    font-size: 9px;
+    font-size: 10px;
 
     line-height: 130%;
 
@@ -2039,7 +2039,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     opacity: .65;
 
-    font-size: 8px;
+    font-size: 12px;
 
 }
 
