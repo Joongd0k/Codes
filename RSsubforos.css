@@ -48,6 +48,8 @@
 
     list-style: none;
 
+    border-radius: 0 0 16px 16px;
+
 }
 
 
@@ -1428,6 +1430,8 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     grid-row: 1;
 
+    border-radius: 16px 16px 0 0;
+
 }
 
 
@@ -1532,6 +1536,8 @@ PANEL IZQUIERDO + SUBFOROS  */
     flex-direction: column;
 
     gap: 6px;
+
+    border-radius: 8px;
 
 }
 
@@ -1638,6 +1644,8 @@ PANEL IZQUIERDO + SUBFOROS  */
     border: var(--borde2);
 
     list-style: none;
+
+    border-radius: 13px;
 
 }
 
