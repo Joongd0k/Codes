@@ -626,7 +626,7 @@
 DOS SUBFOROS + GUIDEBOOK ***/
 
 
-/* CONTENEDOR */
+/* CONTENEDOR *
 
 .cat1-special .inner {
 
@@ -647,7 +647,7 @@ DOS SUBFOROS + GUIDEBOOK ***/
 }
 
 
-/* CABECERA */
+/* CABECERA *
 
 .cat1-special .categoria {
 
@@ -660,7 +660,7 @@ DOS SUBFOROS + GUIDEBOOK ***/
 }
 
 
-/* GRID DE SUBFOROS */
+/* GRID DE SUBFOROS *
 
 .cat1-special .topiclist.forums {
 
@@ -687,7 +687,7 @@ DOS SUBFOROS + GUIDEBOOK ***/
 }
 
 
-/* TARJETA DEL SUBFORO */
+/* TARJETA DEL SUBFORO *
 
 .cat1-special .foro-index {
 
@@ -717,7 +717,7 @@ DOS SUBFOROS + GUIDEBOOK ***/
 
 
 /* CABECERA DEL SUBFORO
-NO usamos la cabecera arriba.  */
+NO usamos la cabecera arriba.  *
 
 .cat1-special .foro-header {
 
@@ -750,7 +750,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/*  TÍTULO */
+/*  TÍTULO *
 
 .cat1-special .foro-name {
 
@@ -797,7 +797,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* ICONO */
+/* ICONO *
 
 .cat1-special .foro-header-icon {
 
@@ -806,7 +806,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* CUERPO */
+/* CUERPO *
 
 .cat1-special .foro-body {
 
@@ -823,7 +823,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* IMAGEN DEL ÚLTIMO USUARIO */
+/* IMAGEN DEL ÚLTIMO USUARIO *
 
 .cat1-special .foro-avatar {
 
@@ -850,7 +850,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* AVATAR */
+/* AVATAR *
 
 .cat1-special .avatar-lastpost {
 
@@ -893,7 +893,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/*  CONTENIDO */
+/*  CONTENIDO *
 
 .cat1-special .foro-content {
 
@@ -908,7 +908,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* ESTADÍSTICAS */
+/* ESTADÍSTICAS *
 
 .cat1-special .foro-meta {
 
@@ -937,7 +937,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* USUARIO: NO VA AQUÍ */
+/* USUARIO: NO VA AQUÍ *
 
 .cat1-special .foro-meta .lastpost-user {
 
@@ -946,7 +946,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* ESTADÍSTICAS */
+/* ESTADÍSTICAS *
 
 .cat1-special .foro-stats {
 
@@ -988,7 +988,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* ÚLTIMO TEMA */
+/* ÚLTIMO TEMA *
 
 .cat1-special .lastpost-topic {
 
@@ -1019,7 +1019,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* TÍTULO DEL TEMA */
+/* TÍTULO DEL TEMA *
 
 .cat1-special .lastpost-topic a {
 
@@ -1044,7 +1044,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/*  ICONO DEL USUARIO */
+/*  ICONO DEL USUARIO *
 
 .cat1-special .lastpost-topic::after {
 
@@ -1059,7 +1059,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* AUTOR */
+/* AUTOR *
 
 .cat1-special .lastpost-user {
 
@@ -1076,7 +1076,7 @@ NO usamos la cabecera arriba.  */
 
 /*
    Lo mostramos fuera de .foro-meta mediante su posición absoluta.
-*/
+*
 
 .cat1-special .foro-content > .foro-meta .lastpost-user {
 
@@ -1085,7 +1085,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* DESCRIPCIÓN */
+/* DESCRIPCIÓN *
 
 .cat1-special .foro-description {
 
@@ -1118,7 +1118,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* TEXTO */
+/* TEXTO *
 
 .cat1-special .foro-desc {
 
@@ -1143,7 +1143,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* LINKS */
+/* LINKS *
 
 .cat1-special .fdesc-links {
 
@@ -1180,7 +1180,7 @@ NO usamos la cabecera arriba.  */
 }
 
 
-/* FRANJA INFERIOR  */
+/* FRANJA INFERIOR  *
 
 .cat1-special .foro-accent {
 
@@ -1200,6 +1200,579 @@ NO usamos la cabecera arriba.  */
 
     border-radius: 0 0 14px 14px;
 
+}
+
+/**** CATEGORÍA 1
+DOS SUBFOROS + GUIDEBOOK ****/
+
+/* SUBFOROS */
+
+.cat1-special .topiclist.forums {
+    grid-column: 1;
+    grid-row: 2;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+
+    list-style: none;
+}
+
+
+/* TARJETA */
+
+.cat1-special .foro-index {
+    position: relative;
+
+    width: 100%;
+    height: 470px;
+
+    min-width: 0;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    background: var(--fondo3);
+
+    border: var(--borde2);
+
+    border-radius: 16px;
+}
+
+
+/* CUERPO */
+
+.cat1-special .foro-body {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    background: none;
+}
+
+
+/* IMAGEN SUPERIOR */
+
+.cat1-special .foro-avatar {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 225px;
+
+    padding: 0;
+
+    display: block;
+
+    overflow: hidden;
+
+    background: #111;
+
+    border: 0;
+
+    z-index: 1;
+}
+
+
+.cat1-special .avatar-lastpost {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    background: #111;
+
+    border: 0;
+
+    border-radius: 0;
+
+    opacity: 1;
+}
+
+
+.cat1-special .avatar-lastpost img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    filter:
+        grayscale(100%)
+        contrast(.90)
+        brightness(.88);
+}
+
+
+/* OSCURECIMIENTO */
+
+.cat1-special .foro-avatar::before {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,.05) 0%,
+            rgba(0,0,0,.10) 45%,
+            rgba(0,0,0,.55) 100%
+        );
+
+    z-index: 2;
+
+    pointer-events: none;
+}
+
+
+/* CURVA */
+
+.cat1-special .foro-avatar::after {
+    content: "";
+
+    position: absolute;
+
+    left: -5%;
+
+    bottom: -35px;
+
+    width: 110%;
+    height: 65px;
+
+    background: var(--fondo3);
+
+    border-radius:
+        50% 50% 0 0 /
+        100% 100% 0 0;
+
+    z-index: 3;
+
+    pointer-events: none;
+}
+
+
+/*  ICONO DEL SUBFORO */
+
+.cat1-special .foro-header-icon {
+    position: absolute;
+
+    top: 14px;
+    left: 14px;
+
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: rgba(255,255,255,.92);
+
+    color: var(--textobase);
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    z-index: 8;
+}
+
+
+/* TÍTULO */
+
+.cat1-special .foro-header {
+    position: absolute;
+
+    top: 174px;
+    left: 0;
+
+    width: 100%;
+    height: 51px;
+
+    padding: 0 15px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+
+    border: 0;
+
+    z-index: 7;
+}
+
+
+.cat1-special .foro-name {
+    width: 100%;
+
+    padding: 0;
+
+    text-align: center;
+}
+
+
+.cat1-special .foro-name a {
+    display: block;
+
+    width: 100%;
+
+    color: var(--links1);
+
+    font-family: Georgia, serif;
+
+    font-size: 19px;
+
+    line-height: 110%;
+
+    font-weight: 700;
+
+    font-style: italic;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    text-shadow:
+        0 1px 4px rgba(0,0,0,.7);
+}
+
+
+.cat1-special .foro-name a:hover {
+    color: var(--textobase);
+}
+
+
+/* CONTENIDO */
+
+.cat1-special .foro-content {
+    position: static;
+
+    width: 100%;
+    height: 100%;
+
+    display: block;
+}
+
+
+/*  ESTADÍSTICAS */
+
+.cat1-special .foro-meta {
+    position: absolute;
+
+    top: 14px;
+    right: 14px;
+
+    width: auto;
+
+    min-height: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: flex-end;
+
+    gap: 5px;
+
+    background: transparent;
+
+    z-index: 8;
+}
+
+
+.cat1-special .foro-meta .lastpost-user {
+    display: none;
+}
+
+
+.cat1-special .foro-stats {
+    display: flex;
+
+    gap: 5px;
+}
+
+
+.cat1-special .foro-stats > div {
+    padding: 5px 7px;
+
+    background: rgba(255,255,255,.90);
+
+    border: 0;
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 2px 7px rgba(0,0,0,.18);
+
+    color: #333;
+}
+
+
+.cat1-special .foro-stats strong {
+    color: #333;
+
+    font-size: 9px;
+}
+
+
+.cat1-special .foro-stats span {
+    color: #666;
+
+    font-size: 7px;
+}
+
+
+/*  DESCRIPCIÓN */
+
+.cat1-special .foro-description {
+    position: absolute;
+
+    top: 225px;
+    left: 0;
+
+    width: 100%;
+
+    height: 167px;
+
+    padding: 12px 15px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    background: var(--fondo3);
+
+    z-index: 4;
+}
+
+
+/* TEXTO */
+
+.cat1-special .foro-desc {
+    max-height: 62px;
+
+    overflow: hidden;
+
+    padding: 8px 10px;
+
+    box-sizing: border-box;
+
+    background:
+        rgba(255,255,255,.42);
+
+    border:
+        1px solid rgba(0,0,0,.05);
+
+    border-radius: 6px;
+
+    color: var(--textobase);
+
+    font-size: 9px;
+
+    line-height: 145%;
+
+    text-align: justify;
+}
+
+
+/* LINKS */
+
+.cat1-special .fdesc-links {
+    margin-top: 8px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 5px 9px;
+}
+
+
+.cat1-special .fdesc-links a {
+    color: var(--links1);
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: .2px;
+
+    text-transform: uppercase;
+
+    text-decoration: none;
+}
+
+
+.cat1-special .fdesc-links a:hover {
+    color: var(--textobase);
+}
+
+
+/* ÚLTIMO TEMA  */
+
+.cat1-special .lastpost-topic {
+    position: absolute;
+
+    left: 15px;
+    right: 15px;
+
+    bottom: 38px;
+
+    width: auto;
+
+    height: 29px;
+
+    padding: 6px 42px 6px 9px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    background:
+        rgba(255,255,255,.50);
+
+    border-radius: 5px;
+
+    z-index: 7;
+}
+
+
+.cat1-special .lastpost-topic a {
+    display: block;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    color: var(--textobase);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    text-decoration: none;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/*  AVATAR PEQUEÑO DEL ÚLTIMO POST */
+
+.cat1-special .lastpost-topic::after {
+    content: "\f2bd";
+
+    position: absolute;
+
+    right: 7px;
+    top: 50%;
+
+    width: 28px;
+    height: 28px;
+
+    transform: translateY(-50%);
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: var(--fondo2);
+
+    border:
+        2px solid var(--links1);
+
+    border-radius: 50%;
+
+    font-family: FontAwesome;
+
+    color: var(--links1);
+
+    font-size: 16px;
+}
+
+
+/* AUTOR */
+
+.cat1-special .lastpost-user {
+    position: absolute;
+
+    left: 24px;
+    bottom: 14px;
+
+    z-index: 8;
+
+    color: var(--textobase);
+
+    font-size: 8px;
+}
+
+
+.cat1-special .foro-content > .foro-meta .lastpost-user {
+    display: block;
+}
+
+
+/* FRANJA INFERIOR */
+
+.cat1-special .foro-accent {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    bottom: 0;
+
+    height: 7px;
+
+    background: var(--links1);
+
+    z-index: 9;
+
+    border-radius:
+        0 0 14px 14px;
 }
 
 /** GUIDEBOOK — CATEGORÍA 1 **/
