@@ -1205,6 +1205,39 @@ NO usamos la cabecera arriba.  *
 /**** CATEGORÍA 1
 DOS SUBFOROS + GUIDEBOOK ****/
 
+/* CONTENEDOR */
+
+.cat1-special .inner {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        390px;
+
+    grid-template-rows:
+        auto
+        minmax(0, 1fr);
+
+    gap: 18px;
+
+    align-items: stretch;
+
+}
+
+
+/* CABECERA */
+
+.cat1-special .categoria {
+
+    grid-column: 1 / -1;
+
+    grid-row: 1;
+
+    border-radius: 16px 16px 0 0;
+
+}
+
 /* SUBFOROS */
 
 .cat1-special .topiclist.forums {
