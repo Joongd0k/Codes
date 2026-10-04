@@ -1710,31 +1710,31 @@ DOS SUBFOROS + GUIDEBOOK ****/
 }
 
 
-/*  AVATAR PEQUEÑO DEL ÚLTIMO POST */
+/*  AVATAR DEL ÚLTIMO POST */
 
-.cat1-special .lastpost-avatar::after {
+.cat1-special .lastpost-avatar {
 
     position: absolute;
 
-    right: 7px;
-    top: 50%;
-
     right: 18px;
-    bottom: 34px;
+    bottom: 32px;
+
+    width: 30px;
+    height: 30px;
 
     overflow: hidden;
 
     box-sizing: border-box;
 
-    border:
-        2px solid var(--links1);
+    background: var(--fondo2);
+
+    border: 2px solid var(--links1);
 
     border-radius: 50%;
 
-    background: var(--fondo2);
-
     z-index: 10;
 }
+
 
 .cat1-special .lastpost-avatar img {
 
@@ -1746,7 +1746,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
     object-fit: cover;
 
     object-position: center;
-}
+    }
 
 
 /* AUTOR */
@@ -1756,15 +1756,12 @@ DOS SUBFOROS + GUIDEBOOK ****/
     position: absolute;
 
     left: 24px;
+    right: 60px;
     bottom: 13px;
 
     z-index: 8;
 
     display: block !important;
-
-    width: auto;
-
-    max-width: calc(100% - 48px);
 
     overflow: hidden;
 
