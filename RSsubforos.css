@@ -660,7 +660,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
 /* SUBFOROS */
 
 .cat1-special .topiclist.forums {
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 2;
 
     width: 100%;
