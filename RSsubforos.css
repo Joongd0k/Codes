@@ -1262,6 +1262,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
 /* TARJETA */
 
 .cat1-special .foro-index {
+
     position: relative;
 
     width: 100%;
@@ -1281,12 +1282,26 @@ DOS SUBFOROS + GUIDEBOOK ****/
     border: var(--borde2);
 
     border-radius: 16px;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+
+.cat1-special .foro-index:hover {
+
+    border-color: var(--links1);
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.25);
 }
 
 
 /* CUERPO */
 
 .cat1-special .foro-body {
+
     position: relative;
 
     width: 100%;
@@ -1294,13 +1309,12 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
     display: block;
 
-    background: none;
+    background: transparent;
 }
-
 
 /* IMAGEN SUPERIOR */
 
-.cat1-special .foro-avatar {
+.cat1-special .foro-cover {
     position: absolute;
 
     top: 0;
@@ -1309,38 +1323,15 @@ DOS SUBFOROS + GUIDEBOOK ****/
     width: 100%;
     height: 225px;
 
-    padding: 0;
-
-    display: block;
-
     overflow: hidden;
 
     background: #111;
-
-    border: 0;
 
     z-index: 1;
 }
 
 
-.cat1-special .avatar-lastpost {
-    width: 100%;
-    height: 100%;
-
-    margin: 0;
-    padding: 0;
-
-    background: #111;
-
-    border: 0;
-
-    border-radius: 0;
-
-    opacity: 1;
-}
-
-
-.cat1-special .avatar-lastpost img {
+.cat1-special .foro-cover img {
     display: block;
 
     width: 100%;
@@ -1359,7 +1350,8 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
 /* OSCURECIMIENTO */
 
-.cat1-special .foro-avatar::before {
+.cat1-special .foro-cover::after {
+
     content: "";
 
     position: absolute;
@@ -1382,7 +1374,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
 /* CURVA */
 
-.cat1-special .foro-avatar::after {
+.cat1-special .foro-cover::after {
     content: "";
 
     position: absolute;
@@ -1409,32 +1401,9 @@ DOS SUBFOROS + GUIDEBOOK ****/
 /*  ICONO DEL SUBFORO */
 
 .cat1-special .foro-header-icon {
-    position: absolute;
 
-    top: 14px;
-    left: 14px;
-
-    width: 38px;
-    height: 38px;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    box-sizing: border-box;
-
-    background: rgba(255,255,255,.92);
-
-    color: var(--textobase);
-
-    border-radius: 6px;
-
-    font-size: 16px;
-
-    z-index: 8;
+    display: none !important;
 }
-
 
 /* TÍTULO */
 
@@ -1519,6 +1488,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
 /*  ESTADÍSTICAS */
 
 .cat1-special .foro-meta {
+
     position: absolute;
 
     top: 14px;
@@ -1544,19 +1514,26 @@ DOS SUBFOROS + GUIDEBOOK ****/
 }
 
 
+/* OCULTAMOS EL AUTOR DENTRO DE META */
+
 .cat1-special .foro-meta .lastpost-user {
-    display: none;
+
+    display: none !important;
 }
 
 
 .cat1-special .foro-stats {
+
     display: flex;
+
+    align-items: center;
 
     gap: 5px;
 }
 
 
 .cat1-special .foro-stats > div {
+
     padding: 5px 7px;
 
     background: rgba(255,255,255,.90);
@@ -1573,6 +1550,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
 
 .cat1-special .foro-stats strong {
+
     color: #333;
 
     font-size: 9px;
@@ -1580,22 +1558,22 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
 
 .cat1-special .foro-stats span {
+
     color: #666;
 
     font-size: 7px;
 }
 
-
 /*  DESCRIPCIÓN */
 
 .cat1-special .foro-description {
+
     position: absolute;
 
     top: 225px;
     left: 0;
 
     width: 100%;
-
     height: 167px;
 
     padding: 12px 15px;
@@ -1610,30 +1588,29 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
     justify-content: flex-start;
 
-    background: var(--fondo3);
+    background: transparent;
 
     z-index: 4;
 }
 
 
-/* TEXTO */
+/* TEXTO DE DESCRIPCIÓN */
 
 .cat1-special .foro-desc {
+
     max-height: 62px;
 
     overflow: hidden;
 
-    padding: 8px 10px;
+    padding: 0;
 
     box-sizing: border-box;
 
-    background:
-        rgba(255,255,255,.42);
+    background: transparent;
 
-    border:
-        1px solid rgba(0,0,0,.05);
+    border: 0;
 
-    border-radius: 6px;
+    border-radius: 0;
 
     color: var(--textobase);
 
@@ -1642,7 +1619,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
     line-height: 145%;
 
     text-align: justify;
-}
+    }
 
 
 /* LINKS */
@@ -1681,12 +1658,13 @@ DOS SUBFOROS + GUIDEBOOK ****/
 /* ÚLTIMO TEMA  */
 
 .cat1-special .lastpost-topic {
+
     position: absolute;
 
     left: 15px;
     right: 15px;
 
-    bottom: 38px;
+    bottom: 36px;
 
     width: auto;
 
@@ -1700,8 +1678,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
     align-items: center;
 
-    background:
-        rgba(255,255,255,.50);
+    background: rgba(255,255,255,.50);
 
     border-radius: 5px;
 
@@ -1710,9 +1687,12 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
 
 .cat1-special .lastpost-topic a {
+
     display: block;
 
     width: 100%;
+
+    min-width: 0;
 
     overflow: hidden;
 
@@ -1732,60 +1712,72 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
 /*  AVATAR PEQUEÑO DEL ÚLTIMO POST */
 
-.cat1-special .lastpost-topic::after {
-    content: "\f2bd";
+.cat1-special .lastpost-avatar::after {
 
     position: absolute;
 
     right: 7px;
     top: 50%;
 
-    width: 28px;
-    height: 28px;
+    right: 18px;
+    bottom: 34px;
 
-    transform: translateY(-50%);
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
+    overflow: hidden;
 
     box-sizing: border-box;
-
-    background: var(--fondo2);
 
     border:
         2px solid var(--links1);
 
     border-radius: 50%;
 
-    font-family: FontAwesome;
+    background: var(--fondo2);
 
-    color: var(--links1);
+    z-index: 10;
+}
 
-    font-size: 16px;
+.cat1-special .lastpost-avatar img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
 }
 
 
 /* AUTOR */
 
 .cat1-special .lastpost-user {
+
     position: absolute;
 
     left: 24px;
-    bottom: 14px;
+    bottom: 13px;
 
     z-index: 8;
+
+    display: block !important;
+
+    width: auto;
+
+    max-width: calc(100% - 48px);
+
+    overflow: hidden;
 
     color: var(--textobase);
 
     font-size: 8px;
-}
 
+    line-height: 120%;
 
-.cat1-special .foro-content > .foro-meta .lastpost-user {
-    display: block;
-}
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+    }
 
 
 /* FRANJA INFERIOR */
@@ -1802,7 +1794,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
     background: var(--links1);
 
-    z-index: 9;
+    z-index: 12;
 
     border-radius:
         0 0 14px 14px;
