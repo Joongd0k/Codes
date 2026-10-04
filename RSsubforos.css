@@ -758,6 +758,9 @@
 
 }
 
+.cat1-special .foro-header-icon {
+    display: none;
+}
 
 /*  NOMBRE DEL SUBFORO  */
 
@@ -769,7 +772,7 @@
 
     width: auto;
 
-    padding-right: 15px;
+    padding-right: 0;
 
 }
 
@@ -833,7 +836,8 @@
         minmax(0, 62%);
 
     grid-template-rows:
-        90px
+        70px
+        48px
         52px
         minmax(0, 1fr);
 
@@ -859,7 +863,7 @@ Ocupa las dos filas superiores. */
 
     grid-column: 1;
 
-    grid-row: 1 / 3;
+    grid-row: 1 / 4;
 
     width: 100%;
     height: 100%;
@@ -876,7 +880,8 @@ Ocupa las dos filas superiores. */
 
     background: #0d0d0d;
 
-    border-right: 1px solid rgba(255,255,255,.06);
+    border-right: 2px solid rgba(255,255,255,.06);
+    
 
 }
 
@@ -989,77 +994,63 @@ Ocupa las dos filas superiores. */
 }
 
 
-/*  AUTOR + TEMAS + MENSAJES */
+/* AUTOR */
 
-.cat1-special .foro-meta {
-
+.cat1-special .lastpost-user {
     grid-column: 2;
-
     grid-row: 2;
 
     width: 100%;
     height: 100%;
+    min-width: 0;
 
-    min-height: 0;
-
-    padding: 7px 12px;
+    margin: 0;
+    padding: 7px 15px;
 
     box-sizing: border-box;
 
     display: flex;
-
     align-items: center;
-
-    justify-content: space-between;
-
-    gap: 8px;
-
-    background: rgba(0,0,0,.25);
-
-}
-
-
-/* AUTOR */
-
-.cat1-special .lastpost-user {
-
-    min-width: 0;
-
-    flex: 1;
 
     overflow: hidden;
 
-    margin: 0;
-
     color: var(--links1);
-
     font-size: 12px;
-
     font-weight: 700;
-
     line-height: 120%;
 
     opacity: .85;
 
     text-overflow: ellipsis;
-
     white-space: nowrap;
 
+    background: rgba(0,0,0,.12);
+    border-bottom: 1px solid rgba(255,255,255,.06);
 }
 
+.cat1-special .foro-meta {
+    display: contents;
+}
 
 /*  ESTADÍSTICAS */
 
 .cat1-special .foro-stats {
+    grid-column: 2;
+    grid-row: 3;
 
-    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
 
     display: flex;
-
     align-items: center;
+    justify-content: flex-end;
 
     gap: 7px;
+    padding: 7px 12px;
 
+    box-sizing: border-box;
+
+    background: rgba(0,0,0,.25);
 }
 
 
