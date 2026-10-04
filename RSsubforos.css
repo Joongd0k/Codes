@@ -1536,7 +1536,7 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
     padding: 5px 7px;
 
-    background: rgba(255,255,255,.90);
+    background: rgba(103,55,105,.65);
 
     border: 0;
 
@@ -1545,30 +1545,32 @@ DOS SUBFOROS + GUIDEBOOK ****/
     box-shadow:
         0 2px 7px rgba(0,0,0,.18);
 
-    color: #333;
+    color: var(--textobase);
 }
 
 
 .cat1-special .foro-stats strong {
 
-    color: #333;
+    color: #fff;
 
-    font-size: 9px;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 
 .cat1-special .foro-stats span {
 
-    color: #666;
+    color: rgba(255,255,255,.85);
 
-    font-size: 7px;
+    font-size: 9px;
+    line-height: 100%;
 }
 
 /*  DESCRIPCIÓN */
 
 .cat1-special .foro-description {
 
-    position: absolute;
+    min-width: 0;
 
     top: 225px;
     left: 0;
@@ -1588,6 +1590,8 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
     justify-content: flex-start;
 
+    position: relative;
+
     background: transparent;
 
     z-index: 4;
@@ -1605,12 +1609,6 @@ DOS SUBFOROS + GUIDEBOOK ****/
     padding: 0;
 
     box-sizing: border-box;
-
-    background: transparent;
-
-    border: 0;
-
-    border-radius: 0;
 
     color: var(--textobase);
 
@@ -1630,19 +1628,29 @@ DOS SUBFOROS + GUIDEBOOK ****/
     display: flex;
 
     flex-wrap: wrap;
+    
+    display: grid;
 
-    gap: 5px 9px;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 5px 8px;
 }
 
 
 .cat1-special .fdesc-links a {
-    color: var(--links1);
 
     font-size: 7px;
 
     font-weight: 700;
 
     letter-spacing: .2px;
+
+    background: rgba(103,55,105,.65);
+
+    border-radius: 4px;
+
+    color: var(--textobase);
 
     text-transform: uppercase;
 
@@ -1651,7 +1659,8 @@ DOS SUBFOROS + GUIDEBOOK ****/
 
 
 .cat1-special .fdesc-links a:hover {
-    color: var(--textobase);
+    background: var(--links1);
+    color: #fff;
 }
 
 
