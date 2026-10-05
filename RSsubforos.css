@@ -2237,3 +2237,625 @@ PANEL IZQUIERDO + SUBFOROS  */
         );
 
 }
+
+
+/**** CATEGORÍA 4
+SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
+
+
+/* CONTENEDOR */
+
+.cat4-special .inner {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* CABECERA */
+
+.cat4-special .categoria {
+    width: 100%;
+}
+
+
+/* LISTA DE SUBFOROS */
+
+.cat4-special .topiclist.forums {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    list-style: none;
+}
+
+
+/* TARJETA */
+
+.cat4-special .foro-index {
+    position: relative;
+
+    width: 100%;
+    min-width: 0;
+
+    min-height: 300px;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        300px;
+
+    background: var(--fondo3);
+
+    border: var(--borde2);
+
+    border-radius: 16px;
+}
+
+
+/* PARTE IZQ */
+
+.cat4-special .foro-body {
+    position: relative;
+
+    min-width: 0;
+    min-height: 300px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: var(--fondo3);
+}
+
+
+/*  FRANJA SUPERIOR */
+
+.cat4-special .foro-header {
+    position: relative;
+
+    width: 100%;
+    height: 62px;
+
+    flex-shrink: 0;
+
+    padding: 0 14px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: var(--fondo2);
+
+    border-bottom:
+        1px solid rgba(255,255,255,.06);
+
+    z-index: 5;
+}
+
+
+/*  ICONO + TÍTULO */
+
+.cat4-special .foro-name {
+    min-width: 0;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.cat4-special .foro-name::before {
+    content: "\f02d";
+
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    background: var(--links1);
+
+    color: var(--fondo1);
+
+    border-radius: 6px;
+
+    font-family: FontAwesome;
+
+    font-size: 14px;
+}
+
+
+.cat4-special .foro-name a {
+    display: block;
+
+    overflow: hidden;
+
+    color: var(--textobase);
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    font-style: italic;
+
+    line-height: 110%;
+
+    text-decoration: none;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.cat4-special .foro-name a:hover {
+    color: var(--links1);
+}
+
+
+/* ICONO ORIGINAL */
+
+.cat4-special .foro-header-icon {
+    display: none;
+}
+
+
+/* INFORMACIÓN DEL ÚLTIMO TEMA */
+
+.cat4-special .foro-header::after {
+    content: "";
+}
+
+
+/* AVATAR PEQUEÑO + AUTOR + TEMA */
+
+.cat4-special .foro-lastpost {
+    position: absolute;
+
+    top: 8px;
+    right: 14px;
+
+    height: 46px;
+
+    padding-right: 2px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+
+    z-index: 8;
+}
+
+
+/* AVATAR */
+
+.cat4-special .avatar-lastpost {
+    order: 1;
+
+    width: 40px;
+    height: 40px;
+
+    flex-shrink: 0;
+
+    margin: 0;
+    padding: 2px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background: var(--fondo1);
+
+    border:
+        1px solid var(--links1);
+
+    border-radius: 10px;
+}
+
+
+.cat4-special .avatar-lastpost img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+}
+
+
+/* INFORMACIÓN */
+
+.cat4-special .lastpost-info {
+    order: 2;
+
+    min-width: 120px;
+    max-width: 190px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    gap: 2px;
+}
+
+
+/* AUTOR */
+
+.cat4-special .lastpost-user {
+    display: block;
+
+    overflow: hidden;
+
+    color: var(--links1);
+
+    font-size: 8px;
+
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+/* ÚLTIMO TEMA */
+
+.cat4-special .lastpost-topic {
+    min-width: 0;
+
+    display: block;
+}
+
+
+.cat4-special .lastpost-topic a {
+    display: block;
+
+    overflow: hidden;
+
+    color: var(--textobase);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 120%;
+
+    text-decoration: none;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+}
+
+
+.cat4-special .lastpost-topic a:hover {
+    color: var(--links1);
+}
+
+
+/*  IMAGEN GRANDE */
+
+.cat4-special .foro-cover {
+    position: relative;
+
+    width: 100%;
+
+    flex: 1;
+
+    min-height: 190px;
+
+    overflow: hidden;
+
+    background-size: cover;
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-color: #111;
+}
+
+
+/* OSCURECIMIENTO */
+
+.cat4-special .foro-cover::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,0,0,.05),
+            rgba(0,0,0,.18)
+        );
+
+    pointer-events: none;
+}
+
+
+/* SI EXISTE OVERLAY ORIGINAL */
+
+.cat4-special .foro-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 45%,
+            rgba(0,0,0,.25) 100%
+        );
+
+    z-index: 2;
+}
+
+
+/* LINKS INFERIORES */
+
+.cat4-special .fdesc-links {
+    width: 100%;
+
+    min-height: 38px;
+
+    padding: 7px 12px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 0;
+
+    background: var(--fondo2);
+
+    border-top:
+        1px solid rgba(255,255,255,.06);
+
+    overflow: hidden;
+}
+
+
+.cat4-special .fdesc-links a {
+    flex: 1;
+
+    padding: 4px 10px;
+
+    color: var(--textobase);
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: .6px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    border-right:
+        1px solid rgba(255,255,255,.08);
+}
+
+
+.cat4-special .fdesc-links a:last-child {
+    border-right: 0;
+}
+
+
+.cat4-special .fdesc-links a:hover {
+    color: var(--links1);
+
+    background:
+        rgba(255,255,255,.03);
+}
+
+
+/* PARTE DERECHA — DESCRIPCIÓN */
+
+.cat4-special .foro-content {
+    position: relative;
+
+    min-width: 0;
+
+    height: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    flex-direction: column;
+
+    background: var(--fondo3);
+
+    border-left:
+        1px solid rgba(255,255,255,.07);
+}
+
+
+/* ESTADÍSTICAS */
+
+.cat4-special .foro-meta {
+    position: relative;
+
+    width: 100%;
+
+    margin: 0 0 20px;
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: flex-start;
+
+    gap: 6px;
+
+    background: none;
+
+    order: 1;
+}
+
+
+.cat4-special .foro-stats {
+    display: flex;
+
+    gap: 6px;
+
+    width: 100%;
+}
+
+
+.cat4-special .foro-stats > div {
+    flex: 1;
+
+    padding: 7px 6px;
+
+    box-sizing: border-box;
+
+    background: var(--fondo2);
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    border-radius: 5px;
+
+    text-align: center;
+}
+
+
+.cat4-special .foro-stats strong {
+    display: block;
+
+    color: var(--links1);
+
+    font-size: 11px;
+
+    line-height: 100%;
+}
+
+
+.cat4-special .foro-stats span {
+    display: block;
+
+    margin-top: 3px;
+
+    color: var(--textobase);
+
+    font-size: 7px;
+
+    text-transform: uppercase;
+}
+
+
+/*  DESCRIPCIÓN */
+
+.cat4-special .foro-description {
+    position: relative;
+
+    width: 100%;
+
+    flex: 1;
+
+    min-height: 0;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: flex-start;
+
+    background: none;
+
+    order: 2;
+}
+
+
+.cat4-special .foro-desc {
+    width: 100%;
+
+    max-height: none;
+
+    overflow: hidden;
+
+    padding: 0;
+
+    color: var(--textobase);
+
+    font-size: 10px;
+
+    line-height: 155%;
+
+    text-align: justify;
+
+    background: none;
+
+    border: 0;
+}
+
+
+/* FRANJA DECORATIVA */
+
+.cat4-special .foro-accent {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 5px;
+
+    background: var(--links1);
+
+    z-index: 10;
+}
