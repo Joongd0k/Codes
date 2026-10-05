@@ -2240,53 +2240,74 @@ PANEL IZQUIERDO + SUBFOROS  */
 
 
 /**** CATEGORÍA 4
-SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
+SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
 
-/* CONTENEDOR */
+/* 
+   CONTENEDOR DE LA CATEGORÍA
+*/
 
 .cat4-special .inner {
+
     display: flex;
+
     flex-direction: column;
+
     gap: 18px;
+
 }
 
 
-/* CABECERA DE CATEGORÍA */
+/* CABECERA DE LA CATEGORÍA */
 
 .cat4-special .categoria {
+
     width: 100%;
+
     border-radius: 16px 16px 0 0;
+
 }
 
 
-/* LISTA DE SUBFOROS */
+/* 
+   LISTA DE SUBFOROS
+*/
 
 .cat4-special .topiclist.forums {
+
     width: 100%;
 
     margin: 0;
+
     padding: 0;
 
     display: flex;
+
     flex-direction: column;
 
     gap: 18px;
 
     list-style: none;
+
 }
 
-/* TARJETA */
+
+/* 
+   TARJETA COMPLETA
+*/
 
 .cat4-special .foro-index {
+
     position: relative;
 
     width: 100%;
+
     min-width: 0;
 
-    min-height: 300px;
+    min-height: 390px;
 
     margin: 0;
+
     padding: 0;
 
     overflow: hidden;
@@ -2295,45 +2316,421 @@ SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
 
     display: grid;
 
+    /*
+       IZQUIERDA = información
+       DERECHA   = título + imagen + links
+    */
+
     grid-template-columns:
-        minmax(0, 1fr)
-        300px;
+        minmax(0, 42%)
+        minmax(0, 58%);
+
+    grid-template-rows:
+        100%;
 
     background: var(--fondo3);
 
     border: var(--borde2);
 
     border-radius: 16px;
+
 }
 
 
-/* PARTE IZQ */
+/* 
+   IMPORTANTE
+   Eliminamos las cajas intermedias del flujo.
+   
+   Así podemos colocar cada elemento directamente
+   dentro del grid de la tarjeta.
+*/
 
-.cat4-special .foro-body {
-    position: relative;
+.cat4-special .foro-body,
+.cat4-special .foro-content,
+.cat4-special .foro-meta,
+.cat4-special .foro-description {
 
-    min-width: 0;
-    min-height: 300px;
+    display: contents;
+
+}
+
+
+/* 
+   COLUMNA IZQUIERDA
+*/
+
+
+/* AVATAR */
+
+.cat4-special .foro-avatar {
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+    width: 180px;
+
+    height: 150px;
+
+    margin: 20px 0 0 20px;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    display: block;
+
+    overflow: hidden;
+
+    background: transparent;
+
+    border: 0;
+
+    z-index: 4;
+
+}
+
+
+/* CONTENEDOR DEL AVATAR */
+
+.cat4-special .avatar-lastpost {
+
+    width: 100%;
+
+    height: 100%;
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    background: var(--fondo1);
+
+    border: 1px solid var(--links1);
+
+    border-radius: 12px;
+
+}
+
+
+/* IMAGEN DEL AVATAR */
+
+.cat4-special .avatar-lastpost img {
+
+    display: block;
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 11px;
+
+}
+
+
+/* 
+   AUTOR
+*/
+
+.cat4-special .lastpost-user {
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+    align-self: start;
+
+    width: calc(100% - 220px);
+
+    margin: 25px 20px 0 215px;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    color: var(--links1);
+
+    font-size: 9px;
+
+    font-weight: 700;
+
+    line-height: 120%;
+
+    text-transform: uppercase;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    z-index: 5;
+
+}
+
+
+/* 
+   TÍTULO DEL ÚLTIMO TEMA
+*/
+
+.cat4-special .lastpost-topic {
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+    align-self: start;
+
+    width: calc(100% - 220px);
+
+    margin: 43px 20px 0 215px;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+    min-height: 0;
+
+    display: block;
+
+    overflow: hidden;
+
+    border: 0;
+
+    z-index: 5;
+
+}
+
+
+.cat4-special .lastpost-topic a {
+
+    display: block;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    color: var(--textobase);
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    line-height: 125%;
+
+    text-decoration: none;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+}
+
+
+.cat4-special .lastpost-topic a:hover {
+
+    color: var(--links1);
+
+}
+
+
+/* 
+   DESCRIPCIÓN
+*/
+
+.cat4-special .foro-description {
+
+    grid-column: 1;
+
+    grid-row: 1;
+
+    align-self: end;
+
+    width: calc(100% - 40px);
+
+    height: 145px;
+
+    margin: 0 20px 20px;
+
+    padding: 14px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    display: block;
+
+    background: rgba(0,0,0,.25);
+
+    border: 1px solid rgba(255,255,255,.07);
+
+    border-radius: 8px;
+
+    z-index: 4;
+
+}
+
+
+/* TEXTO */
+
+.cat4-special .foro-desc {
+
+    width: 100%;
+
+    height: 100%;
+
+    max-height: none;
+
+    padding: 0;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+
+    color: var(--textobase);
+
+    font-size: 10px;
+
+    line-height: 150%;
+
+    text-align: justify;
+
+    background: none;
+
+    border: 0;
+
+}
+
+
+/* 
+   LINKS
+   Los sacamos visualmente de la descripción
+   y los colocamos abajo a la derecha.
+*/
+
+.cat4-special .fdesc-links {
+
+    position: absolute;
+
+    left: calc(42% + 1px);
+
+    right: 0;
+
+    bottom: 0;
+
+    width: auto;
+
+    min-height: 42px;
+
+    margin: 0;
+
+    padding: 7px 12px;
+
+    box-sizing: border-box;
 
     display: flex;
 
-    flex-direction: column;
+    align-items: center;
 
-    background: var(--fondo3);
+    justify-content: stretch;
+
+    gap: 0;
+
+    overflow: hidden;
+
+    background: var(--fondo2);
+
+    border-top: 1px solid rgba(255,255,255,.07);
+
+    z-index: 8;
+
 }
 
 
-/*  FRANJA SUPERIOR */
+/* LINKS INDIVIDUALES */
+
+.cat4-special .fdesc-links a {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 5px 8px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    color: var(--textobase);
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: .6px;
+
+    line-height: 110%;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    border-right: 1px solid rgba(255,255,255,.08);
+
+}
+
+
+.cat4-special .fdesc-links a:last-child {
+
+    border-right: 0;
+
+}
+
+
+.cat4-special .fdesc-links a:hover {
+
+    color: var(--links1);
+
+    background: rgba(255,255,255,.04);
+
+}
+
+
+/* 
+   COLUMNA DERECHA
+   TÍTULO + ESTADÍSTICAS
+*/
 
 .cat4-special .foro-header {
-    position: relative;
 
-    width: 100%;
-    height: 62px;
+    grid-column: 2;
 
-    flex-shrink: 0;
+    grid-row: 1;
 
-    padding: 0 14px;
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    right: 0;
+
+    height: 64px;
+
+    padding: 0 15px;
 
     box-sizing: border-box;
 
@@ -2345,37 +2742,48 @@ SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
 
     background: var(--fondo2);
 
-    border-bottom:
-        1px solid rgba(255,255,255,.06);
+    border-bottom: 1px solid rgba(255,255,255,.07);
 
-    z-index: 5;
+    z-index: 7;
+
 }
 
 
-/*  ICONO + TÍTULO */
+/* TÍTULO */
 
 .cat4-special .foro-name {
+
     min-width: 0;
+
+    flex: 1;
+
+    padding: 0;
 
     display: flex;
 
     align-items: center;
 
-    gap: 10px;
+    gap: 9px;
+
 }
 
 
+/* ICONO */
+
 .cat4-special .foro-name::before {
+
     content: "\f02d";
 
-    width: 34px;
-    height: 34px;
+    width: 32px;
+
+    height: 32px;
 
     flex-shrink: 0;
 
     display: flex;
 
     align-items: center;
+
     justify-content: center;
 
     box-sizing: border-box;
@@ -2388,12 +2796,20 @@ SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
 
     font-family: FontAwesome;
 
-    font-size: 14px;
+    font-size: 13px;
+
 }
 
 
+/* NOMBRE */
+
 .cat4-special .foro-name a {
+
     display: block;
+
+    min-width: 0;
+
+    max-width: 100%;
 
     overflow: hidden;
 
@@ -2414,174 +2830,132 @@ SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
     text-overflow: ellipsis;
 
     white-space: nowrap;
+
 }
 
 
 .cat4-special .foro-name a:hover {
+
     color: var(--links1);
+
 }
 
 
 /* ICONO ORIGINAL */
 
 .cat4-special .foro-header-icon {
+
     display: none;
+
 }
 
 
-/* INFORMACIÓN DEL ÚLTIMO TEMA */
+/* 
+   ESTADÍSTICAS
+   TEMAS | MENSAJES
+*/
 
-.cat4-special .foro-header::after {
-    content: "";
-}
+.cat4-special .foro-stats {
 
-
-/* AVATAR PEQUEÑO + AUTOR + TEMA */
-
-.cat4-special .foro-lastpost {
     position: absolute;
 
-    top: 8px;
+    top: 11px;
+
     right: 14px;
 
-    height: 46px;
-
-    padding-right: 2px;
+    width: auto;
 
     display: flex;
 
     align-items: center;
 
-    gap: 8px;
+    gap: 5px;
 
-    z-index: 8;
+    z-index: 10;
+
 }
 
 
-/* AVATAR */
+/* CAJAS */
 
-.cat4-special .avatar-lastpost {
-    order: 1;
+.cat4-special .foro-stats > div {
 
-    width: 40px;
-    height: 40px;
+    min-width: 52px;
 
-    flex-shrink: 0;
-
-    margin: 0;
-    padding: 2px;
+    padding: 5px 7px;
 
     box-sizing: border-box;
 
-    overflow: hidden;
+    background: rgba(0,0,0,.28);
 
-    background: var(--fondo1);
+    border: 1px solid rgba(255,255,255,.08);
 
-    border:
-        1px solid var(--links1);
+    border-radius: 5px;
 
-    border-radius: 10px;
+    text-align: center;
+
 }
 
 
-.cat4-special .avatar-lastpost img {
+/* NÚMERO */
+
+.cat4-special .foro-stats strong {
+
     display: block;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    border-radius: 7px;
-}
-
-
-/* INFORMACIÓN */
-
-.cat4-special .lastpost-info {
-    order: 2;
-
-    min-width: 120px;
-    max-width: 190px;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-    gap: 2px;
-}
-
-
-/* AUTOR */
-
-.cat4-special .lastpost-user {
-    display: block;
-
-    overflow: hidden;
 
     color: var(--links1);
 
-    font-size: 8px;
+    font-size: 10px;
 
-    font-weight: 700;
+    line-height: 100%;
 
-    text-transform: uppercase;
-
-    text-overflow: ellipsis;
-
-    white-space: nowrap;
 }
 
 
-/* ÚLTIMO TEMA */
+/* TEXTO */
 
-.cat4-special .lastpost-topic {
-    min-width: 0;
+.cat4-special .foro-stats span {
 
     display: block;
-}
 
-
-.cat4-special .lastpost-topic a {
-    display: block;
-
-    overflow: hidden;
+    margin-top: 3px;
 
     color: var(--textobase);
 
-    font-size: 9px;
+    font-size: 6px;
 
-    font-weight: 700;
+    line-height: 100%;
 
-    line-height: 120%;
+    text-transform: uppercase;
 
-    text-decoration: none;
-
-    text-overflow: ellipsis;
-
-    white-space: nowrap;
 }
 
 
-.cat4-special .lastpost-topic a:hover {
-    color: var(--links1);
-}
-
-
-/*  IMAGEN GRANDE */
+/* 
+   IMAGEN GRANDE
+*/
 
 .cat4-special .foro-cover {
-    position: relative;
 
-    width: 100%;
+    position: absolute;
 
-    flex: 1;
+    top: 64px;
 
-    min-height: 190px;
+    left: 42%;
+
+    right: 0;
+
+    bottom: 42px;
+
+    width: auto;
+
+    height: auto;
+
+    margin: 0;
 
     overflow: hidden;
+
+    background-color: #111;
 
     background-size: cover;
 
@@ -2589,13 +2963,15 @@ SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
 
     background-repeat: no-repeat;
 
-    background-color: #111;
+    z-index: 1;
+
 }
 
 
 /* OSCURECIMIENTO */
 
 .cat4-special .foro-cover::after {
+
     content: "";
 
     position: absolute;
@@ -2606,256 +2982,86 @@ SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
         linear-gradient(
             to bottom,
             rgba(0,0,0,.05),
-            rgba(0,0,0,.18)
+            rgba(0,0,0,.25)
         );
 
     pointer-events: none;
+
 }
 
 
-/* SI EXISTE OVERLAY ORIGINAL */
+/* 
+   OVERLAY
+*/
 
 .cat4-special .foro-overlay {
+
     position: absolute;
 
     inset: 0;
 
+    z-index: 2;
+
     background:
         linear-gradient(
             to bottom,
-            transparent 45%,
-            rgba(0,0,0,.25) 100%
+            transparent 40%,
+            rgba(0,0,0,.30) 100%
         );
 
-    z-index: 2;
 }
 
 
-/* LINKS INFERIORES */
-
-.cat4-special .fdesc-links {
-    width: 100%;
-
-    min-height: 38px;
-
-    padding: 7px 12px;
-
-    box-sizing: border-box;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 0;
-
-    background: var(--fondo2);
-
-    border-top:
-        1px solid rgba(255,255,255,.06);
-
-    overflow: hidden;
-}
-
-
-.cat4-special .fdesc-links a {
-    flex: 1;
-
-    padding: 4px 10px;
-
-    color: var(--textobase);
-
-    font-size: 7px;
-
-    font-weight: 700;
-
-    letter-spacing: .6px;
-
-    text-align: center;
-
-    text-decoration: none;
-
-    text-transform: uppercase;
-
-    border-right:
-        1px solid rgba(255,255,255,.08);
-}
-
-
-.cat4-special .fdesc-links a:last-child {
-    border-right: 0;
-}
-
-
-.cat4-special .fdesc-links a:hover {
-    color: var(--links1);
-
-    background:
-        rgba(255,255,255,.03);
-}
-
-
-/* PARTE DERECHA — DESCRIPCIÓN */
-
-.cat4-special .foro-content {
-    position: relative;
-
-    min-width: 0;
-
-    height: 100%;
-
-    padding: 20px;
-
-    box-sizing: border-box;
-
-    display: flex;
-
-    flex-direction: column;
-
-    background: var(--fondo3);
-
-    border-left:
-        1px solid rgba(255,255,255,.07);
-}
-
-
-/* ESTADÍSTICAS */
-
-.cat4-special .foro-meta {
-    position: relative;
-
-    width: 100%;
-
-    margin: 0 0 20px;
-
-    padding: 0;
-
-    display: flex;
-
-    justify-content: flex-start;
-
-    gap: 6px;
-
-    background: none;
-
-    order: 1;
-}
-
-
-.cat4-special .foro-stats {
-    display: flex;
-
-    gap: 6px;
-
-    width: 100%;
-}
-
-
-.cat4-special .foro-stats > div {
-    flex: 1;
-
-    padding: 7px 6px;
-
-    box-sizing: border-box;
-
-    background: var(--fondo2);
-
-    border:
-        1px solid rgba(255,255,255,.07);
-
-    border-radius: 5px;
-
-    text-align: center;
-}
-
-
-.cat4-special .foro-stats strong {
-    display: block;
-
-    color: var(--links1);
-
-    font-size: 11px;
-
-    line-height: 100%;
-}
-
-
-.cat4-special .foro-stats span {
-    display: block;
-
-    margin-top: 3px;
-
-    color: var(--textobase);
-
-    font-size: 7px;
-
-    text-transform: uppercase;
-}
-
-
-/*  DESCRIPCIÓN */
-
-.cat4-special .foro-description {
-    position: relative;
-
-    width: 100%;
-
-    flex: 1;
-
-    min-height: 0;
-
-    padding: 0;
-
-    overflow: hidden;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: flex-start;
-
-    background: none;
-
-    order: 2;
-}
-
-
-.cat4-special .foro-desc {
-    width: 100%;
-
-    max-height: none;
-
-    overflow: hidden;
-
-    padding: 0;
-
-    color: var(--textobase);
-
-    font-size: 10px;
-
-    line-height: 155%;
-
-    text-align: justify;
-
-    background: none;
-
-    border: 0;
-}
-
-
-/* FRANJA DECORATIVA */
+/* 
+   FRANJA DECORATIVA
+*/
 
 .cat4-special .foro-accent {
+
     position: absolute;
 
     left: 0;
+
     top: 0;
+
     bottom: 0;
 
     width: 5px;
 
     background: var(--links1);
 
-    z-index: 10;
+    z-index: 20;
+
+}
+
+
+/* 
+   HOVER
+*/
+
+.cat4-special .foro-index {
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+.cat4-special .foro-index:hover {
+
+    border-color: var(--links1);
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,.25);
+
+}
+
+
+.cat4-special .foro-index:hover .foro-cover {
+
+    transform: scale(1.015);
+
+    transition: transform .35s ease;
+
 }
