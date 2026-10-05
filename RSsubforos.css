@@ -2252,10 +2252,11 @@ SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
 }
 
 
-/* CABECERA */
+/* CABECERA DE CATEGORÍA */
 
 .cat4-special .categoria {
     width: 100%;
+    border-radius: 16px 16px 0 0;
 }
 
 
@@ -2274,7 +2275,6 @@ SUBFOROS GRANDES + DISEÑO HORIZONTAL ****/
 
     list-style: none;
 }
-
 
 /* TARJETA */
 
