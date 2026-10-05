@@ -2239,12 +2239,13 @@ PANEL IZQUIERDO + SUBFOROS  */
 }
 
 
-/**** CATEGORÍA 4
-SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
+ /**** CATEGORÍA 4
+SUBFOROS GRANDES — DISEÑO HORIZONTAL
+****/
 
 
 /* 
-   CONTENEDOR DE LA CATEGORÍA
+   CONTENEDOR
 */
 
 .cat4-special .inner {
@@ -2258,7 +2259,9 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 }
 
 
-/* CABECERA DE LA CATEGORÍA */
+/* 
+   CABECERA DE CATEGORÍA
+*/
 
 .cat4-special .categoria {
 
@@ -2293,7 +2296,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
 
 /* 
-   TARJETA COMPLETA
+   TARJETA
 */
 
 .cat4-special .foro-index {
@@ -2304,7 +2307,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     min-width: 0;
 
-    min-height: 390px;
+    height: 420px;
 
     margin: 0;
 
@@ -2316,17 +2319,9 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     display: grid;
 
-    /*
-       IZQUIERDA = información
-       DERECHA   = título + imagen + links
-    */
-
     grid-template-columns:
-        minmax(0, 42%)
-        minmax(0, 58%);
-
-    grid-template-rows:
-        100%;
+        38%
+        62%;
 
     background: var(--fondo3);
 
@@ -2338,17 +2333,12 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
 
 /* 
-   IMPORTANTE
-   Eliminamos las cajas intermedias del flujo.
-   
-   Así podemos colocar cada elemento directamente
-   dentro del grid de la tarjeta.
+   QUITAMOS LAS CAJAS INTERMEDIAS
 */
 
 .cat4-special .foro-body,
 .cat4-special .foro-content,
-.cat4-special .foro-meta,
-.cat4-special .foro-description {
+.cat4-special .foro-meta {
 
     display: contents;
 
@@ -2357,10 +2347,13 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
 /* 
    COLUMNA IZQUIERDA
+   AVATAR + AUTOR + ÚLTIMO TEMA + DESCRIPCIÓN
 */
 
 
-/* AVATAR */
+/* 
+   AVATAR
+*/
 
 .cat4-special .foro-avatar {
 
@@ -2368,11 +2361,11 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     grid-row: 1;
 
-    width: 180px;
+    width: 150px;
 
     height: 150px;
 
-    margin: 20px 0 0 20px;
+    margin: 22px 0 0 22px;
 
     padding: 0;
 
@@ -2386,12 +2379,12 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     border: 0;
 
-    z-index: 4;
+    z-index: 5;
 
 }
 
 
-/* CONTENEDOR DEL AVATAR */
+/* CONTENEDOR */
 
 .cat4-special .avatar-lastpost {
 
@@ -2416,7 +2409,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 }
 
 
-/* IMAGEN DEL AVATAR */
+/* IMAGEN */
 
 .cat4-special .avatar-lastpost img {
 
@@ -2445,11 +2438,9 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     grid-row: 1;
 
-    align-self: start;
+    width: calc(100% - 190px);
 
-    width: calc(100% - 220px);
-
-    margin: 25px 20px 0 215px;
+    margin: 28px 20px 0 190px;
 
     padding: 0;
 
@@ -2471,7 +2462,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     white-space: nowrap;
 
-    z-index: 5;
+    z-index: 6;
 
 }
 
@@ -2486,11 +2477,9 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     grid-row: 1;
 
-    align-self: start;
+    width: calc(100% - 190px);
 
-    width: calc(100% - 220px);
-
-    margin: 43px 20px 0 215px;
+    margin: 48px 20px 0 190px;
 
     padding: 0;
 
@@ -2504,7 +2493,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     border: 0;
 
-    z-index: 5;
+    z-index: 6;
 
 }
 
@@ -2543,6 +2532,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
 /* 
    DESCRIPCIÓN
+   TAMBIÉN ESTÁ EN LA COLUMNA IZQUIERDA
 */
 
 .cat4-special .foro-description {
@@ -2567,7 +2557,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     display: block;
 
-    background: rgba(0,0,0,.25);
+    background: rgba(0,0,0,.28);
 
     border: 1px solid rgba(255,255,255,.07);
 
@@ -2587,6 +2577,8 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
     height: 100%;
 
     max-height: none;
+
+    margin: 0;
 
     padding: 0;
 
@@ -2610,108 +2602,13 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
 
 /* 
-   LINKS
-   Los sacamos visualmente de la descripción
-   y los colocamos abajo a la derecha.
+   COLUMNA DERECHA
+   TÍTULO + ESTADÍSTICAS + IMAGEN + LINKS
 */
-
-.cat4-special .fdesc-links {
-
-    position: absolute;
-
-    left: calc(42% + 1px);
-
-    right: 0;
-
-    bottom: 0;
-
-    width: auto;
-
-    min-height: 42px;
-
-    margin: 0;
-
-    padding: 7px 12px;
-
-    box-sizing: border-box;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: stretch;
-
-    gap: 0;
-
-    overflow: hidden;
-
-    background: var(--fondo2);
-
-    border-top: 1px solid rgba(255,255,255,.07);
-
-    z-index: 8;
-
-}
-
-
-/* LINKS INDIVIDUALES */
-
-.cat4-special .fdesc-links a {
-
-    flex: 1;
-
-    min-width: 0;
-
-    padding: 5px 8px;
-
-    box-sizing: border-box;
-
-    overflow: hidden;
-
-    color: var(--textobase);
-
-    font-size: 7px;
-
-    font-weight: 700;
-
-    letter-spacing: .6px;
-
-    line-height: 110%;
-
-    text-align: center;
-
-    text-decoration: none;
-
-    text-transform: uppercase;
-
-    text-overflow: ellipsis;
-
-    white-space: nowrap;
-
-    border-right: 1px solid rgba(255,255,255,.08);
-
-}
-
-
-.cat4-special .fdesc-links a:last-child {
-
-    border-right: 0;
-
-}
-
-
-.cat4-special .fdesc-links a:hover {
-
-    color: var(--links1);
-
-    background: rgba(255,255,255,.04);
-
-}
 
 
 /* 
-   COLUMNA DERECHA
-   TÍTULO + ESTADÍSTICAS
+   FRANJA SUPERIOR
 */
 
 .cat4-special .foro-header {
@@ -2724,13 +2621,15 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     top: 0;
 
-    left: 0;
+    left: 38%;
 
     right: 0;
 
+    width: auto;
+
     height: 64px;
 
-    padding: 0 15px;
+    padding: 0 14px;
 
     box-sizing: border-box;
 
@@ -2744,12 +2643,14 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     border-bottom: 1px solid rgba(255,255,255,.07);
 
-    z-index: 7;
+    z-index: 10;
 
 }
 
 
-/* TÍTULO */
+/* 
+   ICONO + TÍTULO
+*/
 
 .cat4-special .foro-name {
 
@@ -2801,7 +2702,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 }
 
 
-/* NOMBRE */
+/* TÍTULO */
 
 .cat4-special .foro-name a {
 
@@ -2851,8 +2752,8 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
 
 /* 
-   ESTADÍSTICAS
-   TEMAS | MENSAJES
+   TEMAS / MENSAJES
+   MISMA FRANJA QUE EL TÍTULO
 */
 
 .cat4-special .foro-stats {
@@ -2871,7 +2772,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     gap: 5px;
 
-    z-index: 10;
+    z-index: 12;
 
 }
 
@@ -2933,6 +2834,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
 /* 
    IMAGEN GRANDE
+   DEBAJO DEL TÍTULO
 */
 
 .cat4-special .foro-cover {
@@ -2941,7 +2843,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     top: 64px;
 
-    left: 42%;
+    left: 38%;
 
     right: 0;
 
@@ -2963,7 +2865,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     background-repeat: no-repeat;
 
-    z-index: 1;
+    z-index: 2;
 
 }
 
@@ -2981,7 +2883,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
     background:
         linear-gradient(
             to bottom,
-            rgba(0,0,0,.05),
+            rgba(0,0,0,.04),
             rgba(0,0,0,.25)
         );
 
@@ -2990,9 +2892,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 }
 
 
-/* 
-   OVERLAY
-*/
+/* OVERLAY */
 
 .cat4-special .foro-overlay {
 
@@ -3000,7 +2900,7 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     inset: 0;
 
-    z-index: 2;
+    z-index: 3;
 
     background:
         linear-gradient(
@@ -3008,6 +2908,105 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
             transparent 40%,
             rgba(0,0,0,.30) 100%
         );
+
+}
+
+
+/* 
+   LINKS
+   DEBAJO DE LA IMAGEN
+*/
+
+.cat4-special .fdesc-links {
+
+    position: absolute;
+
+    left: 38%;
+
+    right: 0;
+
+    bottom: 0;
+
+    width: auto;
+
+    height: 42px;
+
+    margin: 0;
+
+    padding: 6px 10px;
+
+    box-sizing: border-box;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: stretch;
+
+    gap: 0;
+
+    overflow: hidden;
+
+    background: var(--fondo2);
+
+    border-top: 1px solid rgba(255,255,255,.07);
+
+    z-index: 10;
+
+}
+
+
+/* LINKS */
+
+.cat4-special .fdesc-links a {
+
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 5px 7px;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    color: var(--textobase);
+
+    font-size: 7px;
+
+    font-weight: 700;
+
+    letter-spacing: .6px;
+
+    line-height: 110%;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    text-overflow: ellipsis;
+
+    white-space: nowrap;
+
+    border-right: 1px solid rgba(255,255,255,.08);
+
+}
+
+
+.cat4-special .fdesc-links a:last-child {
+
+    border-right: 0;
+
+}
+
+
+.cat4-special .fdesc-links a:hover {
+
+    color: var(--links1);
+
+    background: rgba(255,255,255,.04);
 
 }
 
@@ -3064,4 +3063,4 @@ SUBFOROS GRANDES — DISEÑO HORIZONTAL ****/
 
     transition: transform .35s ease;
 
-}
+    }
