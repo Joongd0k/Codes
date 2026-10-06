@@ -2558,3 +2558,20 @@ PANEL IZQUIERDO + SUBFOROS  */
 .cat4-special .foro-accent {
     display: none;
 }
+
+/**IMG SUBFOROS**/
+.cat4-special .foro-index:nth-child(1) .foro-description {
+    background-image: url('IMAGEN-1');
+}
+
+.cat4-special .foro-index:nth-child(2) .foro-description {
+    background-image: url('IMAGEN-2');
+}
+
+.cat4-special .foro-index:nth-child(3) .foro-description {
+    background-image: url('IMAGEN-3');
+}
+
+.cat4-special .foro-index:nth-child(4) .foro-description {
+    background-image: url('IMAGEN-4');
+}
