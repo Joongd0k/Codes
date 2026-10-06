@@ -2500,17 +2500,16 @@ PANEL IZQUIERDO + SUBFOROS  */
     border-radius: 10px;
 }
 
-
-/*** AUTOR — DEBAJO DEL AVATAR ***/
+/*** AUTOR — COLUMNA DERECHA ***/
 
 .cat4-special .lastpost-user {
     position: absolute;
     z-index: 5;
 
     top: 220px;
-    left: 18px;
+    left: calc(100% + 18px);
 
-    width: calc(250px - 36px);
+    width: 214px;
 
     margin: 0;
 
@@ -2522,16 +2521,16 @@ PANEL IZQUIERDO + SUBFOROS  */
 }
 
 
-/*** ÚLTIMO TEMA — DEBAJO DEL AUTOR ***/
+/*** ÚLTIMO TEMA — COLUMNA DERECHA ***/
 
 .cat4-special .lastpost-topic {
     position: absolute;
     z-index: 5;
 
     top: 252px;
-    left: 18px;
+    left: calc(100% + 18px);
 
-    width: calc(250px - 36px);
+    width: 214px;
 
     margin: 0;
 
@@ -2551,7 +2550,6 @@ PANEL IZQUIERDO + SUBFOROS  */
 .cat4-special .lastpost-topic a:hover {
     color: #fff;
 }
-
 
 /*** QUITAR FRANJA ***/
 
