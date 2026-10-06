@@ -2247,6 +2247,17 @@ PANEL IZQUIERDO + SUBFOROS  */
     gap: 22px;
 }
 
+/* CABECERA DE LA CATEGORÍA */
+
+.cat4-special .categoria {
+
+    grid-column: 1 / -1;
+
+    grid-row: 1;
+
+    border-radius: 16px 16px 0 0;
+
+}
 
 /*** TARJETA ***/
 
@@ -2358,39 +2369,48 @@ PANEL IZQUIERDO + SUBFOROS  */
     display: none;
 }
 
-/*** LINKS INFERIORES ***/
+/*** LINKS DEL SUBFORO — COLUMNA IZQUIERDA ***/
 
 .cat4-special .fdesc-links {
     position: absolute;
-    z-index: 10;
-    left: 0;
-    right: 0;
-    bottom: 0;
 
-    min-height: 42px;
-    padding: 0 10px;
+    left: 18px;
+    right: 268px;
+    bottom: 18px;
+
+    width: auto;
+
+    margin: 0;
+    padding: 0;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 
-    background: rgba(10,10,10,.94);
-    border-top: 1px solid rgba(255,255,255,.08);
-    box-sizing: border-box;
+    gap: 5px 14px;
+
+    z-index: 8;
 }
+
+
+/*** CADA LINK ***/
 
 .cat4-special .fdesc-links a {
-    display: block;
-    padding: 0 15px;
+    display: inline-block;
 
-    color: #ddd;
-    font-size: 10px;
-    letter-spacing: .08em;
-    line-height: 42px;
-    text-transform: uppercase;
+    color: #aaa;
+
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 1.2;
+
     text-decoration: none;
+    text-transform: uppercase;
+
+    transition: .2s ease;
 }
+
 
 .cat4-special .fdesc-links a:hover {
     color: #fff;
