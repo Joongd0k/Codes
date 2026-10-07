@@ -2293,7 +2293,7 @@ PANEL IZQUIERDO + SUBFOROS  */
     top: 0;
     left: 0;
     width: calc(100% - 250px);
-    height: 78px;
+    height: 38px;
     padding: 0 28px;
     display: flex;
     align-items: center;
@@ -2375,13 +2375,13 @@ PANEL IZQUIERDO + SUBFOROS  */
     position: absolute;
 
     left: 18px;
-    right: 268px;
-    bottom: 18px;
+    right: 18px;
+    bottom: 0;
 
     width: auto;
 
     margin: 0;
-    padding: 0;
+    padding: 12px 10px;
 
     display: flex;
     flex-wrap: wrap;
@@ -2391,8 +2391,9 @@ PANEL IZQUIERDO + SUBFOROS  */
     gap: 5px 14px;
 
     z-index: 8;
-}
 
+    background: rgba(0,0,0,.85);
+}
 
 /*** CADA LINK ***/
 
@@ -2488,7 +2489,7 @@ PANEL IZQUIERDO + SUBFOROS  */
     position: absolute;
     z-index: 5;
 
-    top: 252px;
+    top: 244px;
     left: calc(100% + 18px);
 
     width: 214px;
@@ -2587,11 +2588,11 @@ PANEL IZQUIERDO + SUBFOROS  */
 
 /**IMG SUBFOROS**/
 .cat4-special .foro-index:nth-child(1) .foro-description {
-    background-image: url('https://placehold.co/1000x400');
+    background-image: url('https://placehold.co/1200x500');
 }
 
 .cat4-special .foro-index:nth-child(2) .foro-description {
-    background-image: url('IMAGEN-2');
+    background-image: url('https://placehold.co/1000x400');
 }
 
 .cat4-special .foro-index:nth-child(3) .foro-description {
