@@ -2322,7 +2322,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
 .cat4-special .foro-name a:hover {
 
-    color: var(--textobase);
+    color: var(--links1);
 
 }
 
@@ -2468,7 +2468,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 }
 
 .cat4-special .lastpost-topic a:hover {
-    color: var(--textobase);
+    color: var(--links1);
 }
 
 /*** STATS — DEBAJO DEL ÚLTIMO TEMA ***/
@@ -2522,7 +2522,6 @@ PANEL IZQUIERDO + SUBFOROS  */
     box-sizing: border-box;
     background: rgba(103,55,105,.65);
     border-radius: 4px;
-    color: var(--textobase);
     text-align: center;
 }
 
