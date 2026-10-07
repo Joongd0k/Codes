@@ -2532,6 +2532,9 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     margin: 0;
     padding: 0;
+
+    align-items: center;
+    background: rgba(0,0,0,.25);
 }
 
 
@@ -2544,11 +2547,12 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     box-sizing: border-box;
 
-    background: rgba(255,255,255,.08);
+    background: rgba(103,55,105,.65);
     border: 1px solid rgba(255,255,255,.12);
     border-radius: 5px;
 
     text-align: center;
+    justify-content: center;
 }
 
 
@@ -2561,7 +2565,6 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     font-size: 11px;
     line-height: 1;
-    text-align: center;
 }
 
 
@@ -2572,14 +2575,13 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     margin-top: 3px;
 
-    color: #888;
-
-    font-size: 7px;
-    line-height: 1;
-
     text-transform: uppercase;
     letter-spacing: .5px;
-    text-align: center;
+    color: rgba(255,255,255,.85);
+
+    font-size: 8px;
+
+    line-height: 1;
 }
 
 
