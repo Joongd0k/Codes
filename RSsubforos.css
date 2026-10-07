@@ -2335,10 +2335,30 @@ PANEL IZQUIERDO + SUBFOROS  */
     grid-row: 1;
     min-width: 0;
     height: 500px;
-    padding-top: 78px;
+    padding-top: 45px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+}
+
+.cat4-special .foro-content .links a {
+    display: inline-block;
+
+    color: #aaa;
+
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    transition: .2s ease;
+}
+
+
+.cat4-special .foro-content .links a:hover {
+    color: #fff;
 }
 
 /*** IMAGEN ***/
@@ -2369,9 +2389,9 @@ PANEL IZQUIERDO + SUBFOROS  */
     display: none;
 }
 
-/*** LINKS DEL SUBFORO — COLUMNA IZQUIERDA ***/
+/*** LINKS DEL SUBFORO — COLUMNA IZQUIERDA ***
 
-.cat4-special .links {
+.cat4-special .link {
     position: absolute;
 
     top: 0;
@@ -2393,29 +2413,6 @@ PANEL IZQUIERDO + SUBFOROS  */
     gap: 5px 14px;
 
     z-index: 20;
-}
-
-
-/*** LINKS INDIVIDUALES ***/
-
-.cat4-special .links a {
-    display: inline-block;
-
-    color: #aaa;
-
-    font-size: 8px;
-    font-weight: 700;
-    line-height: 1.2;
-
-    text-decoration: none;
-    text-transform: uppercase;
-
-    transition: .2s ease;
-}
-
-
-.cat4-special .links a:hover {
-    color: #fff;
 }
 
 /*** COLUMNA DERECHA ***/
