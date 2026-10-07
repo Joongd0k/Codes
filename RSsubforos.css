@@ -2371,7 +2371,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
 /*** LINKS DEL SUBFORO — COLUMNA IZQUIERDA ***/
 
-.cat4-special .fdesc-links {
+.cat4-special .links {
     position: absolute;
 
     top: 0;
@@ -2398,7 +2398,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
 /*** LINKS INDIVIDUALES ***/
 
-.cat4-special .fdesc-links a {
+.cat4-special .links a {
     display: inline-block;
 
     color: #aaa;
@@ -2414,7 +2414,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 }
 
 
-.cat4-special .fdesc-links a:hover {
+.cat4-special .links a:hover {
     color: #fff;
 }
 
@@ -2524,7 +2524,7 @@ PANEL IZQUIERDO + SUBFOROS  */
     top: 292px;
     left: calc(100% + 18px);
 
-    width: 214px;
+    width: 180px;
 
     display: flex;
     justify-content: center;
@@ -2561,6 +2561,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     font-size: 11px;
     line-height: 1;
+    text-align: center;
 }
 
 
@@ -2578,6 +2579,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
     text-transform: uppercase;
     letter-spacing: .5px;
+    text-align: center;
 }
 
 
