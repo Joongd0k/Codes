@@ -2589,7 +2589,7 @@ PANEL IZQUIERDO + SUBFOROS  */
 
 /**IMG SUBFOROS**/
 .cat4-special .foro-index:nth-child(1) .foro-description {
-    background-image: url('https://placehold.co/1200x500');
+    background-image: url('https://placehold.co/900x400');
 }
 
 .cat4-special .foro-index:nth-child(2) .foro-description {
