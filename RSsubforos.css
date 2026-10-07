@@ -2352,7 +2352,7 @@ PANEL IZQUIERDO + SUBFOROS  */
     margin: 0;
     padding: 0;
 
-    overflow: hidden;
+    overflow: visible;
 
     background-color: #151515;
     background-repeat: no-repeat;
@@ -2374,28 +2374,29 @@ PANEL IZQUIERDO + SUBFOROS  */
 .cat4-special .fdesc-links {
     position: absolute;
 
-    left: 18px;
-    right: 18px;
-    bottom: 0;
+    top: 0;
+    left: 0;
 
-    width: auto;
+    width: calc(100% - 250px);
+    height: 78px;
 
     margin: 0;
-    padding: 12px 10px;
+    padding: 0 28px;
+
+    box-sizing: border-box;
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 
     gap: 5px 14px;
 
-    z-index: 8;
-
-    background: rgba(0,0,0,.85);
+    z-index: 20;
 }
 
-/*** CADA LINK ***/
+
+/*** LINKS INDIVIDUALES ***/
 
 .cat4-special .fdesc-links a {
     display: inline-block;
