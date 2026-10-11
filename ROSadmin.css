@@ -17,7 +17,7 @@
     --rp-acento:#66678a;
     --rp-dorado:#7978a1;
     --rp-borde:#303038;
-    --rp-fondo:#2d2d2d;
+    --rp-fondo:#404040;
     --rp-fondod:#080a0d;
     --rp-fondom:#11141A;
     --rp-texto:#b8b8c0;
@@ -36,7 +36,7 @@
     position:relative;
     overflow:hidden;
 
-    background-color: #404040;
+    background-color: #2d2d2d;
 
     border:1px solid rgba(255,255,255,0.1);
     border-radius:8px;
