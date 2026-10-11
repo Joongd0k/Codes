@@ -1,6 +1,4 @@
-/* =====================
-   QUITA AVATAR
-   ===================== */
+/* === QUITA AVATAR === */
 .post:has(.big-post) .post-post {
     flex:1;
     margin-left:10px;
@@ -9,14 +7,10 @@
     display:none
 }
 
-/* =====================
-FUENTES
-====================== */
+/* ==== FUENTES ==== */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* ==========================================
-   ROS — ADMINISTRATIVE POST
-   ========================================== */
+/* ====== ROS — ADMINISTRATIVE POST ====== */
 
 #rospost{
 
@@ -69,9 +63,7 @@ FUENTES
 }
 
 
-/* ====================
-   CABECERA
-   ==================== */
+/* ===== CABECERA ===== */
 
 #rospost .rp-header{
 
@@ -91,9 +83,7 @@ FUENTES
 }
 
 
-/* ====================
-   ICONO
-   =================== */
+/* ==== ICONO ===== */
 
 #rospost .rp-icon{
 
@@ -124,9 +114,7 @@ FUENTES
 }
 
 
-/* ==================
-   TITULO
-   ================== */
+/* ==== TITULO ==== */
 
 #rospost .rp-title{
 
