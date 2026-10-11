@@ -14,10 +14,10 @@
 
 #rospost{
 
-    --rp-acento:#66758A;
-    --rp-dorado:#a19278;
+    --rp-acento:#66678a;
+    --rp-dorado:#7978a1;
     --rp-borde:#303038;
-    --rp-fondo:#171b22;
+    --rp-fondo:#2d2d2d;
     --rp-fondod:#080a0d;
     --rp-fondom:#11141A;
     --rp-texto:#b8b8c0;
@@ -36,23 +36,7 @@
     position:relative;
     overflow:hidden;
 
-    background:
-        radial-gradient(
-            circle at 15% 0%,
-            rgba(102,117,138,.10),
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at 90% 100%,
-            rgba(161,146,120,.06),
-            transparent 30%
-        ),
-        linear-gradient(
-            135deg,
-            #080a0d 0%,
-            #11141A 52%,
-            #171b22 100%
-        );
+    background-color: #404040;
 
     border:1px solid rgba(255,255,255,0.1);
     border-radius:8px;
@@ -116,7 +100,7 @@
 
 #rospost .rp-title{
 
-    color:var(--rp-claro);
+    color: #aaaaaa;
 
     font-family:'Cinzel Decorative',serif;
     font-size:34px;
@@ -140,12 +124,12 @@
     color:var(--rp-acento);
 
     font-family:'Raleway',sans-serif;
-    font-size:17px;
+    font-size:14px;
     font-weight:700;
 
     letter-spacing:2px;
 
-    text-transform:uppercase;
+    text-transform: lowercase;
 }
 
 
