@@ -167,7 +167,7 @@
     font-optical-sizing: auto;
     font-size:11px;
     font-weight:400;
-    line-height:1.4;
+    line-height:1.6;
 
     text-align:justify;
 }
@@ -180,7 +180,7 @@
 #rospost .rp-body strong, .rp-body b{
 
     font-family: "Cinzel Decorative", serif;
-    color:#66758a;
+    color:#69668a;
     font-size:11px;
     font-weight:700;
 }
@@ -188,7 +188,7 @@
 
 #rospost .rp-body i{
 
-    color:#8c98a8;
+    color:#8c8ea8;
 }
 
 
