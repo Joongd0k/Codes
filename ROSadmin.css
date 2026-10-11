@@ -76,12 +76,6 @@
     align-items:center;
 
     text-align:center;
-
-    background: linear-gradient(
-        to top,
-        rgba(133, 90, 219, .5),
-        rgba(0, 0, 0, .5)
-    );
     
     border-bottom:1px solid var(--rp-borde);
 }
@@ -112,7 +106,7 @@
             transparent 68%
         );
 
-    color: #404040;
+    color: rgba(133, 90, 219, .5);
 
     font-size:25px;
 }
