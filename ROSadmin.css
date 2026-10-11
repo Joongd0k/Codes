@@ -60,8 +60,8 @@ FUENTES
             #171b22 100%
         );
 
-    border:1px solid var(--rp-borde);
-    border-radius:5px;
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:8px;
 
     color:var(--rp-texto);
 
@@ -85,6 +85,8 @@ FUENTES
 
     text-align:center;
 
+    background: linear-gradient(to top,rgba(133, 90, 219,.5),rgba(0,0,0,0.5)
+
     border-bottom:1px solid var(--rp-borde);
 }
 
@@ -106,17 +108,17 @@ FUENTES
 
     box-sizing:border-box;
 
-    border:1px solid rgba(161,146,120,.45);
+    border:1px solid rgba(134,120,161,.45);
     border-radius:50%;
 
     background:
         radial-gradient(
             circle,
-            rgba(161,146,120,.12),
+            rgba(134,120,161,.12),
             transparent 68%
         );
 
-    color:var(--rp-dorado);
+    color: #404040;
 
     font-size:25px;
 }
