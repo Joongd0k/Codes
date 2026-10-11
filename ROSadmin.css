@@ -15,7 +15,7 @@
 #rospost{
 
     --rp-acento:#66678a;
-    --rp-dorado:#7978a1;
+    --rp-purple:#7978a1;
     --rp-borde:#303038;
     --rp-fondo:#404040;
     --rp-fondod:#080a0d;
@@ -41,7 +41,6 @@
     border:1px solid rgba(255,255,255,0.1);
     border-radius:8px;
 
-    color:var(--rp-texto);
 }
 
 
@@ -121,7 +120,7 @@
 
     color:var(--rp-acento);
 
-    font-family:'Raleway',sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size:14px;
     font-weight:700;
 
@@ -146,7 +145,7 @@
         linear-gradient(
             90deg,
             transparent,
-            var(--rp-dorado),
+            var(--rp-purple),
             transparent
         );
 }
@@ -199,7 +198,7 @@
 
 #rospost .rp-body a{
 
-    color:var(--rp-dorado);
+    color:var(--rp-purple);
 
     text-decoration:none;
 
@@ -244,9 +243,9 @@
 
     margin-bottom:10px;
 
-    color:var(--rp-dorado);
+    color:var(--rp-purple);
 
-    font-family:'Raleway',sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size:9px;
     font-weight:700;
 
@@ -275,7 +274,7 @@
             rgba(161,146,120,.04)
         );
 
-    border-left:2px solid var(--rp-dorado);
+    border-left:2px solid var(--rp-purple);
 
     color:#aaaeb6;
 
@@ -385,7 +384,7 @@
 #rospost .rp-staff-back::before {
     content:"✦";
     margin-bottom:20px;
-    color:var(--rp-dorado);
+    color:var(--rp-purple);
     font-family:"Cinzel Decorative",serif;
     font-size:16px;
 }
@@ -485,7 +484,7 @@
 
 #rospost .rp-body li::marker{
 
-    color:var(--rp-dorado);
+    color:var(--rp-purple);
 }
 
 
@@ -575,7 +574,7 @@
 
     color:#686c75;
 
-    font-family:'Raleway',sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size:7px;
     font-weight:600;
 
