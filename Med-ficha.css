@@ -658,7 +658,7 @@ filter: grayscale(0%) contrast(110%);
 
 .medium-extra-content {
 min-width: 0;
-height: 300px;
+height: 250px;
 display: flex;
 flex-direction: column;
 
@@ -702,7 +702,7 @@ font-size: 15px;
 .medium-extra-text {
 color: var(--medium-text);
     
- height: 200px; 
+ height: 230px; 
  margin: 25px; 
  padding-right: 5px; 
  line-height:18px!important;
