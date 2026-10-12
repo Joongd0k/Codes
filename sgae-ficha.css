@@ -274,49 +274,59 @@
     );
 }
 
-
 /* CUADRÍCULA DE DATOS */
 
 .st-info-grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0,1fr));
-
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
     width: 100%;
 }
 
 .st-info-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
     min-width: 0;
+    min-height: 48px;
+    padding: 8px 7px;
 
-    padding: 12px 8px;
+    background: var(--st-bg);
+    border-left: 2px solid var(--st-main);
+    border-radius: 3px;
 
-    border-bottom: 1px solid var(--st-border);
+    transition: background .3s;
 }
 
-.st-info-item:nth-child(odd) {
-    padding-left: 0;
-    padding-right: 10px;
+.st-info-item:hover {
+    background: var(--st-panel2);
 }
 
-.st-info-item:nth-child(even) {
-    padding-left: 12px;
+.st-info-item > i {
+    flex-shrink: 0;
+    width: 18px;
 
-    border-left: 1px solid var(--st-border);
+    color: var(--st-main);
+    font-size: 16px;
+    text-align: center;
 }
 
-.st-info-item:nth-last-child(-n+2) {
-    border-bottom: none;
+.st-info-content {
+    min-width: 0;
+    flex: 1;
 }
 
 .st-info-label {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 
     color: var(--st-main);
 
     font-family: 'Poppins', sans-serif;
     font-size: 8px;
-    font-weight: 700;
+    font-weight: 800;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
@@ -324,9 +334,9 @@
     color: var(--st-text);
 
     font-family: 'Inter', sans-serif;
-    font-size: 10px;
+    font-size: 9px;
+    line-height: 1.5;
 
-    line-height: 1.6;
     overflow-wrap: anywhere;
 }
 
@@ -674,23 +684,6 @@
 
     .st-info-grid {
         grid-template-columns: repeat(2, minmax(0,1fr));
-    }
-
-    .st-info-item:nth-child(odd) {
-        padding-left: 0;
-        padding-right: 10px;
-    }
-
-    .st-info-item:nth-child(even) {
-        padding-left: 10px;
-    }
-
-    .st-info-item:nth-child(n+5) {
-        border-bottom: none;
-    }
-
-    .st-info-item:nth-child(4) {
-        border-bottom: 1px solid var(--st-border);
     }
 
     .st-section {
