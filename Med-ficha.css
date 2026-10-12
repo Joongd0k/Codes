@@ -90,31 +90,49 @@ height: 200px;
 position: relative;
 overflow: hidden;
 
-background-size: cover;
-background-position: center;
+background: var(--medium-bg);
+    background-size: cover;
+    background-position: center;
 
-filter: grayscale(100%) contrast(115%);
-
+    isolation: isolate;
 }
+
+/* IMAGEN EN BLANCO Y NEGRO */
+
+.medium-main-img::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+
+    filter: grayscale(100%) contrast(115%);
+}
+
+/* DEGRADADO VIOLETA */
 
 .medium-main-img::after {
-content: "";
+    content: "";
 
-position: absolute;
-inset: 0;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
 
-background:
-linear-gradient(
-to top,
-var(--medium-bg) 0%,
-rgba(13,10,17,.80) 12%,
-rgba(13,10,17,.35) 35%,
-transparent 70%
-);
+    background: linear-gradient(
+        to top,
+        rgba(142,106,154,.95) 0%,
+        rgba(142,106,154,.75) 20%,
+        rgba(165,136,174,.45) 45%,
+        rgba(165,136,174,.15) 70%,
+        transparent 100%
+    );
 
-pointer-events: none;
-
-}
+    pointer-events: none;
+   }
 
 /* NOMBRE PRINCIPAL */
 
