@@ -89,7 +89,7 @@
 
     background-blend-mode: multiply;
 
-    border: 1px solid var(--st-border);
+    border: 1px solid #222226;
     border-radius: 5px;
 }
 
@@ -126,22 +126,6 @@
 }
 
 
-/* CLASIFICACIÓN */
-
-.st-classification {
-    margin-bottom: 18px;
-
-    color: var(--st-light);
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 9px;
-    font-weight: 700;
-
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
-
-
 /* NOMBRE */
 
 .st-name {
@@ -150,9 +134,9 @@
     color: var(--st-white);
 
     font-family: 'Playfair Display', serif;
-    font-size: clamp(23px, 4vw, 32px);
-    font-weight: 400;
-
+    font: 300 24px clash display;
+    text-align: center; 
+    
     line-height: 1.1;
     letter-spacing: 1px;
 
@@ -162,7 +146,7 @@
 
 .st-name b {
     display: block;
-
+    text-align: center; 
     margin-top: 6px;
 
     color: var(--st-light);
@@ -177,11 +161,11 @@
 
 /* LÍNEA VERTICAL */
 
-.st-quote-line {
+.st-line {
     width: 1px;
-    height: 35px;
+    height: 45px;
 
-    margin: 18px 0 13px 2px;
+    margin: 20px auto 0; 
 
     background: var(--st-main);
 }
@@ -193,23 +177,25 @@
     position: relative;
 
     max-width: 100%;
-    padding-left: 14px;
 
-    border-left: 1px solid var(--st-main);
+    margin: 20px auto 5px;
+    padding: 0 40px;
 
     color: var(--st-white);
 
-    font-family: 'Playfair Display', serif;
-    font-size: 12px;
-    font-style: italic;
-
-    line-height: 1.7;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    text-align: justify;
+    letter-spacing: 1px; 
+    
+    display: block;
+    line-height: normal;
 }
 
 .st-quote span {
-    display: block;
-
-    margin-bottom: 2px;
+    float: left;
+    padding: 0 5px;
 
     color: var(--st-main);
 
