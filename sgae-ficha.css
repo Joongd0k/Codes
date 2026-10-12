@@ -497,8 +497,8 @@
     overflow: hidden;
 
     background: var(--st-panel);
-    border-top: 1px solid var(--st-border);
-    border-bottom: 1px solid var(--st-border);
+    border-top: none;
+    border-bottom: none;
 }
 
 /* IMAGEN ALARGADA */
@@ -590,6 +590,7 @@
 
     border-radius: 5px 5px 0 0;
     border-bottom: none;
+    border-right: none;
 }
 
 /* SEPARADOR PEGADO A HISTORIA */
@@ -613,7 +614,8 @@
 
     border: 1px solid var(--st-border);
     border-top: none;
-    border-right: 3px solid var(--st-main);
+    border-bottom: none;
+    border-right: 10px solid var(--st-main);
 
     border-radius: 0;
 }
