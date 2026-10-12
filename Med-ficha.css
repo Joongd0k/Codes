@@ -658,7 +658,7 @@ filter: grayscale(0%) contrast(110%);
 
 .medium-extra-content {
 min-width: 0;
-height: 250px;
+min-height: 0;
 display: flex;
 flex-direction: column;
 
@@ -701,14 +701,17 @@ font-size: 15px;
 
 .medium-extra-text {
 color: var(--medium-text);
-    
- height: 230px; 
- margin: 25px; 
- padding-right: 5px; 
- line-height:18px!important;
- font:normal 11px "Inter";
- text-align: justify;
- overflow: auto;
+line-height:18px!important;
+font:normal 11px "Inter";
+text-align: justify;
+
+flex: 1;
+min-height: 0;
+overflow-y: auto;
+overflow-x: hidden;
+
+margin: 0;
+padding: 20px 15px;
 
 }
 
