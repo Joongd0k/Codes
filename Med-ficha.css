@@ -317,10 +317,10 @@ border-left: 2px solid var(--medium-main);
 color: var(--medium-soft);
 
 font-family: 'Inter', sans-serif;
-font-size: 10px;
+font-size: 8px;
 font-weight: 500;
 
-line-height: 1.6;
+line-height: 1.4;
 
 }
 
@@ -445,7 +445,7 @@ overflow: hidden;
 
 }
 
-/* DETALLE DECORATIVO DE ESQUINA */
+/* DETALLE DECORATIVO DE ESQUINA *
 
 .medium-history::after {
 content: "";
@@ -606,27 +606,6 @@ justify-content: flex-start;
 min-width: 0;
 
 padding: 5px 0;
-
-}
-
-/* PALABRA EXTRA EN VERTICAL */
-
-.medium-extra-word {
-display: flex;
-
-flex-direction: column;
-align-items: center;
-
-margin-bottom: 13px;
-
-color: var(--medium-main);
-
-font-family: 'Poppins', sans-serif;
-font-size: 17px;
-font-weight: 800;
-
-line-height: 1.15;
-letter-spacing: 2px;
 
 }
 
