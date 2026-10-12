@@ -580,6 +580,25 @@
     opacity: 0;
 }
 
+/* HISTORIA FUSIONADA CON EL SEPARADOR */
+
+.st-section:not(.st-extras):has(.st-section-title) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: 12px;
+    margin-bottom: 0;
+
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+}
+
+/* SEPARADOR PEGADO A HISTORIA */
+
+.st-divider {
+    margin-top: 0;
+
+    border-top: none;
+}
 
 /* HABILIDADES */
 
@@ -817,6 +836,11 @@
 
     .st-divider-overlay {
         inset: 6px;
+    }
+
+    .st-section:not(.st-extras):has(.st-section-title) {
+    width: calc(100% + 20px);
+    margin-left: -10px;
     }
 
     .st-collage {
