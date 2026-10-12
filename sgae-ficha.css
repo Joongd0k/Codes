@@ -412,12 +412,11 @@
 
 .st-text {
     color: var(--st-text);
-
     font: normal 11.5px "inter"; 
-    line-height: 13px;
+    line-height: 16px;
     text-align: justify;
-
-    margin: 20px auto 0;
+    
+    padding: 25px 30px;
 
 }
 
@@ -671,11 +670,12 @@
 }
 
 .st-extras-content .st-section-head {
-margin-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .st-extras-content .st-text {
-margin-top: 0;
+    margin-top: 0;
+    padding: 0;
 }
 
 /* IMAGEN DERECHA */
@@ -708,7 +708,7 @@ transition: filter .4s;
 }
 
 .st-extras-image:hover img {
-filter: grayscale(0%) contrast(110%);
+    filter: grayscale(0%) contrast(110%);
 }
 
 /* CIERRE */
