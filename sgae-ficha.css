@@ -600,83 +600,38 @@
     border-top: none;
 }
 
-/* HABILIDADES */
+/* HABILIDADES FUSIONADAS CON EL SEPARADOR */
 
-.st-collage {
-    display: grid;
-    grid-template-columns: .8fr 1.2fr;
-    gap: 12px;
-
-    margin-top: 12px;
-
-    align-items: stretch;
-}
-
-
-/* IMAGEN DE HABILIDADES */
-
-.st-collage-photo {
-    min-width: 0;
-    min-height: 230px;
+.st-skills {
+    width: calc(100% + 40px);
+    margin: 0 0 0 -20px;
+    padding: 25px 27px;
 
     position: relative;
-    overflow: hidden;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    padding: 20px;
-
-    background-color: var(--st-main);
-    background-size: cover;
-    background-position: center;
-
-    background-blend-mode: multiply;
-
-    border: 1px solid #;
-    border-radius: 5px;
-}
-
-.st-collage-photo::after {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    background: linear-gradient(
-        to top,
-        rgba(11,12,11,.85),
-        transparent 75%
-    );
-
-    pointer-events: none;
-}
-
-
-/* PANEL DE HABILIDADES */
-
-.st-extra {
-    min-width: 0;
-
-    padding: 23px 20px;
 
     background: var(--st-panel);
 
     border: 1px solid var(--st-border);
-    border-radius: 5px;
+    border-top: none;
+    border-right: 3px solid var(--st-main);
+
+    border-radius: 0;
 }
 
-.st-extra .st-section-head {
-    margin-bottom: 0;
+/* ESPACIADO DEL CONTENIDO */
+
+.st-skills .st-section-head {
+    margin-bottom: 15px;
 }
 
-.st-extra .st-section-title {
-    font-size: 12px;
+.st-skills .st-section-title {
+    font-size: 16px;
 }
 
-.st-extra .st-line {
-    margin: 15px 0 17px;
+/* TEXTO */
+
+.st-skills .st-text {
+    margin-top: 0;
 }
 
 
@@ -752,9 +707,11 @@
         padding: 22px;
     }
 
-    .st-collage {
-        gap: 9px;
-    }
+    .st-skills {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        padding: 22px;
+     }
 
     .st-extra {
         padding: 19px 15px;
@@ -843,12 +800,15 @@
     margin-left: -10px;
     }
 
-    .st-collage {
-        grid-template-columns: 1fr;
+    .st-skills {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        padding: 20px 17px;
     }
 
-    .st-collage-photo {
-        min-height: 190px;
+    .st-skills .st-section-title {
+        font-size: 12px;
+        letter-spacing: 1.5px;
     }
 
     .st-extra {
