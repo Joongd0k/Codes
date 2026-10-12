@@ -479,6 +479,107 @@
     margin-bottom: 15px;
 }
 
+/* SEPARADOR VISUAL */
+
+.st-divider {
+    --st-divider-opacity: .85;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    width: calc(100% + 40px);
+    height: 120px;
+
+    margin: 12px 0 0 -20px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: var(--st-panel);
+    border-top: 1px solid var(--st-border);
+    border-bottom: 1px solid var(--st-border);
+}
+
+/* IMAGEN ALARGADA */
+
+.st-divider-banner {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+
+    overflow: hidden;
+    opacity: var(--st-divider-opacity);
+
+    background: var(--st-main);
+}
+
+.st-divider-banner img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+
+    filter: grayscale(100%) contrast(120%);
+    mix-blend-mode: multiply;
+}
+
+/* IMAGEN PEQUEÑA */
+
+.st-divider-icon {
+    flex-shrink: 0;
+
+    width: 80px;
+    height: 80px;
+
+    margin-right: 15px;
+    padding: 8px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: var(--st-bg);
+    border: 1px solid var(--st-border);
+
+    opacity: var(--st-divider-opacity);
+}
+
+.st-divider-icon img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    filter: grayscale(100%) contrast(120%);
+    transition: .5s;
+}
+
+.st-divider-overlay {
+    position: absolute;
+    inset: 8px;
+
+    background: var(--st-main);
+    mix-blend-mode: multiply;
+
+    pointer-events: none;
+    transition: .3s;
+}
+
+/* EFECTO HOVER */
+
+.st-divider-icon:hover img {
+    filter: grayscale(0%) contrast(110%);
+}
+
+.st-divider-icon:hover .st-divider-overlay {
+    opacity: 0;
+}
+
 
 /* HABILIDADES */
 
@@ -698,6 +799,24 @@
     .st-text {
         font-size: 10px;
         line-height: 1.9;
+    }
+
+    .st-divider {
+        width: calc(100% + 20px);
+        height: 95px;
+        margin-left: -10px;
+        gap: 8px;
+    }
+
+    .st-divider-icon {
+        width: 65px;
+        height: 65px;
+        margin-right: 10px;
+        padding: 6px;
+    }
+
+    .st-divider-overlay {
+        inset: 6px;
     }
 
     .st-collage {
