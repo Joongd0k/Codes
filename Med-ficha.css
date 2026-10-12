@@ -700,17 +700,15 @@ font-size: 15px;
 /* TEXTO EXTRA */
 
 .medium-extra-text {
-padding: 13px 14px 16px;
-
 color: var(--medium-text);
-
-font-family: 'Inter', sans-serif;
-font-size: 10px;
-
-line-height: 1.8;
-text-align: justify;
-
-overflow-wrap: anywhere;
+    
+ height: 250px; 
+ margin: 25px; 
+ padding-right: 5px; 
+ line-height:18px!important;
+ font:normal 11px "Inter";
+ text-align: justify;
+ overflow: auto;
 
 }
 
