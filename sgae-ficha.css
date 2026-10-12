@@ -20,7 +20,7 @@
     max-width: 100%;
 
     margin: 30px auto;
-    padding: 20px;
+    padding: 20px 20px 0;
 
     box-sizing: border-box;
     position: relative;
@@ -560,13 +560,16 @@
 
 .st-footer {
     display: block;
-    width: 100%;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: 20px;
     padding: 9px 15px;
 
     background: #b5a653;
+    border: none;
+    border-radius: 0;
 
-    border: 1px solid var(--st-border);
-    border-radius: 0 0 10px 10px;
+    box-sizing: border-box;
 }
 
 
@@ -625,6 +628,11 @@
     .st-extra {
         padding: 19px 15px;
     }
+
+     .st-footer {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+     }
 }
 
 
@@ -710,9 +718,10 @@
         padding: 21px 17px;
     }
 
-    .st-footer {
-        font-size: 7px;
-        letter-spacing: 1.5px;
-    }
+     .st-footer {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+      
+     }
 
 }
