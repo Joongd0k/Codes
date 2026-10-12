@@ -536,18 +536,14 @@ opacity: .8;
 /* TEXTO DE HISTORIA */
 
 .medium-history-text {
-margin-top: 18px;
-padding-right: 8px;
-
 color: var(--medium-text);
 
-font-family: 'Inter', sans-serif;
-font-size: 10px;
-
-line-height: 1.9;
-text-align: justify;
-
-overflow-wrap: anywhere;
+display: block; 
+font-size: 11.5px; 
+font-family: inter; 
+text-align: justify; 
+padding: 30px 40px; 
+line-height: 18px;
 
 }
 
