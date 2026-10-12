@@ -104,13 +104,13 @@ position: absolute;
 inset: 0;
 
 background:
-linear-gradient(
-to top,
-var(--vidente-bg) 0%,
-rgba(13,10,17,.80) 12%,
-rgba(13,10,17,.35) 35%,
-transparent 70%
-);
+    linear-gradient(
+        to top,
+        var(--vidente-bg) 0%,
+        rgba(51,76,135,.65) 12%,
+        rgba(71,93,147,.30) 35%,
+        transparent 70%
+    );
 
 pointer-events: none;
 
