@@ -89,7 +89,7 @@
 
     background-blend-mode: multiply;
 
-    border: 1px solid #222226;
+    border: 1px solid #;
     border-radius: 5px;
 }
 
@@ -137,18 +137,14 @@
     font: 300 24px clash display;
     text-align: center; 
     
-    line-height: 1.1;
+    line-height: 18px;
     letter-spacing: 1px;
-
-    overflow-wrap: anywhere;
     text-transform: uppercase;
 }
 
 .st-name b {
     display: block;
     text-align: center; 
-    margin-top: 6px;
-
     color: var(--st-light);
 
     font-family: 'Poppins', sans-serif;
@@ -161,9 +157,9 @@
 
 /* LÍNEA VERTICAL */
 
-.st-line {
+.st-quote-line {
     width: 1px;
-    height: 45px;
+    height: 35px;
 
     margin: 20px auto 0; 
 
@@ -178,7 +174,7 @@
 
     max-width: 100%;
 
-    margin: 20px auto 5px;
+    margin: 20px auto 0;
     padding: 0 40px;
 
     color: var(--st-white);
@@ -200,7 +196,7 @@
     color: var(--st-main);
 
     font-family: 'Playfair Display', serif;
-    font-size: 23px;
+    font-size: 40px;
     font-style: normal;
 
     line-height: 1;
@@ -504,20 +500,6 @@
     );
 
     pointer-events: none;
-}
-
-.st-collage-photo span {
-    position: relative;
-    z-index: 1;
-
-    color: var(--st-white);
-
-    font-family: 'Poppins', sans-serif;
-    font-size: 9px;
-    font-weight: 600;
-
-    letter-spacing: 2px;
-    text-align: center;
 }
 
 
