@@ -438,6 +438,29 @@
     color: var(--st-white);
 }
 
+.st-txt {
+    color: var(--st-text);
+    font: normal 11px "inter"; 
+    line-height: 18px;
+    text-align: justify;
+
+    height: 230px;
+    overflow: auto;
+
+}
+
+.st-txt b,
+.st-txt strong {
+    color: var(--st-light);
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+.st-txt i,
+.st-txt em {
+    color: var(--st-soft);
+}
 
 /* HISTORIA */
 
