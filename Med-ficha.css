@@ -445,28 +445,6 @@ overflow: hidden;
 
 }
 
-/* DETALLE DECORATIVO DE ESQUINA *
-
-.medium-history::after {
-content: "";
-
-position: absolute;
-
-right: 10px;
-bottom: 10px;
-
-width: 23px;
-height: 23px;
-
-border-right: 1px solid var(--medium-main);
-border-bottom: 1px solid var(--medium-main);
-
-opacity: .65;
-
-pointer-events: none;
-
-}
-
 /* TÍTULO DE HISTORIA */
 
 .medium-history-title {
