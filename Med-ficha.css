@@ -2,817 +2,987 @@
 
 @import url('https://solrainha.github.io/honeybee/honeybee.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
 
-/* ======================
-   MÉDIUM · FICHA
-   ==================== */
+/* MÉDIUM · VARIABLES GENERALES */
 
 .medium-ficha {
 
-    --medium-main: #8e6a9a;
-    --medium-light: #a588ae;
-    --medium-soft: #bba6c2;
+--medium-main: #8e6a9a;
+--medium-light: #a588ae;
+--medium-soft: #bba6c2;
 
-    --medium-bg: #0d0a11;
-    --medium-panel: #15101a;
-    --medium-border: rgba(165,136,174,.35);
+--medium-bg: #0d0a11;
+--medium-panel: #15101a;
+--medium-panel2: #1c1721;
 
-    width: 650px;
-    margin: 30px auto;
-    padding: 28px;
+--medium-border: rgba(165,136,174,.30);
+--medium-text: #b9b0bd;
+--medium-white: #eee8f0;
 
-    box-sizing: border-box;
+--opac: .85;
 
-    background:
-        radial-gradient(
-            circle at 10% 10%,
-            rgba(142,106,154,.12),
-            transparent 35%
-        ),
+width: 580px;
+max-width: 100%;
 
-        radial-gradient(
-            circle at 90% 90%,
-            rgba(187,166,194,.05),
-            transparent 35%
-        ),
+margin: 30px auto;
+padding: 0;
 
-        var(--medium-bg);
+box-sizing: border-box;
 
-    color: var(--medium-soft);
+position: relative;
+overflow: hidden;
 
-    font-family: 'Montserrat', sans-serif;
-    font-size: 10px;
-    line-height: 1.5;
+background: var(--medium-bg);
+color: var(--medium-text);
 
-    letter-spacing: .3px;
+font-family: 'Inter', sans-serif;
+font-size: 11px;
+line-height: 1.6;
 
-    position: relative;
-    overflow: hidden;
-
-    border: 1px solid rgba(165,136,174,.25);
-    border-radius: 20px 20px 0 0;
+border: 1px solid var(--medium-border);
+border-radius: 12px;
 
 }
 
-/* ==================
-   MARCO INTERIOR
-   =================== */
+/* AJUSTES GENERALES */
 
-.medium-ficha:before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 10px;
-
-    border: 1px solid rgba(187,166,194,.10);
-    border-radius: 15px 15px 0 0;
-   
-    pointer-events: none;
-
+.medium-ficha *,
+.medium-ficha *::before,
+.medium-ficha *::after {
+box-sizing: border-box;
 }
 
-/* ===================
-   CABECERA
-   ==================== */
+.medium-ficha img {
+max-width: 100%;
+}
+
+.medium-ficha br {
+display: initial;
+}
+
+.medium-ficha b,
+.medium-ficha strong {
+color: var(--medium-light);
+}
+
+.medium-ficha a {
+color: var(--medium-soft);
+text-decoration: none;
+transition: .3s;
+}
+
+.medium-ficha a:hover {
+color: var(--medium-white);
+}
+
+/* CABECERA PANORÁMICA */
 
 .medium-header {
-
-    position: relative;
-    margin: -17.5px -17.5px 0;
-    border-radius: 15px 15px 0 0;
-
+width: 100%;
+position: relative;
 }
-
-
-/* =======================
-   IMAGEN PRINCIPAL
-   ======================= */
 
 .medium-main-img {
+width: 100%;
+height: 200px;
 
-    height: 405px;
+position: relative;
+overflow: hidden;
 
-    background-size: cover;
-    background-position: center;
+background-size: cover;
+background-position: center;
 
-    position: relative;
-
-    overflow: hidden;
-
-    border-radius: 15px 15px 0 0;
-   
-    filter:
-        grayscale(55%)
-        contrast(105%);
+filter: grayscale(100%) contrast(115%);
 
 }
 
-/* DIFUMINADO */
-.medium-main-img:after {
-    content: "";
-    position: absolute;
-    width: 100%; height: 100%;
-    background-image: linear-gradient(to top, #0d0a11 0%,
-            rgba(13,10,17,.85) 8%,
-            rgba(13,10,17,.55) 18%,
-            rgba(13,10,17,.20) 32%,
-            transparent 48%);
-    /*#15101a, rgba(21,16,26, .65), rgba(142,106,154, .55), transparent 55%);*/
-    pointer-events: none;
-    z-index: 1;
-    
+.medium-main-img::after {
+content: "";
+
+position: absolute;
+inset: 0;
+
+background:
+linear-gradient(
+to top,
+var(--medium-bg) 0%,
+rgba(13,10,17,.80) 12%,
+rgba(13,10,17,.35) 35%,
+transparent 70%
+);
+
+pointer-events: none;
+
 }
 
-/* =========================
-   NOMBRE GRANDE
-   ========================= */
+/* NOMBRE PRINCIPAL */
 
 .medium-name {
+position: absolute;
 
-    position: absolute;
+z-index: 2;
 
-    z-index: 2;
+left: 20px;
+right: 20px;
+bottom: 23px;
 
-    left: 28px;
-    right: 28px;
-    bottom: 55px;
+color: var(--medium-white);
 
-    color: #eee8f0;
+font-family: 'Poppins', sans-serif;
+font-size: 36px;
+font-weight: 800;
 
-    font-family: "Abril Fatface", serif;
-   
-    font-size: 58px;
+line-height: 1.1;
+letter-spacing: 5px;
 
-    line-height: .8;
+text-align: center;
+text-transform: uppercase;
 
-    letter-spacing: 11px;
+text-shadow: 0 2px 10px rgba(0,0,0,.65);
 
-    text-align: center;
-
-    text-transform: uppercase;
-
-    text-shadow: 0 1px 8px rgba(0,0,0,.7);
-    
-    user-select: none;
+overflow-wrap: anywhere;
 
 }
 
-
-/* ================
-   IDENTIDAD
-   ================= */
+/* IDENTIDAD Y DATOS */
 
 .medium-identity {
+display: grid;
 
-    height: 45px;
+grid-template-columns: 175px minmax(0,1fr);
+gap: 0;
 
-    display: flex;
+position: relative;
 
-    align-items: center;
-
-    justify-content: space-between;
-
-    padding: 0 8px;
-
-    box-sizing: border-box;
-
-    border-bottom: 1px solid var(--medium-soft);
-    
+background: var(--medium-panel);
 
 }
 
+/* COLUMNA DEL RETRATO */
 
-/* NOMBRE COMPLETO */
+.medium-profile {
+min-width: 0;
 
-.medium-fullname {
+display: flex;
+flex-direction: column;
 
-    color: var(--medium-soft);
+align-items: center;
+justify-content: flex-start;
 
-    font-family: "Cinzel", serif;
+padding: 23px 12px 22px;
 
-    font-size: 12px;
+background: var(--medium-panel2);
 
-    font-weight: 600;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-
-}
-
-
-/* MÉDIUM */
-
-.medium-type {
-
-    color: var(--medium-soft);
-
-    font-family: "Cinzel", serif;
-
-    font-size: 11px;
-
-    font-weight: 600;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
+border-top: 2px solid var(--medium-main);
 
 }
 
-
-/* ===========================
-   BLOQUE DE INFORMACIÓN
-   ========================== */
-
-.medium-info {
-
-    display: grid;
-
-    grid-template-columns: 180px 1fr;
-
-    gap: 12px;
-
-    margin-top: 20px;
-
-}
-
-
-/* ======================
-   IMÁGENES LATERALES
-   ======================= */
+/* RETRATO CIRCULAR */
 
 .medium-side-img {
+width: 94px;
+height: 94px;
 
-    height: 265px;
+position: relative;
 
-    background-size: cover;
+flex-shrink: 0;
 
-    background-position: center;
+margin: 0 auto 18px;
 
-    border: 1px solid var(--medium-border);
+border-radius: 50%;
+border: 2px solid var(--medium-main);
 
-    filter:
-        grayscale(65%)
-        contrast(105%);
+outline: 5px solid var(--medium-bg);
 
-    position: relative;
+overflow: hidden;
 
-    overflow: hidden;
-
-}
-
-
-/* COLOR SOBRE IMAGEN */
-
-.medium-side-img:after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(142,106,154,.18),
-            transparent 65%
-        );
-
-    pointer-events: none;
+background: var(--medium-bg);
 
 }
 
+.medium-side-img img {
+display: block;
 
-/* ==================
-   PANEL CENTRAL
-   =================== */
+width: 100%;
+height: 100%;
 
-.medium-data {
+object-fit: cover;
+object-position: center;
 
-    min-width: 0;
+filter: grayscale(100%) contrast(110%);
 
-    height: 265px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    background: var(--medium-panel);
-
-    border: 1px solid var(--medium-border);
+transition: .5s;
 
 }
 
+.medium-img-color {
+position: absolute;
+inset: 0;
 
-/* =================
-   RADIO BUTTONS
-   ============= */
+background: var(--medium-main);
 
-.medium-data > input {
+opacity: .48;
+mix-blend-mode: multiply;
 
-    display: none;
+border-radius: 50%;
 
-}
-
-
-/* ===================
-   TABS
-   =================== */
-
-.medium-tabs {
-
-    height: 47px;
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    border-bottom: 1px solid var(--medium-border);
+transition: .5s;
 
 }
 
+/* EFECTO AL PASAR EL CURSOR */
 
-.medium-tabs label {
+.medium-profile:hover .medium-side-img img {
+filter: grayscale(0%) contrast(110%);
+}
 
-    display: flex;
+.medium-profile:hover .medium-img-color {
+opacity: 0;
+}
 
-    align-items: center;
+/* NOMBRE COMPLETO Y CATEGORÍA */
 
-    justify-content: center;
+.medium-profile-name {
+width: 100%;
 
-    cursor: pointer;
+text-align: center;
 
-    color: rgba(187,166,194,.55);
+font-family: 'Inter', sans-serif;
+font-size: 9px;
 
-    font-family: "Cinzel", serif;
+line-height: 1.5;
+text-transform: uppercase;
 
-    font-size: 10px;
-
-    font-weight: 600;
-
-    letter-spacing: 2px;
-
-    transition: .3s;
+overflow-wrap: anywhere;
 
 }
 
+.medium-profile-name b {
+display: block;
 
-/* TAB ACTIVO */
+margin-bottom: 7px;
 
-#medium-main:checked ~ .medium-tabs label[for="medium-main"],
-#medium-extra:checked ~ .medium-tabs label[for="medium-extra"] {
+color: var(--medium-white);
 
-    color: #eee8f0;
+font-family: 'Poppins', sans-serif;
+font-size: 12px;
+font-weight: 800;
 
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(142,106,154,.65),
-            rgba(165,136,174,.18)
-        );
+line-height: 1.3;
+letter-spacing: 1px;
 
 }
 
+.medium-profile-name span {
+display: inline-block;
 
-/* ===================
-   CONTENIDO DE TABS
-   ================= */
+padding: 4px 8px;
 
-.medium-content {
+background: var(--medium-main);
+color: var(--medium-bg);
 
-    position: absolute;
+border-radius: 4px;
 
-    top: 47px;
+font-family: 'Poppins', sans-serif;
+font-size: 8px;
+font-weight: 700;
 
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    padding: 19px 27px;
-
-    box-sizing: border-box;
-
-    overflow-y: auto;
-
-    opacity: 0;
-
-    visibility: hidden;
-
-    transform: translateX(18px);
-
-    transition:
-        opacity .3s ease,
-        transform .3s ease;
+letter-spacing: 1.5px;
 
 }
 
+/* INFORMACIÓN A LA DERECHA */
 
-/* TAB PRINCIPAL */
+.medium-about {
+min-width: 0;
 
-#medium-main:checked ~ .medium-primary {
-
-    opacity: 1;
-
-    visibility: visible;
-
-    transform: translateX(0);
+padding: 18px 18px 15px;
 
 }
 
+/* FRASE O DESCRIPCIÓN */
 
-/* TAB EXTRAS */
+.medium-quote {
+position: relative;
 
-#medium-extra:checked ~ .medium-extra {
+margin-bottom: 13px;
+padding: 10px 12px 10px 30px;
 
-    opacity: 1;
+background: var(--medium-bg);
 
-    visibility: visible;
+border-radius: 7px;
+border-left: 2px solid var(--medium-main);
 
-    transform: translateX(0);
+color: var(--medium-soft);
 
-}
+font-family: 'Inter', sans-serif;
+font-size: 10px;
+font-weight: 500;
 
-
-/* ===================
-   CAMPOS
-   ==================== */
-
-.medium-field {
-
-    margin-bottom: 12px;
-
-}
-
-
-.medium-label {
-
-    color: var(--medium-main);
-
-    font-family: "Cinzel", serif;
-
-    font-size: 8px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
+line-height: 1.6;
 
 }
 
+.medium-quote::before {
+content: "“";
 
-.medium-value {
+position: absolute;
 
-    margin-top: 1px;
+left: 9px;
+top: 0;
 
-    color: #eee8f0;
+color: var(--medium-main);
 
-    font-family: 'Cormorant Garamond', serif;
+font-family: 'Playfair Display', serif;
+font-size: 29px;
+font-weight: 700;
 
-    font-size: 12px;
-
-    line-height: 1.4;
-
-}
-
-.medium-text {
-
-    margin-top: 1px;
-
-    color: #eee8f0;
-
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 12px;
-
-    line-height: 1.4;
+line-height: 1.2;
 
 }
 
-.medium-text b,
-.medium-text strong {
+/* CUADRÍCULA DE DATOS */
 
-    color: var(--medium-main);
+.medium-datos {
+display: grid;
 
-    font-family: "Cinzel", serif;
+grid-template-columns: repeat(2, minmax(0,1fr));
+gap: 6px;
 
-    font-size: 11px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
+width: 100%;
 
 }
 
+/* TARJETA DE CADA DATO */
 
-/* ====================
-   HISTORIA
-   =================== */
+.medium-dato {
+min-width: 0;
+min-height: 48px;
+
+display: flex;
+align-items: center;
+
+gap: 9px;
+
+padding: 8px 7px;
+
+background: var(--medium-bg);
+
+border-left: 2px solid var(--medium-main);
+border-radius: 3px;
+
+transition: .25s;
+
+}
+
+.medium-dato:hover {
+background: var(--medium-panel2);
+}
+
+/* ICONO */
+
+.medium-dato > i {
+flex-shrink: 0;
+
+width: 18px;
+
+color: var(--medium-main);
+
+font-size: 16px;
+text-align: center;
+
+}
+
+/* TEXTO DEL DATO */
+
+.medium-dato > span {
+display: block;
+
+min-width: 0;
+
+color: var(--medium-white);
+
+font-family: 'Inter', sans-serif;
+font-size: 9px;
+
+line-height: 1.4;
+
+overflow-wrap: anywhere;
+
+}
+
+.medium-dato > span b {
+display: block;
+
+margin-bottom: 3px;
+
+color: var(--medium-main);
+
+font-family: 'Poppins', sans-serif;
+font-size: 8px;
+font-weight: 800;
+
+letter-spacing: 1px;
+text-transform: uppercase;
+
+}
+
+/* HISTORIA */
 
 .medium-history {
+position: relative;
 
-    margin-top: 14px;
-   
-    padding: 29px 30px 32px;
+margin: 14px 14px 0;
+padding: 21px 22px 24px;
 
-    background: var(--medium-panel);
+background: var(--medium-panel);
 
-    border: 1px solid var(--medium-border);
+border: 1px solid var(--medium-border);
+border-radius: 9px;
 
-    position: relative;
-
-}
-
-
-/* DETALLE ESQUINA */
-
-.medium-history:after {
-
-    content: "";
-
-    position: absolute;
-
-    right: 14px;
-
-    bottom: 14px;
-
-    width: 30px;
-
-    height: 30px;
-
-    border-right: 1px solid rgba(142,106,154,.55);
-
-    border-bottom: 1px solid rgba(142,106,154,.55);
+overflow: hidden;
 
 }
 
+/* DETALLE DECORATIVO DE ESQUINA */
 
-/* ========================
-   TÍTULO HISTORIA
-   ======================== */
+.medium-history::after {
+content: "";
+
+position: absolute;
+
+right: 10px;
+bottom: 10px;
+
+width: 23px;
+height: 23px;
+
+border-right: 1px solid var(--medium-main);
+border-bottom: 1px solid var(--medium-main);
+
+opacity: .65;
+
+pointer-events: none;
+
+}
+
+/* TÍTULO DE HISTORIA */
 
 .medium-history-title {
+display: flex;
 
-    display: flex;
+align-items: center;
+gap: 10px;
 
-    align-items: center;
+min-width: 0;
 
-    gap: 12px;
+color: var(--medium-white);
 
-    color: var(--medium-soft);
+font-family: 'Poppins', sans-serif;
+font-size: 17px;
+font-weight: 700;
 
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 26px;
-
-    line-height: 1;
-
-    letter-spacing: 3px;
-
-    text-transform: uppercase;
+letter-spacing: 2px;
+text-transform: uppercase;
 
 }
 
+.medium-history-title > span {
+display: flex;
 
-.medium-history-title span {
+width: 34px;
+height: 34px;
 
-    color: var(--medium-main);
+flex-shrink: 0;
 
-    font-size: 15px;
+align-items: center;
+justify-content: center;
+
+background: var(--medium-main);
+color: var(--medium-bg);
+
+border-radius: 50%;
+
+font-size: 15px;
 
 }
 
+.medium-history-title > b {
+color: var(--medium-white);
 
-/* ========================
-   LÍNEA HISTORIA
-   ========================= */
+font-size: inherit;
+font-weight: inherit;
+
+}
+
+/* LÍNEA DECORATIVA */
 
 .medium-history-line {
+flex: 1;
 
-    width: 70px;
+min-width: 15px;
+height: 1px;
 
-    height: 1px;
+margin-left: 5px;
 
-    margin: 17px 0 20px;
+background:
+linear-gradient(
+to right,
+var(--medium-main),
+transparent
+);
 
-    background:
-
-        linear-gradient(
-            to right,
-            var(--medium-main),
-            transparent
-        );
+opacity: .8;
 
 }
 
-
-/* ======================
-   TEXTO HISTORIA
-   ======================= */
+/* TEXTO DE HISTORIA */
 
 .medium-history-text {
+margin-top: 18px;
+padding-right: 8px;
 
-    color: #a99faa;
+color: var(--medium-text);
 
-    font-size: 11px;
+font-family: 'Inter', sans-serif;
+font-size: 10px;
 
-    line-height: 1.5;
+line-height: 1.9;
+text-align: justify;
 
-    text-align: justify;
+overflow-wrap: anywhere;
 
 }
-
 
 .medium-history-text b,
 .medium-history-text strong {
+color: var(--medium-light);
 
-    color: var(--medium-light);
+font-family: 'Poppins', sans-serif;
+font-weight: 700;
 
 }
-
 
 .medium-history-text i,
 .medium-history-text em {
+color: var(--medium-soft);
+}
 
-    color: var(--medium-soft);
+.medium-history-text u {
+color: var(--medium-light);
+text-decoration-color: var(--medium-main);
+}
+
+/* EXTRAS */
+
+.medium-extras {
+display: grid;
+
+grid-template-columns: 92px minmax(0,1fr);
+gap: 13px;
+
+margin: 14px;
+
+padding: 14px;
+
+background: var(--medium-panel2);
+
+border: 1px solid var(--medium-border);
+border-radius: 9px;
 
 }
 
+/* COLUMNA DECORATIVA EXTRA */
 
-/* =====================
-   SCROLL DE DATOS
-   ====================== */
+.medium-extra-side {
+display: flex;
 
-.medium-content::-webkit-scrollbar {
+flex-direction: column;
+align-items: center;
 
-    width: 3px;
+justify-content: flex-start;
 
-}
+min-width: 0;
 
-
-.medium-content::-webkit-scrollbar-thumb {
-
-    background: var(--medium-main);
+padding: 5px 0;
 
 }
 
+/* PALABRA EXTRA EN VERTICAL */
 
-.medium-content::-webkit-scrollbar-track {
+.medium-extra-word {
+display: flex;
 
-    background: transparent;
+flex-direction: column;
+align-items: center;
 
-}
+margin-bottom: 13px;
 
+color: var(--medium-main);
 
-/* ==================
-   TABLET
-   ================== */
+font-family: 'Poppins', sans-serif;
+font-size: 17px;
+font-weight: 800;
 
-@media screen and (max-width: 720px) {
-
-    .medium-ficha {
-
-        width: 95%;
-
-        padding: 20px;
-
-    }
-
-
-    .medium-name {
-
-        font-size: 49px;
-
-        letter-spacing: 8px;
-
-    }
-
-
-    .medium-info {
-
-        grid-template-columns: 145px 1fr;
-
-    }
+line-height: 1.15;
+letter-spacing: 2px;
 
 }
 
+/* CUADRADOS DECORATIVOS */
 
-/* ==============
-   MÓVIL
-   ============= */
+.medium-extra-square {
+width: 9px;
+height: 9px;
 
-@media screen and (max-width: 500px) {
+flex-shrink: 0;
 
-    .medium-ficha {
+background: var(--medium-main);
 
-        width: 96%;
+border-radius: 2px;
 
-        padding: 15px;
+opacity: var(--opac);
 
-    }
+}
 
+/* IMAGEN DE 50 X 50 */
 
-    .medium-main-img {
+.medium-extra-img {
+width: 50px;
+height: 50px;
 
-        height: 350px;
+flex-shrink: 0;
 
-    }
+margin: 12px 0;
 
+overflow: hidden;
 
-    .medium-name {
+background: var(--medium-bg);
 
-        left: 15px;
-        right: 15px;
+border: 1px solid var(--medium-main);
+border-radius: 5px;
 
-        font-size: 39px;
+}
 
-        letter-spacing: 5px;
+.medium-extra-img img {
+display: block;
 
-    }
+width: 100%;
+height: 100%;
 
+object-fit: cover;
 
-    .medium-identity {
+filter: grayscale(100%) contrast(110%);
 
-        padding: 0 4px;
+transition: .4s;
 
-    }
+}
 
+.medium-extra-img:hover img {
+filter: grayscale(0%) contrast(110%);
+}
 
-    .medium-fullname,
-    .medium-type {
+/* PANEL DE TEXTO EXTRA */
 
-        font-size: 8px;
+.medium-extra-content {
+min-width: 0;
 
-        letter-spacing: 1px;
+display: flex;
+flex-direction: column;
 
-    }
+background: var(--medium-bg);
 
+border-radius: 7px;
 
-    .medium-info {
+overflow: hidden;
 
-        grid-template-columns: 110px 1fr;
+}
 
-        gap: 7px;
+/* TÍTULO EXTRA */
 
-    }
+.medium-extra-title {
+display: flex;
 
+align-items: center;
+gap: 9px;
 
-    .medium-side-img,
-    .medium-data {
+padding: 11px 13px;
 
-        height: 270px;
+background: var(--medium-main);
 
-    }
+color: var(--medium-bg);
 
+font-family: 'Poppins', sans-serif;
+font-size: 11px;
+font-weight: 800;
 
-    .medium-tabs label {
+letter-spacing: 1px;
+text-transform: uppercase;
 
-        font-size: 6px;
+}
 
-        letter-spacing: 1px;
+.medium-extra-title i {
+font-size: 15px;
+}
 
-    }
+/* TEXTO EXTRA */
 
+.medium-extra-text {
+padding: 13px 14px 16px;
 
-    .medium-content {
+color: var(--medium-text);
 
-        padding: 17px 15px;
+font-family: 'Inter', sans-serif;
+font-size: 10px;
 
-    }
+line-height: 1.8;
+text-align: justify;
 
-   .medium-label {
+overflow-wrap: anywhere;
 
-    font-size: 12px;
+}
+
+.medium-extra-text b,
+.medium-extra-text strong {
+color: var(--medium-main);
+
+font-family: 'Poppins', sans-serif;
+font-size: 9px;
+font-weight: 800;
+
+letter-spacing: .7px;
+
+}
+
+.medium-extra-text i,
+.medium-extra-text em {
+color: var(--medium-soft);
+}
+
+/* BARRA INFERIOR */
+
+.medium-footer {
+display: block;
+
+width: 100%;
+
+padding: 9px 15px;
+
+background: var(--medium-main);
+color: var(--medium-bg);
+
+font-family: 'Poppins', sans-serif;
+font-size: 9px;
+font-weight: 700;
+
+letter-spacing: 1px;
+
+text-align: right;
+text-transform: uppercase;
+
+border-radius: 0 0 10px 10px;
+
+}
+
+/* SCROLLBARS */
+
+.medium-ficha ::-webkit-scrollbar {
+width: 4px;
+height: 4px;
+}
+
+.medium-ficha ::-webkit-scrollbar-thumb {
+background: var(--medium-main);
+border-radius: 4px;
+}
+
+.medium-ficha ::-webkit-scrollbar-track {
+background: var(--medium-bg);
+}
+
+/* TABLET */
+
+@media screen and (max-width: 620px) {
+
+.medium-ficha {
+width: 96%;
+}
+
+.medium-main-img {
+height: 180px;
+}
+
+.medium-name {
+font-size: 29px;
+letter-spacing: 3px;
+}
+
+.medium-identity {
+grid-template-columns: 145px minmax(0,1fr);
+}
+
+.medium-profile {
+padding: 22px 9px;
+}
+
+.medium-side-img {
+width: 82px;
+height: 82px;
+}
+
+.medium-about {
+padding: 15px 12px;
+}
+
+.medium-datos {
+gap: 5px;
+}
+
+.medium-dato {
+gap: 5px;
+padding: 7px 5px;
+}
+
+.medium-dato > i {
+width: 15px;
+font-size: 13px;
+}
+
+.medium-dato > span {
+font-size: 8px;
+}
+
+.medium-history {
+padding: 19px 17px 22px;
+}
+
+.medium-extras {
+grid-template-columns: 76px minmax(0,1fr);
+gap: 9px;
+padding: 10px;
+}
+
+}
+
+/* MÓVIL */
+
+@media screen and (max-width: 430px) {
+
+.medium-main-img {
+height: 155px;
+}
+
+.medium-name {
+left: 10px;
+right: 10px;
+bottom: 19px;
+
+font-size: 23px;
+letter-spacing: 2px;
+
+}
+
+.medium-identity {
+grid-template-columns: 1fr;
+}
+
+.medium-profile {
+display: grid;
+
+grid-template-columns: 76px minmax(0,1fr);
+align-items: center;
+
+gap: 14px;
+
+padding: 17px 15px;
+
+text-align: left;
+
+}
+
+.medium-side-img {
+width: 68px;
+height: 68px;
+
+margin: 0;
+
+}
+
+.medium-profile-name {
+text-align: left;
+}
+
+.medium-profile-name b {
+font-size: 11px;
+}
+
+.medium-about {
+padding: 13px;
+}
+
+.medium-quote {
+font-size: 10px;
+}
+
+.medium-dato {
+min-height: 46px;
+}
+
+.medium-history {
+margin: 10px;
+padding: 17px 14px 21px;
+}
+
+.medium-history-title {
+gap: 8px;
+font-size: 14px;
+letter-spacing: 1px;
+}
+
+.medium-history-title > span {
+width: 29px;
+height: 29px;
+font-size: 13px;
+}
+
+.medium-history-text {
+font-size: 10px;
+line-height: 1.8;
+}
+
+.medium-extras {
+grid-template-columns: 55px minmax(0,1fr);
+gap: 8px;
+
+margin: 10px;
+padding: 9px;
+
+}
+
+.medium-extra-word {
+font-size: 14px;
+letter-spacing: 1px;
+}
+
+.medium-extra-img {
+width: 42px;
+height: 42px;
+}
+
+.medium-extra-title {
+padding: 10px;
+font-size: 9px;
+}
+
+.medium-extra-text {
+padding: 11px;
+font-size: 10px;
+}
+
+.medium-footer {
+padding: 8px 10px;
+font-size: 8px;
+}
+
    }
-   
-   .medium-value {
-
-        font-size: 12px;
-
-   }
-
-   .medium-text {
-
-        font-size: 11px;
-
-   }
-
-    .medium-history {
-
-        padding: 25px 20px 30px;
-
-    }
-
-
-    .medium-history-title {
-
-        font-size: 22px;
-
-    }
-}
