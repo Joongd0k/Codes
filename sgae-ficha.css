@@ -405,13 +405,12 @@
 .st-text {
     color: var(--st-text);
 
-    font-family: 'Inter', sans-serif;
-    font-size: 10px;
-
-    line-height: 2;
+    font: normal 11.5px "inter"; 
+    line-height: 16px;
     text-align: justify;
 
-    overflow-wrap: anywhere;
+    margin: 20px auto 0;
+
 }
 
 .st-text b,
@@ -483,7 +482,7 @@
 
     background-blend-mode: multiply;
 
-    border: 1px solid var(--st-border);
+    border: 1px solid #;
     border-radius: 5px;
 }
 
