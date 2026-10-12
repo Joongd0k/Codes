@@ -615,7 +615,7 @@
     border: 1px solid var(--st-border);
     border-top: none;
     border-bottom: none;
-    border-right: 10px solid var(--st-main);
+    border-right: 20px solid var(--st-main);
 
     border-radius: 0;
 }
@@ -650,8 +650,8 @@
 
     background: var(--st-panel);
     border: none;
-    border-top: 20px solid var(--st-main);
-    border-radius: 0;
+    border-top: none;
+    border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-sizing: border-box;
 }
