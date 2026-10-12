@@ -636,13 +636,80 @@
     margin-top: 0;
 }
 
-
 /* DATOS EXTRAS */
 
-.st-extras {
-    padding-bottom: 27px;
+.st-section.st-extras {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+
+    width: calc(100% + 40px);
+    max-height: 300px;
+    margin: 0 0 0 -20px;
+    padding: 0;
+
+    background: var(--st-panel);
+    border: none;
+    border-top: 20px solid var(--st-main);
+    border-radius: 0;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 
+/* CONTENIDO */
+
+.st-extras-content {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+
+    padding: 22px 27px;  
+
+    overflow-y: auto;  
+    box-sizing: border-box;
+
+}
+
+.st-extras-content .st-section-head {
+margin-bottom: 15px;
+}
+
+.st-extras-content .st-text {
+margin-top: 0;
+}
+
+/* IMAGEN DERECHA */
+
+.st-extras-image {
+flex: 0 0 180px;
+width: 180px;
+min-width: 0;
+min-height: 0;
+
+position: relative;  
+overflow: hidden;  
+
+background: var(--st-bg);
+
+}
+
+.st-extras-image img {
+display: block;
+
+width: 100%;  
+height: 100%;  
+
+object-fit: cover;  
+object-position: center;  
+
+filter: grayscale(100%) contrast(115%);  
+transition: filter .4s;
+
+}
+
+.st-extras-image:hover img {
+filter: grayscale(0%) contrast(110%);
+}
 
 /* CIERRE */
 
@@ -715,8 +782,13 @@
         padding: 22px;
      }
 
-    .st-extra {
-        padding: 19px 15px;
+    .st-section.st-extras {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+
+    .st-extras-content {
+        padding: 22px;
     }
 
      .st-footer {
@@ -813,8 +885,25 @@
         letter-spacing: 1.5px;
     }
 
-    .st-extra {
-        padding: 21px 17px;
+    .st-section.st-extras {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        max-height: 300px;
+        border-top-width: 15px;
+    }
+
+    .st-extras-content {
+        padding: 18px 12px;
+    }
+
+    .st-extras-image {
+        flex-basis: 115px;
+        width: 115px;
+    }
+
+    .st-extras-content .st-section-title {
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 
      .st-footer {
