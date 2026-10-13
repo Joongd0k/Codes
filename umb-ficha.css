@@ -59,15 +59,9 @@ border-radius: 8px;
 .umbrarum-ficha:before {
 content: "";
 position: absolute;
-top: 0;
-left: 0;
-right: 8px;
-bottom: 8px;
-border-top: 1px solid rgba(189, 58, 65, .35);
-border-left: 1px solid rgba(189, 58, 65, .35);
-pointer-events: none;
-z-index: 2;
+inset: 8px;
 border: none;
+pointer-events: none;
 }
 
 /*** CABECERA ***/
@@ -89,6 +83,10 @@ border-bottom-right-radius:25px;
 border-right: 1px solid rgba(189, 58, 65, .20);
 border-bottom: 1px solid rgba(189, 58, 65, .20);
 box-sizing: border-box;
+
+margin-top: -20px;
+margin-left: -20px;
+width: calc(100% + 20px);
 
 }
 
