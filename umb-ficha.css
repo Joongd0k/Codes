@@ -186,8 +186,7 @@ overflow-wrap: anywhere;
 
 .uf-profile {
     display: grid;
-    grid-template-columns: minmax(0, 180px) 200px;
-    justify-content: space-between;
+    grid-template-columns: minmax(0, 1fr) 200px;
     gap: 12px;
 
     margin-top: 12px;
