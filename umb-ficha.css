@@ -21,7 +21,7 @@
 
 --uf-line: rgba(172, 9, 17, .28);
 
-width: 650px;
+width: 600px;
 max-width: 100%;
 margin: 30px auto;
 padding: 20px;
@@ -168,7 +168,7 @@ font-family: 'Stardom', sans-serif;
 font-size: 9px;
 font-weight: 400;
 line-height: 1;
-letter-spacing: 3px;
+letter-spacing: 1px;
 text-transform: uppercase;
 }
 
@@ -186,7 +186,8 @@ overflow-wrap: anywhere;
 
 .uf-profile {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 230px;
+    grid-template-columns: minmax(0, 180px) 200px;
+    justify-content: space-between;
     gap: 12px;
 
     margin-top: 12px;
