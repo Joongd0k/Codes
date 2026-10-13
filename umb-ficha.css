@@ -1,939 +1,646 @@
 @import url('https://solrainha.github.io/saturnicons/saturnicons.css');
-
 @import url('https://solrainha.github.io/honeybee/honeybee.css');
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
 
+@import url('https://api.fontshare.com/v2/css?f[]=stardom@400&f[]=bebas-neue@400&f[]=melodrama@600&f[]=rosaline@400&f[]=britney@300&display=swap');
 
-/* ==========================
-   UMBRARUM · PROFILE
-   ========================== */
-
+/*** CONTENEDOR PRINCIPAL ***/
 
 .umbrarum-ficha {
+--uf-main: #ac0911;
+--uf-light: #bd3a41;
+--uf-soft: #cd6b70;
 
-    /* PALETA */
+--uf-bg: #080808;
+--uf-panel: #111011;
+--uf-panel-2: #161214;
 
-    --uf-main: #ac0911;
+--uf-text: #e4dedb;
+--uf-muted: #a49b9a;
 
-    --uf-light: #bd3a41;
+--uf-line: rgba(172, 9, 17, .28);
 
-    --uf-soft: #cd6b70;
+width: 650px;
+max-width: 100%;
+margin: 30px auto;
+padding: 20px;
+box-sizing: border-box;
 
+position: relative;
+overflow: hidden;
 
-    /* FONDOS */
+background:
+    radial-gradient(
+        circle at 10% 5%,
+        rgba(172, 9, 17, .09),
+        transparent 28%
+    ),
+    radial-gradient(
+        circle at 90% 90%,
+        rgba(189, 58, 65, .05),
+        transparent 30%
+    ),
+    var(--uf-bg);
 
-    --uf-bg: #080808;
+color: var(--uf-text);
+font-family: 'Inter', sans-serif;
+font-size: 11px;
+line-height: 1.7;
+letter-spacing: .3px;
 
-    --uf-panel: #111011;
-
-    --uf-panel-2: #161214;
-
-
-    /* TEXTO */
-
-    --uf-text: #e4dedb;
-
-    --uf-muted: #a49b9a;
-
-
-    /* LÍNEAS */
-
-    --uf-line: rgba(172,9,17,.28);
-
-
-    width: 650px;
-
-    margin: 30px auto;
-
-    padding: 28px;
-
-    box-sizing: border-box;
-
-
-    background:
-
-        radial-gradient(
-            circle at 10% 5%,
-            rgba(172,9,17,.09),
-            transparent 28%
-        ),
-
-        radial-gradient(
-            circle at 90% 90%,
-            rgba(189,58,65,.05),
-            transparent 30%
-        ),
-
-        var(--uf-bg);
-
-
-    color: var(--uf-text);
-
-    font-family: 'Montserrat', sans-serif;
-
-    font-size: 11px;
-
-    line-height: 1.7;
-
-    letter-spacing: .3px;
-
-    position: relative;
-
-    overflow: hidden;
-
-    border: 1px solid rgba(189,58,65,.20);
+border: 4px solid rgba(189, 58, 65, .20);
+border-radius: 8px;
 
 }
 
-
-/* ==========================
-   MARCO INTERIOR
-   ========================== */
-
+/*** MARCO INTERIOR ***/
 
 .umbrarum-ficha:before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 11px;
-
-    border: 1px solid rgba(189,58,65,.13);
-
-    pointer-events: none;
-
+content: "";
+position: absolute;
+inset: 8px;
+border: none;
+pointer-events: none;
 }
 
-
-/* ==========================
-   MARCA SUPERIOR
-   ========================== */
-
-
-.uf-top-mark {
-
-    margin-bottom: 12px;
-
-    color: var(--uf-muted);
-
-    font-size: 7px;
-
-    font-weight: 700;
-
-    letter-spacing: 4px;
-
-    text-align: right;
-
-}
-
-
-.uf-top-mark span {
-
-    margin: 0 7px;
-
-    color: var(--uf-main);
-
-}
-
-
-/* ==========================
-   CABECERA
-   ========================== */
-
+/*** CABECERA ***/
 
 .uf-header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+gap: 25px;
 
-    display: grid;
+position: relative;
+z-index: 1;
 
-    grid-template-columns: 1.05fr 1fr;
-
-    gap: 12px;
-
-}
-
-
-/* ==========================
-   IMAGEN PRINCIPAL
-   ========================== */
-
-
-.uf-main-image {
-
-    min-height: 430px;
-
-    background-size: cover;
-
-    background-position: center;
-
-    filter:
-        grayscale(85%)
-        contrast(105%);
-
-    position: relative;
-
-    overflow: hidden;
-
-    border: 1px solid rgba(189,58,65,.25);
+min-height: 65px;
+padding: 8px 12px;
+background: rgba(17, 16, 17, .85);
+border: none;
+border-bottom-right-radius:25px;
+border-right: 1px solid rgba(189, 58, 65, .20);
+border-bottom: 1px solid rgba(189, 58, 65, .20);
+box-sizing: border-box;
 
 }
 
+/*** FILA DE ICONOS ***/
 
-/* TONO ROJIZO */
+.uf-icons {
+display: flex;
+align-items: center;
+gap: 7px;
+flex-shrink: 0;
+}
 
+.uf-icon {
+width: 45px;
+height: 45px;
+flex: 0 0 45px;
 
-.uf-main-image:after {
+position: relative;
+overflow: hidden;
 
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(172,9,17,.20),
-            transparent 55%
-        );
-
-    pointer-events: none;
+background: var(--uf-panel-2);
+border: 1px solid rgba(189, 58, 65, .35);
+box-sizing: border-box;
 
 }
 
+.uf-icon img {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
 
-/* ==========================
-   PERFIL
-   ========================== */
+filter: grayscale(100%) contrast(115%);
+transition: filter .4s ease, transform .4s ease;
 
+}
+
+.uf-icon:after {
+content: "";
+position: absolute;
+inset: 0;
+
+background: rgba(172, 9, 17, .18);
+pointer-events: none;
+transition: opacity .4s ease;
+
+}
+
+.uf-icon:hover img {
+filter: grayscale(15%) contrast(110%);
+transform: scale(1.06);
+}
+
+.uf-icon:hover:after {
+opacity: 0;
+}
+
+/*** NOMBRE Y PLAYED BY ***/
+
+.uf-identity {
+flex: 1;
+min-width: 0;
+
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;
+
+text-align: right;
+
+}
+
+/*** PLAYED BY ***/
+.uf-played-by { margin-bottom: 5px;
+color: var(--uf-soft);
+font-family: 'Stardom', sans-serif;
+font-size: 9px;
+font-weight: 400;
+line-height: 1;
+letter-spacing: 3px;
+text-transform: uppercase;
+}
+
+/*** NOMBRE Y APELLIDO ***/
+.uf-name { color: var(--uf-text); font-family: 'Rosaline', cursive; font-size: 20px; font-weight: 400; line-height: 1.2; letter-spacing: 1px;
+overflow-wrap: anywhere;
+}
+
+/*** PERFIL: DATOS + IMAGEN ***/
 
 .uf-profile {
-
-    padding: 35px 30px;
-
-    box-sizing: border-box;
-
-    background: var(--uf-panel);
-
-    border: 1px solid rgba(189,58,65,.13);
-
-    position: relative;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-}
-
-
-/* DETALLE SUPERIOR */
-
-
-.uf-profile:before {
-
-    content: "";
-
-    position: absolute;
-
-    top: 14px;
-
-    right: 14px;
-
-    width: 35px;
-
-    height: 35px;
-
-    border-top: 1px solid rgba(172,9,17,.35);
-
-    border-right: 1px solid rgba(172,9,17,.35);
-
-}
-
-
-/* ==========================
-   KICKER
-   ========================== */
-
-
-.uf-kicker {
-
-    margin-bottom: 18px;
-
-    color: var(--uf-main);
-
-    font-size: 8px;
-
-    font-weight: 700;
-
-    letter-spacing: 4px;
-
-}
-
-
-.uf-kicker i {
-
-    margin-right: 5px;
-
-    font-size: 10px;
-
-}
-
-
-/* ==========================
-   NOMBRE
-   ========================== */
-
-
-.uf-name {
-
-    color: #eee8e5;
-
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 47px;
-
-    line-height: .78;
-
-    letter-spacing: 1px;
-
-    text-transform: uppercase;
-
-}
-
-
-.uf-surname {
-
-    margin-top: 8px;
-
-    color: var(--uf-light);
-
-    font-size: 27px;
-
-    letter-spacing: 4px;
-
-}
-
-
-/* ==========================
-   DIVISOR
-   ========================== */
-
-
-.uf-line {
-
-    width: 70px;
-
-    height: 1px;
-
-    margin: 25px 0 16px;
-
-    background:
-
-        linear-gradient(
-            to right,
-            var(--uf-main),
-            transparent
-        );
-
-}
-
-
-/* ==========================
-   DATOS BÁSICOS
-   ========================== */
-
-
-.uf-data {
-
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    margin-top: 28px;
-
-    border-top: none;
-
-    border-left: none;
-
-}
-
-
-.uf-data-item {
-
-    min-height: 58px;
-
-    padding: 11px 7px;
-
-    box-sizing: border-box;
-
-    display: flex;
-
-    flex-direction: column;
-
-    justify-content: center;
-
-}
-
-/* Línea vertical central */
-
-.uf-data-item:nth-child(odd) {
-
-    border-right: 1px solid var(--uf-line);
-
-}
-
-
-/* Línea horizontal central */
-
-.uf-data-item:nth-child(n+3) {
-
-    border-top: 1px solid var(--uf-line);
-
-}
-
-
-/* ==========================
-   ETIQUETAS
-   ========================== */
-
-
-.uf-label {
-
-    color: var(--uf-main);
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    letter-spacing: 2px;
-
-}
-
-
-.uf-value {
-
-    margin-top: 4px;
-
-    color: var(--uf-text);
-
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 16px;
-
-    line-height: 1.2;
-
-}
-
-
-/* ==========================
-   GALERÍA
-   ========================== */
-
-
-.uf-gallery {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr 1.35fr;
-
+    grid-template-columns: minmax(0, 1fr) 230px;
     gap: 12px;
 
     margin-top: 12px;
-
-}
-
-
-/* ==========================
-   FOTOS SECUNDARIAS
-   ========================== */
-
-
-.uf-small-image {
-
-    height: 145px;
-
-    background-size: cover;
-
-    background-position: center;
-
-    filter:
-        grayscale(85%)
-        contrast(105%);
+    align-items: stretch;
 
     position: relative;
-
-    overflow: hidden;
-
-    border: 1px solid rgba(189,58,65,.18);
-
+    z-index: 1;
+    min-width: 0;
 }
 
+/*** PANEL DE DATOS ***/
 
-.uf-small-image:after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background: rgba(172,9,17,.10);
-
-    pointer-events: none;
-
-}
-
-
-/* ==========================
-   PLAYED BY
-   ========================== */
-
-
-.uf-quote {
-
-    min-height: 145px;
-
-    padding: 22px;
-
-    box-sizing: border-box;
-
-    background: var(--uf-panel);
-
-    border: 1px solid rgba(189,58,65,.13);
+.uf-data {
+    min-width: 0;
 
     display: flex;
-
     flex-direction: column;
+    gap: 6px;
 
-    justify-content: center;
-
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
 }
 
+/*** RECUADROS INDIVIDUALES ***/
 
-.uf-quote-symbol {
+.uf-data-item {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
 
-    margin-bottom: 8px;
+    min-width: 0;
+    min-height: 48px;
+    padding: 8px 12px;
 
+    background: var(--uf-bg);
+    border-left: 2px solid var(--uf-main);
+    border-radius: 3px;
+
+    box-sizing: border-box;
+    transition: background .3s ease;
+}
+
+.uf-data-item:hover {
+    background: var(--uf-panel-2);
+}
+
+/*** ETIQUETAS ***/
+
+.uf-label {
     color: var(--uf-main);
 
-    font-size: 9px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
 
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
+/*** VALORES ***/
 
-.uf-quote-PB {
-
-    color: var(--uf-soft);
-
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 22px;
-
-    line-height: .8;
-
-}
-
-
-.uf-quote-text {
-
-    margin-top: 12px;
+.uf-value {
+    min-width: 0;
 
     color: var(--uf-text);
 
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 14px;
-
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
     line-height: 1.5;
 
-    text-transform: uppercase;
-
+    overflow-wrap: anywhere;
 }
 
+/*** IMAGEN PRINCIPAL ***/
 
-/* ==========================
-   SECCIONES
-   ========================== */
-
-
-.uf-section {
-
-    margin-top: 12px;
-
-    padding: 35px;
-
-    box-sizing: border-box;
-
-    background: var(--uf-panel);
-
-    border: 1px solid rgba(189,58,65,.13);
+.uf-main-image {
+    min-width: 0;
+    min-height: 270px;
 
     position: relative;
+    overflow: hidden;
 
+    background-color: var(--uf-main);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+
+    border: none;
+    border-radius: 5px;
+
+    box-sizing: border-box;
 }
 
+/*** SOMBRA SOBRE LA IMAGEN ***/
 
-/* DETALLE ESQUINA */
-
-
-.uf-section:after {
-
+.uf-main-image:after {
     content: "";
 
     position: absolute;
+    inset: 0;
+    z-index: 1;
 
-    right: 14px;
+    background: linear-gradient(
+        to top,
+        rgba(8, 8, 8, .65) 0%,
+        rgba(8, 8, 8, .15) 45%,
+        rgba(172, 9, 17, .12) 100%
+    );
 
-    bottom: 14px;
-
-    width: 25px;
-
-    height: 25px;
-
-    border-right: 1px solid rgba(172,9,17,.25);
-
-    border-bottom: 1px solid rgba(172,9,17,.25);
-
+    pointer-events: none;
 }
 
+/*** CONTENIDO SOBRE LA IMAGEN ***/
 
-/* ==========================
-   CABECERA DE SECCIÓN
-   ========================== */
-
-
-.uf-section-head {
+.uf-image-content {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
 
     display: flex;
-
-    align-items: baseline;
-
-    gap: 13px;
-
-}
-
-
-.uf-section-number {
-
-    color: var(--uf-main);
-
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 13px;
-
-}
-
-
-/* ==========================
-   TÍTULO
-   ========================== */
-
-
-.uf-section-title {
-
-    display: flex;
-
     align-items: center;
-
+    justify-content: center;
     gap: 10px;
 
-    color: #e7e1de;
-
-    font-family: 'Cormorant Garamond', serif;
-
-    font-size: 27px;
-
-    line-height: 1;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-
+    padding: 15px;
+    box-sizing: border-box;
 }
 
+/*** NOMBRE DEL PERSONAJE ***/
 
-.uf-section-title i {
+.uf-image-name {
+    color: var(--uf-text);
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: right;
+
+    overflow-wrap: anywhere;
+}
+
+/*** LÍNEA VERTICAL ***/
+
+.uf-image-line {
+    flex: 0 0 1px;
+    align-self: stretch;
+
+    max-height: 45px;
+    margin: auto 0;
+
+    background: var(--uf-main);
+}
+
+/*** ICONO ***/
+
+.uf-image-icon {
+    flex: 0 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--uf-soft);
+    font-size: 22px;
+    line-height: 1;
+}
+
+/*** SECCIONES GENERALES ***/
+
+.uf-section {
+    margin-top: 12px;
+    padding: 25px 27px;
+
+    position: relative;
+
+    background: var(--uf-panel);
+    border: 1px solid var(--uf-line);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/*** CABECERA DE SECCIÓN ***/
+
+.uf-section-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+}
+
+.uf-section-number {
+    flex-shrink: 0;
 
     color: var(--uf-main);
-
-    font-size: 13px;
-
+    font-family: 'Melodrama', serif;
+    font-size: 17px;
+    font-style: italic;
 }
 
+.uf-section-title {
+    margin: 0;
 
-/* ==========================
-   LÍNEA
-   ========================== */
+    color: var(--uf-text);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
 
+/*** LÍNEA DECORATIVA ***/
 
-.uf-section-line {
-
-    width: 55px;
-
+.uf-line {
+    flex: 1;
+    min-width: 12px;
     height: 1px;
+    margin-left: 5px;
 
-    margin: 15px 0 22px;
-
-    background:
-
-        linear-gradient(
-            to right,
-            var(--uf-main),
-            transparent
-        );
-
+    background: linear-gradient(
+        to right,
+        var(--uf-main),
+        transparent
+    );
 }
 
-
-/* ==========================
-   TEXTO
-   ========================== */
-
+/*** TEXTO ***/
 
 .uf-text {
+    padding: 25px 30px;
 
-    color: var(--uf-muted);
-
-    font-size: 10px;
-
-    line-height: 1.9;
-
+    color: var(--uf-text);
+    font-family: 'Inter', sans-serif;
+    font-size: 11.5px;
+    font-weight: 400;
+    line-height: 1.6;
     text-align: justify;
 
+    overflow-wrap: anywhere;
 }
-
-
-/* FORMATO */
-
 
 .uf-text b,
 .uf-text strong {
-
     color: var(--uf-light);
-
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
     font-weight: 700;
-
+    letter-spacing: .4px;
 }
-
 
 .uf-text i,
 .uf-text em {
-
     color: var(--uf-soft);
-
 }
 
-
-/* ==========================
-   DATOS EXTRAS
-   ========================== */
-
-
-.uf-extras {
-
-    padding-bottom: 35px;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(172,9,17,.035),
-            transparent 45%
-        ),
-
-        var(--uf-panel);
-
+.uf-text a {
+    color: var(--uf-light);
+    text-decoration: none;
+    transition: .3s;
 }
 
-
-/* ==========================
-   FOOTER
-   ========================== */
-
-
-.uf-footer {
-
-    margin-top: 18px;
-
-    color: #51494a;
-
-    font-size: 7px;
-
-    font-weight: 700;
-
-    letter-spacing: 4px;
-
-    text-align: center;
-
+.uf-text a:hover {
+    color: var(--uf-text);
 }
 
+/*** HISTORIA ***/
 
-.uf-footer span {
-
-    margin: 0 8px;
-
-    color: var(--uf-main);
-
+.uf-section .uf-section-head {
+    margin-bottom: 15px;
 }
 
+/*** HISTORIA FUSIONADA CON EL SEPARADOR ***/
 
-/* ==========================
-   RESPONSIVE — TABLET
-   ========================== */
+.uf-section:not(.uf-extras) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: 12px;
+    margin-bottom: 0;
 
-
-@media screen and (max-width: 720px) {
-
-    .umbrarum-ficha {
-
-        width: 95%;
-
-        padding: 20px;
-
-    }
-
-
-    .uf-header {
-
-        grid-template-columns: 1fr;
-
-    }
-
-
-    .uf-main-image {
-
-        min-height: 380px;
-
-    }
-
-
-    .uf-gallery {
-
-        grid-template-columns: 1fr 1fr;
-
-    }
-
-
-    .uf-quote {
-
-        grid-column: 1 / 3;
-
-    }
-
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    border-right: none;
 }
 
+/*** DATOS EXTRAS ***/
 
-/* ==========================
-   RESPONSIVE — MÓVIL
-   ========================== */
+.uf-section.uf-extras {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 0;
 
+    width: calc(100% + 40px);
+    max-height: 300px;
+    margin: 0 0 0 -20px;
+    padding: 0;
 
-@media screen and (max-width: 450px) {
+    background: var(--uf-panel);
+    border: none;
+    border-radius: 0;
 
-    .umbrarum-ficha {
+    overflow: hidden;
+    box-sizing: border-box;
+}
 
-        width: 96%;
+/*** IMAGEN A LA IZQUIERDA ***/
 
-        padding: 15px;
+.uf-extras-image {
+    order: 1;
 
-    }
+    flex: 0 0 180px;
+    width: 180px;
+    min-width: 0;
+    min-height: 0;
 
+    position: relative;
+    overflow: hidden;
 
-    .uf-gallery {
+    background: var(--uf-bg);
+}
 
-        grid-template-columns: 1fr;
+.uf-extras-image img {
+    display: block;
 
-    }
+    width: 100%;
+    height: 100%;
 
+    object-fit: cover;
+    object-position: center;
 
-    .uf-quote {
+    filter: grayscale(100%) contrast(115%);
+    transition: filter .4s;
+}
 
-        grid-column: auto;
+.uf-extras-image:hover img {
+    filter: grayscale(0%) contrast(110%);
+}
 
-    }
+/*** CONTENIDO A LA DERECHA ***/
 
-    .uf-quote-text {
-       
-    font-size: 11px;
+.uf-extras-content {
+    order: 2;
 
-    }
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
 
-    .uf-profile {
+    padding: 22px 27px;
 
-        padding: 28px 22px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
 
-    }
+.uf-extras-content .uf-section-head {
+    margin-bottom: 15px;
+}
 
+.uf-extras-content .uf-text {
+    margin-top: 0;
+    padding: 0;
+}
 
-    .uf-name {
+/*** RESPONSIVE ***/
 
-        font-size: 40px;
+@media screen and (max-width: 480px) {
+.umbrarum-ficha {
+padding: 15px;
+}
 
-    }
+.uf-header {
+    gap: 12px;
+    padding: 10px;
+}
 
+.uf-icons {
+    gap: 5px;
+}
 
-    .uf-surname {
+.uf-icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+}
 
-        font-size: 23px;
+.uf-name {
+    font-size: 20px;
+    letter-spacing: .5px;
+}
 
-    }
-
-
-    .uf-data {
-        grid-template-columns: 1fr;
+.uf-profile {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
     }
 
     .uf-data-item {
-
-        min-height: 55px;
-
-        border-right: none !important;
-
-        border-top: 1px solid var(--uf-line);
-
+        flex: initial;
+        min-height: 48px;
+        padding: 8px 12px;
     }
 
-    .uf-data-item:first-child {
-
-        border-top: none;
-
+    .uf-main-image {
+        min-height: 280px;
     }
 
+.uf-image-content {
+    gap: 8px;
+    padding: 12px;
+}
 
-    .uf-section {
+.uf-image-name {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
 
-        padding: 25px 22px;
+.uf-image-icon {
+    font-size: 20px;
+}
 
-    }
+.uf-section {
+    padding: 20px 17px;
+}
 
+.uf-section-title {
+    font-size: 12px;
+    letter-spacing: 1.5px;
+}
 
-    .uf-section-title {
+.uf-text {
+    padding: 20px 10px;
+    font-size: 10px;
+    line-height: 1.5;
+}
 
-        font-size: 23px;
+/*** HISTORIA ***/
 
-    }
+.uf-section:not(.uf-extras) {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+}
 
+/*** DATOS EXTRAS ***/
 
-    .uf-text {
+.uf-section.uf-extras {
+    width: calc(100% + 20px);
+    margin-left: -10px;
+    max-height: 300px;
+}
 
-        font-size: 10px;
+.uf-extras-image {
+    flex: 0 0 115px;
+    width: 115px;
+}
 
-    }
+.uf-extras-content {
+    padding: 18px 12px;
+}
 
-    .uf-footer {
+.uf-extras-content .uf-section-title {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
 
-    font-size:  7px;
-
-    font-weight: 500;
-
-    letter-spacing: 4px;
-
-    text-align: center;
-
-    }
-
-        }
+   }
