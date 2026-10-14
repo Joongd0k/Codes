@@ -43,12 +43,6 @@ background:
     ),
     var(--uf-bg);
 
-color: var(--uf-text);
-font-family: 'Inter', sans-serif;
-font-size: 11px;
-line-height: 1.7;
-letter-spacing: .3px;
-
 border: 2px solid rgba(189, 58, 65, .20);
 border-bottom: 8px solid rgba(189, 58, 65, .20);
 border-radius: 8px;
@@ -302,64 +296,6 @@ overflow-wrap: anywhere;
     pointer-events: none;
 }
 
-/*** CONTENIDO SOBRE LA IMAGEN ***/
-
-.uf-image-content {
-    position: absolute;
-    inset: 0;
-    z-index: 2;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    padding: 15px;
-    box-sizing: border-box;
-}
-
-/*** NOMBRE DEL PERSONAJE ***/
-
-.uf-image-name {
-    color: var(--uf-text);
-
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.1;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    text-align: right;
-
-    overflow-wrap: anywhere;
-}
-
-/*** LÍNEA VERTICAL ***/
-
-.uf-image-line {
-    flex: 0 0 1px;
-    align-self: stretch;
-
-    max-height: 45px;
-    margin: auto 0;
-
-    background: var(--uf-main);
-}
-
-/*** ICONO ***/
-
-.uf-image-icon {
-    flex: 0 0 auto;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    color: var(--uf-soft);
-    font-size: 22px;
-    line-height: 1;
-}
-
 /*** SECCIONES GENERALES ***/
 
 .uf-section {
@@ -420,7 +356,7 @@ overflow-wrap: anywhere;
 
 /*** TEXTO ***/
 
-.uf-text {
+.umbrarum-ficha .uf-text {
     padding: 30px 20px;
 
     color: var(--uf-text);
