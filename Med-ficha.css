@@ -319,7 +319,7 @@ padding: 18px 18px 15px;
 
 }
 
-/* FRASE O DESCRIPCIÓN */
+/* FRASE */
 
 .medium-quote {
 position: relative;
@@ -535,17 +535,18 @@ opacity: .8;
 
 /* TEXTO DE HISTORIA */
 
-.medium-history-text {
+.medium-ficha .medium-history-text {
 color: var(--medium-text);
-
-display: block; 
 font-size: 11.5px; 
-font-family: inter; 
+font-family: inter, sans-serif;
+font-weight: 400;
+    
 text-align: justify; 
-padding: 30px 28px; 
-line-height: 18px;
+padding: 30px 20px; 
+line-height: 170%;
 
 }
+
 
 .medium-history-text b,
 .medium-history-text strong {
@@ -699,10 +700,10 @@ font-size: 15px;
 
 /* TEXTO EXTRA */
 
-.medium-extra-text {
+.medium-ficha .medium-extra-text {
 color: var(--medium-text);
 line-height:18px!important;
-font:normal 11px "Inter";
+font:normal 11px "Inter", sans-serif;
 text-align: justify;
 
 flex: 1;
@@ -720,7 +721,7 @@ padding: 20px 15px;
 color: var(--medium-main);
 
 font-family: 'Poppins', sans-serif;
-font-size: 9px;
+font-size: 10px;
 font-weight: 800;
 
 letter-spacing: .7px;
