@@ -49,7 +49,8 @@ font-size: 11px;
 line-height: 1.7;
 letter-spacing: .3px;
 
-border: 4px solid rgba(189, 58, 65, .20);
+border: 2px solid rgba(189, 58, 65, .20);
+border-bottom: 8px;
 border-radius: 8px;
 
 }
@@ -86,7 +87,7 @@ box-sizing: border-box;
 
 margin-top: -20px;
 margin-left: -20px;
-width: calc(100% + 20px);
+width: calc(100% + 5px);
 
 }
 
@@ -192,7 +193,7 @@ overflow-wrap: anywhere;
 
     position: relative;
     z-index: 1;
-    min-width: 0;
+    min-width: 350px;
 }
 
 /*** PANEL DE DATOS ***/
@@ -219,7 +220,7 @@ overflow-wrap: anywhere;
     gap: 3px;
 
     min-width: 0;
-    min-height: 48px;
+    min-height: 40px;
     padding: 8px 12px;
 
     background: var(--uf-bg);
@@ -239,8 +240,8 @@ overflow-wrap: anywhere;
 .uf-label {
     color: var(--uf-main);
 
-    font-family: 'Poppins', sans-serif;
-    font-size: 8px;
+    font-family: 'Stardom', sans-serif;
+    font-size: 10px;
     font-weight: 700;
 
     letter-spacing: 1px;
@@ -255,7 +256,7 @@ overflow-wrap: anywhere;
     color: var(--uf-text);
 
     font-family: 'Inter', sans-serif;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.5;
 
     overflow-wrap: anywhere;
@@ -265,7 +266,7 @@ overflow-wrap: anywhere;
 
 .uf-main-image {
     min-width: 0;
-    min-height: 270px;
+    min-height: 280px;
 
     position: relative;
     overflow: hidden;
