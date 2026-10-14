@@ -34,7 +34,6 @@
     overflow: hidden;
 
     background: var(--vidente-bg);
-    color: var(--vidente-text);
 
     border: 1px solid var(--vidente-border);
     border-radius: 12px;
@@ -315,7 +314,7 @@ padding: 18px 18px 15px;
 
 }
 
-/* FRASE O DESCRIPCIÓN */
+/* FRASE */
 
 .vidente-quote {
 position: relative;
@@ -659,7 +658,7 @@ min-height: 0;
 display: flex;
 flex-direction: column;
 
-background: var(--medium-bg);
+background: var(--vidente-bg);
 
 border-radius: 7px;
 
@@ -704,6 +703,7 @@ text-align: justify;
 
 flex: 1;
 min-height: 0;
+max-height: 200px;
 overflow-y: auto;
 overflow-x: hidden;
 
