@@ -1,722 +1,581 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Staatliches&family=Xanh+Mono:ital@0;1&display=swap');
-@import url('https://solrainha.github.io/saturnicons/saturnicons.css');
-@import url('https://solrainha.github.io/honeybee/honeybee.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 
-/* ======================
-   GRIM REAPERS · PROFILE 
-   ======================= */
+/*** FICHA ***/
 
 .reaper-ficha {
+    --rp-main: #7f90a8;
+    --rp-light: #99a6b9;
+    --rp-soft: #b2bccb;
 
-    --reaper-main: #7f90a8;
-    --reaper-light: #99a6b9;
-    --reaper-bright: #b2bccb;
+    --rp-bg: #090b0e;
+    --rp-panel: #11151a;
+    --rp-panel2: #161214;
 
-    --reaper-text: #d5dbe3;
-    --reaper-muted: #8d96a2;
+    --rp-border: rgba(181,166,83,.22);
+    --rp-text: #d5dbe3;
+    --rp-white: #eeeadd;
 
-    --reaper-bg: #090b0e;
-    --reaper-panel: #11151a;
-
-    --reaper-line: #252c34;
-
-    width: 650px;
-
+    width: 700px;
+    max-width: 100%;
     margin: 30px auto;
-
-    padding: 28px;
+    padding: 20px 20px 0;
 
     box-sizing: border-box;
-
-    background:
-
-        radial-gradient(
-            circle at 10% 5%,
-            rgba(127,144,168,.08),
-            transparent 28%
-        ),
-
-        radial-gradient(
-            circle at 90% 85%,
-            rgba(178,188,203,.05),
-            transparent 30%
-        ),
-
-        var(--reaper-bg);
-
-    color: var(--reaper-text);
-
     position: relative;
-
     overflow: hidden;
 
-    border: 1px solid #1d232a;
-    border-radius: 20px 20px 0 0;
+    background: var(--rp-bg);
+    border: 1px solid var(--rp-border);
+    border-radius: 10px;
+}
 
+.reaper-ficha *,
+.reaper-ficha *::before,
+.reaper-ficha *::after {
+    box-sizing: border-box;
+}
+
+.reaper-ficha img {
+    max-width: 100%;
+}
+
+.reaper-ficha b,
+.reaper-ficha strong {
+    color: var(--rp-light);
+}
+
+.reaper-ficha i,
+.reaper-ficha em {
+    color: var(--rp-soft);
 }
 
 
-/* ========================
-   MARCO INTERIOR
-========================= */
+/*** CABECERA ***/
 
-.reaper-ficha:before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 10px;
-
-    border: 1px solid rgba(127,144,168,.16);
-    border-radius: 15px 15px 0 0;
-
-    pointer-events: none;
-
-}
-
-
-/* ========================
-   GRID CABECERA
-========================== */
-
-.reaper-header {
-
+.rp-header {
     display: grid;
-
-    grid-template-columns: 1.45fr .8fr .55fr;
-
-    grid-template-rows: 230px 150px;
-
+    grid-template-columns: .9fr 1.1fr;
     gap: 12px;
-
+    position: relative;
+    align-items: stretch;
 }
 
-/* =====================
-   IMAGEN PRINCIPAL
-   ===================== */
 
-.reaper-img-uno {
+/*** IMAGEN PRINCIPAL ***/
 
-    grid-row: 1 / 3;
-
-    background-size: cover;
-
-    background-position: center;
+.rp-main-image {
+    min-width: 0;
+    min-height: 400px;
 
     position: relative;
-
     overflow: hidden;
-
-    border: 1px solid #252c34;
-
-    filter:
-        grayscale(20%)
-        saturate(72%)
-        contrast(105%);
-
-}
-
-
-/* ===========================
-   EFECTO ESPECTRAL
-   =========================== */
-
-.reaper-img-uno:after,
-.reaper-img-dos:after,
-.reaper-img-tres:after {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(127,144,168,.20),
-            transparent 60%
-        );
-
-    pointer-events: none;
-
-}
-
-
-/* =========================
-   FOTOS SECUNDARIAS
-   ========================= */
-
-.reaper-img-dos {
-
-    position: relative;
-
-    overflow: hidden;
-
-    background-size: cover;
-
-    background-position: center;
-
-    border: 1px solid #252c34;
-
-    filter:
-        grayscale(25%)
-        saturate(70%);
-
-}
-
-
-/* =======================
-   IDENTIDAD
-   ======================= */
-
-.reaper-id {
-
-    grid-column: 2 / 4;
-
-    padding: 28px 30px;
-
-    box-sizing: border-box;
-
-    background: var(--reaper-panel);
-
-    border: 1px solid #252c34;
 
     display: flex;
-
     flex-direction: column;
+    justify-content: flex-end;
 
-    justify-content: center;
+    background-color: var(--rp-main);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
 
+    border-radius: 5px;
+}
+
+.rp-main-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(8, 8, 8, .65) 0%,
+        rgba(8, 8, 8, .15) 25%,
+        rgba(172, 9, 17, .12) 60%,
+        transparent 100%
+    );
+
+    pointer-events: none;
 }
 
 
-.reaper-class {
+/*** CONTENIDO SOBRE LA IMAGEN ***/
 
-    color: var(--reaper-main);
+.rp-image-content {
+    position: relative;
+    z-index: 1;
 
-    font-size: 7px;
-    
-    font-family: "Montserrat", sans-serif;
+    padding: 25px 22px 28px;
 
-    font-weight: bold;
-
-    letter-spacing: 4px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 
-.reaper-name {
+/*** NOMBRE ***/
 
-    margin-top: 14px;
-
-    color: var(--reaper-bright);
-
-    font-family: "Bodoni Moda SC", serif;
-   
-    font-size: 40px;
-
-    font-weight: 600;
-
-    line-height: .8;
-
-    letter-spacing: 2px;
-
-    text-transform: uppercase;
-
-}
-
-
-.reaper-surname {
-
-    margin-top: 9px;
-
-    color: var(--reaper-main);
-
-    font-size: 23px;
-    
-    font-family: "Bodoni Moda SC", serif;
-
-    letter-spacing: 4px;
-
-}
-
-
-/* ===================
-   DIVISOR
-   =================== */
-
-.reaper-id-line {
-
+.rp-name {
     width: 100%;
 
-    height: 1px;
-
-    margin: 20px 0 16px;
-
-    background: var(--reaper-line);
-
-}
-
-
-/* =====================
-   DATOS BÁSICOS
-   ===================== */
-
-.reaper-basic-grid {
-
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-}
-
-
-.reaper-data {
-
-    padding: 5px 13px;
-
-    border-left: 1px solid var(--reaper-line);
-
-}
-
-
-.reaper-data:nth-child(odd) {
-
-    border-left: none;
-
-}
-
-
-.reaper-data:nth-child(n+3) {
-
-    border-top: 1px solid var(--reaper-line);
-
-    padding-top: 9px;
-
-}
-
-
-.reaper-label {
-
-    color: var(--reaper-main);
-
-    font-size: 9px;
-   
-    font-family: "Staatliches", sans-serif;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-}
-
-
-.reaper-value {
-
-    margin-top: 3px;
-
-    color: var(--reaper-text);
-
-    font-size: 11px;
-   
-    font-family: "Montserrat", sans-serif;
-
-}
-
-
-/* =====================
-   HISTORIA
-   ====================== */
-
-.reaper-section {
-
-    margin-top: 12px;
-
-    padding: 32px;
-
-    box-sizing: border-box;
-
-    background: var(--reaper-panel);
-
-    border: 1px solid #252c34;
-
-    position: relative;
-
-}
-
-
-/* ======================
-   ENCABEZADOS
-   ======================= */
-
-.reaper-section-head {
-
-    display: flex;
-
-    align-items: baseline;
-
-    gap: 13px;
-
-}
-
-
-.reaper-section-number {
-
-    color: var(--reaper-main);
-
-    font-family: "Staatliches", sans-serif;
-   
-    font-size: 15px;
-
-    font-weight: 600;
-
-}
-
-
-.reaper-section-title {
-
-    color: var(--reaper-bright);
-
-    font-family: "Bodoni Moda SC", serif;
-   
-    font-size: 26px;
-
-    font-weight: 600;
-
-    letter-spacing: 4px;
-
+    color: var(--rp-white);
+    font: 500 24px Poppins, sans-serif;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing: 1px;
     text-transform: uppercase;
+}
 
+.rp-name b {
+    display: block;
+    text-align: center;
+
+    color: #C8C5C0;
+    font-family: 'Playfair Display', serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 3px;
 }
 
 
-.reaper-line {
+/*** LÍNEA Y FRASE ***/
 
-    width: 45px;
-
-    height: 1px;
-
-    margin: 15px 0 21px;
-
-    background: var(--reaper-main);
-
+.rp-quote-line {
+    width: 1px;
+    height: 35px;
+    margin: 20px auto 0;
+    background: var(--rp-main);
 }
 
+.rp-quote {
+    position: relative;
+    max-width: 100%;
 
-/* =================
-   TEXTO
-   ================== */
+    margin: 20px auto 0;
+    padding: 0 40px;
 
-.reaper-text {
-
-    color: #aeb5bf;
-
-    font-family: "Montserrat", sans-serif;
-   
-    font-size: 14px;
-
-    line-height: 1.4;
-
+    color: var(--rp-white);
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
     text-align: justify;
-
-}
-
-.reaper-text b,
-.reaper-text strong {
-
-    color: var(--reaper-light);
-
-    font-weight: bold;
-
+    letter-spacing: 1px;
+    line-height: normal;
 }
 
 
-.reaper-text i,
-.reaper-text em {
+/*** PANEL DE DATOS ***/
 
-    color: var(--reaper-bright);
+.rp-intro {
+    min-width: 0;
+    padding: 23px 20px;
 
-}
-
-/* =====================
-   IMG 3
-  ======================= */
-
-.reaper-extras {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 12px;
-    margin-top: 12px;
-}
-
-.reaper-img-tres {
-    min-height: 230px;
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #252c34;
-}
-
-
-/* ====================
-   DATOS EXTRAS
-   ==================== */
-
-.reaper-extra {
-    min-height: 230px;
-    padding: 30px;
-    box-sizing: border-box;
-    background: var(--reaper-panel);
-    border: 1px solid #252c34;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    background: var(--rp-panel);
+    border: 1px solid var(--rp-border);
+    border-radius: 5px;
 }
 
-.reaper-extra .reaper-line {
 
-    margin-bottom: 18px;
+/*** CUADRÍCULA DE DATOS ***/
 
+.rp-info-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6px;
+    width: 100%;
 }
 
-.reaper-extra-text {
+.rp-info-item {
+    display: flex;
+    align-items: center;
+    gap: 9px;
 
-    max-height: 130px;
+    min-width: 0;
+    min-height: 48px;
+    padding: 8px 7px;
 
-    padding-right: 10px;
+    background: var(--rp-bg);
+    border-left: 2px solid var(--rp-main);
+    border-radius: 3px;
 
-    box-sizing: border-box;
+    transition: background .3s;
+}
+
+.rp-info-item:hover {
+    background: var(--rp-panel2);
+}
+
+.rp-info-item > i {
+    flex-shrink: 0;
+    width: 18px;
+
+    color: var(--rp-main);
+    font-size: 16px;
+    text-align: center;
+}
+
+.rp-info-content {
+    min-width: 0;
+    flex: 1;
+}
+
+.rp-info-label {
+    margin-bottom: 3px;
+
+    color: var(--rp-main);
+    font-family: 'Poppins', sans-serif;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.rp-info-value {
+    color: var(--rp-text);
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+
+/*** SECCIONES ***/
+
+.rp-section {
+    position: relative;
+
+    margin-top: 12px;
+    padding: 25px 27px;
+
+    background: var(--rp-panel);
+    border: 1px solid var(--rp-border);
+    border-radius: 5px;
+}
+
+
+/*** CABECERA DE SECCIÓN ***/
+
+.rp-section-head {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 0;
+    margin-bottom: 15px;
+}
+
+.rp-section-number {
+    flex-shrink: 0;
+
+    color: var(--rp-main);
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.rp-section-title {
+    margin: 0;
+
+    color: var(--rp-white);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/*** LÍNEA DECORATIVA ***/
+
+.rp-line {
+    flex: 1;
+    min-width: 12px;
+    height: 1px;
+    margin-left: 5px;
+
+    background: linear-gradient(
+        to right,
+        var(--rp-main),
+        transparent
+    );
+}
+
+
+/*** TEXTO ***/
+
+.rp-text {
+    padding: 25px 30px;
+
+    color: var(--rp-text);
+    font: normal 11.5px 'Inter', sans-serif;
+    line-height: 16px;
+    text-align: justify;
+}
+
+.rp-text b,
+.rp-text strong {
+    color: var(--rp-light);
+    font-family: 'Poppins', sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+.rp-text i,
+.rp-text em {
+    color: var(--rp-soft);
+}
+
+.rp-text a {
+    color: var(--rp-light);
+    text-decoration: none;
+    transition: color .3s;
+}
+
+.rp-text a:hover {
+    color: var(--rp-white);
+}
+
+
+/*** HISTORIA ***/
+
+.rp-section:not(.rp-extras):has(.rp-section-title) {
+    width: calc(100% + 40px);
+    margin: 12px 0 0 -20px;
+
+    border-radius: 5px 5px 0 0;
+    border-bottom: none;
+    border-right: none;
+}
+
+
+/*** DATOS EXTRAS ***/
+
+.rp-section.rp-extras {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
+
+    width: calc(100% + 40px);
+    max-height: 300px;
+    margin: 0 0 0 -20px;
+    padding: 0;
+
+    background: var(--rp-panel);
+    border: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+
+/*** CONTENIDO DE EXTRAS ***/
+
+.rp-extras-content {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    padding: 22px 27px;
 
     overflow-y: auto;
-
-    color: #A8A6AA;
-
-    font-family: "Montserrat", sans-serif;
-
-    font-size: 12px;
-
-    line-height: 1.4;
-
-    text-align: justify;
-
 }
 
-.reaper-extra .reaper-line {
-
-    margin-bottom: 18px;
-
-}
-
-.reaper-extra-text {
-
-    max-height: 130px;
-
-    padding-right: 10px;
-
-    box-sizing: border-box;
-
-    overflow-y: auto;
-
-    color: #A8A6AA;
-
-    font-family: "Montserrat", sans-serif;
-
-    font-size: 12px;
-
-    line-height: 1.4;
-
-    text-align: justify;
-
-}
-
-.reaper-extra-text b,
-.reaper-extra-text strong {
-
-    color: var(--reaper-light);
-
-    font-weight: bold;
-
+.rp-extras-content .rp-text {
+    margin-top: 0;
+    padding: 0;
 }
 
 
-.reaper-extra-text i,
-.reaper-extra-text em {
+/*** IMAGEN DE EXTRAS ***/
 
-    color: var(--reaper-bright);
+.rp-extras-image {
+    flex: 0 0 180px;
+    width: 180px;
+    min-width: 0;
+    min-height: 0;
 
+    position: relative;
+    overflow: hidden;
+
+    background: var(--rp-bg);
 }
 
-.reaper-extra-text::-webkit-scrollbar {
+.rp-extras-image img {
+    display: block;
 
-    width: 3px;
+    width: 100%;
+    height: 100%;
 
+    object-fit: cover;
+    object-position: center;
+
+    filter: grayscale(100%) contrast(115%);
+    transition: filter .4s;
 }
 
-.reaper-extra-text::-webkit-scrollbar-track {
-
-    background: #0C0C0E;
-
-}
-
-.reaper-extra-text::-webkit-scrollbar-thumb {
-
-    background: var(--reaper-main);
-
+.rp-extras-image:hover img {
+    filter: grayscale(0%) contrast(110%);
 }
 
 
-/* ================================
-   RESPONSIVE — TABLET
-   ===================================== */
+/*** PIE ***/
 
-@media screen and (max-width: 720px) {
+.rp-footer {
+    display: block;
+
+    width: calc(100% + 40px);
+    margin: 20px 0 0 -20px;
+    padding: 9px 15px;
+
+    background: var(--rp-main);
+    border-radius: 0;
+}
+
+
+/*** TABLET ***/
+
+@media screen and (max-width: 620px) {
 
     .reaper-ficha {
-
-        width: 95%;
-
-        padding: 20px;
-
+        width: 96%;
+        padding: 15px;
     }
 
-    .reaper-header {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 380px 150px;
+    .rp-header {
+        grid-template-columns: .85fr 1.15fr;
+        gap: 9px;
     }
 
-    .reaper-img-uno {
-        grid-column: 1 / 3;
-        grid-row: 1;
+    .rp-main-image {
+        min-height: 390px;
     }
 
-    .reaper-id {
-        grid-column: 1 / 3;
-        grid-row: 2;
+    .rp-image-content {
+        padding: 20px 14px;
     }
 
-    .reaper-img-dos {
-        grid-row: 3;
+    .rp-intro {
+        padding: 18px 13px;
     }
 
-
-    .reaper-extras {
-
-        grid-template-columns: 1fr 1fr;
-
+    .rp-info-item {
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
 
+    .rp-info-label {
+        font-size: 7px;
+        letter-spacing: 1px;
+    }
+
+    .rp-info-value {
+        font-size: 9px;
+    }
+
+    .rp-section {
+        padding: 22px;
+    }
+
+    .rp-section.rp-extras {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+
+    .rp-extras-content {
+        padding: 22px;
+    }
+
+    .rp-footer {
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
 }
 
 
-/* ===================================
-   RESPONSIVE — MÓVIL
-   =================================== */
+/*** MÓVIL ***/
 
 @media screen and (max-width: 450px) {
 
     .reaper-ficha {
-
-        width: 96%;
-
-        padding: 15px;
-
+        width: 100%;
+        padding: 10px;
     }
 
-
-    .reaper-header {
-
-        display: flex;
-
-        flex-direction: column;
-
-    }
-
-
-    .reaper-img-uno {
-
-        height: 400px;
-
-    }
-
-
-    .reaper-img-dos {
-
-        height: 120px;
-
-    }
-
-
-    .reaper-id {
-
-        min-height: 330px;
-
-    }
-
-
-    .reaper-basic-grid {
-
+    .rp-header {
         grid-template-columns: 1fr;
-
+        gap: 10px;
     }
 
-    .reaper-text {
-      
-       font-size: 11px;
-       line-height: 1.4;
-
-    }
-   
-    .reaper-data {
-
-        border-left: none;
-
-        border-top: 1px solid var(--reaper-line);
-
+    .rp-main-image {
+        min-height: 350px;
+        background-position: center 35%;
     }
 
-
-    .reaper-data:first-child {
-
-        border-top: none;
-
+    .rp-image-content {
+        padding: 23px;
     }
 
+    .rp-name {
+        font-size: 31px;
+    }
 
-    .reaper-extras {
+    .rp-name b {
+        font-size: 13px;
+    }
 
+    .rp-intro {
+        padding: 20px;
+    }
+
+    .rp-info-grid {
         grid-template-columns: 1fr;
-
     }
 
-
-    .reaper-img-tres {
-
-        min-height: 250px;
-
+    .rp-section {
+        padding: 20px 17px;
     }
 
-
-    .reaper-extra {
-
-        min-height: 250px;
-
+    .rp-section-title {
+        font-size: 12px;
+        letter-spacing: 1.5px;
     }
 
-
-    .reaper-section {
-
-        padding: 25px 20px;
-
+    .rp-text {
+        font-size: 10px;
+        line-height: 1.4;
     }
 
-
-    .reaper-section-title {
-
-        font-size: 21px;
-
+    .rp-section:not(.rp-extras):has(.rp-section-title) {
+        width: calc(100% + 20px);
+        margin-left: -10px;
     }
 
-}
-   
+    .rp-section.rp-extras {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+        max-height: 300px;
+    }
+
+    .rp-extras-content {
+        padding: 18px 12px;
+    }
+
+    .rp-extras-image {
+        flex-basis: 115px;
+        width: 115px;
+    }
+
+    .rp-extras-content .rp-section-title {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    .rp-footer {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+   }
