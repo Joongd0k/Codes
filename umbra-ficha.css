@@ -132,7 +132,7 @@
     display: block;
     text-align: center;
 
-    color: var(--um-light);
+    color: var(--um-bg);
     font-family: 'Playfair Display', serif;
     font-size: 13px;
     font-weight: 400;
