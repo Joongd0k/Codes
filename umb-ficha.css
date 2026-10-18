@@ -414,12 +414,11 @@ overflow-wrap: anywhere;
 
 .uf-section.uf-extras {
     display: flex;
-    flex-direction: row;
     align-items: stretch;
     gap: 0;
 
     width: calc(100% + 40px);
-    max-height: 400px;
+    max-height: 380px;
     margin: 0 0 -20px -20px;
     padding: 0;
 
@@ -437,7 +436,7 @@ overflow-wrap: anywhere;
     order: 1;
 
     flex: 0 0 180px;
-    width: 220px;
+    width: 180px;
     min-width: 0;
     min-height: 0;
 
