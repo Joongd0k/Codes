@@ -27,11 +27,6 @@
     overflow: hidden;
 
     background: var(--st-bg);
-    color: var(--st-text);
-
-    font-family: 'Inter', sans-serif;
-    font-size: 11px;
-    line-height: 1.8;
 
     border: 1px solid var(--st-border);
     border-radius: 10px;
