@@ -67,7 +67,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    left: 90px;
+    left: 110px;
     z-index: 5;
     width: auto;
     height: auto;
@@ -521,20 +521,21 @@
 
 /* ESTADÍSTICAS */
 
-.foro-stats {
-    position: absolute;
-    top: 60%;
-    left: 45px;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: max-content;
-    height: auto;
-    transform: translate(-50%, -50%) rotate(-90deg);
-    transform-origin: center;
-    pointer-events: none;
+.foro-stats { 
+    position: absolute; 
+    top: 60%; 
+    left: 45px; 
+    z-index: 10; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 10px; 
+    width: max-content; 
+    height: auto; 
+    transform: translate(-50%, -50%) rotate(-90deg); 
+    transform-origin: center; 
+    mix-blend-mode: multiply; 
+    pointer-events: none; 
 }
 
 
@@ -550,7 +551,6 @@
     background: #494949;
     backdrop-filter:blur(10px) saturate(200%);
     border-radius: 5px;
-    color: #d8c5d0;
     white-space: nowrap;
 
     transition:
@@ -562,7 +562,7 @@
 /* NÚMEROS */
 
 .foro-stats strong {
-    color: #f2e6ed;
+    color: #ededed;
     font-family: Inter, sans-serif;
     font-size: 10px;
     line-height: 10px;
@@ -574,8 +574,8 @@
 
 .foro-stats span {
     color: #ededed;
-    font-family: 'Inter', sans-serif;
-    font-size: 9px;
+    font-family: Inter, sans-serif;
+    font-size: 10px;
     line-height: 10px;
     font-weight: 800;
     text-transform: uppercase;
