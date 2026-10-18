@@ -548,8 +548,8 @@
     gap: 4px;
     padding: 10px;
     box-sizing: border-box;
-    background: rgba(103, 55, 105, .75);
-    border: 1px solid rgba(184, 137, 164, .25);
+    background: #494949;
+    backdrop-filter:blur(10px) saturate(200%);
     border-radius: 5px;
     color: #d8c5d0;
     white-space: nowrap;
@@ -564,7 +564,7 @@
 
 .foro-stats strong {
     color: #f2e6ed;
-    font-family: var(--fontSans, Arial, sans-serif);
+    font-family: Inter, sans-serif;
     font-size: 10px;
     line-height: 10px;
     font-weight: 800;
@@ -574,8 +574,8 @@
 /* ETIQUETAS */
 
 .foro-stats span {
-    color: #d8c5d0;
-    font-family: var(--fontSans, Arial, sans-serif);
+    color: #ededed;
+    font-family: 'Inter', sans-serif;
     font-size: 9px;
     line-height: 10px;
     font-weight: 800;
