@@ -71,7 +71,7 @@
     width: calc(100% - 90px);
     height: auto;
     min-height: 0;
-    padding: 35px 45px 0 35px;
+    padding: 35px 45px 0 55px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -124,7 +124,7 @@
 .foro-header-icon {
     position: absolute;
     top: 18px;
-    right: 20px;
+    right: 8px;
     width: 85px;
     height: 85px;
     display: flex;
@@ -472,7 +472,7 @@
 
 .foro-meta {
     order: 3;
-    position: relative;
+    position: static;
     width: 100%;
     min-width: 0;
     min-height: 0;
@@ -524,16 +524,16 @@
 
 .foro-stats {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    left: 45px;
     z-index: 5;
-    width: 0;
-    height: 0;
+    width: auto;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    transform: rotate(-90deg);
+    transform: translate(-50%, -50%) rotate(-90deg);
     transform-origin: center;
     pointer-events: none;
 }
