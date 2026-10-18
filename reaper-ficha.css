@@ -91,9 +91,9 @@
 
     background: linear-gradient(
         to top,
-        rgba(8, 8, 8, .65) 0%,
-        rgba(8, 8, 8, .15) 25%,
-        rgba(172, 9, 17, .12) 60%,
+        rgba(9, 11, 14, .85) 0%,
+        rgba(9, 11, 14, .40) 30%,
+        rgba(127, 144, 168, .15) 65%,
         transparent 100%
     );
 
