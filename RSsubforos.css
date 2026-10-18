@@ -207,9 +207,9 @@
     position: relative;
     z-index: 4;
 
-    width: 116px;
-    height: 116px;
-    flex: 0 0 116px;
+    width: 100px;
+    height: 100px;
+    flex: 0 0 100px;
 
     margin-left: 40px;
     padding: 6px;
