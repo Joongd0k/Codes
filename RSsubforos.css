@@ -100,12 +100,11 @@
     text-overflow: ellipsis; 
     white-space: nowrap;
     color: var(--board-text);
-    font-family: var(--fontSans, Arial, sans-serif);
-    font-size: 26px;
+    font-family: Playfair Display, serif;
+    font-size: 25px;
     line-height: 1;
     font-weight: 900;
     text-decoration: none;
-    text-transform: uppercase;
     text-align: left;
     letter-spacing: -.8px;
     word-spacing: 5px;
