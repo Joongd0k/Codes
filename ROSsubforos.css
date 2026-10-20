@@ -440,25 +440,22 @@ color: rgba(216, 191, 208, .085);
 }  
   
   
-/* DESCRIPCIÓN */  
-  
+/* DESCRIPCIÓN */   
+
  .foro-three {  
   position: relative;  
   isolation: isolate;  
   
   display: flex;  
   flex-direction: column;  
+  justify-content: flex-start; 
   
   min-width: 0;  
   padding: 20px 20px 0; 
   
   background-color: #202020;  
-  /*background-image: var(--fondo-subforo, none);  
-  background-size: cover;  
-  background-position: center;  
-  background-repeat: no-repeat; */
 }  
-  
+
 /* VELO SOBRE LA IMAGEN */  
   
  .foro-three::before {  
@@ -473,14 +470,12 @@ color: rgba(216, 191, 208, .085);
   pointer-events: none;  
 }  
   
-  
 /* TEXTO DE LA DESCRIPCIÓN */  
   
 .foro-desc {  
   position: relative;  
   z-index: 1;
-  /*flex-grow: 1; */
-  flex-grow: 0;
+  flex-grow: 1;
   margin-bottom: 0;
   
   font-size: 12.5px;  
@@ -508,7 +503,6 @@ color: rgba(216, 191, 208, .085);
   align-items:flex-end;
   margin-top: 0;
   margin-bottom:-2px;
-  /*margin-top: 15px;*/
 }  
   
  .foro-links a {  
