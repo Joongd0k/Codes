@@ -451,7 +451,7 @@ color: rgba(216, 191, 208, .085);
   min-width: 0;  
   padding: 30px 30px 0;  
   
-  background-color: #17141a;  
+  background-color: #111;  
   background-image: var(--fondo-subforo, none);  
   background-size: cover;  
   background-position: center;  
@@ -467,7 +467,7 @@ color: rgba(216, 191, 208, .085);
   inset: 0;  
   z-index: -1;  
   
-  background: rgba(241, 233, 238, .91);  
+  background: rgba(23, 20, 26, .92);  
   
   pointer-events: none;  
 }  
