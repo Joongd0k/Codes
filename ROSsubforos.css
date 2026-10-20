@@ -591,10 +591,10 @@ color: rgba(216, 191, 208, .085);
 .guidebook-container {
   width: 100%;
   max-width: 100%; 
-  height: 450px;
+  height: 325px;
   margin: 20px auto 0;
   
-  background: #ebebeb; 
+  background: #292929; 
   border-radius: 12px 12px 0 0;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
@@ -606,7 +606,7 @@ color: rgba(216, 191, 208, .085);
 .guidebook-top-bar {
   width: 100%;
   height: 35px;
-  background-color: #292929;
+  background-color: #7b3622;
 }
 
 /* Cuerpo interno en cuadrícula */
@@ -643,7 +643,7 @@ color: rgba(216, 191, 208, .085);
   font-family: 'Playfair Display', serif;
   font-size: 44px;
   font-weight: 900;
-  color: #292929;
+  color: #ebebeb;
   line-height: 0.95;
   margin: 0 0 10px 0;
   letter-spacing: -1px;
@@ -663,7 +663,7 @@ color: rgba(216, 191, 208, .085);
 .guidebook-gothic-text {
   font-family: 'UnifrakturCook', cursive;
   font-size: 24px;
-  color: #8f5377; /* Tono acento oscuro/morado para destacar sobre el gris */
+  color: #9c3b25;
   letter-spacing: 0.5px;
   margin-bottom: 6px;
   text-align: center;
@@ -682,7 +682,7 @@ color: rgba(216, 191, 208, .085);
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   line-height: 1.6;
-  color: #3b3b3b; 
+  color: #ebebeb; 
   text-align: justify;
   margin: 0;
   font-weight: 500;
