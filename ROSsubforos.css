@@ -479,7 +479,9 @@ color: rgba(216, 191, 208, .085);
 .foro-desc {  
   position: relative;  
   z-index: 1;
-  flex-grow: 1;  
+  /*flex-grow: 1; */
+  flex-grow: 0;
+  margin-bottom: 0;
   
   font-size: 12.5px;  
   line-height: 1.6;  
@@ -504,8 +506,10 @@ color: rgba(216, 191, 208, .085);
   flex-wrap: wrap;
   gap: 5px;  
   align-items:flex-end;
-  margin-bottom:-2px;
-  /*margin-top: 15px;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  /*margin-bottom:-2px;
+  margin-top: 15px;*/
 }  
   
  .foro-links a {  
