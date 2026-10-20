@@ -686,7 +686,7 @@ color: rgba(216, 191, 208, .085);
   color: #3b3b3b; 
   text-align: justify;
   margin: 0;
-  font-weight: 700; /* Aplica negrita a todo el párrafo */
+  font-weight: 500;
 }
 
 /* SECCIÓN DERECHA (Imagen e Iconos)  */
