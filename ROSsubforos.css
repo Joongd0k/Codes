@@ -171,13 +171,13 @@ color: rgba(216, 191, 208, .085);
   background:  
     radial-gradient(  
       ellipse at 15% 15%,  
-      rgba(143, 83, 119, .55),  
+      rgba(143, 83, 83, .55),  
       transparent 65%  
     ),  
     linear-gradient(  
       145deg,  
-      #30202d,  
-      #19151d 72%  
+      #302020,  
+      #1d151b 72%  
     );  
   
   transition: background .7s ease;  
@@ -194,12 +194,12 @@ color: rgba(216, 191, 208, .085);
   background:  
     radial-gradient(  
       ellipse at 10% 25%,  
-      rgba(210, 155, 185, .15),  
+      rgba(210, 155, 155, .15),  
       transparent 45%  
     ),  
     radial-gradient(  
       ellipse at 80% 80%,  
-      rgba(103, 55, 105, .30),  
+      rgba(105, 55, 65, .30),  
       transparent 50%  
     );  
   
@@ -230,13 +230,13 @@ color: rgba(216, 191, 208, .085);
   background:  
     radial-gradient(  
       ellipse at 15% 15%,  
-      rgba(180, 105, 155, .65),  
+      rgba(180, 105, 119, .65),  
       transparent 65%  
     ),  
     linear-gradient(  
       145deg,  
-      #40283d,  
-      #19151d 72%  
+      #402828,  
+      #1d151a 72%  
     );  
 }  
   
@@ -258,12 +258,12 @@ color: rgba(216, 191, 208, .085);
   
   background: #101013;  
   
-  border: 1px solid rgba(184, 137, 164, .45);  
+  border: 1px solid rgba(184, 137, 147, .45);  
   border-radius: 50%;  
   
   box-shadow:  
     0 0 0 4px rgba(16, 16, 19, .95),  
-    0 0 0 6px rgba(184, 137, 164, .25);  
+    0 0 0 6px rgba(184, 137, 147, .25);  
   
   transition:  
     border-color .7s ease,  
@@ -297,12 +297,12 @@ color: rgba(216, 191, 208, .085);
 /* RESPLANDOR DEL AVATAR */  
  
 .foro-index:hover .avatar-lastpost {  
-  border-color: rgba(210, 155, 185, .8);  
+  border-color: rgba(210, 155, 155, .8);  
   
   box-shadow:  
     0 0 0 4px rgba(16, 16, 19, .95),  
-    0 0 0 6px rgba(184, 137, 164, .55),  
-    0 0 15px rgba(184, 137, 164, .25);  
+    0 0 0 6px rgba(184, 137, 147, .55),  
+    0 0 15px rgba(184, 137, 147, .25);  
 }  
   
 /* TÍTULO DEL ÚLTIMO TEMA */  
