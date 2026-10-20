@@ -486,6 +486,7 @@ color: rgba(216, 191, 208, .085);
   font-size: 12.5px;  
   line-height: 1.6;  
   letter-spacing: .25px;  
+  margin: 0 auto;
   
   color: #d8cbd5;  
   
@@ -523,7 +524,7 @@ color: rgba(216, 191, 208, .085);
   font-weight: 800;  
   line-height: 1;  
   
-  color: #c7a6bf;  
+  color: #594054;  
   
   text-decoration: none;  
   text-transform: uppercase;  
@@ -548,7 +549,7 @@ color: rgba(216, 191, 208, .085);
     #b9a4cc 100%  
   );  
   
-  color: #111;  
+  color: #2c1d2c;  
 }  
   
   
