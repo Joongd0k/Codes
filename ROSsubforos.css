@@ -449,7 +449,8 @@ color: rgba(216, 191, 208, .085);
   display: flex;  
   flex-direction: column;  
   justify-content: flex-start; 
-  
+  gap: 15px; 
+   
   min-width: 0;  
   padding: 20px 20px 0; 
   
@@ -475,16 +476,15 @@ color: rgba(216, 191, 208, .085);
 .foro-desc {  
   position: relative;  
   z-index: 1;
-  flex-grow: 1;
-  margin-bottom: 0;
+  flex-grow: 0;
+  width: 100%;
+  margin: 0;
   
   font-size: 12.5px;  
   line-height: 1.6;  
   letter-spacing: .25px;  
-  margin: 0 auto;
   
   color: #d8cbd5;  
-  
   text-align: justify;  
 }  
 
@@ -501,7 +501,7 @@ color: rgba(216, 191, 208, .085);
   flex-wrap: wrap;
   gap: 5px;  
   align-items:flex-end;
-  margin-top: 0;
+  margin-top: auto;
   margin-bottom:-2px;
 }  
   
