@@ -591,6 +591,12 @@ color: rgba(216, 191, 208, .085);
 }  
 
 
+/* OCULTAR CABECERA DE LA CATEGORÍA 1 */
+
+.forabg.cat1-special > .inner > .categoria {
+  display: none;
+}
+
 /*** GUIDEBOOK ***/
 .guidebook-container {
   width: 100%;
@@ -708,7 +714,7 @@ color: rgba(216, 191, 208, .085);
   position: absolute;
   inset: 0;
   z-index: 1;
-  background-image: url('https://unsplash.com'); 
+  background-image: url('https://i.imgur.com/Kphxt5i.png'); 
   background-size: cover;
   background-position: center;
   filter: grayscale(100%) contrast(85%) brightness(95%); 
