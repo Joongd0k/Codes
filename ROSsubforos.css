@@ -52,7 +52,7 @@ transition: border-color .4s ease;
 
 .cat-bg {
 position: absolute;
-top: 75%;
+top: 58%;
 left: 50%;
 z-index: 0;
 
@@ -62,7 +62,7 @@ padding: 0 10px;
 transform: translate(-50%, -50%);
 
 font-family: "UnifrakturCook", cursive;
-font-size: clamp(80px, 10vw, 180px);
+font-size: clamp(110px, 13vw, 210px);
 font-weight: 700;
 line-height: 1;
 letter-spacing: .12em;
