@@ -367,8 +367,8 @@ color: rgba(216, 191, 208, .085);
   
   background: #e9e9e9;  
   
-  border-top: 2px solid #d5d5d5;  
-  border-bottom: 2px solid #d5d5d5;  
+  border-top: 2px solid #;  
+  border-bottom: 2px solid #;  
 }  
   
   
@@ -545,7 +545,7 @@ color: rgba(216, 191, 208, .085);
     #b9a4cc 100%  
   );  
   
-  color: #e8c8dc;  
+  color: #111;  
 }  
   
   
