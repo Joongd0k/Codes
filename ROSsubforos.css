@@ -122,3 +122,461 @@ border-color: rgba(184, 137, 164, .45);
 .cat:hover .cat-bg {
 color: rgba(216, 191, 208, .085);
   }
+
+/* SUBFORO PRINCIPAL */  
+  .foro-index {  
+  display: grid;  
+  grid-template-columns: 250px minmax(0, 1fr) 25px;  
+  
+  min-height: 220px;  
+  margin: 0 0 20px;  
+  
+  background: transparent;  
+    
+  border-radius: 0 0 12px 12px;  
+  
+  overflow: hidden;  
+  
+  box-shadow: 0 4px 15px rgba(0, 0, 0, .05);  
+}  
+  
+/* BLOQUE IZQUIERDO */  
+  
+ .foro-one {  
+  grid-column: 1;  
+  
+  position: relative;  
+  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: flex-end;  
+  align-items: center;  
+  
+  min-width: 0;  
+  padding: 30px 20px;  
+  
+  background-color: #1a1a1a;  
+  
+  overflow: hidden;  
+}  
+  
+/* FONDO DECORATIVO */  
+  
+ .foro-avatar {  
+  position: absolute;  
+  inset: 0;  
+  z-index: 1;  
+  
+  background:  
+    radial-gradient(  
+      ellipse at 15% 15%,  
+      rgba(143, 83, 119, .55),  
+      transparent 65%  
+    ),  
+    linear-gradient(  
+      145deg,  
+      #30202d,  
+      #19151d 72%  
+    );  
+  
+  transition: background .7s ease;  
+}  
+  
+/* TEXTURA SUPERPUESTA */  
+  
+ .foro-avatar::before {  
+  content: "";  
+  
+  position: absolute;  
+  inset: 0;  
+  
+  background:  
+    radial-gradient(  
+      ellipse at 10% 25%,  
+      rgba(210, 155, 185, .15),  
+      transparent 45%  
+    ),  
+    radial-gradient(  
+      ellipse at 80% 80%,  
+      rgba(103, 55, 105, .30),  
+      transparent 50%  
+    );  
+  
+  pointer-events: none;  
+}  
+  
+/* DEGRADADO PARA LOS TEXTOS */  
+  
+ .foro-one::after {  
+  content: "";  
+  
+  position: absolute;  
+  inset: 0;  
+  z-index: 2;  
+  
+  background: linear-gradient(  
+    to bottom,  
+    rgba(0, 0, 0, .2) 0%,  
+    rgba(0, 0, 0, .8) 100%  
+  );  
+  
+  pointer-events: none;  
+}  
+  
+/* HOVER DEL FONDO */  
+ 
+.foro-index:hover .foro-avatar {  
+  background:  
+    radial-gradient(  
+      ellipse at 15% 15%,  
+      rgba(180, 105, 155, .65),  
+      transparent 65%  
+    ),  
+    linear-gradient(  
+      145deg,  
+      #40283d,  
+      #19151d 72%  
+    );  
+}  
+  
+/* AVATAR CIRCULAR */  
+  
+.avatar-lastpost {  
+  position: absolute;  
+  top: 35%;  
+  left: 50%;  
+  z-index: 4;  
+  
+  width: 75px;  
+  height: 75px;  
+  margin: 0;  
+  padding: 6px;  
+  
+  overflow: hidden;  
+  transform: translate(-50%, -50%);  
+  
+  background: #101013;  
+  
+  border: 1px solid rgba(184, 137, 164, .45);  
+  border-radius: 50%;  
+  
+  box-shadow:  
+    0 0 0 4px rgba(16, 16, 19, .95),  
+    0 0 0 6px rgba(184, 137, 164, .25);  
+  
+  transition:  
+    border-color .7s ease,  
+    box-shadow .7s ease;  
+}  
+  
+/* IMAGEN DEL AVATAR */  
+  
+.avatar-lastpost img {  
+  display: block;  
+  
+  width: 100%;  
+  height: 100%;  
+  
+  object-fit: cover;  
+  object-position: center;  
+  
+  border-radius: 50%;  
+  
+  filter: grayscale(100%) contrast(70%);  
+  
+  transition: filter .7s ease;  
+}  
+  
+/* AVATAR A COLOR AL PASAR EL CURSOR */  
+  
+.foro-index:hover .avatar-lastpost img {  
+  filter: grayscale(0%) contrast(85%);  
+}  
+  
+/* RESPLANDOR DEL AVATAR */  
+ 
+.foro-index:hover .avatar-lastpost {  
+  border-color: rgba(210, 155, 185, .8);  
+  
+  box-shadow:  
+    0 0 0 4px rgba(16, 16, 19, .95),  
+    0 0 0 6px rgba(184, 137, 164, .55),  
+    0 0 15px rgba(184, 137, 164, .25);  
+}  
+  
+/* TÍTULO DEL ÚLTIMO TEMA */  
+  
+.lastpost-topic {  
+  position: relative;  
+  z-index: 3;  
+  
+  width: 100%;  
+  margin-bottom: 5px;  
+  
+  text-align: center;  
+}  
+  
+ .lastpost-topic a {  
+  display: block;  
+  
+  font-family: 'Playfair Display', serif;  
+  font-size: 19px;  
+  font-style: italic;  
+  font-weight: 400;  
+  line-height: 1.2;  
+  
+  color: #ffffff;  
+  text-decoration: none;  
+  
+  text-shadow: 0 2px 4px rgba(0, 0, 0, .8);  
+}  
+  
+/* AUTOR DEL ÚLTIMO MENSAJE */  
+  
+.foro-user {  
+  position: relative;  
+  z-index: 3;  
+  
+  text-align: center;  
+}  
+  
+ .lastpost-user {  
+  font-size: 10px;  
+  font-weight: 700;  
+  letter-spacing: 1px;  
+  text-transform: uppercase;  
+}  
+  
+.lastpost-user a {  
+  color: #dba9a9;  
+  text-decoration: none;  
+  
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .5);  
+}  
+  
+  
+/* BLOQUE CENTRAL */  
+  
+ .foro-two {  
+  grid-column: 2;  
+  
+  display: grid;  
+  grid-template-columns: 240px minmax(0, 1fr);  
+  
+  min-width: 0;  
+  
+  background: #e9e9e9;  
+  
+  border-top: 2px solid #d5d5d5;  
+  border-bottom: 2px solid #d5d5d5;  
+}  
+  
+  
+/*  TÍTULO Y ESTADÍSTICAS */  
+  
+ .foro-header {  
+  display: flex;  
+  flex-direction: column;  
+  justify-content: center;  
+  align-items: center;  
+  gap: 12px;  
+  
+  min-width: 0;  
+  padding: 25px;  
+  
+  border-right: 2px solid #d5d5d5;  
+}  
+  
+/* NOMBRE DEL SUBFORO */  
+  
+ .foro-name {  
+  width: 100%;  
+  margin: 0;  
+  
+  text-align: center;  
+}  
+  
+ .foro-name a {  
+  display: block;  
+  
+  font-family: 'Playfair Display', serif;  
+  font-size: 26px;  
+  font-weight: 900;  
+  line-height: 1.1;  
+  letter-spacing: -.5px;  
+  
+  color: #494949;  
+  
+  text-decoration: none;  
+  text-transform: uppercase;  
+}  
+  
+/* ESTADÍSTICAS */  
+  
+ .foro-stats {  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+  gap: 15px;  
+  
+  width: 100%;  
+}  
+  
+ .foro-stats > div {  
+  display: flex;  
+  align-items: center;  
+  gap: 4px;  
+  
+  font-size: 11px;  
+  font-weight: 600;  
+  letter-spacing: .5px;  
+  
+  color: #7a7a7a;  
+}  
+  
+ .foro-stats strong {  
+  color: #494949;  
+}  
+  
+  
+/*   DESCRIPCIÓN */  
+  
+ .foro-three {  
+  position: relative;  
+  isolation: isolate;  
+  
+  display: flex;  
+  flex-direction: column;  
+  
+  min-width: 0;  
+  padding: 30px 30px 0;  
+  
+  background-color: #f1e9ee;  
+  background-image: var(--fondo-subforo, none);  
+  background-size: cover;  
+  background-position: center;  
+  background-repeat: no-repeat;  
+}  
+  
+/* VELO SOBRE LA IMAGEN */  
+  
+ .foro-three::before {  
+  content: "";  
+  
+  position: absolute;  
+  inset: 0;  
+  z-index: -1;  
+  
+  background: rgba(241, 233, 238, .91);  
+  
+  pointer-events: none;  
+}  
+  
+  
+/* TEXTO DE LA DESCRIPCIÓN */  
+  
+.foro-desc {  
+  position: relative;  
+  
+  flex-grow: 1;  
+  
+  font-size: 12.5px;  
+  line-height: 1.6;  
+  letter-spacing: .25px;  
+  
+  color: #51434e;  
+  
+  text-align: justify;  
+}  
+  
+/* ENLACES DE SUBFOROS */  
+  
+ .foro-links {  
+  display: flex;  
+  flex-wrap: wrap;  
+  gap: 6px;  
+  
+  margin-top: 15px;  
+}  
+  
+ .foro-links a {  
+  flex: 1 1 auto;  
+  
+  padding: 12px 10px;  
+  
+  background: linear-gradient(  
+    135deg,  
+    #e8d7e3 0%,  
+    #ddd1e5 100%  
+  );  
+  
+  border-top: 2px solid #c7a8c0;  
+  border-left: 2px solid rgba(153, 112, 145, .28);  
+  border-right: 2px solid rgba(153, 112, 145, .28);  
+  
+  border-radius: 5px 5px 0 0;  
+  
+  font-size: 10px;  
+  font-weight: 800;  
+  line-height: 1;  
+  
+  color: #594054;  
+  
+  text-decoration: none;  
+  text-transform: uppercase;  
+  text-align: center;  
+  letter-spacing: .5px;  
+  
+  transition:  
+    padding .25s ease,  
+    background .25s ease,  
+    border-color .25s ease,  
+    color .25s ease;  
+}  
+  
+/* HOVER DE LOS ENLACES */  
+  
+ .foro-links a:hover {  
+  padding-bottom: 16px;  
+  
+  background: linear-gradient(  
+    135deg,  
+    #c7a6bf 0%,  
+    #b9a4cc 100%  
+  );  
+  
+  color: #2c1d2c;  
+}  
+  
+  
+/* FRANJA LATERAL DERECHA */  
+  
+.foro-accent {  
+  grid-column: 3;  
+  
+  position: relative;  
+  
+  background: linear-gradient(  
+    180deg,  
+    #d8bfd0 0%,  
+    #c5a6bf 35%,  
+    #b995b2 68%,  
+    #dfc1c4 100%  
+  );  
+}  
+  
+/* BRILLO DE LA FRANJA */  
+  
+.foro-accent::after {  
+  content: "";  
+  
+  position: absolute;  
+  inset: 0;  
+  
+  background: linear-gradient(  
+    180deg,  
+    rgba(255, 255, 255, .28),  
+    transparent 45%,  
+    rgba(75, 42, 70, .10)  
+  );  
+}  
