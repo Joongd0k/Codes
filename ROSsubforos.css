@@ -399,12 +399,12 @@ color: rgba(216, 191, 208, .085);
  .foro-name a {  
   display: block;  
   
-  font-family: 'Playfair Display', serif;  
+  font-family: 'Playfair Display', serif !important;
   font-size: 26px;  
   font-weight: 900;  
   line-height: 1.1;  
   letter-spacing: -.5px;  
-  
+  font-style: normal !important;
   color: #494949;  
   
   text-decoration: none;  
