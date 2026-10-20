@@ -588,14 +588,7 @@ color: rgba(216, 191, 208, .085);
     transparent 45%,  
     rgba(75, 42, 70, .10)  
   );  
-}  
-
-
-/* OCULTAR CABECERA DE LA CATEGORÍA 1 */
-
-.forabg.cat1-special > .inner > .categoria {
-  display: none;
-}
+} 
 
 /*** GUIDEBOOK ***/
 .guidebook-container {
