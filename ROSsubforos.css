@@ -448,17 +448,14 @@ color: rgba(216, 191, 208, .085);
   display: flex;  
   flex-direction: column;  
   
-  min-height: 100%;
-  padding: 30px;
-  box-sizing: border-box;
-  /*min-width: 0;  
-  padding: 30px 30px 0; */
+  min-width: 0;  
+  padding: 30px 30px 0; 
   
-  background-color: #111;  
-  background-image: var(--fondo-subforo, none);  
+  background-color: #202020;  
+  /*background-image: var(--fondo-subforo, none);  
   background-size: cover;  
   background-position: center;  
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat; */
 }  
   
 /* VELO SOBRE LA IMAGEN */  
@@ -492,15 +489,22 @@ color: rgba(216, 191, 208, .085);
   
   text-align: justify;  
 }  
+
+.foro-desc div {
+  height:100px;
+  overflow:auto;
+  padding-right:20px;
+}
   
 /* ENLACES DE SUBFOROS */  
   
  .foro-links {  
   display: flex;  
-  flex-wrap: wrap;  
-  gap: 6px;  
-  
-  margin-top: 15px;  
+  flex-wrap: wrap;
+  /*margin-top: 15px;*/
+  gap: 5px;  
+  align-items:flex-end;
+  margin-bottom:-2px;
 }  
   
  .foro-links a {  
