@@ -671,7 +671,6 @@ color: rgba(216, 191, 208, .085);
 /** Contenedor CATEGORÍA DOS **/
 .cat2-special {
   width: 100%;
-/*max-width: 1050px; */
   margin: 30px auto;
   box-sizing: border-box;
 }
@@ -682,20 +681,24 @@ color: rgba(216, 191, 208, .085);
   grid-template-columns: minmax(0, 390px) minmax(0, 1fr);
   gap: 20px;
   align-items: stretch;
-}
+  width: 100%;
+  box-sizing: border-box;
+  }
 
 /* ARCHIVERO */
 .cat2-special .cat2-main {
   position: relative;
+  width: 100%;
+  min-width: 0;
+  min-height: 480px;
   background-color: #292929;
   border-radius: 8px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 35px 30px 25px 30px;
+  padding: 35px 30px 25px;
   box-sizing: border-box;
-  min-height: 480px; 
 }
 
 /* Imagen de fondo oscura */
@@ -841,4 +844,25 @@ color: rgba(216, 191, 208, .085);
 .cat2-special .g-box:hover .group-text-layer {
   color: #ffffff; 
 
+  }
+
+/* CONTENEDOR DE LOS SUBFOROS */
+
+.cat2-special .cat2-sidebar-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  min-width: 0;
+  align-content: start;
+  box-sizing: border-box;
+}
+
+/* TARJETAS: CONSERVAR EL DISEÑO ORIGINAL */
+
+.cat2-special .cat2-sidebar-list > .cat01 {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+  box-sizing: border-box;
   }
