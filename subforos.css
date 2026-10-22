@@ -671,12 +671,10 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 ========================================== */
 
 /* CONTENEDOR GENERAL */
-
 .ros-cat2 .inner {
     display: grid;
     grid-template-columns: 260px minmax(0, 1fr);
     gap: 12px;
-
     width: 100%;
     align-items: stretch;
     box-sizing: border-box;
@@ -952,8 +950,8 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 /* PANEL DE CONTENIDO */
 .ros-cat2 .cardd .card-main {
-  padding: 0 28px 28px 28px;
-  margin-top: -80px;
+  padding: 24px; /* Un padding limpio y proporcional */
+  margin-top: 0;  /* CORRECCIÓN: Quitamos el -80px para evitar encimamientos */
   position: relative;
   z-index: 3;
   display: flex;
