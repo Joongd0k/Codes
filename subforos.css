@@ -669,38 +669,38 @@ color: rgba(216, 191, 208, .085);
 /* ==========================================
 CATEGORÍA 2: ARCHIVERO + SUBFOROS
 ========================================== */
-
-.cat2-special {
-width: 100%;
-margin: 30px auto;
-box-sizing: border-box;
+.cat2-special { 
+  width: 100%; 
+  margin: 30px auto; 
+  box-sizing: border-box; 
 }
 
-/* Distribución: Archivero a la izquierda y subforos a la derecha */
-.cat2-special .cat2-inner {
-display: grid;
-grid-template-columns: minmax(0, 390px) minmax(0, 1fr);
-gap: 20px;
-align-items: stretch;
-width: 100%;
-box-sizing: border-box;
+/* Archivero a la izquierda y subforos a la derecha */ 
+.cat2-special .cat2-inner { 
+  display: grid; 
+  grid-template-columns: minmax(0, 390px) minmax(0, 1fr); 
+  gap: 20px; align-items: stretch; 
+  width: 100%; 
+  box-sizing: border-box; 
 }
 
-/* Columna de los subforos reales */
-.cat2-special .cat2-sidebar-list {
-display: flex;
-flex-direction: column;
-gap: 15px;
-min-width: 0;
+/* Contenedor de los subforos: conserva dos columnas */ 
+.cat2-special .cat2-sidebar-list { 
+  display: grid; 
+  grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  gap: 5px; align-content: start; 
+  min-width: 0; box-sizing: border-box; 
 }
 
-/* Evita que las tarjetas se desborden de su columna */
-.cat2-special .cat2-sidebar-list .cat01,
-.cat2-special .cat2-sidebar-list .cardd {
-width: 100%;
-max-width: 100%;
-min-width: 0;
-box-sizing: border-box;
+/* Cada subforo conserva su tarjeta */ 
+.cat2-special .cat2-sidebar-list .cat01 { 
+  width: 100%; max-width: none; 
+  min-width: 0; margin: 0; 
+  box-sizing: border-box; 
+}
+.cat2-special .cat2-sidebar-list .cardd { 
+  width: 100%; min-width: 0; 
+  height: 100%; box-sizing: border-box; 
 }
 
 /* ARCHIVERO */
