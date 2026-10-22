@@ -285,8 +285,15 @@ color: rgba(216, 191, 208, .085);
   letter-spacing: 0.4px;
 }
 
-/* DESCRIPCIÓN */
+/* CONTENEDOR GENERAL  */
 .cardd .forodesc {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+/* DESCRIPCIÓN */
+.cardd .fdesc {
   max-height: 90px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -301,21 +308,21 @@ color: rgba(216, 191, 208, .085);
   box-sizing: border-box;
 }
 
-.cardd .forodesc p {
+.cardd .fdesc p {
   margin: 0;
 }
 
 /* BARRA DE SCROLL */
-.cardd .forodesc::-webkit-scrollbar {
+.cardd .fdesc::-webkit-scrollbar {
   width: 3px;
 }
 
-.cardd .forodesc::-webkit-scrollbar-track {
+.cardd .fdesc::-webkit-scrollbar-track {
   background: rgba(75, 31, 16, 0.3);
   border-radius: 10px;
 }
 
-.cardd .forodesc::-webkit-scrollbar-thumb {
+.cardd .fdesc::-webkit-scrollbar-thumb {
   background: var(--color-acento);
   border-radius: 10px;
 }
