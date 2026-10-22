@@ -682,7 +682,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     box-sizing: border-box;
 }
 
-/* ARCHIVERO 
+/* ARCHIVERO */
 
 .ros-cat2 .archivero {
     grid-column: 1;
@@ -692,7 +692,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     min-width: 0;
     margin: 0;
     box-sizing: border-box;
-} */
+} 
 
 /* ELIMINAR LA CABECERA DE LA CATEGORÍA 2 */
 
@@ -861,7 +861,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 /* GRID DE SUBFOROS */
 
-.topiclist.forums .ros-cat2 {
+.ros-cat2 .topiclist.forums  {
     grid-column: 2;
     grid-row: 1;
 
@@ -885,7 +885,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 /* TARJETA */
 
-.topiclist.forums .ros-cat2 .cat01 {
+.ros-cat2 .cat01 {
     width: 100%;
     max-width: none;
     min-width: 0;
