@@ -908,7 +908,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 }
 
 /* IMAGEN ZONA SUPERIOR */
-.ros-cat2 .cardd .card-user-image {
+.ros-cat2 .cardd .user-image {
   width: 100%;
   height: 380px;
   position: relative;
@@ -932,7 +932,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 }
 
 /* Degradado de fusión inferior */
-.ros-cat2 .cardd .card-user-image::after {
+.ros-cat2 .cardd .user-image::after {
   content: "";
   position: absolute;
   inset: 0;
