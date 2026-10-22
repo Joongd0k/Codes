@@ -675,14 +675,30 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat2 .inner {
     display: grid;
     grid-template-columns: 260px minmax(0, 1fr);
-    grid-template-rows: auto;
-    gap: 18px;
+    gap: 12px;
 
     width: 100%;
     align-items: stretch;
     box-sizing: border-box;
 }
 
+/* ARCHIVERO */
+
+.ros-cat2 .archivero {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ELIMINAR LA CABECERA DE LA CATEGORÍA 2 */
+
+.ros-cat2 .cat {
+    display: none;
+}
 
 /* ARCHIVERO */
 .cat2-main {
@@ -852,41 +868,29 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-auto-rows: 1fr;
-    gap: 12px;
+    gap: 10px;
 
     width: 100%;
     min-width: 0;
-    height: 100%;
     margin: 0;
     padding: 0;
 
     align-items: stretch;
     align-content: stretch;
-
     list-style: none;
     box-sizing: border-box;
 }
 
 /*  SUBFOROS DE CATEGORÍA 2  */
 
-
 /* TARJETA */
 
 .ros-cat2 .cat01 {
-  --color-base: #0d0705;
-  --color-oscuro: #4b1f10;
-  --color-principal: #7b3622;
-  --color-acento: #9c3b25;
-  --color-terroso: #5a442f;
-  --color-texto: #e8ddd5;
-  --color-texto-suave: #b5a195;
-  --color-borde: rgba(156, 59, 37, 0.25);
-
-  width: 100%;
-  max-width: 420px;
-  margin: 40px auto;
-  font-family: 'Inter', sans-serif;
-  box-sizing: border-box;
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* Estructura general */
