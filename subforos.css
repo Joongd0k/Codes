@@ -861,7 +861,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 /* GRID DE SUBFOROS */
 
-.ros-cat2 .topiclist.forums {
+.topiclist.forums .ros-cat2 {
     grid-column: 2;
     grid-row: 1;
 
@@ -885,7 +885,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 /* TARJETA */
 
-.ros-cat2 .cat01 {
+.topiclist.forums .ros-cat2 .cat01 {
     width: 100%;
     max-width: none;
     min-width: 0;
@@ -894,7 +894,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 }
 
 /* Estructura general */
-.ros-cat2 .cardd {
+.topiclist.forums .ros-cat2 .cardd {
   width: 100%;
   background: var(--color-base);
   border: 1px solid var(--color-borde);
