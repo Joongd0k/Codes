@@ -1215,23 +1215,19 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     width: 100%;
     box-sizing: border-box;
     align-items: stretch;
-}
+} 
 
 /* SUBFOROS: OCUPAN TODA LA COLUMNA IZQUIERDA */
 
 .ros-cat3 .topiclist.forums {
     grid-column: 1;
     grid-row: 1;
-
-    width: 100% !important;
-    min-width: 0;
-    max-width: none;
-
-    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    width: 100%;
     box-sizing: border-box;
-
-    justify-self: stretch;
-    align-self: start;
+    align-items: stretch;
 }
 
 /* BAÚLES: COLUMNA DERECHA */
