@@ -1249,6 +1249,26 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     box-sizing: border-box;
 }
 
+.ros-cat3 .topiclist.forums .cardd {
+  width: 100%;
+  height: auto !important;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  align-self: start;
+
+  background: var(--color-base);
+  border: 1px solid var(--color-borde);
+  border-radius: 20px;
+
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(13, 7, 5, 0.6);
+  box-sizing: border-box;
+}
+
 /* OCULTAR IMAGEN LATERAL DE LOS SUBFOROS */
 
 .ros-cat3 .cardd .user-image {
