@@ -1222,6 +1222,15 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat3 .topiclist.forums {
     grid-column: 1;
     grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr))!important;
+    grid-auto-rows: auto;
+    gap: 10px; /* Un poco más de aire entre tarjetas */
+
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
     
 }
 
