@@ -685,7 +685,6 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat2 .archivero {
     grid-column: 1;
     grid-row: 1;
-
     width: 100%;
     min-width: 0;
     margin: 0;
@@ -864,7 +863,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     grid-row: 1;
 
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr))!important;
     grid-auto-rows: auto; /* Permite que el alto se adapte orgánicamente */
     gap: 10px; /* Un poco más de aire entre tarjetas */
 
@@ -884,7 +883,6 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 .ros-cat2 .cat01 {
     width: 100%;
-    max-width: 420px;
     max-width: none;
     min-width: 0;
     margin: 0;
@@ -911,10 +909,10 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 /* IMAGEN SUPERIOR TARJETA VERTICAL */
 .ros-cat2 .cardd .user-image {
   width: 100% !important;
-  height: 400px;; /* Altura controlada y equilibrada */
+  height: 240px !important;
   position: relative;
   overflow: hidden;
-  background: var(--color-base);
+  background: var(--color-oscuro);
 }
 
 .ros-cat2 .cardd .user-bg {
@@ -949,8 +947,9 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 /* PANEL DE CONTENIDO */
 .ros-cat2 .cardd .card-main {
-  padding: 0 28px 28px 28px;
-  margin-top: -80px;
+  border-radius: 20px 20px 0 0;
+  padding: 30px 24px 24px 24px !important;
+  margin-top: -50px;
   position: relative;
   z-index: 3;
   
