@@ -1208,8 +1208,6 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
    CATEGORÍA 3: SUBFOROS + BAÚLES
 ================================= */
 
-/* DISTRIBUCIÓN GENERAL */
-
 .ros-cat3 .inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 380px;
@@ -1217,6 +1215,37 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     width: 100%;
     box-sizing: border-box;
     align-items: stretch;
+}
+
+/* SUBFOROS: OCUPAN TODA LA COLUMNA IZQUIERDA */
+
+.ros-cat3 .topiclist.forums {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100% !important;
+    min-width: 0;
+    max-width: none;
+
+    margin: 0;
+    box-sizing: border-box;
+
+    justify-self: stretch;
+    align-self: start;
+}
+
+/* BAÚLES: COLUMNA DERECHA */
+
+.ros-cat3 .baules {
+    grid-column: 2;
+    grid-row: 1;
+
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    align-self: stretch;
 }
 
 /* OCULTAR IMAGEN LATERAL DE LOS SUBFOROS */
@@ -1236,18 +1265,6 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat3 .cardd .card-main {
     width: 100%;
     min-width: 0;
-    box-sizing: border-box;
-}
-
-/* BAÚLES: COLUMNA DERECHA */
-
-.ros-cat3 .baules {
-    grid-column: 2;
-    grid-row: 1;
-    align-self: stretch;
-    width: 100%;
-    min-width: 0;
-    margin: 0;
     box-sizing: border-box;
 }
 
