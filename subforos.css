@@ -1222,12 +1222,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat3 .topiclist.forums {
     grid-column: 1;
     grid-row: 1;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 5px;
-    width: 100%;
-    box-sizing: border-box;
-    align-items: stretch;
+    
 }
 
 /* BAÚLES: COLUMNA DERECHA */
