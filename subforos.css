@@ -1204,27 +1204,177 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   color: #e6a087;
 }
 
-/* ==========================================
-   CATEGORÍA 3: SUBFOROS SIN IMAGEN LATERAL
-========================================== */
+/* =================================
+   CATEGORÍA 3: SUBFOROS + BAÚLES
+================================= */
 
-/* Ocultar imagen lateral */
+/* DISTRIBUCIÓN GENERAL */
+
+.ros-cat3 .inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: stretch;
+}
+
+/* SUBFOROS: DOS COLUMNAS A LA IZQUIERDA */
+
+.ros-cat3 .topiclist.forums {
+    grid-column: 1;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5px;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    align-content: start;
+}
+
+/* OCULTAR IMAGEN LATERAL DE LOS SUBFOROS */
 
 .ros-cat3 .cardd .user-image {
     display: none;
 }
 
-/* Tarjeta de una sola columna */
+/* TARJETAS DE LOS SUBFOROS */
 
 .ros-cat3 .cardd {
     display: block;
     height: auto;
 }
 
-/* Contenido a todo el ancho */
+/* CONTENIDO DE LAS TARJETAS */
 
 .ros-cat3 .cardd .card-main {
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
+}
+
+/* BAÚLES: COLUMNA DERECHA */
+
+.ros-cat3 .baules {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: stretch;
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CAJA DE BAÚLES */
+
+.ros-cat3 .cat3-main {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    height: 100%;
+    padding: 35px 30px 25px;
+    box-sizing: border-box;
+
+    background-color: #292929;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* IMAGEN DE FONDO */
+
+.ros-cat3 .cat3-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background-image: url('https://i.imgur.com/K36ZMY0.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.55;
+    filter: grayscale(100%) contrast(110%) brightness(90%);
+    transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+/* CAPA OSCURA SOBRE LA IMAGEN */
+
+.ros-cat3 .cat3-main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    background: linear-gradient(
+        180deg,
+        rgba(18,18,18,0.1) 0%,
+        rgba(18,18,18,0.5) 50%,
+        rgba(18,18,18,0.85) 100%
+    );
+
+    pointer-events: none;
+}
+
+/* EFECTO HOVER */
+
+.ros-cat3 .cat3-main:hover .cat3-bg {
+    opacity: 0.7;
+    filter: grayscale(30%) contrast(110%) brightness(95%);
+}
+
+/* CONTENIDO */
+
+.ros-cat3 .cat3-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+/* TÍTULO */
+
+.ros-cat3 .cat3-title {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 0.95;
+    text-transform: lowercase;
+    color: #ebebeb;
+    margin: 0 0 15px;
+    letter-spacing: -0.5px;
+}
+
+/* ÚLTIMO TEMA */
+
+.ros-cat3 .cat3-tema {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #8c8c8c;
+    letter-spacing: 1px;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+}
+
+/* AUTOR */
+
+.ros-cat3 .cat3-user {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    color: #555555;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+/* OCULTAR CABECERA DE LA CATEGORÍA */
+
+.ros-cat3 .cat {
+    display: none;
 }
