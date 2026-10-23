@@ -673,11 +673,9 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 /* CONTENEDOR GENERAL */
 .ros-cat2 .inner {
     display: grid;
-    grid-template-columns: 400px minmax(0, 1fr);
-    gap: 10px;
-
+    grid-template-columns: 380px minmax(0, 1fr);
+    gap: 8px;
     width: 100%;
-    /*align-items: start;*/
     align-items: stretch;
     box-sizing: border-box;
 }
@@ -871,7 +869,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr))!important;
     grid-auto-rows: auto; /* Permite que el alto se adapte orgánicamente */
-    gap: 10px; 
+    gap: 8px; 
 
     width: 100%;
     min-width: 0;
@@ -957,7 +955,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   pointer-events: none;
 }
 
-/* PANEL DE CONTENIDO */
+/* PANEL DE CONTENIDO 
 .ros-cat2 .cardd .card-main {
   border-radius: 20px 20px 0 0;
   padding: 30px 24px 24px 24px !important;
@@ -970,7 +968,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   box-sizing: border-box;
 }
 
-/* Bloque de título */
+/* Bloque de título 
 .ros-cat2 .cardd .card-header {
   display: flex;
   flex-direction: column;
@@ -1007,7 +1005,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   text-transform: uppercase;
 }
 
-/* Estadísticas */
+/* Estadísticas 
 .ros-cat2 .cardd .stats {
   display: flex;
   gap: 25px;
@@ -1035,7 +1033,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   letter-spacing: 0.5px;
 }
 
-/* Descripción del subforo */
+/* Descripción del subforo 
 .ros-cat2 .cardd .fdesc {
   font-size: 13px;
   line-height: 1.65;
@@ -1045,7 +1043,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   font-weight: 400;
 }
 
-/* Bloque contenedor de enlaces */
+/* Bloque contenedor de enlaces 
 .ros-cat2 .cardd .forolinks {
   display: flex;
   flex-direction: column;
@@ -1053,7 +1051,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   margin-bottom: 25px;
 }
 
-/* Botones individuales */
+/* Botones individuales 
 .ros-cat2 .cardd .btn {
   display: block;
   width: 100%;
@@ -1084,7 +1082,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   box-shadow: 0 8px 20px rgba(123, 54, 34, 0.3);
 }
 
-/* ÚLTIMO POST INTERACTIVO */
+/* ÚLTIMO POST INTERACTIVO 
 .ros-cat2 .cardd .lastpost {
   width: 100%;
   background: rgba(75, 31, 16, 0.22);
@@ -1101,7 +1099,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   gap: 16px;
 }
 
-/* Contenedor del avatar */
+/* Contenedor del avatar 
 .ros-cat2 .cardd .lastpost-avatar {
   position: relative;
   width: 52px;
@@ -1117,7 +1115,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   box-sizing: border-box;
 }
 
-/* Imagen de perfil a color */
+/* Imagen de perfil a color 
 .ros-cat2 .cardd .lastpost-avatar img {
   width: 100%;
   height: 100%;
@@ -1128,7 +1126,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   transition: transform 0.4s ease;
 }
 
-/* Brillo detrás del avatar */
+/* Brillo detrás del avatar 
 .ros-cat2 .cardd .glow {
   position: absolute;
   inset: -2px;
@@ -1145,7 +1143,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   transition: opacity 0.4s ease;
 }
 
-/* Textos del último mensaje */
+/* Textos del último mensaje 
 .ros-cat2 .cardd .topic-tit {
   flex: 1;
   min-width: 0;
@@ -1190,12 +1188,12 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   border-color: rgba(156, 59, 37, 0.45);
 }
 
-/* Efecto de rotación y escalado */
+/* Efecto de rotación y escalado 
 .ros-cat2 .cardd .lastpost:hover .lastpost-avatar img {
   transform: scale(1.08) rotate(8deg);
 }
 
-/* Destello detrás del avatar */
+/* Destello detrás del avatar 
 .ros-cat2 .cardd .lastpost:hover .glow {
   opacity: 0.7;
 }
@@ -1211,7 +1209,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat3 .inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 380px;
-    gap: 10px;
+    gap: 8px;
     width: 100%;
     box-sizing: border-box;
     align-items: stretch;
@@ -1225,7 +1223,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr))!important;
     grid-auto-rows: auto;
-    gap: 10px; /* aire entre tarjetas */
+    gap: 8px; /* aire entre tarjetas */
 
     width: 100%;
     min-width: 0;
@@ -1294,7 +1292,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat3 .cat3-main {
     position: relative;
     width: 100%;
-    min-height: 480px;
+    min-height: 400px;
     height: 100%;
     padding: 35px 30px 25px;
     box-sizing: border-box;
