@@ -1219,7 +1219,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 /* SUBFOROS: OCUPAN TODA LA COLUMNA IZQUIERDA */
 
-.ros-cat3 .topiclist.forums .cat01 {
+.ros-cat3 .topiclist.forums {
     grid-column: 1;
     grid-row: 1;
     
