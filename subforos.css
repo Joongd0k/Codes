@@ -176,7 +176,7 @@ color: rgba(216, 191, 208, .085);
   background: var(--color-oscuro);
 }
 
-.ros-cat2 .cardd .user-image img {
+.cardd .user-image img {
     display: none !important;
 }
 
