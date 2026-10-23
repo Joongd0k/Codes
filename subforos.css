@@ -673,10 +673,12 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 /* CONTENEDOR GENERAL */
 .ros-cat2 .inner {
     display: grid;
-    grid-template-columns: 330px minmax(0, 1fr);
+    grid-template-columns: 300px minmax(0, 1fr);
     gap: 10px;
+
     width: 100%;
-    align-items: stretch;
+    align-items: start;
+
     box-sizing: border-box;
 }
 
@@ -685,11 +687,13 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat2 .archivero {
     grid-column: 1;
     grid-row: 1;
+
     width: 100%;
     min-width: 0;
     margin: 0;
+
     box-sizing: border-box;
-} 
+}
 
 /* ELIMINAR LA CABECERA DE LA CATEGORÍA 2 */
 
@@ -890,19 +894,25 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 }
 
 /* ESTILO VERTICAL */
+
 .ros-cat2 .topiclist.forums .cardd {
-  width: 100% !important;
+  width: 100%;
+  height: auto !important;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  align-self: start;
+
   background: var(--color-base);
   border: 1px solid var(--color-borde);
   border-radius: 24px;
+
   overflow: hidden;
   box-shadow: 0 30px 60px rgba(13, 7, 5, 0.7);
-  
-  /* FORZAMOS EL BLOQUE VERTICAL CAMBIANDO LA JERARQUÍA */
-  display: flex !important;
-  flex-direction: column !important;
-  
-  position: relative;
+
   box-sizing: border-box;
 }
 
