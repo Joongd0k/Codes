@@ -1219,20 +1219,6 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     align-items: stretch;
 }
 
-/* SUBFOROS: DOS COLUMNAS A LA IZQUIERDA */
-
-.ros-cat3 .topiclist.forums {
-    grid-column: 1;
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 5px;
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
-    align-content: start;
-}
-
 /* OCULTAR IMAGEN LATERAL DE LOS SUBFOROS */
 
 .ros-cat3 .cardd .user-image {
@@ -1242,7 +1228,6 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 /* TARJETAS DE LOS SUBFOROS */
 
 .ros-cat3 .cardd {
-    display: block;
     height: auto;
 }
 
