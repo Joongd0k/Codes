@@ -673,12 +673,12 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 /* CONTENEDOR GENERAL */
 .ros-cat2 .inner {
     display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
+    grid-template-columns: 400px minmax(0, 1fr);
     gap: 10px;
 
     width: 100%;
-    align-items: start;
-
+    /*align-items: start;*/
+    align-items: stretch;
     box-sizing: border-box;
 }
 
@@ -687,6 +687,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat2 .archivero {
     grid-column: 1;
     grid-row: 1;
+    align-self: stretch;
 
     width: 100%;
     min-width: 0;
@@ -713,6 +714,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   padding: 35px 30px 25px 30px;
   box-sizing: border-box;
   min-height: 480px; 
+  height: 100%;
 } 
 
 /* Imagen de fondo oscura */
