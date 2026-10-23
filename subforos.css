@@ -1217,7 +1217,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     align-items: stretch;
 } 
 
-/* SUBFOROS: OCUPAN TODA LA COLUMNA IZQUIERDA */
+/* SUBFOROS: COLUMNA IZQUIERDA */
 
 .ros-cat3 .topiclist.forums {
     grid-column: 1;
@@ -1225,7 +1225,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr))!important;
     grid-auto-rows: auto;
-    gap: 10px; /* Un poco más de aire entre tarjetas */
+    gap: 10px; /* aire entre tarjetas */
 
     width: 100%;
     min-width: 0;
@@ -1234,18 +1234,14 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     
 }
 
-/* BAÚLES: COLUMNA DERECHA */
+/* TARJETA */
 
-.ros-cat3 .baules {
-    grid-column: 2;
-    grid-row: 1;
-
+.ros-cat3 .cat01 {
     width: 100%;
+    max-width: none;
     min-width: 0;
     margin: 0;
-
     box-sizing: border-box;
-    align-self: stretch;
 }
 
 /* OCULTAR IMAGEN LATERAL DE LOS SUBFOROS */
@@ -1266,6 +1262,20 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
+}
+
+/* BAÚLES: COLUMNA DERECHA */
+
+.ros-cat3 .baules {
+    grid-column: 2;
+    grid-row: 1;
+
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    align-self: stretch;
 }
 
 /* CAJA DE BAÚLES */
