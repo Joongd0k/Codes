@@ -1204,3 +1204,27 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
   color: #e6a087;
 }
 
+/* ==========================================
+   CATEGORÍA 3: SUBFOROS SIN IMAGEN LATERAL
+========================================== */
+
+/* Ocultar imagen lateral */
+
+.ros-cat3 .cardd .user-image {
+    display: none;
+}
+
+/* Tarjeta de una sola columna */
+
+.ros-cat3 .cardd {
+    display: block;
+    height: auto;
+}
+
+/* Contenido a todo el ancho */
+
+.ros-cat3 .cardd .card-main {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
