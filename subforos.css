@@ -871,7 +871,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr))!important;
     grid-auto-rows: auto; /* Permite que el alto se adapte orgánicamente */
-    gap: 10px; /* Un poco más de aire entre tarjetas */
+    gap: 10px; 
 
     width: 100%;
     min-width: 0;
@@ -1231,6 +1231,11 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
     min-width: 0;
     margin: 0;
     padding: 0;
+
+    align-items: start; /* Evita que las tarjetas se estiren infinitamente */
+    align-content: start;
+    list-style: none;
+    box-sizing: border-box;
     
 }
 
@@ -1248,20 +1253,6 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 .ros-cat3 .cardd .user-image {
     display: none;
-}
-
-/* TARJETAS DE LOS SUBFOROS */
-
-.ros-cat3 .cardd {
-    height: auto;
-}
-
-/* CONTENIDO DE LAS TARJETAS */
-
-.ros-cat3 .cardd .card-main {
-    width: 100%;
-    min-width: 0;
-    box-sizing: border-box;
 }
 
 /* BAÚLES: COLUMNA DERECHA */
