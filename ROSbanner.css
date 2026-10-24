@@ -1,0 +1,278 @@
+/****BANNER DE NOVEDADES Y STAFF****/
+
+.ros-banner {
+  width: 100%;
+  background: rgba(14, 14, 14, 0.95);
+  border-top: 1px;
+  border-bottom: 25px solid rgba(161, 146, 120, 0.15);
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+/* Alineación interna */
+.ros-banner-inner {
+  max-width: 1200px; /* Ajusta al ancho general de los contenedores de tu foro */
+  margin: 0 auto;
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/** NOVEDADES **/
+.ros-actus {
+  flex: 0 0 35%; /* Ocupa el 35% del ancho total */
+  height: 245px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px dashed rgba(161, 146, 120, 0.2);
+  padding-right: 25px;
+  box-sizing: border-box;
+}
+
+.actus-titulo {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 22px;
+  color: whitesmoke;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.actus-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 5px;
+}
+
+.actus-item {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.actus-fecha {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  font-weight: 600;
+  color: #BBB6A4;
+  background: rgba(161, 146, 120, 0.1);
+  padding: 2px 6px;
+  border-radius: 2px;
+  border: 1px solid rgba(161, 146, 120, 0.15);
+}
+
+.actus-item p {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  color: #888b93;
+  line-height: 1.4;
+}
+
+/**EL STAFF **/
+.ros-staff {
+  flex: 1; /* Ocupa el resto del espacio disponible (65%) */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 245px;
+  box-sizing: border-box;
+}
+
+.staff-cards  {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* Estilo base */
+.staff-card {
+  position: relative;
+  width: 100px;       /* Ancho compacto para que entren cómodamente en línea */
+  height: 140px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid rgba(161, 146, 120, 0.15);
+  background: #161616;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.staff-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%) brightness(40%) contrast(110%);
+  transition: all 0.4s ease;
+}
+
+.staff-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(14,14,14,0.85) 80%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.staff-name {
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 16px;
+  color: #BBB6A4;
+  text-shadow: 1px 1px 2px #000;
+  transition: color 0.4s ease;
+}
+
+.staff-rank {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #66758A; 
+}
+
+.staff-card:hover {
+  border-color: rgba(161, 146, 120, 0.45);
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+.staff-card:hover img {
+  filter: grayscale(20%) brightness(65%) contrast(100%);
+  transform: scale(1.05); 
+}
+
+.staff-card:hover .staff-name {
+  color: whitesmoke;
+}
+
+/** Botones de búsquedas **/
+.staff-busquedas {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 45px; 
+}
+
+.busqueda-link {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(102,117,138,.05);
+  border: 1px solid rgba(161,146,120,.15);
+  border-radius: 4px;
+  padding: 0 10px;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.busqueda-link:hover {
+  background: rgba(102,117,138,.12);
+  border-color: rgba(161,146,120,.35);
+  transform: translateY(-1px);
+}
+
+.busqueda-icon {
+  color: var(--rg-dorado, #a19278);
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.busqueda-link strong {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 8px;
+  font-weight: 700;
+  color: var(--rg-claro, whitesmoke);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.busqueda-link span {
+  display: block;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 10px;
+  color: #777b84;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+/** EVENTOS **/
+.actus-evento {
+  margin-top: 15px;
+  width: 100%;
+  height: 90px;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* Estado: HAY EVENTO */
+.actus-evento.current-event .evento-activo { display: block; height: 100%; }
+.actus-evento.current-event .evento-vacio { display: none; }
+
+/* Estado: NO HAY EVENTO */
+.actus-evento.no-event .evento-activo { display: none; }
+.actus-evento.no-event .evento-vacio { 
+  display: flex; 
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: rgba(8, 10, 13, 0.4);
+  border: 1px dashed rgba(161, 146, 120, 0.15);
+  padding: 10px;
+  color: #777b84;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  text-align: center;
+}
+.evento-vacio i { color: rgba(161, 146, 120, 0.3); font-size: 14px; }
+
+/* Detalles estéticos del evento activo */
+.evento-activo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(40%) brightness(35%) contrast(120%);
+  border: 1px solid rgba(161, 146, 120, 0.25);
+  border-radius: 4px;
+}
+.evento-tag {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: #b32424;
+  color: whitesmoke;
+  padding: 2px 6px;
+  border-radius: 2px;
+}
+.evento-texto {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-family: 'UnifrakturCook', cursive;
+  font-size: 16px;
+  color: #BBB6A4;
+  text-shadow: 1px 1px 3px #000;
+}
