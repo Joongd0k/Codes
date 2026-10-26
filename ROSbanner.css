@@ -276,3 +276,41 @@
   color: #BBB6A4;
   text-shadow: 1px 1px 3px #000;
 }
+
+
+/* CAJA CENTRAL (ULTIMOS MENSAJES) */
+
+.ros-caja {
+flex: 0 0 25%;
+min-width: 0;
+height: 300px;
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+flex-direction: column;
+background: rgba(18, 18, 18, 0.9);
+border: 1px solid rgba(161, 146, 120, 0.12);
+color: #888b93;
+overflow: hidden;
+}
+
+.ros-caja-titulo {
+margin-bottom: 15px;
+font-family: 'UnifrakturCook', cursive;
+font-size: 25px;
+color: #BBB6A4;
+}
+
+.ros-caja-info {
+flex: 1;
+min-height: 0;
+overflow-y: auto;
+font-family: 'Montserrat', sans-serif;
+font-size: 11px;
+line-height: 1.7;
+text-align: justify;
+}
+
+.ros-caja-info p {
+margin: 0 0 12px;
+}
