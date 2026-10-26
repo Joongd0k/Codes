@@ -360,11 +360,22 @@ flex: 1;
 min-height: 0;
 overflow-y: auto;
 font-family: 'Montserrat', sans-serif;
-font-size: 11px;
+font-size: 12px;
 line-height: 1.7;
 text-align: justify;
 }
 
 .ros-caja-info p {
 margin: 0 0 12px;
+}
+
+.ros-caja-info a{ 
+    color: #BBB6A4;
+    font-weight:700;  
+    text-decoration:none; 
+    transition: color .3s ease;
+}
+
+.ros-caja-info a:hover{ 
+     color: #F0E4EC;
 }
