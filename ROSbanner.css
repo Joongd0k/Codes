@@ -25,7 +25,7 @@
 /** NOVEDADES **/
 .ros-actus {
   flex: 0 0 35%; /* Ocupa el 35% del ancho total */
-  height: 260px;
+  height: 280px;
   display: flex;
   flex-direction: column;
   border-right: 1px dashed rgba(161, 146, 120, 0.2);
