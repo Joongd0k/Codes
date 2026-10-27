@@ -973,7 +973,7 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 
 
 /* =================================
-   CATEGORÍA 3: SUBFOROS + BAÚLES
+   CATEGORÍA 3: SUBFOROS BAÚLES
 ================================= */
 
 .ros-cat3 .inner {
@@ -1169,3 +1169,201 @@ CATEGORÍA 2: ARCHIVERO + SUBFOROS
 .ros-cat3 .cat {
     display: none;
 }
+
+/* ==========================================
+CATEGORÍA 4: SUBFOROS BÚSQUEDAS
+========================================== */
+
+.ros-cat4 .inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 380px;
+    gap: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: stretch;
+} 
+
+/* SUBFOROS: COLUMNA DERECHA */
+
+.ros-cat4 .topiclist.forums {
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr))!important;
+    grid-auto-rows: auto;
+    gap: 8px;
+
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+
+    align-items: start;
+    align-content: start;
+    list-style: none;
+    box-sizing: border-box;
+    
+}
+
+/* TARJETA */
+
+.ros-cat4 .cat01 {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.ros-cat4 .topiclist.forums .cardd {
+  width: 100%;
+  height: auto !important;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+  align-self: start;
+
+  background: var(--color-base);
+  border: 1px solid var(--color-borde);
+  border-radius: 20px;
+
+  overflow: hidden;
+  box-shadow: 0 20px 45px rgba(13, 7, 5, 0.6);
+  box-sizing: border-box;
+}
+
+/* OCULTAR IMAGEN LATERAL DE LOS SUBFOROS */
+
+.ros-cat4 .cardd .user-image {
+    display: none;
+}
+
+/* BÚSQUEDAS: COLUMNA IZQUIERDA */
+
+.ros-cat4 .bqda {
+    grid-column: 1;
+    grid-row: 1;
+
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+    align-self: stretch;
+}
+
+/* CAJA DE BÚSQUEDA */
+
+.ros-cat4 .cat4-main {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    height: 100%;
+    padding: 35px 30px 25px;
+    box-sizing: border-box;
+
+    background-color: #292929;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* IMAGEN DE FONDO */
+
+.ros-cat4 .cat4-bg {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background-image: url('https://i.imgur.com/71BzPTQ.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0.55;
+    filter: grayscale(100%) contrast(110%) brightness(90%);
+    transition: opacity 0.4s ease, filter 0.4s ease;
+}
+
+/* CAPA OSCURA SOBRE LA IMAGEN */
+
+.ros-cat4 .cat4-main::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    background: linear-gradient(
+        180deg,
+        rgba(18,18,18,0.1) 0%,
+        rgba(18,18,18,0.5) 50%,
+        rgba(18,18,18,0.85) 100%
+    );
+
+    pointer-events: none;
+}
+
+/* EFECTO HOVER */
+
+.ros-cat4 .cat4-main:hover .cat4-bg {
+    opacity: 0.7;
+    filter: grayscale(30%) contrast(110%) brightness(95%);
+}
+
+/* CONTENIDO */
+
+.ros-cat4 .cat4-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+/* TÍTULO */
+
+.ros-cat4 .cat4-title {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 0.95;
+    text-transform: lowercase;
+    color: #ebebeb;
+    margin: 0 0 15px;
+    letter-spacing: -0.5px;
+}
+
+/* ÚLTIMO TEMA */
+
+.ros-cat4 .cat4-tema {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #8c8c8c;
+    letter-spacing: 1px;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+}
+
+/* AUTOR */
+
+.ros-cat4 .cat4-user {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    color: #555555;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+}
+
+/* OCULTAR CABECERA DE LA CATEGORÍA */
+
+.ros-cat4 .cat {
+    display: none;
+  }
