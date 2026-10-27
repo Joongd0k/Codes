@@ -493,6 +493,10 @@ color: rgba(216, 191, 208, .085);
   color: #e6a087;
 }
 
+/* ==========================================
+CATEGORÍA 1: GUIDEBOOK + SUBFOROS
+========================================== */
+
 /*** GUIDEBOOK ***/
 .guidebook-container {
   width: 100%;
@@ -669,7 +673,18 @@ color: rgba(216, 191, 208, .085);
 
 .guidebook-icon-box:active i {
   color: #ffffff; 
-  }
+}
+
+/***SUBFOROS***/
+
+.ros-cat1 .topiclist.forums {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: stretch;
+}
 
 /* ==========================================
 CATEGORÍA 2: ARCHIVERO + SUBFOROS
