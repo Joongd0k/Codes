@@ -1176,7 +1176,7 @@ CATEGORÍA 4: SUBFOROS BÚSQUEDAS
 
 .ros-cat4 .inner {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 380px;
+    grid-template-columns: 380px minmax(0, 1fr);
     gap: 8px;
     width: 100%;
     box-sizing: border-box;
