@@ -1,33 +1,44 @@
-/*MEMBERLIST POR MARYSKINS*/
-.noexiste{
-    background: #171113;
-    border: 1px solid #49302f;
-    font-family: montserrat;
+/* =========================================
+   MEMBERLIST — MARYSKINS
+========================================= */
+
+.noexiste {
+    background: #171312;
+    border: 1px solid #49332D;
+    font-family: Montserrat, sans-serif;
     padding: 10px;
     width: 600px;
     margin: 10px auto;
+    color: #D8C8BD;
 }
-  
+
+
+/* BUSCADOR Y PAGINACIÓN */
+
 #memberlistextra {
-    background: #171113;
-    border: 1px solid #49302f;
-    font-family: montserrat;
+    background: #171312;
+    border: 1px solid #49332D;
+    font-family: Montserrat, sans-serif;
     padding: 10px;
     height: 30px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    overflow:hidden;
+    overflow: hidden;
     justify-content: space-between;
-   margin-top:10px;
+    margin-top: 10px;
+    color: #D8C8BD;
 }
 
 #memberlistextra i {
     font-size: 70px;
-    color: #d8b9ae;
+    color: #AD684B;
     margin-right: 20px;
 }
-  
+
+
+/* CONTENEDOR */
+
 #memberlist {
     display: flex;
     flex-direction: row;
@@ -35,16 +46,28 @@
     flex-wrap: wrap;
     align-items: center;
 }
-  
+
+
+/* TARJETA */
+
 #memberlist .miembro {
-    background: #171113;
-    border: 1px solid #49302f;
+    background: #171312;
+    border: 1px solid #49332D;
     height: 301px;
     margin-top: 10px;
     width: 450px;
+    transition: border-color .4s ease;
 }
+
+#memberlist .miembro:hover {
+    border-color: rgba(173, 104, 75, .65);
+}
+
+
+/* FONDO DEL GRUPO */
+
 #memberlist .miembro .mfondogrup {
-    background: var(--groups);
+    background-color: var(--groups);
     background-blend-mode: multiply;
     background-image: url('https://i.imgur.com/l1qdU9Z.jpg');
     background-size: 100%;
@@ -55,6 +78,10 @@
     background-position: center;
     background-position-y: -44px;
 }
+
+
+/* CUERPO */
+
 #memberlist .miembro .mcuerpo {
     display: flex;
     flex-direction: row;
@@ -64,51 +91,60 @@
     width: 95%;
 }
 
-#memberlist .miembro .mcuerpo .mavatar{
-  overflow:hidden;
-  border: 1px solid #ffffff;
-  border-radius:5px;
-  width:200px;
-  height:225px;
-display: flex;
+
+/* AVATAR */
+
+#memberlist .miembro .mcuerpo .mavatar {
+    overflow: hidden;
+    border: 1px solid rgba(197, 139, 109, .35);
+    border-radius: 5px;
+    width: 200px;
+    height: 225px;
+    display: flex;
     align-items: flex-start;
 }
 
-#memberlist .miembro .mcuerpo .mavatar img{
-  background: #171113;
+#memberlist .miembro .mcuerpo .mavatar img {
+    background: #171312;
 }
 
-#memberlist .miembro .mcuerpo .mdatos{
-      width: 48%;
+
+/* DATOS */
+
+#memberlist .miembro .mcuerpo .mdatos {
+    width: 48%;
     margin-left: 20px;
 }
 
-#memberlist .miembro .mcuerpo .mdatos li{
+#memberlist .miembro .mcuerpo .mdatos li {
     list-style: none;
-    background: #211719;
-    border: 1px solid #49302f;
+    background: #211917;
+    border: 1px solid #49332D;
     width: 180px;
     height: 40px;
-    padding-right:20px;
+    padding-right: 20px;
     border-radius: 5px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    font-family:montserrat;
-    overflow:hidden;
-    font-size:11px;
-    color: #d8c8c5;
-    font-weight:600;
+    font-family: Montserrat, sans-serif;
+    overflow: hidden;
+    font-size: 11px;
+    color: #C8B8AD;
+    font-weight: 600;
 }
 
-#memberlist .miembro .mcuerpo .mdatos li i{
+#memberlist .miembro .mcuerpo .mdatos li i {
     font-size: 55px;
     color: var(--groups);
-  opacity:0.4;
+    opacity: .55;
 }
+
+
+/* CONTACTO */
 
 #memberlist .miembro .mcuerpo .mdatos .contacto li {
     width: 55px;
@@ -116,28 +152,33 @@ display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-right: 0px;
+    padding-right: 0;
 }
-#memberlist .miembro .mcuerpo .mdatos .contacto{
+
+#memberlist .miembro .mcuerpo .mdatos .contacto {
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
 }
-#memberlist .miembro .mcuerpo .mdatos .contacto li i{
-      font-size: 30px;
+
+#memberlist .miembro .mcuerpo .mdatos .contacto li i {
+    font-size: 30px;
     opacity: 1;
 }
 
+
+/* NOMBRE */
+
 #memberlist .miembro .mnombre {
     align-items: center;
-    border-top: 1px solid #49302f;
+    border-top: 1px solid #49332D;
     display: flex;
     flex-direction: row;
-    font-family: montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 15px;
-    height: 40px;    
+    height: 40px;
     justify-content: space-between;
     margin-top: 29%;
     overflow: hidden;
@@ -145,11 +186,24 @@ display: flex;
     text-transform: uppercase;
 }
 
-#memberlist .miembro .mnombre .visita{
-background: var(--groups);
-    color: #fff;
+#memberlist .miembro .mnombre a {
+    color: #D8C8BD;
+    text-decoration: none;
+    transition: color .3s ease;
+}
+
+#memberlist .miembro .mnombre a:hover {
+    color: var(--groups);
+}
+
+
+/* ÚLTIMA VISITA */
+
+#memberlist .miembro .mnombre .visita {
+    background: var(--groups);
+    color: #171312;
     border-radius: 100%;
     padding: 30px;
     margin-right: -10px;
     font-size: 20px;
-}
+    }
