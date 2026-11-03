@@ -70,10 +70,9 @@
     padding: 13px 25px;
     background: var(--fondo2);
     border-radius: 5px;
-    font-size: 14px;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 700;
     font-family: 'UnifrakturCook', sans-serif;
-    text-transform: lowercase;
     letter-spacing: 2px;
 }
 
@@ -254,7 +253,7 @@
     border: var(--borde2);
     border-radius: 8px;
     font-family: 'UnifrakturCook', sans-serif;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 700;
 }
 
@@ -432,7 +431,7 @@
     border-radius: 7px;
     font-size: 14px;
     line-height: 1.8;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 /**** COLUMNA 4: IMÁGENES ****/
@@ -474,36 +473,36 @@
 }
 
 .sgae {
-    filter: sepia(75%) saturate(170%) hue-rotate(5deg) brightness(65%) contrast(110%);
-}
+    filter: sepia(75%) saturate(150%) hue-rotate(5deg) brightness(65%) contrast(110%);
+} /* #B5A653 */
 
 .grim {
-    filter: sepia(45%) saturate(110%) hue-rotate(175deg) brightness(65%) contrast(110%);
-}
+    filter: sepia(40%) saturate(90%) hue-rotate(175deg) brightness(70%) contrast(110%);
+} /* #ADB7C7 */
 
 .dry {
-    filter: sepia(35%) saturate(110%) hue-rotate(95deg) brightness(70%) contrast(110%);
-}
+    filter: sepia(35%) saturate(90%) hue-rotate(100deg) brightness(75%) contrast(105%);
+} /* #7EA38B */
 
 .aqua {
-    filter: sepia(35%) saturate(150%) hue-rotate(165deg) brightness(70%) contrast(110%);
-}
+    filter: sepia(25%) saturate(130%) hue-rotate(165deg) brightness(75%) contrast(110%);
+} /* #4F96B0 */
 
 .ela {
-    filter: sepia(55%) saturate(125%) hue-rotate(330deg) brightness(70%) contrast(110%);
-}
+    filter: sepia(45%) saturate(110%) hue-rotate(340deg) brightness(70%) contrast(110%);
+} /* #986F75 */
 
 .seer {
-    filter: sepia(70%) saturate(180%) hue-rotate(185deg) brightness(55%) contrast(120%);
-}
+    filter: sepia(55%) saturate(120%) hue-rotate(195deg) brightness(65%) contrast(115%);
+} /* #6F7598 */
 
 .med {
-    filter: sepia(65%) saturate(150%) hue-rotate(245deg) brightness(55%) contrast(115%);
-}
+    filter: sepia(55%) saturate(110%) hue-rotate(255deg) brightness(65%) contrast(110%);
+} /* #8B7EA3 */
 
 .umbra {
-    filter: sepia(100%) saturate(500%) hue-rotate(315deg) brightness(45%) contrast(120%);
-}
+    filter: sepia(100%) saturate(400%) hue-rotate(315deg) brightness(50%) contrast(120%);
+} /* #AC0911 */
 
 /* NOMBRE DEL GRUPO */
 
