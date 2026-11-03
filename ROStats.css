@@ -514,9 +514,11 @@
     justify-content: center;
     text-align: center;
     pointer-events: none;
+    flex-direction: column;
 }
 
 .group-badge h2 {
+    text-align: center;
     margin: 0;
     font-family: 'UnifrakturCook', sans-serif;
     font-size: 23px;
@@ -525,6 +527,7 @@
     color: #f0e4ec;
     text-shadow: 1px 1px 5px #000, 0 0 12px #000;
     letter-spacing: 1px;
+    width: 100%;
 }
 
 .group-count {
