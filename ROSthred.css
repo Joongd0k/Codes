@@ -20,9 +20,9 @@
 
 /* TÍTULO DE CATEGORÍA */  
   
-.ros-cat {  
-    grid-column-start: 1;  
-    grid-column-end: 3;  
+.ros-cat {
+    width: 100%;
+    box-sizing: border-box;
     border-bottom: 1px solid var(--borderColor);  
     position: relative;  
     overflow: hidden;  
@@ -30,7 +30,7 @@
     background: linear-gradient(to left, rgba(184,137,147,.12), #1d151b);  
 }  
   
-.ros-cat i {  
+.ros-cat > i {
     text-shadow:  
         .75px .75px 0 var(--borderColor),  
         -.75px .75px 0 var(--borderColor),  
