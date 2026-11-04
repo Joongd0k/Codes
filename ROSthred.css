@@ -59,6 +59,32 @@
     background-size: contain;
 }
 
+/* AVATAR DEL ÚLTIMO MENSAJE */
+
+.ros-thred-bot .lastpost-avatar1 {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    box-sizing: border-box;
+    background: var(--backgroundColor);
+    border: 1px solid var(--borderColor);
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.ros-thred-bot .lastpost-avatar1 img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    display: block;
+}
+
 /* TÍTULO Y DESCRIPCIÓN */
 
 .ros-thred-name {
@@ -147,19 +173,6 @@
 .ros-thred-bot a {
     color: var(--accentColor);
     text-decoration: none;
-}
-
-/* AVATAR DEL ÚLTIMO MENSAJE */
-
-.ros-thred-bot .lastpost-avatar1 {
-    margin-right: 8px;
-}
-
-.ros-thred-bot .lastpost-avatar1 img {
-    width: 30px;
-    height: 30px;
-    object-fit: cover;
-    border-radius: 50%;
 }
 
 .ros-thred-bot .lista-paginas {
