@@ -198,6 +198,26 @@
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.es-profile-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('https://i.imgur.com/CoFgX1w.jpeg');
+    background-size: cover;
+    background-position: center;
+    opacity: .55;
+    filter: grayscale(100%) contrast(110%) brightness(90%);
+    transition: opacity .4s ease, filter .4s ease;
+    z-index: -1;
+}
+
+.es-profile-card:hover::before {
+    opacity: .75;
 }
 
 .newest-ava {
