@@ -230,7 +230,7 @@
     object-fit: cover;
     object-position: center 30%;
     outline: 1px solid rgba(184, 137, 147, .45);
-    border: 7px #1a1a1a;
+    border: 7px solid #1a1a1a;
     border-radius: 8px;
 }
 
@@ -294,8 +294,7 @@
 }
 
 .es-online {
-    min-height: 170px;
-    max-height: 200px;
+    height: 200px;
     margin-top: 10px;
     padding: 15px;
     overflow: auto;
