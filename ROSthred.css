@@ -1,0 +1,167 @@
+@import url('https://solrainha.github.io/saturnicons/saturnicons.css');  
+  
+@import url('https://solrainha.github.io/honeybee/honeybee.css');  
+  
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');  
+  
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=UnifrakturCook:wght@700&display=swap');
+
+/* TARJETAS DE TEMAS */
+
+:root {
+    --backgroundColor: #1a1a1a;
+    --backgroundColorDark: #1d151b;
+    --borderColor: rgba(184, 137, 147, .35);
+    --accentColor: #dba9a9;
+    --accentRGBA: 184, 137, 147;
+    --textColor: #d8cbd5;
+    --textColorDark: #999999;
+    --textColorBright: #e8d7e3;
+    --scanlines: url(https://i.ibb.co/BVnmNrf/scanlineshorizontal2.png);
+}
+
+.ros-thred {
+    border: 1px solid var(--borderColor);
+    display: grid;
+    grid-template-columns: 102px minmax(0, 1fr) 56px;
+    grid-template-rows: minmax(100px, auto) 41px;
+    background-color: #202020;
+    position: relative;
+}
+
+/* IMAGEN */
+
+.ros-thred-img {
+    grid-column: 1;
+    grid-row: 1 / 3;
+    padding: 20px;
+    border-right: 1px solid var(--borderColor);
+    background-image: var(--scanlines);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ros-thred-img > div {
+    width: 70px;
+    height: 70px;
+    padding: 9px;
+    border: 1px solid var(--borderColor);
+    background-color: #1a1a1a;
+    box-sizing: border-box;
+}
+
+.ros-thred-img .tl-icon2 {
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* TÍTULO Y DESCRIPCIÓN */
+
+.ros-thred-name {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 25px 20px 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font: bold 11px Hind;
+    color: var(--textColor);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    overflow: hidden;
+}
+
+.ros-thred-name > a {
+    font: 700 25px UnifrakturCook;
+    text-transform: lowercase;
+    line-height: 1.1;
+    letter-spacing: 0;
+    color: var(--accentColor);
+    text-decoration: none;
+    transition: .7s;
+}
+
+.ros-thred-name > a:hover {
+    color: var(--textColorBright);
+}
+
+.ros-thred-description {
+    padding-top: 8px;
+}
+
+.ros-thred-author {
+    padding-top: 7px;
+    font-size: 9px;
+    color: var(--textColorDark);
+}
+
+/* ESTADÍSTICAS */
+
+.ros-thred-num {
+    grid-column: 3;
+    grid-row: 1;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.ros-thred-num div {
+    width: 26px;
+    height: 26px;
+    background-color: #302020;
+    border: 1px solid var(--borderColor);
+    border-radius: 2px;
+    font-size: 10px;
+    color: var(--accentColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* ÚLTIMO MENSAJE */
+
+.ros-thred-bot {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    padding: 10px 15px 10px 30px;
+    border-top: 1px solid var(--borderColor);
+    font: bold 9px Hind;
+    line-height: 15px;
+    color: var(--textColor);
+    text-transform: uppercase;
+    letter-spacing: .7px;
+    background: linear-gradient(to left, rgba(184,137,147,.12), #1d151b);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.ros-thred-bot a {
+    color: var(--accentColor);
+    text-decoration: none;
+}
+
+/* AVATAR DEL ÚLTIMO MENSAJE */
+
+.ros-thred-bot .lastpost-avatar1 {
+    margin-right: 8px;
+}
+
+.ros-thred-bot .lastpost-avatar1 img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.ros-thred-bot .lista-paginas {
+    margin-left: auto;
+}
