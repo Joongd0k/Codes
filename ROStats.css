@@ -209,9 +209,8 @@
     height: 145px;
     object-fit: cover;
     object-position: center 30%;
-    border-color: #1a1a1a;
     outline: 1px solid rgba(184, 137, 147, .45);
-    border: 7px;
+    border: 7px #1a1a1a;
     border-radius: 8px;
 }
 
@@ -252,7 +251,6 @@
 
 .es-center {
     padding: 20px;
-    border-right: 1px solid rgba(184, 137, 147, .35);
 }
 
 .es-online-title {
@@ -468,7 +466,6 @@
     inset: 20px;
     display: none;
     overflow: hidden;
-    border: 1px solid rgba(184, 137, 147, .45);
     border-radius: 8px;
     animation: groupFade .4s ease forwards;
 }
