@@ -256,19 +256,14 @@
     padding-bottom: 12px;
 
     border-bottom: 1px solid var(--ros-borde);
-
-    box-sizing: border-box;
 }
 
 .estadistica-mensajes,
 .estadistica-puntos {
     flex: 1;
-    min-width: 0;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     text-align: center;
 }
 
@@ -277,13 +272,11 @@
 
 .estadistica-mensajes .campp-label,
 .estadistica-puntos .campp-label {
-    font-size: 9px;
-    text-transform: uppercase;
     font-family: 'Inter';
-
+    font-size: 9px;
     color: var(--ros-secundario);
-
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 
@@ -291,11 +284,10 @@
 
 .estadistica-mensajes .campp-cont,
 .estadistica-puntos .campp-cont {
+    order: -1;
     font-family: 'Playfair Display';
-
     font-size: 20px;
     font-weight: 700;
-
     color: var(--ros-beige);
 }
 
@@ -304,14 +296,10 @@
 
 .estadistica-mensajes .campo-p,
 .estadistica-puntos .campo-p {
-    width: 100%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     gap: 3px;
-
     border: none;
 }
 
@@ -353,37 +341,34 @@
  DATOS DEL PERSONAJE
 ************************************************/
 
-.perfil-datos {
+.perfil-datos-bloque {
     width: 100%;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 8px;
-
-    padding: 5px 0;
-
-    box-sizing: border-box;
 }
 
+.perfil-subtitulo {
+    width: 100%;
+    font-family: 'UnifrakturCook';
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--ros-beige);
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.perfil-datos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
 
 /* CAMPOS */
 
 .perfil-datos .campo-p {
-    width: 100%;
-
     display: flex;
     flex-direction: column;
-
-    align-items: flex-start;
-
     gap: 3px;
-
     border: none;
-
-    height: auto;
-
-    font-style: normal;
 }
 
 
@@ -428,27 +413,27 @@
  FRASE DEL PERSONAJE
 ************************************************/
 
+/* SEPARADORES */
+
+.perfil-separador {
+    width: 100%;
+    text-align: center;
+    color: var(--ros-malva);
+    letter-spacing: 3px;
+    font-size: 11px;
+    padding: 2px 0;
+}
+
 .perfil-frase {
     width: 100%;
-
-    padding: 10px 5px;
-
-    box-sizing: border-box;
-
+    padding: 8px 5px;
     text-align: center;
-
     font-family: 'Playfair Display';
-
     font-size: 12px;
-
     font-style: italic;
-
     line-height: 150%;
-
     color: var(--ros-secundario);
-
-    border-top: 1px solid var(--ros-borde);
-    border-bottom: 1px solid var(--ros-borde);
+    border: none;
 }
 
 
@@ -478,12 +463,12 @@
 
 .perfil-frase .campo-p {
     display: block;
-
-    height: auto;
-
     border: none;
 }
 
+.perfil-frase .campp-label {
+    display: none;
+}
 
 /************************************************
  MEDALLERO
@@ -491,16 +476,21 @@
 
 .perfil-medallero {
     width: 100%;
-
-    padding: 12px;
-
-    box-sizing: border-box;
-
-    background: var(--ros-caja2);
-
-    border-radius: 4px;
+    background: transparent;
+    padding: 0;
 }
 
+.perfil-medallero .perfil-subtitulo {
+    margin-bottom: 12px;
+}
+
+.medallero-contenido {
+    width: 100%;
+    background: var(--ros-caja2);
+    padding: 12px;
+    border-radius: 4px;
+    min-height: 50px;
+}
 
 /* TÍTULO */
 
@@ -530,10 +520,11 @@
 
 .perfil-medallero .campo-p {
     display: block;
-
-    height: auto;
-
     border: none;
+}
+
+.medallero-contenido .campp-label {
+    display: none;
 }
 
 
@@ -542,10 +533,9 @@
 .perfil-medallero img {
     width: 32px;
     height: 32px;
-
     object-fit: cover;
-
     border-radius: 4px;
+    margin: 3px;
 }
 
 
