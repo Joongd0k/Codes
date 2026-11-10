@@ -252,6 +252,7 @@
     gap: 10px;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--ros-borde);
+    margin-bottom: 30px;
 }
 
 .estadistica-mensajes,
