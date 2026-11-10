@@ -364,7 +364,7 @@
     font-family: 'UnifrakturCook';
     font-size: 30px;
     font-weight: normal;
-    color: var(--ros-beige);
+    color: var(--grupo-color);
     text-align: center;
     margin-bottom: 10px;
 }
@@ -426,13 +426,12 @@
 
 .perfil-separador {
     width: 100%;
-    color: var(--ros-malva);  
+    color: var(--grupo-color);  
     margin: 5px 0;  
     letter-spacing: 2px;
     font-family: 'Inter';
     text-align: center;
     font-size: 22px;
-    /*padding: 2px 0;*/
 }
 
 .perfil-frase {
