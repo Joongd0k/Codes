@@ -246,20 +246,24 @@
 
 .perfil-estadisticas {
     width: 100%;
-    display: flex;
+    display: flex !important;
     justify-content: space-around;
     align-items: center;
     gap: 10px;
+
     padding-bottom: 12px;
-    border-bottom: 1px solid var(--ros-borde);
     margin-bottom: 30px;
+
+    border-bottom: 1px solid var(--ros-borde);
+    box-sizing: border-box;
 }
 
 .estadistica-mensajes,
 .estadistica-puntos {
     flex: 1;
     min-width: 0;
-    display: flex;
+
+    display: flex !important;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -270,35 +274,41 @@
 .estadistica-mensajes .campp-label,
 .estadistica-puntos .campp-label {
     display: block !important;
+
     font-family: 'Inter';
     font-size: 9px;
+
     color: var(--ros-secundario);
+
     letter-spacing: 1px;
     text-transform: uppercase;
 }
-
 
 /* NÚMEROS */
 
 .estadistica-mensajes .campp-cont,
 .estadistica-puntos .campp-cont {
     order: -1;
+
     display: block !important;
+
     font-family: 'Playfair Display';
     font-size: 20px;
     font-weight: 700;
+
     color: var(--ros-beige);
 }
-
 
 /* DISTRIBUCIÓN INTERNA */
 
 .estadistica-mensajes .campo-p,
 .estadistica-puntos .campo-p {
     width: 100%;
+
     display: flex !important;
-    flex-direction: column;
+    flex-direction: column !important;
     align-items: center;
+
     gap: 3px;
     border: none !important;
 }
