@@ -364,7 +364,7 @@
     font-family: 'UnifrakturCook';
     font-size: 30px;
     font-weight: normal;
-    color: var(--grupo-color);
+    color: #dbc8d6 !important;
     text-align: center;
     margin-bottom: 10px;
 }
