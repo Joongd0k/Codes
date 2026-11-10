@@ -246,32 +246,29 @@
 
 .perfil-estadisticas {
     width: 100%;
-
     display: flex;
     justify-content: space-around;
     align-items: center;
-
     gap: 10px;
-
     padding-bottom: 12px;
-
     border-bottom: 1px solid var(--ros-borde);
 }
 
 .estadistica-mensajes,
 .estadistica-puntos {
     flex: 1;
+    min-width: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-
 /* ETIQUETAS */
 
 .estadistica-mensajes .campp-label,
 .estadistica-puntos .campp-label {
+    display: block !important;
     font-family: 'Inter';
     font-size: 9px;
     color: var(--ros-secundario);
@@ -285,6 +282,7 @@
 .estadistica-mensajes .campp-cont,
 .estadistica-puntos .campp-cont {
     order: -1;
+    display: block !important;
     font-family: 'Playfair Display';
     font-size: 20px;
     font-weight: 700;
@@ -296,11 +294,12 @@
 
 .estadistica-mensajes .campo-p,
 .estadistica-puntos .campo-p {
-    display: flex;
+    width: 100%;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
     gap: 3px;
-    border: none;
+    border: none !important;
 }
 
 
@@ -365,26 +364,16 @@
 /* CAMPOS */
 
 .perfil-datos .campo-p {
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
-    border: none;
+    width: 100%;
+    display: block;
+    border: none !important;
 }
 
 
 /* ETIQUETAS */
 
 .perfil-datos .campp-label {
-    font-family: 'Inter';
-
-    font-size: 9px;
-    font-weight: 800;
-
-    text-transform: uppercase;
-
-    letter-spacing: 1px;
-
-    color: var(--ros-malva);
+    display: none !important;
 }
 
 .perfil-datos .campp-label span.label span {
@@ -399,15 +388,20 @@
 /* CONTENIDO */
 
 .perfil-datos .campp-cont {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     font-family: 'Inter';
-
     font-size: 11px;
-
     color: var(--ros-secundario);
-
-    line-height: 140%;
+    line-height: 160%;
 }
 
+.perfil-datos .campp-cont i {
+    flex-shrink: 0;
+    font-size: 14px;
+    color: var(--ros-malva);
+}
 
 /************************************************
  FRASE DEL PERSONAJE
@@ -493,30 +487,6 @@
     border-radius: 4px;
     min-height: 50px;
 }
-
-/* TÍTULO */
-
-.medallero-titulo {
-    display: inline-block;
-
-    background: var(--ros-malva);
-
-    color: white;
-
-    font-family: 'Inter';
-
-    font-size: 9px;
-    font-weight: 800;
-
-    letter-spacing: 1px;
-
-    padding: 4px 8px;
-
-    border-radius: 3px;
-
-    margin-bottom: 12px;
-}
-
 
 /* CONTENIDO DEL CAMPO MEDALLERO */
 
