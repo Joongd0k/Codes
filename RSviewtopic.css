@@ -415,7 +415,7 @@
 .perfil-datos .campp-cont i {
     flex-shrink: 0;
     font-size: 18px;
-    color: var(--ros-malva);
+    color: var(--grupo-color);
 }
 
 /************************************************
