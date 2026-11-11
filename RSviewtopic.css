@@ -1,8 +1,6 @@
 /* IMPORTACIONES */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=UnifrakturCook:wght@700&display=swap');
 
 @import url('https://solrainha.github.io/saturnicons/saturnicons.css');
 
@@ -98,11 +96,12 @@
 .headpost .name-post {
     font-size: 22px;
     line-height: 120%;
-    font-weight: 900;
+    font-weight: 700;
 
-    color: var(--ros-beige);
+    color: var(--grupo-color);
 
     font-family: 'UnifrakturCook';
+    text-transform: lowercase;    
 }
 
 .headpost .rango-post {
@@ -241,7 +240,6 @@
 
 }
 
-
 /***********************
  ESTADÍSTICAS
 ***********************/
@@ -277,8 +275,9 @@
 .estadistica-puntos .campp-label {
     display: block !important;
 
-    font-family: 'Inter', sans-serif;
+    font-family: "Hind", sans-serif;
     font-size: 0.8rem;
+    font-weight: 400;
 
     color: var(--ros-secundario);
 
@@ -294,7 +293,7 @@
 
     display: block !important;
 
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display", serif;
     font-size: 1.1rem;
     font-weight: 700;
 
@@ -489,33 +488,33 @@
     padding: 8px 5px;
     text-align: center;
     font-family: 'Playfair Display';
-    font-size: 12px;
-    font-style: italic;
+    font-size: 15px;
     line-height: 150%;
     color: var(--ros-secundario);
     border: none;
 }
 
-
 /* FORMATO DE TEXTO */
 
 .perfil-frase strong,
 .perfil-frase b {
-    color: var(--ros-malva);
+    color: var(--grupo-color);
+    font-family: "UnifrakturCook", cursive;
 }
 
 .perfil-frase i {
-    color: var(--ros-malva);
+    color: var(--grupo-color);
 }
 
 .perfil-frase u {
     text-decoration: none;
 
-    background: var(--ros-malva);
+    background: var(--grupo-color);
 
     color: var(--ros-texto);
 
     border-radius: 3px;
+    padding: 1px 4px;
 }
 
 
