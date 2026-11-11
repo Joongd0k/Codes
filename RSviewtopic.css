@@ -331,9 +331,10 @@
     border-bottom: 5px solid #dbc8d6; 
 
     background: var(--ros-caja2);
-
     box-sizing: border-box;
     margin-bottom: 20px;
+
+    position: relative;
 }
 
 .perfil-avatar-nuevo img {
@@ -344,8 +345,55 @@
 
     object-fit: cover;
 
-    transition: 0.4s;
+    transition: transform 0.5s ease;
 }
+
+/* EFECTO FANTASMAGÓRICO */
+
+.perfil-avatar-nuevo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+        135deg,
+        transparent 20%,
+        color-mix(in srgb, var(--grupo-color) 40%, transparent) 50%,
+        transparent 80%
+    );
+
+    opacity: 0;
+    transform: translateX(-100%);
+    pointer-events: none;
+}
+
+/* ANIMACIÓN */
+
+.perfil-avatar-nuevo:hover::after {
+    animation: espectral 0.8s ease forwards;
+}
+
+@keyframes espectral {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    15% {
+        opacity: 1;
+    }
+
+    85% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+/* ZOOM */
 
 .perfil-avatar-nuevo:hover img {
     transform: scale(1.04);
@@ -354,7 +402,7 @@
 
 /***************************
  DATOS DEL PERSONAJE
-*****************************/
+****************************/
 
 .perfil-datos-bloque {
     width: 100%;
@@ -420,9 +468,9 @@
     color: var(--grupo-color);
 }
 
-/************************************************
+/*****************************
  FRASE DEL PERSONAJE
-************************************************/
+****************************/
 
 /* SEPARADORES */
 
@@ -482,9 +530,9 @@
     display: none;
 }
 
-/************************************************
+/*****************************
  MEDALLERO
-************************************************/
+*****************************/
 
 .perfil-medallero {
     width: 100%;
