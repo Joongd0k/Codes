@@ -215,9 +215,9 @@
 }
 
 
-/************************************************
+/**********************************
  COLUMNA IZQUIERDA - PERFIL
-************************************************/
+**********************************/
 
 .post-perfil {
     width: 300px;
@@ -242,9 +242,9 @@
 }
 
 
-/************************************************
+/***********************
  ESTADÍSTICAS
-************************************************/
+***********************/
 
 .perfil-estadisticas {
     width: 100%;
@@ -253,8 +253,8 @@
     align-items: center;
     gap: 10px;
 
-    padding-bottom: 12px;
-    margin-bottom: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
 
     border-bottom: 1px solid var(--ros-borde);
     box-sizing: border-box;
@@ -278,7 +278,7 @@
     display: block !important;
 
     font-family: 'Inter';
-    font-size: 9px;
+    font-size: 0.8rem;
 
     color: var(--ros-secundario);
 
@@ -295,7 +295,7 @@
     display: block !important;
 
     font-family: 'Playfair Display';
-    font-size: 20px;
+    font-size: 1.1rem;
     font-weight: 700;
 
     color: var(--grupo-color);
@@ -316,17 +316,19 @@
 }
 
 
-/************************************************
+/**************************
  AVATAR PRINCIPAL
-************************************************/
+**************************/
 
 .perfil-avatar-nuevo {
     width: 100%;
-    height: 400px;
+    height: 380px;
 
     overflow: hidden;
 
     border-radius: 4px;
+    border-top: 5px solid #dbc8d6;
+    border-bottom: 5px solid #dbc8d6; 
 
     background: var(--ros-caja2);
 
@@ -338,7 +340,7 @@
     display: block;
 
     width: 100%;
-    height: 400px;
+    height: 380px;
 
     object-fit: cover;
 
@@ -350,9 +352,9 @@
 }
 
 
-/************************************************
+/***************************
  DATOS DEL PERSONAJE
-************************************************/
+*****************************/
 
 .perfil-datos-bloque {
     width: 100%;
