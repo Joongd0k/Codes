@@ -64,12 +64,12 @@
 
     background: var(--ros-caja);
 
-    /*border: 1px solid var(--ros-borde);*/
+    border-right: 1px solid var(--ros-borde);
     border-left: 50px solid var(--grupo-color);
 
     border-radius: 4px 4px 0 0;
 
-    margin: 5px 15px 15px;
+    margin: 5px 15px 0px;
 
     padding: 15px 20px 15px 85px;
 
