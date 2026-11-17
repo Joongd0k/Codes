@@ -1,0 +1,476 @@
+/* =============
+   LORIENNPEDIA
+ ================ */
+
+/* CONTENEDOR PRINCIPAL */
+
+.wiki-lorienn {
+    font-family: Roboto, Lato, Arial, sans-serif;
+    background: #fff;
+    color: #202122;
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 24px 32px;
+    border: 1px solid #a7d7f9;
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
+
+.wiki-lorienn * {
+    box-sizing: border-box;
+}
+
+/* CABECERA */
+
+.wiki-lorienn .wiki-title {
+    font-family: 'Linux Libertine', Georgia, serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #000;
+    border-bottom: 1px solid #a2a9b1;
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+}
+
+.wiki-lorienn .wiki-subtitle {
+    font-size: 12px;
+    color: #54595d;
+    margin-bottom: 16px;
+}
+
+
+/* TEXTO GENERAL */
+
+.wiki-lorienn .wiki-text {
+    white-space: pre-line;
+    line-height: 1.7;
+    margin: 0 0 12px;
+}
+
+.wiki-lorienn b {
+    font-weight: 700;
+}
+
+.wiki-lorienn i {
+    font-style: italic;
+}
+
+.wiki-lorienn u {
+    text-decoration: underline;
+}
+
+.wiki-lorienn a {
+    color: #36c;
+    text-decoration: none;
+}
+
+.wiki-lorienn a:hover {
+    text-decoration: underline;
+}
+
+.wiki-lorienn small {
+    font-size: 11px;
+}
+
+.wiki-lorienn code {
+    font-family: monospace;
+    background: #f1f1f1;
+    padding: 1px 4px;
+    border-radius: 2px;
+}
+
+
+/* ============
+   FICHA INFORMATIVA
+   ================ */
+
+.wiki-lorienn .wiki-infobox {
+    float: right;
+    clear: right;
+    width: 300px;
+    max-width: 100%;
+    margin: 0 0 18px 24px;
+    padding: 6px;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    font-size: 12.5px;
+    line-height: 1.45;
+}
+
+.wiki-lorienn .wiki-infobox-title {
+    background: #dce8f4;
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+    padding: 7px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.wiki-lorienn .wiki-infobox-sub {
+    text-align: center;
+    padding: 5px;
+    background: #eef3f8;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.wiki-lorienn .wiki-infobox-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.wiki-lorienn .wiki-infobox-images > div {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+.wiki-lorienn .wiki-infobox-images img {
+    max-width: 100%;
+    height: auto;
+    max-height: 110px;
+    object-fit: contain;
+    border: 1px solid #c8ccd1;
+}
+
+.wiki-lorienn .wiki-infobox-map {
+    text-align: center;
+    padding: 10px 4px;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.wiki-lorienn .wiki-infobox-map img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid #c8ccd1;
+}
+
+.wiki-lorienn .wiki-caption {
+    font-size: 11px;
+    color: #54595d;
+    margin-top: 4px;
+}
+
+.wiki-lorienn .wiki-row {
+    display: grid;
+    grid-template-columns: 38% 62%;
+    border-bottom: 1px solid #eaecf0;
+}
+
+.wiki-lorienn .wiki-label {
+    font-weight: 700;
+    padding: 6px;
+    align-self: start;
+}
+
+.wiki-lorienn .wiki-data {
+    padding: 6px;
+    min-width: 0;
+}
+
+
+/* ===================
+   ÍNDICE DESPLEGABLE
+  ================= */
+
+.wiki-lorienn .wiki-toc {
+    display: table;
+    min-width: 230px;
+    max-width: 100%;
+    margin: 18px 0;
+    padding: 10px 16px;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    font-size: 13px;
+}
+
+.wiki-lorienn .wiki-toc details {
+    display: block;
+}
+
+.wiki-lorienn .wiki-toc summary {
+    cursor: pointer;
+    text-align: center;
+    font-weight: 700;
+    list-style: none;
+    padding: 3px;
+}
+
+.wiki-lorienn .wiki-toc summary::-webkit-details-marker {
+    display: none;
+}
+
+.wiki-lorienn .wiki-toc summary:after {
+    content: " [ocultar]";
+    color: #36c;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.wiki-lorienn .wiki-toc details:not([open]) summary:after {
+    content: " [mostrar]";
+}
+
+.wiki-lorienn .wiki-toc-content {
+    padding-top: 10px;
+    line-height: 1.8;
+}
+
+.wiki-lorienn .wiki-toc-sub {
+    padding-left: 18px;
+}
+
+
+/* ======================
+   SECCIONES DESPLEGABLES
+   ==================== */
+
+/* CONTENEDOR */
+
+.wiki-lorienn .wiki-section-box {
+    width: 100%;
+    margin: 24px 0;
+    clear: both;
+    scroll-margin-top: 20px;
+}
+
+/* CHECKBOX OCULTO */
+
+.wiki-lorienn .wiki-check {
+    display: none;
+}
+
+/* TÍTULO CLICKEABLE */
+
+.wiki-lorienn .wiki-section-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+
+    font-family: 'Linux Libertine', Georgia, serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: #202122;
+
+    border-bottom: 1px solid #a2a9b1;
+    padding: 0 0 7px;
+    margin: 0;
+
+    cursor: pointer;
+    transition: color .2s ease;
+}
+
+/* HOVER DEL TÍTULO */
+
+.wiki-lorienn .wiki-section-toggle:hover {
+    color: #36c;
+}
+
+/* FLECHA */
+
+.wiki-lorienn .wiki-arrow {
+    flex-shrink: 0;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    color: #72777d;
+    transition: transform .3s ease;
+}
+
+/* CONTENIDO OCULTO */
+
+.wiki-lorienn .wiki-section-content {
+    display: none;
+    padding: 14px 0 4px;
+}
+
+/* CONTENIDO VISIBLE */
+
+.wiki-lorienn .wiki-check:checked ~ .wiki-section-content {
+    display: block;
+}
+
+/* FLECHA GIRADA */
+
+.wiki-lorienn .wiki-check:checked + .wiki-section-toggle .wiki-arrow {
+    transform: rotate(180deg);
+}
+
+/* ESTADO HOVER DE LA FLECHA */
+
+.wiki-lorienn .wiki-section-toggle:hover .wiki-arrow {
+    color: #36c;
+}
+
+
+/* ====================
+   SUBSECCIONES
+   ===================== */
+
+.wiki-lorienn .wiki-subsection {
+    font-family: Roboto, Lato, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #202122;
+    margin: 22px 0 9px;
+    scroll-margin-top: 20px;
+}
+
+
+/* ==============
+   TABLAS 
+   ============= */
+
+.wiki-lorienn .wiki-table {
+    display: block;
+    width: 100%;
+    margin: 14px 0;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    font-size: 13px;
+}
+
+.wiki-lorienn .wiki-table-head,
+.wiki-lorienn .wiki-table-row {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.wiki-lorienn .wiki-table-head {
+    background: #eaecf0;
+    font-weight: 700;
+}
+
+.wiki-lorienn .wiki-table-head > div,
+.wiki-lorienn .wiki-table-row > div {
+    padding: 7px 10px;
+    border-bottom: 1px solid #a2a9b1;
+    min-width: 0;
+}
+
+.wiki-lorienn .wiki-table-head > div:first-child,
+.wiki-lorienn .wiki-table-row > div:first-child {
+    border-right: 1px solid #a2a9b1;
+}
+
+.wiki-lorienn .wiki-table-row:last-child > div {
+    border-bottom: 0;
+}
+
+
+/* ===================
+   NOTAS Y RECUADROS
+   =================== */
+
+.wiki-lorienn .wiki-hatnote {
+    font-style: italic;
+    padding-left: 22px;
+    margin-bottom: 12px;
+    color: #54595d;
+    font-size: 13px;
+}
+
+.wiki-lorienn .wiki-lore-box {
+    background: #f4f6fa;
+    border-left: 4px solid #36c;
+    padding: 12px 16px;
+    margin: 16px 0;
+    font-size: 13.5px;
+}
+
+.wiki-lorienn .wiki-lore-box-title {
+    display: block;
+    font-weight: 700;
+    color: #202122;
+    margin-bottom: 6px;
+}
+
+
+/* ===============
+   LISTAS
+   =============== */
+
+.wiki-lorienn ul,
+.wiki-lorienn ol {
+    padding-left: 28px;
+    margin: 8px 0 16px;
+}
+
+.wiki-lorienn li {
+    margin-bottom: 7px;
+}
+
+
+/* ===============
+   CATEGORÍAS
+   ================ */
+
+.wiki-lorienn .wiki-categories {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    padding: 8px 12px;
+    margin-top: 28px;
+    font-size: 12.5px;
+    clear: both;
+}
+
+
+/* ===============
+   RESPONSIVE
+   ================ */
+
+@media screen and (max-width: 650px) {
+
+    .wiki-lorienn {
+        padding: 16px;
+        font-size: 13px;
+    }
+
+    .wiki-lorienn .wiki-title {
+        font-size: 24px;
+    }
+
+    .wiki-lorienn .wiki-section-toggle {
+        font-size: 19px;
+    }
+
+    .wiki-lorienn .wiki-subsection {
+        font-size: 15px;
+    }
+
+    .wiki-lorienn .wiki-infobox {
+        float: none;
+        clear: both;
+        width: 100%;
+        margin: 0 0 18px;
+    }
+
+    .wiki-lorienn .wiki-toc {
+        display: block;
+        width: 100%;
+    }
+
+    .wiki-lorienn .wiki-table {
+        font-size: 12px;
+    }
+
+    .wiki-lorienn .wiki-table-head,
+    .wiki-lorienn .wiki-table-row {
+        grid-template-columns: 30% 70%;
+    }
+
+    .wiki-lorienn .wiki-table-head > div,
+    .wiki-lorienn .wiki-table-row > div {
+        padding: 6px;
+    }
+
+}
