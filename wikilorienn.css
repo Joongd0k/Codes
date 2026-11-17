@@ -1,6 +1,10 @@
-/* =============
-   LORIENNPEDIA
- ================ */
+.post:has(.big-post) .post-post {
+    flex:1;
+    margin-left:10px;
+}
+.post:has(.big-post) .post-perfil {
+    display:none
+}
 
 /* CONTENEDOR PRINCIPAL */
 
