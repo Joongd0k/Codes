@@ -427,30 +427,49 @@
     clear: both;
 }
 
-/* MAPA DE LAS OCHO ISLAS */
+/* =========================
+   MAPA DE LAS OCHO ISLAS
+   ========================= */
 
 .wiki-lorienn .wiki-island-map {
+    display: block;
     width: 100%;
+    max-width: 100%;
     margin: 25px auto 30px;
     padding: 20px 12px;
-    box-sizing: border-box;
-    overflow-x: auto;
+
     background: #f8f9fa;
     border: 1px solid #a7d7f9;
     border-radius: 4px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
     text-align: center;
+    box-sizing: border-box;
 }
 
 .wiki-lorienn .wiki-island-map pre {
     display: inline-block;
-    margin: 0;
+
+    width: max-content;
+    max-width: none;
+
+    margin: 0 auto;
     padding: 0;
-    color: #202122;
+
     font-family: "Courier New", monospace;
     font-size: 12px;
+    font-weight: 400;
     line-height: 1.35;
-    text-align: left;
+
+    color: #202122;
+
     white-space: pre;
+    text-align: left;
+
+    overflow: visible;
+    tab-size: 4;
 }
 
 /* ===============
@@ -507,7 +526,8 @@
     }
 
     .wiki-lorienn .wiki-island-map pre {
-        font-size: 10px;
+        font-size: 11px;
+        line-height: 1.3;
     }
 
 }
