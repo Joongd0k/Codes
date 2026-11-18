@@ -438,57 +438,97 @@
 
     width: 100%;
     margin: 30px auto;
-    padding: 35px 20px;
+    padding: 22px 16px;
+
     background: #f8f9fa;
     border: 1px solid var(--map-border);
     border-radius: 5px;
+
     box-sizing: border-box;
-    overflow: hidden;
 }
 
-/* FILAS DE ISLAS */
+/* TÍTULO DEL MAPA */
 
-.wiki-lorienn .island-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
+.wiki-lorienn .island-map-title {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.wiki-lorienn .island-row > .island-card {
-    grid-column: 2;
+.wiki-lorienn .island-map-title p {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: #34495e;
+    letter-spacing: .5px;
 }
 
-.wiki-lorienn .island-row-two .island-card:first-child {
-    grid-column: 1;
-}
+/* CONTENEDOR CON DESPLAZAMIENTO */
 
-.wiki-lorienn .island-row-two .island-card:last-child {
-    grid-column: 3;
-}
-
-.wiki-lorienn .island-row-three .island-card {
-    grid-column: auto;
+.wiki-lorienn .island-map-scroll {
     width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-bottom: 8px;
 }
 
-/* TARJETAS */
+/* ÁREA DEL DIAGRAMA */
+
+.wiki-lorienn .island-map-graphic {
+    position: relative;
+
+    width: 100%;
+    min-width: 650px;
+    max-width: 900px;
+
+    aspect-ratio: 900 / 720;
+    margin: 0 auto;
+}
+
+/* LÍNEAS DE CONEXIÓN SVG */
+
+.wiki-lorienn .island-map-lines {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+    overflow: visible;
+}
+
+.wiki-lorienn .island-map-lines path {
+    fill: none;
+    stroke: var(--map-line);
+    stroke-width: 2.2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* TARJETAS DE LAS ISLAS */
 
 .wiki-lorienn .island-card {
+    position: absolute;
+    z-index: 2;
+
     width: 190px;
-    min-height: 75px;
-    padding: 14px 10px;
+    min-height: 65px;
+    padding: 12px 10px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 5px;
 
+    transform: translate(-50%, -50%);
+
     background: #fff;
     border: 1px solid var(--map-border);
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,.05);
+    border-radius: 5px;
+
+    box-shadow: 0 2px 6px rgba(0,0,0,.06);
 
     text-align: center;
     transition: .25s ease;
@@ -496,84 +536,138 @@
 
 .wiki-lorienn .island-card:hover {
     border-color: var(--map-accent);
-    transform: translateY(-3px);
-    box-shadow: 0 4px 10px rgba(0,0,0,.10);
+    box-shadow: 0 4px 12px rgba(0,0,0,.12);
+    transform: translate(-50%, -53%);
+}
+
+/* NÚMEROS */
+
+.wiki-lorienn .island-number {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    color: #9aa9b8;
+    letter-spacing: 1px;
 }
 
 /* NOMBRES */
 
-.wiki-lorienn .island-name {
+.wiki-lorienn .island-card strong {
     font-family: Georgia, serif;
-    font-size: 13px;
+    font-size: 12px;
     font-weight: bold;
-    letter-spacing: 1.5px;
+    letter-spacing: 1px;
     color: #34495e;
 }
 
-.wiki-lorienn .island-description {
+/* DESCRIPCIONES */
+
+.wiki-lorienn .island-card small {
     font-family: Arial, sans-serif;
-    font-size: 11px;
+    font-size: 10px;
     color: #777;
     letter-spacing: .3px;
 }
 
-/* CAPITAL */
+/* POSICIONES DE LAS OCHO ISLAS */
 
-.wiki-lorienn .island-capital {
-    background: #edf2f7;
-    border: 1px solid #849db7;
+/* 01 - LYNGEN */
+
+.wiki-lorienn .island-lyngen {
+    left: 50%;
+    top: 9.72%;
 }
 
-.wiki-lorienn .island-capital .island-name {
+/* 02 - SKELLIG */
+
+.wiki-lorienn .island-skellig {
+    left: 27.78%;
+    top: 30.56%;
+}
+
+/* 03 - RUKKEN */
+
+.wiki-lorienn .island-rukken {
+    left: 72.22%;
+    top: 30.56%;
+}
+
+/* 04 - BERGEN */
+
+.wiki-lorienn .island-bergen {
+    left: 50%;
+    top: 48.61%;
+}
+
+/* 05 - MIRATUN */
+
+.wiki-lorienn .island-miratun {
+    left: 16.67%;
+    top: 72.22%;
+}
+
+/* 06 - SUNDERØ */
+
+.wiki-lorienn .island-sundero {
+    left: 50%;
+    top: 72.22%;
+}
+
+/* 07 - FREYDAL */
+
+.wiki-lorienn .island-freydal {
+    left: 83.33%;
+    top: 72.22%;
+}
+
+/* 08 - SOLVIGA */
+
+.wiki-lorienn .island-solviga {
+    left: 50%;
+    top: 90.28%;
+}
+
+/* DESTACAR LA CAPITAL */
+
+.wiki-lorienn .island-sundero {
+    background: #edf2f7;
+    border: 1px solid #849db7;
+    box-shadow: 0 2px 8px rgba(64,95,123,.12);
+}
+
+.wiki-lorienn .island-sundero strong {
     color: #405f7b;
 }
 
-/* CONECTORES */
+/* REFERENCIAS DEL MAPA */
 
-.wiki-lorienn .connector {
-    position: relative;
-    width: 100%;
-    height: 48px;
+.wiki-lorienn .island-map-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 16px;
+    padding-top: 12px;
+
+    border-top: 1px solid #e2e7ec;
+
+    font-size: 11px;
+    color: #666;
 }
 
-/* RAMIFICACIÓN HACIA DOS ISLAS */
+.wiki-lorienn .legend-dot {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
 
-.wiki-lorienn .connector-two {
-    background:
-        linear-gradient(var(--map-line), var(--map-line))
-        center top / 1px 24px no-repeat,
-        linear-gradient(var(--map-line), var(--map-line))
-        16.66% 24px / 66.67% 1px no-repeat,
-        linear-gradient(var(--map-line), var(--map-line))
-        16.66% 24px / 1px 24px no-repeat,
-        linear-gradient(var(--map-line), var(--map-line))
-        83.33% 24px / 1px 24px no-repeat;
-}
-
-/* UNIÓN CENTRAL */
-
-.wiki-lorienn .connector-center {
-    background:
-        linear-gradient(var(--map-line), var(--map-line))
-        center top / 1px 48px no-repeat;
-}
-
-/* RAMIFICACIÓN HACIA TRES ISLAS */
-
-.wiki-lorienn .connector-three {
-    background:
-        linear-gradient(var(--map-line), var(--map-line))
-        center top / 1px 24px no-repeat,
-        linear-gradient(var(--map-line), var(--map-line))
-        16.66% 24px / 66.67% 1px no-repeat,
-        linear-gradient(var(--map-line), var(--map-line))
-        16.66% 24px / 1px 24px no-repeat,
-        linear-gradient(var(--map-line), var(--map-line))
-        50% 24px / 1px 24px no-repeat,
-        linear-gradient(var(--map-line), var(--map-line))
-        83.33% 24px / 1px 24px no-repeat;
-}
-
+    background: #849db7;
+    border: 1px solid #526f8b;
+    border-radius: 50%;
+ }
           
 /* ===============
    RESPONSIVE
@@ -624,64 +718,35 @@
         padding: 6px;
     }
 
-    .wiki-lorienn .wiki-island-map {
-        padding: 25px 8px;
+     .wiki-lorienn .wiki-island-map {
+        padding: 18px 8px;
     }
 
-    .wiki-lorienn .island-row {
-        gap: 8px;
+    .wiki-lorienn .island-map-title p {
+        font-size: 14px;
+    }
+
+    .wiki-lorienn .island-map-graphic {
+        min-width: 650px;
     }
 
     .wiki-lorienn .island-card {
-        width: 100%;
-        min-height: 68px;
-        padding: 10px 4px;
+        width: 155px;
+        min-height: 58px;
+        padding: 10px 6px;
     }
 
-    .wiki-lorienn .island-name {
+    .wiki-lorienn .island-card strong {
         font-size: 10px;
-        letter-spacing: .8px;
+        letter-spacing: .6px;
     }
 
-    .wiki-lorienn .island-description {
+    .wiki-lorienn .island-card small {
         font-size: 9px;
     }
 
-    .wiki-lorienn .connector {
-        height: 38px;
-    }
-
-    .wiki-lorienn .connector-two,
-    .wiki-lorienn .connector-three {
-        background:
-            linear-gradient(var(--map-line), var(--map-line))
-            center top / 1px 19px no-repeat,
-            linear-gradient(var(--map-line), var(--map-line))
-            16.66% 19px / 66.67% 1px no-repeat,
-            linear-gradient(var(--map-line), var(--map-line))
-            16.66% 19px / 1px 19px no-repeat,
-            linear-gradient(var(--map-line), var(--map-line))
-            83.33% 19px / 1px 19px no-repeat;
-    }
-
-    .wiki-lorienn .connector-three {
-        background:
-            linear-gradient(var(--map-line), var(--map-line))
-            center top / 1px 19px no-repeat,
-            linear-gradient(var(--map-line), var(--map-line))
-            16.66% 19px / 66.67% 1px no-repeat,
-            linear-gradient(var(--map-line), var(--map-line))
-            16.66% 19px / 1px 19px no-repeat,
-            linear-gradient(var(--map-line), var(--map-line))
-            50% 19px / 1px 19px no-repeat,
-            linear-gradient(var(--map-line), var(--map-line))
-            83.33% 19px / 1px 19px no-repeat;
-    }
-
-    .wiki-lorienn .connector-center {
-        background:
-            linear-gradient(var(--map-line), var(--map-line))
-            center top / 1px 38px no-repeat;
+    .wiki-lorienn .island-number {
+        font-size: 8px;
     }
 
 }
