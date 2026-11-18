@@ -1274,6 +1274,566 @@
 
     background: #9aafbf;
 }
+
+/* =========================
+   ESTRATIGRAFÍA GENERAL
+========================= */
+
+.wiki-lorienn .wiki-stratigraphy {
+    --strat-blue: #526f8b;
+    --strat-border: #a7d7f9;
+    --strat-text: #34495e;
+
+    width: 100%;
+    margin: 30px auto;
+    padding: 22px 18px;
+
+    box-sizing: border-box;
+
+    background: #f8f9fa;
+    border: 1px solid var(--strat-border);
+    border-radius: 5px;
+}
+
+/* CABECERA */
+
+.wiki-lorienn .stratigraphy-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wiki-lorienn .stratigraphy-kicker {
+    display: block;
+    margin-bottom: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #8499aa;
+}
+
+.wiki-lorienn .stratigraphy-heading h3 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    color: var(--strat-text);
+}
+
+.wiki-lorienn .stratigraphy-heading p {
+    margin: 7px 0 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+
+    color: #84909b;
+}
+
+/* DESPLAZAMIENTO */
+
+.wiki-lorienn .stratigraphy-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: 5px;
+}
+
+/* TABLA */
+
+.wiki-lorienn .stratigraphy-table {
+    width: 100%;
+    min-width: 620px;
+
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    background: #fff;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+
+    border: 1px solid #dce4e9;
+}
+
+/* CABECERAS */
+
+.wiki-lorienn .stratigraphy-table th {
+    padding: 13px 8px;
+
+    background: #eaf0f5;
+    border: 1px solid #d2dce5;
+
+    font-family: Georgia, serif;
+    font-size: 11px;
+    font-weight: bold;
+
+    letter-spacing: .5px;
+    text-align: center;
+
+    color: #405f7b;
+    text-transform: uppercase;
+}
+
+/* CELDAS */
+
+.wiki-lorienn .stratigraphy-table td {
+    vertical-align: top;
+
+    padding: 13px 12px;
+
+    border: 1px solid #dce4e9;
+
+    color: #667783;
+}
+
+/* PERIODOS */
+
+.wiki-lorienn .stratigraphy-period {
+    display: block;
+
+    margin-bottom: 10px;
+    padding: 5px 4px;
+
+    background: #f1f4f7;
+    border-radius: 3px;
+
+    font-size: 9px;
+    font-weight: bold;
+    text-align: center;
+
+    letter-spacing: .5px;
+
+    color: #8499aa;
+}
+
+/* LISTAS */
+
+.wiki-lorienn .stratigraphy-table ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+
+    list-style: none;
+}
+
+.wiki-lorienn .stratigraphy-table li {
+    position: relative;
+
+    margin: 8px 0;
+    padding-left: 8px;
+
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.wiki-lorienn .stratigraphy-table li::before {
+    content: "";
+
+    position: absolute;
+    left: -10px;
+    top: 6px;
+
+    width: 5px;
+    height: 5px;
+
+    background: #91a9ba;
+    border-radius: 50%;
+}
+
+/* NOTA INFERIOR */
+
+.wiki-lorienn .stratigraphy-caption {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid #e2e7ec;
+}
+
+.wiki-lorienn .stratigraphy-caption > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 15px;
+    height: 15px;
+
+    border: 1px solid #9aabba;
+    border-radius: 50%;
+
+    font-family: Georgia, serif;
+    font-size: 10px;
+    font-style: italic;
+
+    color: #71889a;
+}
+
+.wiki-lorienn .stratigraphy-caption p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+
+    color: #84909b;
+}
+
+/* ==============================
+   SISTEMA DE ÁREAS PROTEGIDAS
+============================== */
+
+.wiki-lorienn .wiki-protected-system {
+    --protected-blue: #526f8b;
+    --protected-border: #a7d7f9;
+    --protected-line: #9aafbf;
+    --protected-text: #34495e;
+
+    width: 100%;
+    margin: 30px auto;
+    padding: 22px 18px;
+
+    box-sizing: border-box;
+
+    background: #f8f9fa;
+    border: 1px solid var(--protected-border);
+    border-radius: 5px;
+}
+
+/* CABECERA */
+
+.wiki-lorienn .protected-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.wiki-lorienn .protected-kicker {
+    display: block;
+    margin-bottom: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #8499aa;
+}
+
+.wiki-lorienn .protected-heading h3 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: bold;
+
+    color: var(--protected-text);
+}
+
+.wiki-lorienn .protected-heading p {
+    margin: 7px 0 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+
+    color: #84909b;
+}
+
+/* CONTENEDOR */
+
+.wiki-lorienn .protected-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 5px 0 10px;
+}
+
+.wiki-lorienn .protected-graphic {
+    position: relative;
+
+    width: 100%;
+    min-width: 700px;
+    max-width: 900px;
+
+    height: 420px;
+
+    margin: 0 auto;
+}
+
+/* CONEXIONES */
+
+.wiki-lorienn .protected-lines {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+    overflow: visible;
+}
+
+.wiki-lorienn .protected-lines path {
+    fill: none;
+
+    stroke: var(--protected-line);
+    stroke-width: 2.5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* NODO PRINCIPAL */
+
+.wiki-lorienn .protected-origin {
+    position: absolute;
+    z-index: 2;
+
+    top: 2%;
+    left: 50%;
+
+    width: 34%;
+    min-height: 90px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 12px;
+
+    background: #edf2f7;
+    border: 1px solid #849db7;
+    border-radius: 5px;
+
+    box-shadow: 0 2px 8px rgba(64,95,123,.08);
+
+    text-align: center;
+}
+
+.wiki-lorienn .protected-index {
+    margin-bottom: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+    color: #8499aa;
+}
+
+.wiki-lorienn .protected-origin strong {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: #405f7b;
+}
+
+/* TARJETAS */
+
+.wiki-lorienn .protected-card {
+    position: absolute;
+    z-index: 2;
+
+    top: 44%;
+
+    width: 29%;
+    min-height: 185px;
+
+    padding: 15px 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    background: #fff;
+    border: 1px solid var(--protected-border);
+    border-radius: 5px;
+
+    box-shadow: 0 2px 7px rgba(0,0,0,.05);
+
+    text-align: center;
+
+    transition: .25s ease;
+}
+
+.wiki-lorienn .protected-card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--protected-blue);
+
+    box-shadow: 0 5px 13px rgba(0,0,0,.09);
+}
+
+/* POSICIONES */
+
+.wiki-lorienn .protected-parks {
+    left: 2%;
+}
+
+.wiki-lorienn .protected-reserves {
+    left: 35.5%;
+}
+
+.wiki-lorienn .protected-landscapes {
+    left: 69%;
+}
+
+/* NÚMEROS */
+
+.wiki-lorienn .protected-number {
+    position: absolute;
+    top: 7px;
+    right: 9px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+
+    color: #a2b0bb;
+    letter-spacing: 1px;
+}
+
+/* SÍMBOLOS */
+
+.wiki-lorienn .protected-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 27px;
+    height: 27px;
+
+    margin-bottom: 8px;
+
+    border: 1px solid #b7c8d5;
+    border-radius: 50%;
+
+    font-family: Georgia, serif;
+    font-size: 12px;
+
+    color: #718ba0;
+}
+
+/* TÍTULOS */
+
+.wiki-lorienn .protected-card > strong {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    line-height: 1.4;
+
+    color: #405f7b;
+}
+
+/* ISLAS */
+
+.wiki-lorienn .protected-islands {
+    display: inline-block;
+
+    margin-top: 6px;
+    padding: 4px 9px;
+
+    background: #edf2f7;
+    border-radius: 3px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: .5px;
+
+    color: #71889a;
+}
+
+/* LISTAS */
+
+.wiki-lorienn .protected-card ul {
+    width: 100%;
+
+    margin: 12px 0 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: left;
+}
+
+.wiki-lorienn .protected-card li {
+    position: relative;
+
+    margin: 7px 0;
+    padding-left: 14px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.4;
+
+    color: #667783;
+}
+
+.wiki-lorienn .protected-card li::before {
+    content: "";
+
+    position: absolute;
+    left: 1px;
+    top: 5px;
+
+    width: 5px;
+    height: 5px;
+
+    background: #91a9ba;
+    border-radius: 50%;
+}
+
+/* NOTA INFERIOR */
+
+.wiki-lorienn .protected-caption {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid #e2e7ec;
+}
+
+.wiki-lorienn .protected-caption > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 15px;
+    height: 15px;
+
+    border: 1px solid #9aabba;
+    border-radius: 50%;
+
+    font-family: Georgia, serif;
+    font-size: 10px;
+    font-style: italic;
+
+    color: #71889a;
+}
+
+.wiki-lorienn .protected-caption p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+
+    color: #84909b;
+}
           
 /* ===============
    RESPONSIVE
@@ -1409,6 +1969,30 @@
 
     .wiki-lorienn .hydro-legend {
         font-size: 9px;
+    }
+
+    .wiki-lorienn .wiki-stratigraphy {
+    padding: 18px 9px;
+    }
+
+    .wiki-lorienn .stratigraphy-heading h3 {
+    font-size: 14px;
+    }
+
+    .wiki-lorienn .stratigraphy-table {
+    min-width: 620px;
+    }
+
+    .wiki-lorienn .wiki-protected-system {
+    padding: 18px 9px;
+    }
+
+    .wiki-lorienn .protected-heading h3 {
+    font-size: 14px;
+    }
+
+    .wiki-lorienn .protected-graphic {
+    min-width: 700px;
     }
 
 }
