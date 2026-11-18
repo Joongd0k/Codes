@@ -1834,6 +1834,194 @@
 
     color: #84909b;
 }
+
+/* ====================================
+   FACTORES CONDICIONANTES DEL CLIMA
+====================================== */
+
+.wiki-lorienn .wiki-climate-factors {
+    margin: 24px 0;
+    padding: 20px;
+    background: #f8fafb;
+    border: 1px solid #c8dce9;
+    border-radius: 4px;
+}
+
+.wiki-lorienn .climate-factors-title {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 13px 18px;
+    background: #e8f1f7;
+    border: 1px solid #a7c5d9;
+    color: #294b63;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+    text-align: center;
+}
+
+.wiki-lorienn .climate-factors-connector {
+    width: 1px;
+    height: 25px;
+    margin: 0 auto;
+    background: #9db9cb;
+    position: relative;
+}
+
+.wiki-lorienn .climate-factors-connector::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #9db9cb;
+    border-bottom: 1px solid #9db9cb;
+    transform: rotate(45deg);
+    background: #f8fafb;
+}
+
+.wiki-lorienn .climate-factors-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.wiki-lorienn .climate-factor {
+    padding: 16px 15px;
+    background: #fff;
+    border: 1px solid #c8dce9;
+    border-top: 3px solid #8eafc5;
+    min-width: 0;
+}
+
+.wiki-lorienn .climate-factor-heading {
+    margin-bottom: 12px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e1e9ee;
+    color: #365970;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .7px;
+    text-align: center;
+}
+
+.wiki-lorienn .climate-factor ul {
+    margin: 0;
+    padding-left: 18px;
+    color: #454f57;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.wiki-lorienn .climate-factor li {
+    margin-bottom: 5px;
+}
+
+.wiki-lorienn .climate-factor li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* ========================
+   DINÁMICA ESTACIONAL
+======================== */
+
+.wiki-lorienn .wiki-seasonal-climate {
+    margin: 28px 0;
+    padding: 20px;
+    background: #f8fafb;
+    border: 1px solid #c8dce9;
+    border-radius: 4px;
+}
+
+.wiki-lorienn .seasonal-heading {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.wiki-lorienn .seasonal-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #7894a8;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.wiki-lorienn .seasonal-heading h3 {
+    margin: 0;
+    color: #294b63;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+
+.wiki-lorienn .seasonal-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.wiki-lorienn .seasonal-table {
+    width: 100%;
+    min-width: 620px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    background: #fff;
+    font-size: 12px;
+}
+
+.wiki-lorienn .seasonal-table th {
+    padding: 13px 8px;
+    background: #e5eff5;
+    border: 1px solid #b9cedd;
+    color: #34566d;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .6px;
+    text-align: center;
+}
+
+.wiki-lorienn .seasonal-table td {
+    padding: 12px 11px;
+    border: 1px solid #d1dfe8;
+    vertical-align: top;
+}
+
+.wiki-lorienn .seasonal-table .seasonal-dates td {
+    padding: 9px 5px;
+    background: #f2f6f9;
+    color: #718696;
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.wiki-lorienn .seasonal-table tbody td {
+    color: #454f57;
+    line-height: 1.55;
+}
+
+.wiki-lorienn .seasonal-table ul {
+    margin: 0;
+    padding-left: 16px;
+}
+
+.wiki-lorienn .seasonal-table li {
+    margin-bottom: 7px;
+}
+
+.wiki-lorienn .seasonal-table li:last-child {
+    margin-bottom: 0;
+}
+
+.wiki-lorienn .seasonal-caption {
+    margin-top: 12px;
+    color: #84939e;
+    font-size: 11px;
+    font-style: italic;
+    text-align: center;
+}
           
 /* ===============
    RESPONSIVE
@@ -1993,6 +2181,28 @@
 
     .wiki-lorienn .protected-graphic {
     min-width: 700px;
+    }
+
+    .wiki-lorienn .wiki-climate-factors,
+    .wiki-lorienn .wiki-seasonal-climate {
+        padding: 13px;
+    }
+
+    .wiki-lorienn .climate-factors-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .wiki-lorienn .climate-factor {
+        padding: 13px;
+    }
+
+    .wiki-lorienn .climate-factor-heading {
+        text-align: left;
+    }
+
+    .wiki-lorienn .seasonal-table {
+        min-width: 650px;
     }
 
 }
