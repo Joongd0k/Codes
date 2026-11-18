@@ -950,6 +950,330 @@
 
     color: #84909b;
 }
+
+/* ========================
+    CUENCA HIDROGRÁFICA
+========================= */
+
+.wiki-lorienn .wiki-hydro-diagram {
+    --hydro-blue: #526f8b;
+    --hydro-border: #a7d7f9;
+    --hydro-line: #9aafbf;
+    --hydro-text: #34495e;
+
+    width: 100%;
+    margin: 30px auto;
+    padding: 22px 18px;
+
+    box-sizing: border-box;
+
+    background: #f8f9fa;
+    border: 1px solid var(--hydro-border);
+    border-radius: 5px;
+}
+
+/* CABECERA */
+
+.wiki-lorienn .hydro-heading {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.wiki-lorienn .hydro-kicker {
+    display: block;
+    margin-bottom: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #8499aa;
+}
+
+.wiki-lorienn .hydro-heading h3 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    color: var(--hydro-text);
+}
+
+.wiki-lorienn .hydro-heading p {
+    margin: 7px 0 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+
+    color: #84909b;
+}
+
+/* CONTENEDOR */
+
+.wiki-lorienn .hydro-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 5px 0 10px;
+}
+
+.wiki-lorienn .hydro-graphic {
+    position: relative;
+
+    width: 100%;
+    min-width: 650px;
+    max-width: 900px;
+
+    aspect-ratio: 900 / 500;
+
+    margin: 0 auto;
+}
+
+/* CONEXIONES */
+
+.wiki-lorienn .hydro-lines {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
+    overflow: visible;
+}
+
+.wiki-lorienn .hydro-lines path {
+    fill: none;
+
+    stroke: var(--hydro-line);
+    stroke-width: 2.5;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* TARJETAS */
+
+.wiki-lorienn .hydro-node {
+    position: absolute;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+
+    padding: 15px 18px;
+
+    background: #fff;
+    border: 1px solid var(--hydro-border);
+    border-radius: 5px;
+
+    box-shadow: 0 2px 7px rgba(0,0,0,.05);
+
+    text-align: center;
+}
+
+/* NODO PRINCIPAL */
+
+.wiki-lorienn .hydro-origin {
+    left: 50%;
+    top: 4%;
+
+    width: 48%;
+    min-height: 65px;
+
+    transform: translateX(-50%);
+
+    background: #edf2f7;
+    border-color: #849db7;
+}
+
+.wiki-lorienn .hydro-node-label {
+    margin-bottom: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+    color: #8499aa;
+}
+
+.wiki-lorienn .hydro-origin strong {
+    font-family: Georgia, serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    color: #405f7b;
+}
+
+.wiki-lorienn .hydro-origin small {
+    margin-top: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+
+    color: #7c8c99;
+}
+
+/* CURSOS ALTOS Y BAJOS */
+
+.wiki-lorienn .hydro-upper,
+.wiki-lorienn .hydro-lower {
+    top: 30%;
+
+    width: 36.67%;
+    min-height: 130px;
+
+    transform: translateX(-50%);
+}
+
+.wiki-lorienn .hydro-upper {
+    left: 25.56%;
+}
+
+.wiki-lorienn .hydro-lower {
+    left: 74.44%;
+}
+
+/* IDENTIFICADORES */
+
+.wiki-lorienn .hydro-index {
+    display: block;
+    margin-bottom: 8px;
+
+    font-family: Arial, sans-serif;
+    font-size: 8px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+
+    color: #91a1ae;
+}
+
+/* TÍTULOS */
+
+.wiki-lorienn .hydro-node > strong {
+    font-family: Georgia, serif;
+    font-size: 12px;
+    letter-spacing: .8px;
+
+    color: #405f7b;
+}
+
+/* LISTAS */
+
+.wiki-lorienn .hydro-node ul {
+    width: 100%;
+
+    margin: 12px 0 0;
+    padding: 0;
+
+    list-style: none;
+
+    text-align: left;
+}
+
+.wiki-lorienn .hydro-node li {
+    position: relative;
+
+    margin: 6px 0;
+    padding-left: 15px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.4;
+
+    color: #667783;
+}
+
+.wiki-lorienn .hydro-node li::before {
+    content: "";
+
+    position: absolute;
+    left: 1px;
+    top: 5px;
+
+    width: 5px;
+    height: 5px;
+
+    background: #91a9ba;
+    border-radius: 50%;
+}
+
+/* SISTEMA FINAL */
+
+.wiki-lorienn .hydro-final {
+    left: 50%;
+    top: 70%;
+
+    width: 55%;
+    min-height: 120px;
+
+    transform: translateX(-50%);
+
+    background: #edf3f6;
+    border: 1px solid #849db7;
+
+    box-shadow: 0 3px 9px rgba(64,95,123,.09);
+}
+
+.wiki-lorienn .hydro-final > strong {
+    max-width: 100%;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.wiki-lorienn .hydro-location {
+    display: inline-block;
+
+    margin-top: 6px;
+    padding: 3px 12px;
+
+    background: #dce7ee;
+    border-radius: 3px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #526f8b;
+}
+
+/* LEYENDA */
+
+.wiki-lorienn .hydro-legend {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid #e2e7ec;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+
+    color: #84909b;
+}
+
+.wiki-lorienn .hydro-legend-line {
+    display: inline-block;
+
+    width: 22px;
+    height: 2px;
+
+    background: #9aafbf;
+}
           
 /* ===============
    RESPONSIVE
@@ -1052,6 +1376,38 @@
     }
 
     .wiki-lorienn .terrain-bottom {
+        font-size: 9px;
+    }
+
+      .wiki-lorienn .wiki-hydro-diagram {
+        padding: 18px 9px;
+    }
+
+    .wiki-lorienn .hydro-heading h3 {
+        font-size: 15px;
+    }
+
+    .wiki-lorienn .hydro-graphic {
+        min-width: 650px;
+    }
+
+    .wiki-lorienn .hydro-node {
+        padding: 12px 10px;
+    }
+
+    .wiki-lorienn .hydro-node > strong {
+        font-size: 11px;
+    }
+
+    .wiki-lorienn .hydro-node li {
+        font-size: 9px;
+    }
+
+    .wiki-lorienn .hydro-final {
+        padding: 12px 15px;
+    }
+
+    .wiki-lorienn .hydro-legend {
         font-size: 9px;
     }
 
