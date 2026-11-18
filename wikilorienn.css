@@ -668,6 +668,288 @@
     border: 1px solid #526f8b;
     border-radius: 50%;
  }
+
+/* =====================
+   PERFIL TOPOGRÁFICO
+====================== */
+
+.wiki-lorienn .wiki-terrain-profile {
+    --terrain-blue: #526f8b;
+    --terrain-border: #a7d7f9;
+    --terrain-line: #9cabb8;
+    --terrain-text: #34495e;
+
+    width: 100%;
+    margin: 30px auto;
+    padding: 22px 18px;
+
+    box-sizing: border-box;
+
+    background: #f8f9fa;
+    border: 1px solid var(--terrain-border);
+    border-radius: 5px;
+}
+
+/* CABECERA */
+
+.wiki-lorienn .terrain-heading {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.wiki-lorienn .terrain-kicker {
+    display: block;
+    margin-bottom: 7px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    color: #8499aa;
+}
+
+.wiki-lorienn .terrain-heading h3 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: .5px;
+
+    color: var(--terrain-text);
+}
+
+.wiki-lorienn .terrain-heading p {
+    margin: 7px 0 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+
+    color: #84909b;
+}
+
+/* CONTENEDOR */
+
+.wiki-lorienn .terrain-scroll {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: 8px;
+}
+
+.wiki-lorienn .terrain-graphic {
+    width: 100%;
+    min-width: 650px;
+    margin: 0 auto;
+}
+
+/* REGIONES */
+
+.wiki-lorienn .terrain-regions {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+
+    border-top: 1px solid #dce4e9;
+    border-bottom: 1px solid #dce4e9;
+
+    margin-bottom: 5px;
+}
+
+.wiki-lorienn .terrain-regions div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    padding: 11px 5px;
+    text-align: center;
+}
+
+.wiki-lorienn .terrain-regions div + div {
+    border-left: 1px solid #dce4e9;
+}
+
+.wiki-lorienn .terrain-regions strong {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    letter-spacing: 1px;
+
+    color: var(--terrain-blue);
+}
+
+.wiki-lorienn .terrain-regions span {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+
+    color: #8996a1;
+}
+
+/* SVG */
+
+.wiki-lorienn .terrain-svg {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    overflow: visible;
+}
+
+/* GUÍAS */
+
+.wiki-lorienn .terrain-guides line {
+    stroke: #dce4e9;
+    stroke-width: 1;
+    stroke-dasharray: 3 5;
+}
+
+/* AGUA */
+
+.wiki-lorienn .terrain-water,
+.wiki-lorienn .terrain-water-east {
+    fill: url(#terrainWater);
+}
+
+.wiki-lorienn .terrain-waves {
+    fill: none;
+    stroke: #8eb7c8;
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+/* TERRENO */
+
+.wiki-lorienn .terrain-land {
+    fill: url(#terrainLand);
+}
+
+.wiki-lorienn .terrain-texture {
+    fill: url(#terrainHatch);
+}
+
+.wiki-lorienn .terrain-outline {
+    fill: none;
+    stroke: #657f91;
+    stroke-width: 2.5;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+}
+
+/* FIORDO */
+
+.wiki-lorienn .terrain-fjord {
+    fill: #b9d5df;
+    stroke: #8caebe;
+    stroke-width: 1.2;
+    opacity: .95;
+}
+
+/* CASCADAS */
+
+.wiki-lorienn .terrain-waterfall {
+    fill: none;
+    stroke: #e9f5f8;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+
+/* VALLE */
+
+.wiki-lorienn .terrain-valley {
+    fill: none;
+    stroke: #8199a8;
+    stroke-width: 1.2;
+    stroke-dasharray: 4 4;
+}
+
+/* ETIQUETAS */
+
+.wiki-lorienn .terrain-labels {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+
+    fill: #526f8b;
+}
+
+.wiki-lorienn .terrain-labels path {
+    fill: none;
+    stroke: #8499aa;
+    stroke-width: 1;
+    stroke-dasharray: 3 3;
+}
+
+.wiki-lorienn .terrain-notes {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+
+    fill: #657b8b;
+}
+
+/* BASE */
+
+.wiki-lorienn .terrain-baseline {
+    stroke: #8799a8;
+    stroke-width: 1.5;
+}
+
+/* REFERENCIAS INFERIORES */
+
+.wiki-lorienn .terrain-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    padding: 10px 5px 2px;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+
+    color: #84909b;
+}
+
+/* NOTA */
+
+.wiki-lorienn .terrain-caption {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+
+    margin-top: 13px;
+    padding-top: 12px;
+
+    border-top: 1px solid #e2e7ec;
+}
+
+.wiki-lorienn .terrain-caption-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 15px;
+    height: 15px;
+
+    border: 1px solid #9aabba;
+    border-radius: 50%;
+
+    font-family: Georgia, serif;
+    font-size: 10px;
+    font-style: italic;
+
+    color: #71889a;
+}
+
+.wiki-lorienn .terrain-caption p {
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    line-height: 1.6;
+
+    color: #84909b;
+}
           
 /* ===============
    RESPONSIVE
@@ -747,6 +1029,30 @@
 
     .wiki-lorienn .island-number {
         font-size: 8px;
+    }
+
+     .wiki-lorienn .wiki-terrain-profile {
+        padding: 18px 9px;
+    }
+
+    .wiki-lorienn .terrain-heading h3 {
+        font-size: 15px;
+    }
+
+    .wiki-lorienn .terrain-graphic {
+        min-width: 650px;
+    }
+
+    .wiki-lorienn .terrain-regions strong {
+        font-size: 9px;
+    }
+
+    .wiki-lorienn .terrain-regions span {
+        font-size: 9px;
+    }
+
+    .wiki-lorienn .terrain-bottom {
+        font-size: 9px;
     }
 
 }
