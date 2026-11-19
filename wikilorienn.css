@@ -2022,6 +2022,280 @@
     font-style: italic;
     text-align: center;
 }
+
+/* =======================
+   PERFIL DE VEGETACIÓN
+======================== */
+
+.wiki-lorienn .wiki-vegetation-profile {
+    margin: 26px 0;
+    padding: 20px;
+    background: #f8fafb;
+    border: 1px solid #c8dce9;
+    border-radius: 4px;
+}
+
+.wiki-lorienn .vegetation-heading {
+    padding: 13px;
+    background: #e8f1f7;
+    border: 1px solid #b9cedd;
+    color: #294b63;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.wiki-lorienn .vegetation-axis-label {
+    margin: 18px 0 8px 42px;
+    color: #7894a8;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.wiki-lorienn .vegetation-content {
+    display: grid;
+    grid-template-columns: 32px 1fr;
+    gap: 12px;
+}
+
+.wiki-lorienn .vegetation-axis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.wiki-lorienn .vegetation-arrow {
+    color: #7396a9;
+    font-size: 17px;
+    line-height: 1;
+}
+
+.wiki-lorienn .vegetation-axis-line {
+    width: 1px;
+    flex: 1;
+    min-height: 240px;
+    background: #a9c0ce;
+}
+
+.wiki-lorienn .vegetation-levels {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.wiki-lorienn .vegetation-level {
+    display: grid;
+    grid-template-columns: 5px 1fr;
+    background: #fff;
+    border: 1px solid #d4e0e7;
+    min-height: 55px;
+}
+
+.wiki-lorienn .vegetation-marker {
+    background: #8ba99b;
+}
+
+.wiki-lorienn .vegetation-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 13px;
+    gap: 4px;
+}
+
+.wiki-lorienn .vegetation-name {
+    color: #365970;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .6px;
+}
+
+.wiki-lorienn .vegetation-description {
+    color: #535e65;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.wiki-lorienn .level-alpine .vegetation-marker {
+    background: #8296a5;
+}
+
+.wiki-lorienn .level-subalpine .vegetation-marker {
+    background: #819f91;
+}
+
+.wiki-lorienn .level-montane .vegetation-marker {
+    background: #688c79;
+}
+
+.wiki-lorienn .level-colline .vegetation-marker {
+    background: #9cae83;
+}
+
+.wiki-lorienn .level-coastal .vegetation-marker {
+    background: #91b5b8;
+}
+
+.wiki-lorienn .vegetation-bottom {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0 0 44px;
+    color: #82939e;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+
+.wiki-lorienn .vegetation-horizontal-line {
+    flex: 1;
+    height: 1px;
+    background: #a9c0ce;
+    position: relative;
+}
+
+.wiki-lorienn .vegetation-horizontal-line::after {
+    content: "►";
+    position: absolute;
+    right: -2px;
+    top: -7px;
+    color: #7396a9;
+    font-size: 12px;
+}
+
+.wiki-lorienn .vegetation-caption {
+    margin-top: 14px;
+    color: #84939e;
+    font-size: 11px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* =======================
+   ESTRUCTURA DE LA FAUNA
+========================= */
+
+.wiki-lorienn .wiki-fauna-structure {
+    margin: 26px 0;
+    padding: 20px;
+    background: #f8fafb;
+    border: 1px solid #c8dce9;
+    border-radius: 4px;
+}
+
+.wiki-lorienn .fauna-main-title {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 14px;
+    background: #e8f1f7;
+    border: 1px solid #a7c5d9;
+    color: #294b63;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.wiki-lorienn .fauna-connector {
+    width: 1px;
+    height: 24px;
+    margin: 0 auto;
+    background: #9db9cb;
+    position: relative;
+}
+
+.wiki-lorienn .fauna-connector::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #9db9cb;
+    border-bottom: 1px solid #9db9cb;
+    transform: rotate(45deg);
+    background: #f8fafb;
+}
+
+.wiki-lorienn .fauna-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.wiki-lorienn .fauna-card {
+    min-width: 0;
+    background: #fff;
+    border: 1px solid #c8dce9;
+    border-top: 3px solid #8eafc5;
+    padding: 14px 12px;
+}
+
+.wiki-lorienn .fauna-card-title {
+    min-height: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e1e9ee;
+    color: #365970;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: .5px;
+    text-align: center;
+}
+
+.wiki-lorienn .fauna-card-title span {
+    margin-top: 4px;
+    color: #82939e;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.wiki-lorienn .fauna-card ul {
+    margin: 0;
+    padding-left: 17px;
+    color: #535e65;
+    font-size: 12px;
+    line-height: 1.55;
+}
+
+.wiki-lorienn .fauna-card li {
+    margin-bottom: 6px;
+}
+
+.wiki-lorienn .fauna-card li:last-child {
+    margin-bottom: 0;
+}
+
+.wiki-lorienn .fauna-card:nth-child(1) {
+    border-top-color: #819f91;
+}
+
+.wiki-lorienn .fauna-card:nth-child(2) {
+    border-top-color: #8ba7b9;
+}
+
+.wiki-lorienn .fauna-card:nth-child(3) {
+    border-top-color: #739eae;
+}
+
+.wiki-lorienn .fauna-card:nth-child(4) {
+    border-top-color: #91aaa5;
+}
+
+.wiki-lorienn .fauna-caption {
+    margin-top: 14px;
+    color: #84939e;
+    font-size: 11px;
+    font-style: italic;
+    text-align: center;
+}
           
 /* ===============
    RESPONSIVE
