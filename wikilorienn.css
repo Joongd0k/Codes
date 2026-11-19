@@ -2296,6 +2296,324 @@
     font-style: italic;
     text-align: center;
 }
+
+/* =========================
+   ESTRUCTURA ECONÓMICA
+========================= */
+
+.wiki-economic-structure {
+    margin: 24px 0;
+    padding: 25px 22px;
+    background: #f8fafc;
+    border: 1px solid #cbd8e2;
+    border-radius: 5px;
+    color: #344454;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.economic-heading {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.economic-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.economic-heading h3 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.economic-heading p {
+    margin: 7px 0 0;
+    color: #788895;
+    font-size: 11px;
+}
+
+/* NODO PRINCIPAL */
+
+.economic-origin {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 13px 25px;
+    background: #405f73;
+    border: 1px solid #344f61;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* CONECTOR */
+
+.economic-connector {
+    width: 1px;
+    height: 28px;
+    margin: 0 auto;
+    background: #9aafbf;
+    position: relative;
+}
+
+.economic-connector::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #9aafbf;
+    border-bottom: 1px solid #9aafbf;
+    transform: rotate(45deg);
+}
+
+/* CUADRÍCULA */
+
+.economic-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+/* TARJETAS */
+
+.economic-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 17px 13px;
+    background: #fff;
+    border: 1px solid #d5dfe7;
+    border-top: 3px solid #6f899e;
+    border-radius: 4px;
+    transition: .2s ease;
+}
+
+.economic-card:hover {
+    border-color: #8ba5b8;
+    transform: translateY(-3px);
+}
+
+.economic-card-number {
+    margin-bottom: 12px;
+    color: #a8bac8;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.economic-location {
+    display: block;
+    margin-bottom: 5px;
+    color: #8b9eae;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.economic-card h4 {
+    min-height: 36px;
+    margin: 0 0 11px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e5ebf0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.economic-card ul {
+    margin: 0;
+    padding-left: 14px;
+    color: #667784;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.economic-card li {
+    padding-left: 2px;
+    margin-bottom: 3px;
+}
+
+/* PIE */
+
+.economic-footer {
+    margin-top: 17px;
+    padding-top: 11px;
+    border-top: 1px solid #dce4ea;
+    color: #8b9eae;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+/* =========================
+   TABLA DE DISTRIBUCIÓN DEL PIB
+========================= */
+
+.wiki-economic-pib {
+    margin: 25px 0;
+    padding: 23px;
+    background: #f8fafc;
+    border: 1px solid #cbd8e2;
+    border-radius: 5px;
+    color: #344454;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.pib-heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pib-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.pib-heading h3 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.pib-heading p {
+    margin: 7px 0 0;
+    color: #788895;
+    font-size: 10px;
+}
+
+/* CONTENEDOR */
+
+.pib-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* TABLA */
+
+.pib-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 11px;
+}
+
+.pib-table th {
+    padding: 12px 14px;
+    background: #405f73;
+    border: 1px solid #405f73;
+    color: #fff;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+.pib-table th:last-child {
+    width: 115px;
+    text-align: center;
+}
+
+.pib-table td {
+    padding: 12px 14px;
+    border: 1px solid #e0e7ed;
+    color: #596c7a;
+    vertical-align: middle;
+}
+
+.pib-table tbody tr:nth-child(even) {
+    background: #f4f7f9;
+}
+
+.pib-sector {
+    display: block;
+    margin-bottom: 8px;
+    color: #40566a;
+    font-weight: 600;
+}
+
+/* BARRAS */
+
+.pib-bar {
+    width: 100%;
+    height: 5px;
+    overflow: hidden;
+    background: #e8edf1;
+    border-radius: 10px;
+}
+
+.pib-bar span {
+    display: block;
+    height: 100%;
+    background: #7895aa;
+    border-radius: 10px;
+}
+
+/* PORCENTAJES */
+
+.pib-value {
+    color: #405f73 !important;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* TOTAL */
+
+.pib-table tfoot td {
+    padding: 13px 14px;
+    background: #eaf0f4;
+    border-color: #d4dfe7;
+    color: #405f73;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.pib-table tfoot td:last-child {
+    text-align: center;
+    font-size: 13px;
+}
+
+/* NOTA */
+
+.pib-note {
+    margin-top: 14px;
+    padding: 10px 13px;
+    background: #edf3f7;
+    border-left: 3px solid #7895aa;
+    color: #71808c;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.pib-note strong {
+    color: #405f73;
+}
           
 /* ===============
    RESPONSIVE
@@ -2581,6 +2899,50 @@
     .wiki-lorienn .fauna-card li {
         margin-bottom: 5px;
     }
+
+    /* ECONOMÍA */
+
+.wiki-lorienn .wiki-economic-structure,
+.wiki-lorienn .wiki-economic-pib {
+    padding: 16px 10px;
+}
+
+.wiki-lorienn .economic-heading h3,
+.wiki-lorienn .pib-heading h3 {
+    font-size: 15px;
+}
+
+.wiki-lorienn .economic-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.wiki-lorienn .economic-card {
+    padding: 13px 10px;
+}
+
+.wiki-lorienn .economic-card h4 {
+    font-size: 12px;
+    min-height: 0;
+}
+
+.wiki-lorienn .economic-card ul {
+    font-size: 9px;
+}
+
+.wiki-lorienn .economic-origin {
+    padding: 11px 14px;
+    font-size: 9px;
+}
+
+.wiki-lorienn .pib-table {
+    min-width: 430px;
+}
+
+.wiki-lorienn .pib-table td,
+.wiki-lorienn .pib-table th {
+    padding: 10px;
+}
 
 }
 
