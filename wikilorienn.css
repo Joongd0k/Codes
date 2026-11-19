@@ -2473,10 +2473,162 @@
 
     .wiki-lorienn .climate-factor-heading {
         text-align: left;
+        font-size: 11px;
     }
 
     .wiki-lorienn .seasonal-table {
         min-width: 650px;
     }
 
+    .wiki-lorienn .climate-factors-title,
+    .wiki-lorienn .fauna-main-title,
+    .wiki-lorienn .vegetation-heading {
+        font-size: 11px;
+        padding: 11px 8px;
+    }
+
+    .wiki-lorienn .climate-factor ul {
+        font-size: 12px;
+    }
+
+    /* DINÁMICA ESTACIONAL */
+
+    .wiki-lorienn .seasonal-heading h3 {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+
+    .wiki-lorienn .seasonal-table {
+        min-width: 650px;
+    }
+
+    .wiki-lorienn .seasonal-table th {
+        font-size: 11px;
+        padding: 10px 6px;
+    }
+
+    .wiki-lorienn .seasonal-table td {
+        padding: 10px 8px;
+    }
+
+    /* PISOS DE VEGETACIÓN */
+
+    .wiki-lorienn .wiki-vegetation-profile {
+        padding: 14px 10px;
+    }
+
+    .wiki-lorienn .vegetation-axis-label {
+        margin-left: 35px;
+        font-size: 9px;
+    }
+
+    .wiki-lorienn .vegetation-content {
+        grid-template-columns: 24px minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .wiki-lorienn .vegetation-axis-line {
+        min-height: 260px;
+    }
+
+    .wiki-lorienn .vegetation-level {
+        min-height: 62px;
+    }
+
+    .wiki-lorienn .vegetation-info {
+        padding: 9px;
+    }
+
+    .wiki-lorienn .vegetation-name {
+        font-size: 10px;
+        line-height: 1.4;
+    }
+
+    .wiki-lorienn .vegetation-description {
+        font-size: 11px;
+    }
+
+    .wiki-lorienn .vegetation-bottom {
+        margin-left: 32px;
+        gap: 7px;
+        font-size: 8px;
+    }
+
+    /* ESTRUCTURA DE LA FAUNA */
+
+    .wiki-lorienn .wiki-fauna-structure {
+        padding: 14px 10px;
+    }
+
+    .wiki-lorienn .fauna-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 9px;
+    }
+
+    .wiki-lorienn .fauna-card {
+        padding: 12px 10px;
+    }
+
+    .wiki-lorienn .fauna-card-title {
+        font-size: 10px;
+        min-height: 42px;
+    }
+
+    .wiki-lorienn .fauna-card ul {
+        font-size: 11px;
+    }
+
+    .wiki-lorienn .fauna-card li {
+        margin-bottom: 5px;
+    }
+
 }
+
+/* ========================
+   TELÉFONOS PEQUEÑOS
+======================== */
+
+@media screen and (max-width: 420px) {
+
+    .wiki-lorienn {
+        padding: 12px 10px;
+    }
+
+    .wiki-lorienn .wiki-climate-factors,
+    .wiki-lorienn .wiki-seasonal-climate,
+    .wiki-lorienn .wiki-vegetation-profile,
+    .wiki-lorienn .wiki-fauna-structure {
+        padding: 12px 9px;
+    }
+
+    .wiki-lorienn .vegetation-description {
+        font-size: 10px;
+    }
+
+    .wiki-lorienn .vegetation-name {
+        font-size: 9px;
+    }
+
+    .wiki-lorienn .vegetation-bottom {
+        font-size: 7px;
+    }
+
+    .wiki-lorienn .fauna-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wiki-lorienn .fauna-card {
+        padding: 12px;
+    }
+
+    .wiki-lorienn .fauna-card-title {
+        min-height: auto;
+        text-align: left;
+    }
+
+    .wiki-lorienn .seasonal-heading h3 {
+        font-size: 12px;
+    }
+
+}
+
