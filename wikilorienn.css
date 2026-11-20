@@ -2614,6 +2614,381 @@
 .pib-note strong {
     color: #405f73;
 }
+
+/* =========================
+   COMERCIO EXTERIOR
+========================= */
+
+.wiki-foreign-trade {
+    margin: 24px 0;
+    padding: 25px 22px;
+    background: #f8fafc;
+    border: 1px solid #cbd8e2;
+    border-radius: 5px;
+    color: #344454;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.trade-heading {
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.trade-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.trade-heading h3 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.trade-heading p {
+    margin: 7px 0 0;
+    color: #788895;
+    font-size: 11px;
+}
+
+/* NODO PRINCIPAL */
+
+.trade-origin {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 13px 25px;
+    background: #405f73;
+    border: 1px solid #344f61;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* CONECTOR */
+
+.trade-connector {
+    width: 1px;
+    height: 30px;
+    margin: 0 auto;
+    background: #9aafbf;
+    position: relative;
+}
+
+.trade-connector::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #9aafbf;
+    border-bottom: 1px solid #9aafbf;
+    transform: rotate(45deg);
+}
+
+/* TARJETAS */
+
+.trade-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.trade-card {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #d5dfe7;
+    border-radius: 4px;
+}
+
+.trade-exports {
+    border-top: 3px solid #668b9e;
+}
+
+.trade-imports {
+    border-top: 3px solid #8298aa;
+}
+
+/* CABECERAS */
+
+.trade-card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 17px;
+    border-bottom: 1px solid #e5ebf0;
+}
+
+.trade-card-number {
+    color: #a8bac8;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.trade-card-header h4 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+
+/* CONTENIDO */
+
+.trade-card-body {
+    padding: 15px 20px;
+}
+
+.trade-card-body ul {
+    margin: 0;
+    padding-left: 17px;
+    color: #667784;
+    font-size: 11px;
+    line-height: 1.9;
+}
+
+.trade-card-body li {
+    padding-left: 3px;
+    margin-bottom: 4px;
+}
+
+/* PIE DE TARJETA */
+
+.trade-card-footer {
+    padding: 10px 15px;
+    background: #f1f5f8;
+    border-top: 1px solid #e2e9ef;
+    color: #8296a7;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+/* PIE GENERAL */
+
+.trade-bottom {
+    margin-top: 17px;
+    padding-top: 11px;
+    border-top: 1px solid #dce4ea;
+    color: #8b9eae;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+ }
+
+/* =========================
+   SISTEMA MONETARIO
+========================= */
+
+.wiki-currency-system {
+    margin: 24px 0;
+    padding: 23px;
+    background: #f8fafc;
+    border: 1px solid #cbd8e2;
+    border-radius: 5px;
+    color: #344454;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.currency-heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.currency-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.currency-heading h3 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.currency-heading p {
+    margin: 7px 0 0;
+    color: #788895;
+    font-size: 11px;
+}
+
+/* DESTACADO MONETARIO */
+
+.currency-highlight {
+    display: grid;
+    grid-template-columns: 75px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 16px;
+    padding: 17px 20px;
+    background: #405f73;
+    border: 1px solid #344f61;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.currency-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 4px;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.currency-highlight-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.currency-highlight-info span,
+.currency-code span {
+    color: #c0d0dc;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.currency-highlight-info strong {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.currency-highlight-info small {
+    color: #c5d4df;
+    font-size: 10px;
+}
+
+.currency-code {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-left: 17px;
+    border-left: 1px solid rgba(255,255,255,.25);
+    text-align: center;
+}
+
+.currency-code strong {
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* DESCRIPCIÓN */
+
+.currency-description {
+    margin: 15px 0 20px;
+    padding: 12px 15px;
+    background: #edf3f7;
+    border-left: 3px solid #7895aa;
+    color: #667784;
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* TÍTULO DE TABLA */
+
+.currency-table-title {
+    margin-bottom: 9px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+/* TABLA */
+
+.currency-table-scroll {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.currency-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 11px;
+}
+
+.currency-table th {
+    width: 34%;
+    padding: 12px 14px;
+    background: #edf2f6;
+    border: 1px solid #dce4ea;
+    color: #405f73;
+    text-align: left;
+    font-size: 10px;
+    font-weight: 700;
+    vertical-align: middle;
+}
+
+.currency-table td {
+    padding: 12px 15px;
+    border: 1px solid #e0e7ed;
+    color: #596c7a;
+    line-height: 1.6;
+    vertical-align: middle;
+}
+
+.currency-table tr:nth-child(even) td {
+    background: #f8fafb;
+}
+
+.currency-accent {
+    color: #405f73;
+    font-size: 15px;
+    letter-spacing: .5px;
+}
+
+/* NOTA */
+
+.currency-note {
+    margin-top: 14px;
+    padding: 10px 13px;
+    background: #edf3f7;
+    border-left: 3px solid #7895aa;
+    color: #71808c;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.currency-note strong {
+    color: #405f73;
+}
           
 /* ===============
    RESPONSIVE
