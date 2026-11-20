@@ -2988,6 +2988,390 @@
 
 .currency-note strong {
     color: #405f73;
+   }
+
+/* =========================
+   OFERTA TURÍSTICA
+========================= */
+
+.wiki-tourism-offer {
+    margin: 24px 0;
+    padding: 25px 22px;
+    background: #f8fafc;
+    border: 1px solid #cbd8e2;
+    border-radius: 5px;
+    color: #344454;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.tourism-heading {
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.tourism-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.tourism-heading h3 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.tourism-heading p {
+    margin: 7px 0 0;
+    color: #788895;
+    font-size: 11px;
+}
+
+/* NODO PRINCIPAL */
+
+.tourism-origin {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 13px 25px;
+    background: #405f73;
+    border: 1px solid #344f61;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* CONECTOR */
+
+.tourism-connector {
+    width: 1px;
+    height: 28px;
+    margin: 0 auto;
+    background: #9aafbf;
+    position: relative;
+}
+
+.tourism-connector::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #9aafbf;
+    border-bottom: 1px solid #9aafbf;
+    transform: rotate(45deg);
+}
+
+/* TARJETAS */
+
+.tourism-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.tourism-card {
+    min-width: 0;
+    padding: 16px 13px;
+    background: #fff;
+    border: 1px solid #d5dfe7;
+    border-top: 3px solid #7895aa;
+    border-radius: 4px;
+    transition: .2s ease;
+}
+
+.tourism-card:hover {
+    border-color: #8ba5b8;
+    transform: translateY(-3px);
+}
+
+.tourism-number {
+    margin-bottom: 12px;
+    color: #a8bac8;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.tourism-location {
+    display: block;
+    margin-bottom: 6px;
+    color: #8b9eae;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.tourism-card h4 {
+    min-height: 40px;
+    margin: 0 0 11px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e5ebf0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.tourism-card ul {
+    margin: 0;
+    padding-left: 14px;
+    color: #667784;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+.tourism-card li {
+    padding-left: 2px;
+    margin-bottom: 3px;
+}
+
+/* PIE */
+
+.tourism-footer {
+    margin-top: 17px;
+    padding-top: 11px;
+    border-top: 1px solid #dce4ea;
+    color: #8b9eae;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    }
+
+/* =========================
+   DISTRIBUCIÓN TERRITORIAL
+========================= */
+
+.wiki-territorial-structure {
+    margin: 24px 0;
+    padding: 25px 22px;
+    background: #f8fafc;
+    border: 1px solid #cbd8e2;
+    border-radius: 5px;
+    color: #344454;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.territorial-heading {
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.territorial-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.territorial-heading h3 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.territorial-heading p {
+    margin: 7px 0 0;
+    color: #788895;
+    font-size: 11px;
+}
+
+/* NIVELES */
+
+.territorial-level {
+    width: 100%;
+}
+
+.territorial-level-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    color: #71899b;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.territorial-level-label span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background: #e5edf3;
+    border: 1px solid #cbd8e2;
+    border-radius: 50%;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 11px;
+}
+
+/* CAPITAL */
+
+.territorial-capital {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #cbd8e2;
+    border-left: 4px solid #405f73;
+    border-radius: 4px;
+}
+
+.territorial-capital-header {
+    padding: 17px 20px;
+    background: #405f73;
+    color: #fff;
+}
+
+.territorial-capital-header > span {
+    display: block;
+    margin-bottom: 5px;
+    color: #c2d1dc;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.territorial-capital-header h4 {
+    margin: 0 0 5px;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 21px;
+}
+
+.territorial-capital-header strong {
+    color: #d4e0e8;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.territorial-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+    padding: 15px 19px;
+}
+
+.territorial-details > div {
+    display: flex;
+    align-items: flex-start;
+    gap: 9px;
+    color: #667784;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.territorial-bullet {
+    flex-shrink: 0;
+    width: 6px;
+    height: 6px;
+    margin-top: 4px;
+    background: #7895aa;
+    border-radius: 50%;
+}
+
+/* SEPARADORES */
+
+.territorial-divider {
+    width: 1px;
+    height: 28px;
+    margin: 0 auto 20px;
+    background: #a7bac9;
+}
+
+/* CENTROS REGIONALES */
+
+.territorial-regional-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.territorial-place {
+    position: relative;
+    min-width: 0;
+    padding: 16px 14px;
+    background: #fff;
+    border: 1px solid #d5dfe7;
+    border-top: 3px solid #7895aa;
+    border-radius: 4px;
+}
+
+.territorial-place-number {
+    display: block;
+    margin-bottom: 9px;
+    color: #a8bac8;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.territorial-place h4,
+.territorial-peripheral h4 {
+    margin: 0 0 7px;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
+
+.territorial-place p,
+.territorial-peripheral p {
+    margin: 0;
+    color: #71808c;
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+/* ÁREAS PERIFÉRICAS */
+
+.territorial-peripheral-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.territorial-peripheral {
+    min-width: 0;
+    padding: 14px 12px;
+    background: #fff;
+    border: 1px solid #d5dfe7;
+    border-left: 3px solid #a3b5c3;
+    border-radius: 4px;
+}
+
+.territorial-peripheral h4 {
+    font-size: 13px;
+}
+
+/* PIE */
+
+.territorial-footer {
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #dce4ea;
+    color: #8b9eae;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
 }
           
 /* ===============
