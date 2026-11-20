@@ -3786,6 +3786,61 @@
     font-size: 10px;
    }
 
+    /* TURISMO */
+
+   .wiki-lorienn .wiki-tourism-offer {
+    padding: 16px 10px;
+   }
+
+.wiki-lorienn .tourism-heading h3,
+.wiki-lorienn .territorial-heading h3 {
+    font-size: 16px;
+}
+
+.wiki-lorienn .tourism-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.wiki-lorienn .tourism-card {
+    padding: 13px 10px;
+}
+
+.wiki-lorienn .tourism-card h4 {
+    min-height: 0;
+    font-size: 11px;
+}
+
+.wiki-lorienn .tourism-card ul {
+    font-size: 9px;
+}
+
+/* DISTRIBUCIÓN TERRITORIAL */
+
+.wiki-lorienn .wiki-territorial-structure {
+    padding: 16px 10px;
+}
+
+.wiki-lorienn .territorial-details {
+    grid-template-columns: 1fr;
+    gap: 9px;
+}
+
+.wiki-lorienn .territorial-regional-grid {
+    grid-template-columns: 1fr;
+    gap: 9px;
+}
+
+.wiki-lorienn .territorial-peripheral-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.wiki-lorienn .territorial-place,
+.wiki-lorienn .territorial-peripheral {
+    padding: 12px;
+}
+
 }
 
 /* ========================
