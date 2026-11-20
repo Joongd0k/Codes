@@ -2902,10 +2902,10 @@
 
     /* ECONOMÍA */
 
-.wiki-lorienn .wiki-economic-structure,
-.wiki-lorienn .wiki-economic-pib {
+   .wiki-lorienn .wiki-economic-structure,
+   .wiki-lorienn .wiki-economic-pib {
     padding: 16px 10px;
-}
+    }
 
 .wiki-lorienn .economic-heading h3,
 .wiki-lorienn .pib-heading h3 {
@@ -2943,6 +2943,89 @@
 .wiki-lorienn .pib-table th {
     padding: 10px;
 }
+    /* COMERCIO EXTERIOR Y SISTEMA MONETARIO */
+
+    .wiki-lorienn .wiki-foreign-trade,
+    .wiki-lorienn .wiki-currency-system {
+    padding: 16px 10px;
+    }
+
+.wiki-lorienn .trade-heading h3,
+.wiki-lorienn .currency-heading h3 {
+    font-size: 16px;
+}
+
+.wiki-lorienn .trade-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.wiki-lorienn .trade-card-header {
+    padding: 12px 10px;
+    gap: 7px;
+}
+
+.wiki-lorienn .trade-card-header h4 {
+    font-size: 11px;
+}
+
+.wiki-lorienn .trade-card-number {
+    font-size: 17px;
+}
+
+.wiki-lorienn .trade-card-body {
+    padding: 12px 10px;
+}
+
+.wiki-lorienn .trade-card-body ul {
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+.wiki-lorienn .trade-card-footer {
+    font-size: 7px;
+    padding: 9px 5px;
+}
+
+.wiki-lorienn .trade-origin {
+    padding: 11px 14px;
+    font-size: 9px;
+}
+
+.wiki-lorienn .currency-highlight {
+    grid-template-columns: 55px minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 13px 10px;
+}
+
+.wiki-lorienn .currency-symbol {
+    width: 52px;
+    height: 52px;
+    font-size: 23px;
+}
+
+.wiki-lorienn .currency-highlight-info strong {
+    font-size: 13px;
+}
+
+.wiki-lorienn .currency-code {
+    padding-left: 10px;
+}
+
+.wiki-lorienn .currency-code strong {
+    font-size: 15px;
+}
+
+.wiki-lorienn .currency-table th {
+    width: 38%;
+    padding: 10px 8px;
+    font-size: 9px;
+}
+
+.wiki-lorienn .currency-table td {
+    padding: 10px 8px;
+    font-size: 10px;
+   }
 
 }
 
