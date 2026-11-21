@@ -3373,6 +3373,399 @@
     font-weight: 800;
     letter-spacing: 1.3px;
 }
+
+/* =========================
+   CONECTIVIDAD MULTIMODAL
+========================= */
+
+.wiki-multimodal {
+    margin: 24px 0;
+    padding: 25px 22px;
+    background: #f8fafc;
+    border: 1px solid #cbd8e2;
+    border-radius: 5px;
+    color: #344454;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.multimodal-heading {
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.multimodal-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.multimodal-heading h3 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.multimodal-heading p {
+    margin: 7px 0 0;
+    color: #788895;
+    font-size: 11px;
+}
+
+/* RED GENERAL */
+
+.multimodal-network {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* SISTEMAS */
+
+.multimodal-system {
+    display: grid;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 15px;
+    padding: 17px;
+    background: #fff;
+    border: 1px solid #d5dfe7;
+    border-left: 3px solid #7895aa;
+    border-radius: 4px;
+}
+
+/* ICONOS NUMÉRICOS */
+
+.multimodal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: #edf2f6;
+    border: 1px solid #d5dfe7;
+    border-radius: 4px;
+    color: #526f85;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* CONTENIDO */
+
+.multimodal-content {
+    min-width: 0;
+}
+
+.multimodal-system-title {
+    margin-bottom: 13px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5ebf0;
+}
+
+.multimodal-system-title > span {
+    display: block;
+    margin-bottom: 5px;
+    color: #8b9eae;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.multimodal-system-title h4 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+.multimodal-system-title small {
+    display: inline-block;
+    margin-top: 7px;
+    padding: 4px 7px;
+    background: #e8eff4;
+    border-radius: 2px;
+    color: #58768c;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+
+/* DETALLES */
+
+.multimodal-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+}
+
+.multimodal-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 10px 12px;
+    background: #f6f8fa;
+    border: 1px solid #e5ebf0;
+    border-radius: 3px;
+}
+
+.multimodal-item strong {
+    color: #526f85;
+    font-size: 10px;
+}
+
+.multimodal-item span {
+    color: #71808c;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+/* EJE MARÍTIMO */
+
+.multimodal-maritime {
+    background: #edf3f7;
+    border: 1px solid #b9cbd8;
+    border-left: 3px solid #405f73;
+}
+
+.multimodal-maritime .multimodal-icon {
+    background: #405f73;
+    border-color: #405f73;
+    color: #fff;
+}
+
+.multimodal-maritime .multimodal-system-title {
+    border-color: #d4e0e8;
+}
+
+.multimodal-maritime-flow {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 35px minmax(0, 1fr);
+    align-items: center;
+    gap: 8px;
+}
+
+.multimodal-maritime-node {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 13px 10px;
+    background: #fff;
+    border: 1px solid #d2dfe8;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.multimodal-maritime-node strong {
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 12px;
+}
+
+.multimodal-maritime-node span {
+    color: #788895;
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+.multimodal-maritime-arrow {
+    color: #66869c;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* PIE */
+
+.multimodal-footer {
+    margin-top: 17px;
+    padding-top: 11px;
+    border-top: 1px solid #dce4ea;
+    color: #8b9eae;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+/* =========================
+   ESTADO SECULAR
+========================= */
+
+.wiki-secular-state {
+    margin: 24px 0;
+    padding: 25px 22px;
+    background: #f8fafc;
+    border: 1px solid #cbd8e2;
+    border-radius: 5px;
+    color: #344454;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.secular-heading {
+    margin-bottom: 23px;
+    text-align: center;
+}
+
+.secular-kicker {
+    display: block;
+    margin-bottom: 6px;
+    color: #8296a7;
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.secular-heading h3 {
+    margin: 0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.secular-heading p {
+    margin: 7px 0 0;
+    color: #788895;
+    font-size: 11px;
+}
+
+/* NODO PRINCIPAL */
+
+.secular-origin {
+    padding: 19px 20px;
+    background: #405f73;
+    border: 1px solid #344f61;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+.secular-origin > span {
+    display: block;
+    margin-bottom: 6px;
+    color: #c2d1dc;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.secular-origin h4 {
+    margin: 0 0 14px;
+    color: #fff;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+/* PRINCIPIOS */
+
+.secular-principles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.secular-principles span {
+    padding: 6px 11px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.2);
+    border-radius: 3px;
+    color: #e0e9ef;
+    font-size: 9px;
+    font-weight: 700;
+}
+
+/* CONECTOR */
+
+.secular-connector {
+    width: 1px;
+    height: 30px;
+    margin: 0 auto;
+    background: #9aafbf;
+    position: relative;
+}
+
+.secular-connector::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #9aafbf;
+    border-bottom: 1px solid #9aafbf;
+    transform: rotate(45deg);
+}
+
+/* TARJETAS */
+
+.secular-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.secular-card {
+    min-width: 0;
+    padding: 17px 15px;
+    background: #fff;
+    border: 1px solid #d5dfe7;
+    border-top: 3px solid #7895aa;
+    border-radius: 4px;
+    transition: .2s ease;
+}
+
+.secular-card:hover {
+    border-color: #8ba5b8;
+    transform: translateY(-3px);
+}
+
+.secular-number {
+    margin-bottom: 12px;
+    color: #a8bac8;
+    font-family: Georgia, serif;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.secular-card h4 {
+    min-height: 38px;
+    margin: 0 0 10px;
+    padding-bottom: 9px;
+    border-bottom: 1px solid #e5ebf0;
+    color: #405f73;
+    font-family: Georgia, serif;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.secular-card p {
+    margin: 0;
+    color: #71808c;
+    font-size: 10px;
+    line-height: 1.8;
+}
+
+/* PIE */
+
+.secular-footer {
+    margin-top: 17px;
+    padding-top: 11px;
+    border-top: 1px solid #dce4ea;
+    color: #8b9eae;
+    text-align: center;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
           
 /* ===============
    RESPONSIVE
