@@ -3766,6 +3766,560 @@
     font-weight: 800;
     letter-spacing: 1.3px;
 }
+
+/* =====================
+   SISTEMA EDUCATIVO
+===================== */
+
+.wiki-lorienn .wiki-education-system {
+    --edu-blue: #405f73;
+    --edu-blue-light: #7895aa;
+    --edu-border: #cbd8e2;
+    --edu-bg: #f8fafc;
+    --edu-text: #344454;
+    --edu-muted: #71808c;
+
+    width: 100%;
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 28px 24px;
+    background: #fff;
+    border: 1px solid #d5dfe7;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: var(--edu-text);
+}
+
+/* ENCABEZADO */
+
+.wiki-lorienn .education-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wiki-lorienn .education-kicker {
+    display: inline-block;
+    color: var(--edu-blue-light);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+
+.wiki-lorienn .education-heading h3 {
+    margin: 0 0 9px;
+    color: var(--edu-blue);
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.wiki-lorienn .education-heading p {
+    max-width: 570px;
+    margin: auto;
+    color: var(--edu-muted);
+    font-size: 11px;
+    line-height: 1.7;
+}
+
+/* ETAPAS */
+
+.wiki-lorienn .education-stage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wiki-lorienn .education-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+    max-width: 510px;
+    min-height: 100px;
+    padding: 18px 22px;
+    background: var(--edu-bg);
+    border: 1px solid var(--edu-border);
+    border-left: 4px solid var(--edu-blue-light);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.wiki-lorienn .education-number {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    background: #eaf0f4;
+    border: 1px solid #d5e0e8;
+    border-radius: 50%;
+    color: var(--edu-blue);
+    font-family: Georgia, serif;
+    font-size: 13px;
+}
+
+.wiki-lorienn .education-card-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.wiki-lorienn .education-label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--edu-blue-light);
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.wiki-lorienn .education-card h4 {
+    margin: 0 0 5px;
+    color: var(--edu-blue);
+    font-family: Georgia, serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.wiki-lorienn .education-card p {
+    margin: 0 0 9px;
+    color: var(--edu-muted);
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.wiki-lorienn .education-status {
+    display: inline-block;
+    padding: 5px 9px;
+    background: #edf3f7;
+    border: 1px solid #dbe5ec;
+    border-radius: 3px;
+    color: #526d80;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.wiki-lorienn .education-required {
+    background: #e9f0f4;
+    border-color: #cbd9e3;
+    color: #405f73;
+}
+
+.wiki-lorienn .education-paid {
+    background: #f4f0e9;
+    border-color: #e6dbca;
+    color: #806d53;
+}
+
+/* TARJETA DESTACADA */
+
+.wiki-lorienn .education-highlight {
+    background: #f3f7fa;
+    border-left-color: #405f73;
+}
+
+/* CONECTORES */
+
+.wiki-lorienn .education-connector {
+    display: flex;
+    justify-content: center;
+    height: 30px;
+}
+
+.wiki-lorienn .education-connector span {
+    position: relative;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background: #aebfcb;
+}
+
+.wiki-lorienn .education-connector span::after {
+    position: absolute;
+    bottom: 0;
+    left: -4px;
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-right: 1px solid #7895aa;
+    border-bottom: 1px solid #7895aa;
+    transform: rotate(45deg);
+}
+
+/* BIFURCACIÓN */
+
+.wiki-lorienn .education-branch {
+    margin-top: 8px;
+}
+
+.wiki-lorienn .education-branch-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    margin-bottom: 18px;
+    text-align: left;
+}
+
+.wiki-lorienn .education-branch-title > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: var(--edu-blue);
+    border-radius: 50%;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: 11px;
+}
+
+.wiki-lorienn .education-branch-title strong {
+    display: block;
+    color: var(--edu-blue);
+    font-family: Georgia, serif;
+    font-size: 15px;
+}
+
+.wiki-lorienn .education-branch-title small {
+    display: block;
+    margin-top: 3px;
+    color: var(--edu-muted);
+    font-size: 9px;
+}
+
+/* DOS CAMINOS */
+
+.wiki-lorienn .education-branch-grid {
+    display: grid;
+    grid-template-columns: 1.25fr 0.85fr;
+    gap: 14px;
+    align-items: stretch;
+}
+
+.wiki-lorienn .education-path {
+    position: relative;
+    padding: 17px;
+    background: #f8fafc;
+    border: 1px solid var(--edu-border);
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.wiki-lorienn .education-path-academic {
+    border-top: 3px solid #405f73;
+}
+
+.wiki-lorienn .education-path-work {
+    border-top: 3px solid #9a8b72;
+    background: #faf9f6;
+}
+
+/* ENCABEZADOS DE LOS CAMINOS */
+
+.wiki-lorienn .education-path-header {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 15px;
+}
+
+.wiki-lorienn .education-path-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background: #e9f0f4;
+    border: 1px solid #d3e0e8;
+    border-radius: 50%;
+    color: var(--edu-blue);
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.wiki-lorienn .education-path-work .education-path-icon {
+    background: #f0ece5;
+    border-color: #e1d8ca;
+    color: #806d53;
+}
+
+.wiki-lorienn .education-path-header .education-label {
+    margin-bottom: 4px;
+    font-size: 7px;
+}
+
+.wiki-lorienn .education-path-header h4 {
+    margin: 0;
+    color: var(--edu-blue);
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+
+.wiki-lorienn .education-path-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 13px;
+}
+
+.wiki-lorienn .education-path-info span {
+    padding: 5px 8px;
+    background: #eaf0f4;
+    border-radius: 3px;
+    color: #526d80;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.wiki-lorienn .education-path > p {
+    margin: 0 0 13px;
+    color: var(--edu-muted);
+    font-size: 10px;
+    line-height: 1.7;
+}
+
+/* ORIENTACIONES */
+
+.wiki-lorienn .education-path-connector {
+    width: 1px;
+    height: 20px;
+    margin: 12px auto;
+    background: #aebfcb;
+}
+
+.wiki-lorienn .education-orientations {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wiki-lorienn .education-orientation {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 11px;
+    background: #fff;
+    border: 1px solid #e1e8ee;
+    border-radius: 3px;
+}
+
+.wiki-lorienn .orientation-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background: #edf3f7;
+    border-radius: 3px;
+    color: var(--edu-blue);
+    font-size: 9px;
+    font-weight: 700;
+}
+
+.wiki-lorienn .education-orientation h5 {
+    margin: 1px 0 4px;
+    color: var(--edu-blue);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.wiki-lorienn .education-orientation p {
+    margin: 0;
+    color: var(--edu-muted);
+    font-size: 9px;
+    line-height: 1.5;
+}
+
+/* FINAL DEL CAMINO ACADÉMICO */
+
+.wiki-lorienn .education-path-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 9px 10px;
+    background: #edf3f7;
+    border-radius: 3px;
+    color: #526d80;
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.wiki-lorienn .education-down-arrow {
+    font-size: 17px;
+}
+
+/* INCORPORACIÓN LABORAL */
+
+.wiki-lorienn .education-work-illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 95px;
+    margin-bottom: 15px;
+    background: #f2efe9;
+    border: 1px solid #e7dfd2;
+    border-radius: 3px;
+}
+
+.wiki-lorienn .education-work-illustration span {
+    color: #806d53;
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.wiki-lorienn .education-work-illustration small {
+    margin-top: 4px;
+    color: #887c6a;
+    font-size: 8px;
+    text-align: center;
+}
+
+.wiki-lorienn .education-work-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 14px 0;
+}
+
+.wiki-lorienn .education-work-details span {
+    padding: 8px 10px;
+    background: #fff;
+    border: 1px solid #e8e2d8;
+    border-radius: 3px;
+    color: #786d5d;
+    font-size: 9px;
+}
+
+/* CONVERGENCIA */
+
+.wiki-lorienn .education-convergence {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 23px 0;
+}
+
+.wiki-lorienn .education-convergence-line {
+    width: 1px;
+    height: 15px;
+    background: #aebfcb;
+}
+
+.wiki-lorienn .education-convergence small {
+    margin: 8px 0;
+    color: var(--edu-muted);
+    font-size: 9px;
+    letter-spacing: .4px;
+}
+
+.wiki-lorienn .education-convergence-arrow {
+    color: var(--edu-blue-light);
+    font-size: 21px;
+    line-height: 1;
+}
+
+/* UNIVERSIDAD */
+
+.wiki-lorienn .education-university {
+    max-width: 570px;
+    background: #eef4f7;
+    border-left-color: #405f73;
+}
+
+.wiki-lorienn .education-university-types,
+.wiki-lorienn .education-postgraduate-types {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 10px 0;
+}
+
+.wiki-lorienn .education-university-types span {
+    padding: 6px 9px;
+    background: #fff;
+    border: 1px solid #d7e2e9;
+    border-radius: 3px;
+    color: #526d80;
+    font-size: 9px;
+}
+
+/* POSGRADO */
+
+.wiki-lorienn .education-postgraduate {
+    max-width: 510px;
+    background: #faf9f6;
+    border-left-color: #9a8b72;
+}
+
+.wiki-lorienn .education-postgraduate .education-number {
+    background: #f0ece5;
+    border-color: #e5dccf;
+    color: #806d53;
+}
+
+.wiki-lorienn .education-postgraduate .education-label,
+.wiki-lorienn .education-postgraduate h4 {
+    color: #806d53;
+}
+
+.wiki-lorienn .education-postgraduate-types span {
+    padding: 6px 9px;
+    background: #fff;
+    border: 1px solid #e8e0d5;
+    border-radius: 3px;
+    color: #786d5d;
+    font-size: 9px;
+}
+
+/* NOTA FINAL */
+
+.wiki-lorienn .education-system-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 11px;
+    margin-top: 28px;
+    padding: 14px 16px;
+    background: #f5f8fa;
+    border: 1px solid #dce5eb;
+    border-radius: 3px;
+}
+
+.wiki-lorienn .education-note-icon {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: #e3ebf1;
+    border-radius: 50%;
+    color: var(--edu-blue);
+    font-family: Georgia, serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.wiki-lorienn .education-system-note p {
+    margin: 0;
+    color: var(--edu-muted);
+    font-size: 9px;
+    line-height: 1.7;
+}
+
+.wiki-lorienn .education-system-note strong {
+    color: var(--edu-blue);
+    }
           
 /* ===============
    RESPONSIVE
@@ -4306,6 +4860,108 @@
 
 .wiki-lorienn .secular-principles span {
     padding: 5px 7px;
+    font-size: 8px;
+    }
+
+    /* SISTEMA EDUCATIVO */
+
+.wiki-lorienn .wiki-education-system {
+    padding: 19px 11px;
+    margin: 20px auto;
+}
+
+.wiki-lorienn .education-heading {
+    margin-bottom: 22px;
+}
+
+.wiki-lorienn .education-heading h3 {
+    font-size: 19px;
+}
+
+.wiki-lorienn .education-heading p {
+    font-size: 10px;
+}
+
+.wiki-lorienn .education-card {
+    gap: 11px;
+    min-height: 90px;
+    padding: 14px 12px;
+}
+
+.wiki-lorienn .education-number {
+    width: 31px;
+    height: 31px;
+    font-size: 11px;
+}
+
+.wiki-lorienn .education-card h4 {
+    font-size: 14px;
+}
+
+.wiki-lorienn .education-card p {
+    font-size: 9px;
+}
+
+.wiki-lorienn .education-connector {
+    height: 23px;
+}
+
+/* BIFURCACIÓN */
+
+.wiki-lorienn .education-branch-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+.wiki-lorienn .education-path {
+    padding: 14px;
+}
+
+.wiki-lorienn .education-path-header h4 {
+    font-size: 16px;
+}
+
+.wiki-lorienn .education-path > p {
+    font-size: 9px;
+}
+
+.wiki-lorienn .education-orientation {
+    padding: 9px;
+}
+
+.wiki-lorienn .education-orientation p {
+    font-size: 9px;
+}
+
+.wiki-lorienn .education-branch-title strong {
+    font-size: 13px;
+}
+
+.wiki-lorienn .education-branch-title small {
+    font-size: 8px;
+}
+
+/* EDUCACIÓN SUPERIOR */
+
+.wiki-lorienn .education-university-types,
+.wiki-lorienn .education-postgraduate-types {
+    gap: 5px;
+}
+
+.wiki-lorienn .education-university-types span,
+.wiki-lorienn .education-postgraduate-types span {
+    font-size: 8px;
+    padding: 5px 7px;
+}
+
+/* NOTA */
+
+.wiki-lorienn .education-system-note {
+    padding: 11px;
+    gap: 8px;
+}
+
+.wiki-lorienn .education-system-note p {
     font-size: 8px;
     }
 
